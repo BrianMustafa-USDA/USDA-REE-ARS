@@ -216,8 +216,7 @@ def create_github_issues(title, labels=None, assignees=None, body=None):
     session.auth = (owner, personal_access_token)
 
     # Create new issue
-    issue = {'name': 'Test-Vulnerability Report',
-             'about': 'Test-Template to report vulnerabilities found in the weekly NAL scans',
+    issue = {
              'title': title,  # "new issue"
              'labels': labels,
              'assignees': assignees,
@@ -296,12 +295,6 @@ def Weekly_NAL_create_github_issue(title, labels=None, assignees=None, body=None
     '''
     Pseudocode:
     Iterate through each issue to assign unique identifier to "title"
-    '''
-
-    '''
-    r = session.get("https://github.com/login")
-    tree = html.fromstring(r.content)
-    data = {i.get('name'):i.get('value') for i in tree.cssselect('input')}
     '''
     # Create new issues for Weekly NAL & ARS BOD Report
     Weekly_NAL_issue = {
