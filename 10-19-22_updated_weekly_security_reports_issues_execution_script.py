@@ -30,17 +30,23 @@ print("Print github-api-test-user")
 for key in config['user']:
     print(key)
 
-print(config['user']['name'])
-
 print(config['user']['personal_access_token'])
 print(type(config['user']['personal_access_token']))
 
 owner = config['user']['owner']
 repo = config['user']['repo']
 personal_access_token = config['user']['personal_access_token']
-print(type(config['user']['name']))
+
+print(config['user']['owner'])
+print(config['user']['repo'])
+print(config['user']['personal_access_token'])
+#print(type(config['user']['name']))
 print(type(config['user']['owner']))
 print(type(config['user']['repo']))
+print(owner)
+print(repo)
+print(personal_access_token)
+
 
 # Github Login Credential
 github = login(owner, personal_access_token)
@@ -65,7 +71,6 @@ def Weekly_NAL_read_csv_report(file_name):
         # display the contents of the CSV file
         for row in csv_reader:
             Weekly_NAL_list_issues.append(row)
-            # print(row)
     return Weekly_NAL_list_issues
 
 
@@ -91,7 +96,6 @@ def verify_duplicates(list):
             duplicates_count += 1
         else:
             print("No duplicates")
-            # print(uniq_id)
     print("Total number of duplicates: ", duplicates_count)
 
 
@@ -220,8 +224,6 @@ def create_github_issues(title, labels=None, assignees=None, body=None):
     # Create an authenticated session to create the issue
     session = requests.Session()
     session.auth = (owner, personal_access_token)
-
-    # for unique_id in Security_Report:
 
     # Create new issue
     issue = {'name': 'Test-Vulnerability Report',
@@ -442,7 +444,7 @@ try:
         print("Plugin - (10-04)Log4Shell_no_dupl_all_issues_list[i][1][0]:")
         print(Log4Shell_no_dupl_all_issues_list[issue][1][0])
 
-        Log4Shell_create_github_issue(each_unique_id, ["Test Label"], ['github-api-test-user'], each_unique_id_list)
+        Log4Shell_create_github_issue(each_unique_id, ["Test Label"], ['brian-mustafa'], each_unique_id_list)
     '''
     # Remove previous file
     if os.path.exists(Log4Shell_report):
@@ -486,7 +488,7 @@ try:
         each_unique_id_list = Weekly_NAL_no_dupl_all_issues_list[issue][1]
         print("Plugin - Weekly_NAL_no_dupl_all_issues_list[i][1][0]:")
         print(Weekly_NAL_no_dupl_all_issues_list[issue][1][0])
-        Log4Shell_create_github_issue(each_unique_id, ["Test Label"], ['github-api-test-user'], each_unique_id_list)
+        Log4Shell_create_github_issue(each_unique_id, ["Test Label"], ['brian-mustafa'], each_unique_id_list)
 
     '''
     # Remove previous file
@@ -524,7 +526,7 @@ try:
         each_unique_id = ARS_BOD_no_dupl_all_issues_list[issue][0]
         print("ARS_BOD_no_dupl_all_issues_list[i][1]")
         each_unique_id_list = ARS_BOD_no_dupl_all_issues_list[issue][1]
-        ARS_BOD_create_github_issue(each_unique_id, ["Test Label"], ['github-api-test-user'], each_unique_id_list)
+        ARS_BOD_create_github_issue(each_unique_id, ["Test Label"], ['brian-mustafa'], each_unique_id_list)
     '''
     # Remove previous file
     if os.path.exists(ARS_BOD_report):
