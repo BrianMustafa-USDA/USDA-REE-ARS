@@ -5,6 +5,9 @@ import requests
 import os
 import time
 from github3 import login
+#from threading import Event
+#from threading import Thread
+import time
 from pathlib import Path
 
 #sample github credentials
@@ -26,20 +29,32 @@ print("Print github-api-test-user")
 for key in config['user']:
     print(key)
 
-print(config['user']['personal_access_token'])
-print(type(config['user']['personal_access_token']))
+print(config['API']['personal_access_token'])
+print(type(config['API']['personal_access_token']))
 
 owner = config['user']['owner']
 repo = config['user']['repo']
-personal_access_token = config['user']['personal_access_token']
+personal_access_token = config['API']['personal_access_token']
 
 print(owner)
 print(repo)
 print(personal_access_token)
 
+#delay in seconds
+delay_in_sec = int(config['API']['delay'])
+print(type(delay_in_sec))
+print(delay_in_sec)
 
 # Github Login Credential
 github = login(owner, personal_access_token)
+
+
+#time.sleep(delay_in_sec)
+
+'''
+t = Thread(target=print, args=[1])
+t.run()
+'''
 
 def Log4Shell_read_csv_report(file_name):
     Log4Shell_list_issues = []
@@ -221,19 +236,19 @@ def create_github_issues(title, labels=None, assignees=None, body=None):
              'labels': labels,
              'assignees': assignees,
              'body':
-                 '''
-                 ### Plugin: \<text\>
-                 ### Plugin Name: \<text\>
-                 ### Severity: \<text\>
-                 ### IP Address: \<text\>
-                 ### Port: \<text\>
-                 ### DNS Name: \<text\>
-                 ### NetBios Name: \<text\>
-                 ### Plugin Output: \<text\>
-                 ### Solution: \<text\>
-                 ### CVSS V3 Base Score: \<text\>
-                 ### CVE: \<text\>
-                 '''
+f'''
+### Plugin: \<text\>
+### Plugin Name: \<text\>
+### Severity: \<text\>
+### IP Address: \<text\>
+### Port: \<text\>
+### DNS Name: \<text\>
+### NetBios Name: \<text\>
+### Plugin Output: \<text\>
+### Solution: \<text\>
+### CVSS V3 Base Score: \<text\>
+### CVE: \<text\>
+'''
             }
 
     # Add the issue to our repository
@@ -243,6 +258,9 @@ def create_github_issues(title, labels=None, assignees=None, body=None):
     else:
         print('Could not create Issue {0:s}'.format(title))
         print('Response: ', new_repo.content)
+
+    delay_in_sec = int(config['API']['delay'])
+    time.sleep(delay_in_sec)
 
 def Log4Shell_create_github_issue(title, labels=None, assignees=None, body=None):
     #Create an issue on github.com using the given parameters.
@@ -285,6 +303,9 @@ f'''
         print('Could not create Issue {0:s}'.format(title))
         print('Response: ', new_repo.content)
 
+    delay_in_sec = int(config['API']['delay'])
+    time.sleep(delay_in_sec)
+
 def Weekly_NAL_create_github_issue(title, labels=None, assignees=None, body=None):
     # Create an issue on github.com using the given parameters.
     # Our url to create issues via POST
@@ -325,6 +346,8 @@ f'''
     else:
         print('Could not create Issue {0:s}'.format(title))
         print('Response: ', new_repo.content)
+    delay_in_sec = int(config['API']['delay'])
+    time.sleep(delay_in_sec)
 
 #Weekly_NAL_create_github_issue("Title", ["Test Label"], ['github-api-test-user'], "Sample Body Text")
 
@@ -376,6 +399,8 @@ f'''
     else:
         print('Could not create Issue {0:s}'.format(title))
         print('Response: ', new_repo.content)
+    delay_in_sec = int(config['API']['delay'])
+    time.sleep(delay_in_sec)
 
 Log4Shell_report = config['security-csv-reports']['Log4Shell_report']
 Weekly_NAL_report = config['security-csv-reports']['Weekly_NAL_report']
@@ -520,6 +545,7 @@ try:
     '''
 except AttributeError:
     print("Attribute Error.")
+
 except EOFError:
     print("EOF Error is raised when the input() function hits the end-of-file condition")
 except Exception:
@@ -549,8 +575,7 @@ except ReferenceError:
 except RuntimeError:
     print("RunTime Error. Error does not fall in any pre-existing category.")
 except StopIteration:
-    print('''StopIteration is raised by the next() function to indicate that there is no further item "
-          to be returned by the iterator.''')
+    print("StopIteration is raised by the next() function to indicate that there is no further item to be returned by the iterator.")
 except SyntaxError:
     print("Syntax Error.")
 except SystemError:
@@ -558,8 +583,8 @@ except SystemError:
 except TabError:
     print("Tab Error is raised when the indentation consists of inconsistent tabs and spaces")
 except UnboundLocalError:
-    print('''Unbound Local Error is raised when a reference is made to a local variable in a function or method"
-           but no value has been bound to that variable.''')
+    print("Unbound Local Error is raised when a reference is made to a local variable in a function or method"
+           but no value has been bound to that variable.")
 except UnicodeError:
     print("Unicode Error. Unicode-related encoding or decoding error occured")
 except UnicodeEncodeError:
