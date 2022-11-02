@@ -6,10 +6,8 @@ import os
 import time
 from github3 import login
 from pathlib import Path
-#from threading import Event
-#from threading import Thread
-
-#sample github credentials
+# from threading import Event
+# from threading import Thread
 
 # ConfigParser Object
 config = configparser.ConfigParser()
@@ -39,21 +37,8 @@ print(owner)
 print(repo)
 print(personal_access_token)
 
-#delay in seconds
-delay_in_sec = int(config['API']['delay'])
-print(type(delay_in_sec))
-print(delay_in_sec)
-
 # Github Login Credential
 github = login(owner, personal_access_token)
-
-
-#time.sleep(delay_in_sec)
-
-'''
-t = Thread(target=print, args=[1])
-t.run()
-'''
 
 def Log4Shell_read_csv_report(file_name):
     Log4Shell_list_issues = []
@@ -140,7 +125,7 @@ def Log4Shell_create_unique_ids(list):
     print(assigned_unique_ids_list[0][1][0])
     print("assigned_unique_ids_list[0][1][3]")
     print(assigned_unique_ids_list[0][1][3])
-    
+
     print("This is the list of assigned unique ids:")
     print(assigned_unique_ids_list)
     '''
@@ -194,6 +179,7 @@ def Weekly_NAL_create_unique_ids(list):
     '''
     return assigned_unique_ids_list
 
+
 def ARS_BOD_create_unique_ids(list):
     print("\nUnique IDs: ")
     print("Length of list: ", len(list))
@@ -228,8 +214,9 @@ def ARS_BOD_create_unique_ids(list):
     '''
     return assigned_unique_ids_list
 
+
 def Log4Shell_create_github_issue(title, labels=None, assignees=None):
-    #Create an issue on github.com using the given parameters.
+    # Create an issue on github.com using the given parameters.
     # Our url to create issues via POST
     url = "https://api.github.com/repos/%s/%s/issues" % (owner, repo)
     # Create an authenticated session to create the issue in security report
@@ -244,14 +231,14 @@ def Log4Shell_create_github_issue(title, labels=None, assignees=None):
     print(response.headers)
     '''
 
-    #for unique_id in Security_Report:
-    #Create new issue
+    # for unique_id in Security_Report:
+    # Create new issue
     Log4Shell_issue = {
-            'title': title, #assign each new issue to title
-            'labels': labels,
-            'assignees': assignees,
-            'body':
-f'''
+        'title': title,  # assign each new issue to title
+        'labels': labels,
+        'assignees': assignees,
+        'body':
+            f'''
 ### Plugin: {each_unique_id_list[0]}
 ### Plugin Name: {each_unique_id_list[1]}
 ### Severity: {each_unique_id_list[2]}
@@ -266,7 +253,7 @@ f'''
 ### First Discovered: {each_unique_id_list[11]}
 ### Last Observed: {each_unique_id_list[12]}
 '''
-                        }
+    }
 
     # Add the issue to our repository
     new_repo = session.post(url, json.dumps(Log4Shell_issue))
@@ -278,7 +265,7 @@ f'''
     '''
     delay_in_sec = int(config['API']['delay'])
     time.sleep(delay_in_sec)
-    
+
     res = requests.request("GET", url, headers=headers)
     res = res.headers["Retry-After"]
     print("Retry-After: ")
@@ -291,6 +278,7 @@ f'''
     r.text
     print(r.json())
     '''
+
 
 def Weekly_NAL_create_github_issue(title, labels=None, assignees=None):
     # Create an issue on github.com using the given parameters.
@@ -305,11 +293,11 @@ def Weekly_NAL_create_github_issue(title, labels=None, assignees=None):
     '''
     # Create new issues for Weekly NAL & ARS BOD Report
     Weekly_NAL_issue = {
-             'title': title,  # assign each new issue to title
-             'labels': labels,
-             'assignees': assignees,
-             'body':
-f'''             
+        'title': title,  # assign each new issue to title
+        'labels': labels,
+        'assignees': assignees,
+        'body':
+            f'''             
 ### Plugin: {each_unique_id_list[0]}
 ### Plugin Name: {each_unique_id_list[1]}
 ### Severity: {each_unique_id_list[2]}
@@ -324,7 +312,7 @@ f'''
 ### First Discovered: {each_unique_id_list[11]}
 ### Last Observed: {each_unique_id_list[12]}
 '''
-                        }
+    }
     # Add the issue to our repository
     new_repo = session.post(url, json.dumps(Weekly_NAL_issue))
     if new_repo.status_code == 201:
@@ -351,11 +339,11 @@ def ARS_BOD_create_github_issue(title, labels=None, assignees=None):
     '''
     # Create new issues for Weekly NAL Security Report
     ARS_BOD_issue = {
-             'title': title,  # assign each new issue to title
-             'labels': labels,
-             'assignees': assignees,
-             'body':
-f'''             
+        'title': title,  # assign each new issue to title
+        'labels': labels,
+        'assignees': assignees,
+        'body':
+            f'''             
 ### Plugin: {each_unique_id_list[0]}
 ### Plugin Name: {each_unique_id_list[1]}
 ### Family: {each_unique_id_list[2]}
@@ -378,7 +366,7 @@ f'''
 ### Last Observed: {each_unique_id_list[19]}
 ### Cross References: {each_unique_id_list[20]}
 '''
-                        }
+    }
     # Add the issue to our repository
     new_repo = session.post(url, json.dumps(ARS_BOD_issue))
     if new_repo.status_code == 201:
@@ -392,6 +380,7 @@ f'''
     time.sleep(delay_in_sec)
     '''
 
+
 Log4Shell_report = config['security-csv-reports']['Log4Shell_report']
 Weekly_NAL_report = config['security-csv-reports']['Weekly_NAL_report']
 ARS_BOD_report = config['security-csv-reports']['ARS_BOD_report']
@@ -400,8 +389,8 @@ try:
     '''
     with os.scandir("my directory") as entries:
         print("entries")
-    
-    
+
+
     #Display all of csv files in server directory 
     entries = Path("directory/")
     for entry in entries.iterdir():
@@ -429,7 +418,7 @@ try:
     # into Log4Shell_create_github_issue() function
     print("\nCreate issues from Log4Shell Report: ")
     print("Log4Shell_no_dupl_all_issues_left")
-    print("Length of Log4Shell:",)
+    print("Length of Log4Shell:", )
     for issue in range(len(Log4Shell_no_dupl_all_issues_list)):
         '''
         print("for i in range(len(Log4Shell_no_dupl_all_issues_list))")
@@ -447,7 +436,6 @@ try:
         print("Plugin - (10-04)Log4Shell_no_dupl_all_issues_list[i][1][0]:")
         print(Log4Shell_no_dupl_all_issues_list[issue][1][0])
         '''
-
 
         delay_in_sec = int(config['API']['delay'])
         time.sleep(delay_in_sec)
@@ -476,7 +464,7 @@ try:
         # all_unique_ids_list.append(Weekly_NAL_issues_list[j])
         # unique_ids_list.append(Log4Shell_list_issues[row])
 
-    #verify duplciates in Weekly NAL reports
+    # verify duplciates in Weekly NAL reports
     verify_duplicates(Weekly_NAL_issues_list)
     # Weekly_NAL_create_unique_ids(Weekly_NAL_issues_list)
     Weekly_NAL_no_dupl_all_issues_list = Weekly_NAL_create_unique_ids(Weekly_NAL_issues_list)
@@ -580,7 +568,8 @@ except ReferenceError:
 except RuntimeError:
     print("RunTime Error. Error does not fall in any pre-existing category.")
 except StopIteration:
-    print("StopIteration is raised by the next() function to indicate that there is no further item to be returned by the iterator.")
+    print(
+        "StopIteration is raised by the next() function to indicate that there is no further item to be returned by the iterator.")
 except SyntaxError:
     print("Syntax Error.")
 except SystemError:
@@ -588,7 +577,8 @@ except SystemError:
 except TabError:
     print("Tab Error is raised when the indentation consists of inconsistent tabs and spaces")
 except UnboundLocalError:
-    print("Unbound Local Error is raised when a reference is made to a local variable in a function or method but no value has been bound to that variable.")
+    print(
+        "Unbound Local Error is raised when a reference is made to a local variable in a function or method but no value has been bound to that variable.")
 except UnicodeError:
     print("Unicode Error. Unicode-related encoding or decoding error occured")
 except UnicodeEncodeError:
