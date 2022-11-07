@@ -6,8 +6,6 @@ import os
 import time
 from github3 import login
 from pathlib import Path
-# from threading import Event
-# from threading import Thread
 
 # ConfigParser Object
 config = configparser.ConfigParser()
@@ -18,19 +16,13 @@ config.read("gitconfig.ini")
 # Read config.sections()
 config.sections()
 
-'''
-for key, value in config:
-    print(key, value)
-'''
-print("Print github-api-test-user")
-for key in config['user']:
-    print(key)
-
-print(config['API']['personal_access_token'])
-print(type(config['API']['personal_access_token']))
-
+# Read owner of [user] from config.ini
 owner = config['user']['owner']
+
+# Read repo of [user] from config.ini
 repo = config['user']['repo']
+
+# Read personal_access_token in [API] in config.ini
 personal_access_token = config['API']['personal_access_token']
 
 print(owner)
@@ -104,31 +96,11 @@ def Log4Shell_create_unique_ids(list):
         '''
 
         unique_id = str(list[row][0]) + list[row][1] + str(list[row][3]) + str(list[row][4]) + list[row][12]
-        print("row")
-        print(row)
-        print("list[row]")
-        print(list[row])
-        print("list of unique id, list[row]")
+
         print(unique_id, list[row])
         pair_assigned_unique_id = [unique_id, list[row]]
         print("Assigned_unique_ids_list (assigned values): ")
         assigned_unique_ids_list.append(pair_assigned_unique_id)
-
-    '''
-    print("\nAll assigned_unique_ids_list: ")
-    print("Length of unique ids list: ", len(assigned_unique_ids_list))
-    print("assigned_unique_ids_list[0]")
-    print(assigned_unique_ids_list[0])
-    print("assigned_unique_ids_list[0][1])")
-    print(assigned_unique_ids_list[0][1])
-    print("assigned_unique_ids_list[0][1])[0]")
-    print(assigned_unique_ids_list[0][1][0])
-    print("assigned_unique_ids_list[0][1][3]")
-    print(assigned_unique_ids_list[0][1][3])
-
-    print("This is the list of assigned unique ids:")
-    print(assigned_unique_ids_list)
-    '''
     return assigned_unique_ids_list
 
 
@@ -149,34 +121,15 @@ def Weekly_NAL_create_unique_ids(list):
         '''
         unique_id = str(list[row][0]) + list[row][1] + str(list[row][3]) + str(list[row][4]) + list[row][12]
         Weekly_NAL_unique_ids_list.append(unique_id)
-        print(type(unique_id))
-        print(unique_id)
 
-        print("row")
-        print(row)
-        print("list[row]")
-        print(list[row])
-        print("list of unique id, list[row]")
-        print(unique_id, list[row])
         pair_assigned_unique_id = [unique_id, list[row]]
         print("Assigned_unique_ids_list (assigned values): ")
         assigned_unique_ids_list.append(pair_assigned_unique_id)
 
-    '''
-    print("\nAll assigned_unique_ids_list: ")
-    print("Length of unique ids list: ", len(assigned_unique_ids_list))
-    print("assigned_unique_ids_list[0]")
-    print(assigned_unique_ids_list[0])
-    print("assigned_unique_ids_list[0][1])")
-    print(assigned_unique_ids_list[0][1])
-    print("assigned_unique_ids_list[0][1])[0]")
-    print(assigned_unique_ids_list[0][1][0])
-    print("assigned_unique_ids_list[0][1][3]")
-    print(assigned_unique_ids_list[0][1][3])
 
     print("list of assigned unique ids:")
     print(assigned_unique_ids_list)
-    '''
+
     return assigned_unique_ids_list
 
 
@@ -196,26 +149,14 @@ def ARS_BOD_create_unique_ids(list):
         '''
         unique_id = str(list[row][0]) + list[row][1] + str(list[row][3]) + str(list[row][4]) + list[row][19]
 
-        '''
-        print("row")
-        print(row)
-        print("list[row]")
-        print(list[row])
-        print("list of unique id, list[row]")
-        print(unique_id, list[row])
         pair_assigned_unique_id = [unique_id, list[row]]
         print("Assigned_unique_ids_list (assigned values): ")
         assigned_unique_ids_list.append(pair_assigned_unique_id)
-        '''
 
-    '''
-    print("list of assigned unique ids:")
-    print(assigned_unique_ids_list)
-    '''
     return assigned_unique_ids_list
 
 
-def Log4Shell_create_github_issue(title, labels=None, assignees=None):
+def Log4Shell_create_github_issue(title, labels=None, assignees=None, body=None):
     # Create an issue on github.com using the given parameters.
     # Our url to create issues via POST
     url = "https://api.github.com/repos/%s/%s/issues" % (owner, repo)
@@ -239,19 +180,19 @@ def Log4Shell_create_github_issue(title, labels=None, assignees=None):
         'assignees': assignees,
         'body':
             f'''
-### Plugin: {each_unique_id_list[0]}
-### Plugin Name: {each_unique_id_list[1]}
-### Severity: {each_unique_id_list[2]}
-### IP Address: {each_unique_id_list[3]}
-### Port: {each_unique_id_list[4]}
-### DNS Name: {each_unique_id_list[5]}
-### NetBios Name: {each_unique_id_list[6]}
-### Plugin Output: {each_unique_id_list[7]}
-### Solution: {each_unique_id_list[8]}
-### CVSS V3 Base Score: {each_unique_id_list[9]}
-### CVE: {each_unique_id_list[10]}
-### First Discovered: {each_unique_id_list[11]}
-### Last Observed: {each_unique_id_list[12]}
+### Plugin: {unique_ids_list[0]}
+### Plugin Name: {unique_ids_list[1]}
+### Severity: {unique_ids_list[2]}
+### IP Address: {unique_ids_list[3]}
+### Port: {unique_ids_list[4]}
+### DNS Name: {unique_ids_list[5]}
+### NetBios Name: {unique_ids_list[6]}
+### Plugin Output: {unique_ids_list[7]}
+### Solution: {unique_ids_list[8]}
+### CVSS V3 Base Score: {unique_ids_list[9]}
+### CVE: {unique_ids_list[10]}
+### First Discovered: {unique_ids_list[11]}
+### Last Observed: {unique_ids_list[12]}
 '''
     }
 
@@ -262,55 +203,35 @@ def Log4Shell_create_github_issue(title, labels=None, assignees=None):
     else:
         print('Could not create Issue {0:s}'.format(title))
         print('Response: ', new_repo.content)
-    '''
-    delay_in_sec = int(config['API']['delay'])
-    time.sleep(delay_in_sec)
 
-    res = requests.request("GET", url, headers=headers)
-    res = res.headers["Retry-After"]
-    print("Retry-After: ")
-    print(int(res))
-    '''
-
-    '''
-    r = requests.get("https://github.com/isdapps/IT-Security-Test/issues")
-    print("r.text")
-    r.text
-    print(r.json())
-    '''
-
-
-def Weekly_NAL_create_github_issue(title, labels=None, assignees=None):
+def Weekly_NAL_create_github_issue(title, labels=None, assignees=None, body=None):
     # Create an issue on github.com using the given parameters.
     # Our url to create issues via POST
     url = "https://api.github.com/repos/%s/%s/issues" % (owner, repo)
     # Create an authenticated session to create the issue
     session = requests.Session()
     session.auth = (owner, personal_access_token)
-    '''
-    Pseudocode:
-    Iterate through each issue to assign unique identifier to "title"
-    '''
-    # Create new issues for Weekly NAL & ARS BOD Report
+
+    # Create new issues for Weekly NAL Report
     Weekly_NAL_issue = {
         'title': title,  # assign each new issue to title
         'labels': labels,
         'assignees': assignees,
         'body':
             f'''             
-### Plugin: {each_unique_id_list[0]}
-### Plugin Name: {each_unique_id_list[1]}
-### Severity: {each_unique_id_list[2]}
-### IP Address: {each_unique_id_list[3]}
-### Port: {each_unique_id_list[4]}
-### DNS Name: {each_unique_id_list[5]}
-### NetBios Name: {each_unique_id_list[6]}
-### Plugin Output: {each_unique_id_list[7]}
-### Solution: {each_unique_id_list[8]}
-### CVSS V3 Base Score: {each_unique_id_list[9]}
-### CVE: {each_unique_id_list[10]}
-### First Discovered: {each_unique_id_list[11]}
-### Last Observed: {each_unique_id_list[12]}
+### Plugin: {unique_ids_list[0]}
+### Plugin Name: {unique_ids_list[1]}
+### Severity: {unique_ids_list[2]}
+### IP Address: {unique_ids_list[3]}
+### Port: {unique_ids_list[4]}
+### DNS Name: {unique_ids_list[5]}
+### NetBios Name: {unique_ids_list[6]}
+### Plugin Output: {unique_ids_list[7]}
+### Solution: {unique_ids_list[8]}
+### CVSS V3 Base Score: {unique_ids_list[9]}
+### CVE: {unique_ids_list[10]}
+### First Discovered: {unique_ids_list[11]}
+### Last Observed: {unique_ids_list[12]}
 '''
     }
     # Add the issue to our repository
@@ -320,23 +241,15 @@ def Weekly_NAL_create_github_issue(title, labels=None, assignees=None):
     else:
         print('Could not create Issue {0:s}'.format(title))
         print('Response: ', new_repo.content)
-    '''
-    delay_in_sec = int(config['API']['delay'])
-    time.sleep(delay_in_sec)
-    '''
 
-
-def ARS_BOD_create_github_issue(title, labels=None, assignees=None):
+def ARS_BOD_create_github_issue(title, labels=None, assignees=None, body=None):
     # Create an issue on github.com using the given parameters.
     # Our url to create issues via POST
     url = "https://api.github.com/repos/%s/%s/issues" % (owner, repo)
     # Create an authenticated session to create the issue
     session = requests.Session()
     session.auth = (owner, personal_access_token)
-    '''
-    Pseudocode:
-    Iterate through each issue to assign unique identifier to "title"
-    '''
+
     # Create new issues for Weekly NAL Security Report
     ARS_BOD_issue = {
         'title': title,  # assign each new issue to title
@@ -344,27 +257,27 @@ def ARS_BOD_create_github_issue(title, labels=None, assignees=None):
         'assignees': assignees,
         'body':
             f'''             
-### Plugin: {each_unique_id_list[0]}
-### Plugin Name: {each_unique_id_list[1]}
-### Family: {each_unique_id_list[2]}
-### Severity: {each_unique_id_list[3]}
-### IP Address: {each_unique_id_list[4]}
-### Port: {each_unique_id_list[5]}
-### MAC Address: {each_unique_id_list[6]}
-### DNS Name: {each_unique_id_list[7]}
-### NetBios Name: {each_unique_id_list[8]}
-### Plugin Output: {each_unique_id_list[9]}
-### Synopsis: {each_unique_id_list[10]}
-### Description: {each_unique_id_list[11]}
-### Solution: {each_unique_id_list[12]}
-### Vulnerability Priority Rating: {each_unique_id_list[13]}
-### CVSS V2 Base Score: {each_unique_id_list[14]}
-### CVSS V3 Base Score: {each_unique_id_list[15]}
-### CPE: {each_unique_id_list[16]}
-### CVE: {each_unique_id_list[17]}
-### First Discovered: {each_unique_id_list[18]}
-### Last Observed: {each_unique_id_list[19]}
-### Cross References: {each_unique_id_list[20]}
+### Plugin: {unique_ids_list[0]}
+### Plugin Name: {unique_ids_list[1]}
+### Family: {unique_ids_list[2]}
+### Severity: {unique_ids_list[3]}
+### IP Address: {unique_ids_list[4]}
+### Port: {unique_ids_list[5]}
+### MAC Address: {unique_ids_list[6]}
+### DNS Name: {unique_ids_list[7]}
+### NetBios Name: {unique_ids_list[8]}
+### Plugin Output: {unique_ids_list[9]}
+### Synopsis: {unique_ids_list[10]}
+### Description: {unique_ids_list[11]}
+### Solution: {unique_ids_list[12]}
+### Vulnerability Priority Rating: {unique_ids_list[13]}
+### CVSS V2 Base Score: {unique_ids_list[14]}
+### CVSS V3 Base Score: {unique_ids_list[15]}
+### CPE: {unique_ids_list[16]}
+### CVE: {unique_ids_list[17]}
+### First Discovered: {unique_ids_list[18]}
+### Last Observed: {unique_ids_list[19]}
+### Cross References: {unique_ids_list[20]}
 '''
     }
     # Add the issue to our repository
@@ -375,10 +288,9 @@ def ARS_BOD_create_github_issue(title, labels=None, assignees=None):
         print('Could not create Issue {0:s}'.format(title))
         print('Response: ', new_repo.content)
 
-    '''    
+def delay_API_requests():
     delay_in_sec = int(config['API']['delay'])
     time.sleep(delay_in_sec)
-    '''
 
 
 Log4Shell_report = config['security-csv-reports']['Log4Shell_report']
@@ -426,20 +338,19 @@ try:
         print("(10-04)Log4Shell_no_dupl_all_issues_list[i][0]:")
         print(Log4Shell_no_dupl_all_issues_list[issue][0])
         '''
-        each_unique_id = Log4Shell_no_dupl_all_issues_list[issue][0]
+        unique_id = Log4Shell_no_dupl_all_issues_list[issue][0]
         '''
         print("(10-04)Log4Shell_no_dupl_all_issues_list[i][1]:")
         print(Log4Shell_no_dupl_all_issues_list[issue][1])
         '''
-        each_unique_id_list = Log4Shell_no_dupl_all_issues_list[issue][1]
+        unique_ids_list = Log4Shell_no_dupl_all_issues_list[issue][1]
         '''
         print("Plugin - (10-04)Log4Shell_no_dupl_all_issues_list[i][1][0]:")
         print(Log4Shell_no_dupl_all_issues_list[issue][1][0])
         '''
 
-        delay_in_sec = int(config['API']['delay'])
-        time.sleep(delay_in_sec)
-        Log4Shell_create_github_issue(each_unique_id, ["Test Label"], ['brian-mustafa'], each_unique_id_list)
+        delay_API_requests()
+        Log4Shell_create_github_issue(unique_id, ["Test Label"], ['brian-mustafa'], unique_ids_list)
 
     '''
     # Remove previous file
@@ -474,20 +385,15 @@ try:
     print("\n\nCreate issues from Weekly NAL Report: ")
 
     for issue in range(len(Weekly_NAL_no_dupl_all_issues_list)):
-        print("for i in range(len(Weekly_NAL_no_dupl_all_issues_list))")
-        print(issue)
-        print("(10-04)Weekly_NAL_no_dupl_all_issues_list[i][0]:")
-        print(Weekly_NAL_no_dupl_all_issues_list[issue][0])
-        each_unique_id = Weekly_NAL_no_dupl_all_issues_list[issue][0]
-        print("(10-04)Log4Shell_no_dupl_all_issues_list[i][1]:")
-        print(Weekly_NAL_no_dupl_all_issues_list[issue][1])
-        each_unique_id_list = Weekly_NAL_no_dupl_all_issues_list[issue][1]
+
+        unique_id = Weekly_NAL_no_dupl_all_issues_list[issue][0]
+
+        unique_ids_list = Weekly_NAL_no_dupl_all_issues_list[issue][1]
         print("Plugin - Weekly_NAL_no_dupl_all_issues_list[i][1][0]:")
         print(Weekly_NAL_no_dupl_all_issues_list[issue][1][0])
 
-        delay_in_sec = int(config['API']['delay'])
-        time.sleep(delay_in_sec)
-        Log4Shell_create_github_issue(each_unique_id, ["Test Label"], ['brian-mustafa'], each_unique_id_list)
+        delay_API_requests()
+        Log4Shell_create_github_issue(unique_id, ["Test Label"], ['brian-mustafa'], unique_ids_list)
 
     '''
     # Remove previous file
@@ -522,13 +428,12 @@ try:
     for issue in range(len(ARS_BOD_no_dupl_all_issues_list)):
         print("ARS_BOD_no_dupl_all_issues_list[i][0]")
         print(ARS_BOD_no_dupl_all_issues_list[issue][0])
-        each_unique_id = ARS_BOD_no_dupl_all_issues_list[issue][0]
+        unique_id = ARS_BOD_no_dupl_all_issues_list[issue][0]
         print("ARS_BOD_no_dupl_all_issues_list[i][1]")
-        each_unique_id_list = ARS_BOD_no_dupl_all_issues_list[issue][1]
+        unique_ids_list = ARS_BOD_no_dupl_all_issues_list[issue][1]
 
-        delay_in_sec = int(config['API']['delay'])
-        time.sleep(delay_in_sec)
-        ARS_BOD_create_github_issue(each_unique_id, ["Test Label"], ['brian-mustafa'], each_unique_id_list)
+        delay_API_requests()
+        ARS_BOD_create_github_issue(unique_id, ["Test Label"], ['brian-mustafa'], unique_ids_list)
     '''
     # Remove previous file
     if os.path.exists(ARS_BOD_report):
@@ -577,8 +482,7 @@ except SystemError:
 except TabError:
     print("Tab Error is raised when the indentation consists of inconsistent tabs and spaces")
 except UnboundLocalError:
-    print(
-        "Unbound Local Error is raised when a reference is made to a local variable in a function or method but no value has been bound to that variable.")
+    print("Unbound Local Error is raised when a reference is made to a local variable in a function or method but no value has been bound to that variable.")
 except UnicodeError:
     print("Unicode Error. Unicode-related encoding or decoding error occured")
 except UnicodeEncodeError:
