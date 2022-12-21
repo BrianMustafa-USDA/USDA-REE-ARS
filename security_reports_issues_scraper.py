@@ -16,14 +16,15 @@ config.read("gitconfig.ini")
 config.sections()
 
 # Read owner of [user] from config.ini
-owner = config['user']['owner']
+owner = config["user"]["owner"]
 
 # Read repo of [user] from config.ini
-repo = config['user']['repo']
+repo = config["user"]["repo"]
 
-# Read personal_access_token in [API] in config.ini
+# Read personal_access_token within [API] in config.ini
+personal_access_token = config["API"]["personal_access_token"]
 
-personal_access_token = config['API']['personal_access_token']
+unique_id_title_delimiter = config["unique-id-title"]["delimiter"]
 
 print(owner)
 print(repo)
@@ -39,6 +40,7 @@ def Log4Shell_read_csv_report(file_name):
         csv_reader = csv.reader(file)
         # display the contents of the CSV file
         for row in csv_reader:
+
             Log4Shell_list_issues.append(row)
             # print(row)
     return Log4Shell_list_issues
@@ -95,7 +97,7 @@ def Log4Shell_create_unique_ids(list):
         list[row][12] -> Column: "Last Observed"
         '''
 
-        unique_id = str(list[row][0]) + list[row][1] + str(list[row][3]) + str(list[row][4]) + list[row][12]
+        unique_id = str(list[row][0]) + unique_id_title_delimiter + list[row][1] + unique_id_title_delimiter + str(list[row][3]) + unique_id_title_delimiter + str(list[row][4]) + unique_id_title_delimiter + list[row][12]
 
         print(unique_id, list[row])
         pair_assigned_unique_id = [unique_id, list[row]]
@@ -119,7 +121,8 @@ def Weekly_NAL_create_unique_ids(list):
         list[row][12] -> Column: "Last Observed"
 
         '''
-        unique_id = str(list[row][0]) + list[row][1] + str(list[row][3]) + str(list[row][4]) + list[row][12]
+        #unique_id_delimiter = gitconfig["title"]["delimiter"]
+        unique_id = str(list[row][0]) + unique_id_title_delimiter + list[row][1] + unique_id_title_delimiter + str(list[row][3]) + unique_id_title_delimiter + str(list[row][4]) + unique_id_title_delimiter + list[row][12]
         Weekly_NAL_unique_ids_list.append(unique_id)
 
         pair_assigned_unique_id = [unique_id, list[row]]
@@ -146,7 +149,7 @@ def ARS_BOD_create_unique_ids(list):
         list[row][5] -> Column: "Port Number"
         list[row][19] -> Column: "Last Observed"
         '''
-        unique_id = str(list[row][0]) + list[row][1] + str(list[row][3]) + str(list[row][4]) + list[row][19]
+        unique_id = str(list[row][0]) + unique_id_title_delimiter + list[row][1] + unique_id_title_delimiter + str(list[row][3]) + unique_id_title_delimiter + str(list[row][4]) + unique_id_title_delimiter + list[row][19]
 
         pair_assigned_unique_id = [unique_id, list[row]]
         print("Assigned_unique_ids_list (assigned values): ")
@@ -380,8 +383,6 @@ try:
         
         delay_API_requests()
         Log4Shell_create_github_issue(unique_id, ["Test Label"], ['brian-mustafa'], unique_ids_list)
-
-
 
     print("\nWeekly NAL Report:")
 
