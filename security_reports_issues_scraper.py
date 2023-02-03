@@ -1,8 +1,8 @@
 import csv
 import configparser
 import json
+import logging
 import requests
-import sys
 import time
 from github3 import login
 
@@ -102,7 +102,6 @@ def log4shell_create_unique_ids(list):
         assigned_unique_ids_list.append(assigned_pair_unique_id)
     return assigned_unique_ids_list
 
-
 def weekly_nal_create_unique_ids(list):
     print("\nUnique IDs: ")
     print("Length of list: ", len(list))
@@ -196,10 +195,26 @@ def log4shell_create_github_issue(title, labels=None, assignees=None, body=None)
     new_repo = session.post(url, json.dumps(log4shell_issue))
     if new_repo.status_code == 201:
         print('Successfully Created Issue {0:s}'.format(title))
+
+        """
+        Testing:
+        
+        logging.DEBUG(str('Successfully Created Issue {0:s}'.format(title)))
+        logging.DEBUG(print('Successfully Created Issue {0:s}'.format(title)))
+        
+        id_values = 'Successfully Created Issue {0:s}'.format(title))
+        logging.DEBUG('id_values')
+        """
     else:
         print('Could not create Issue {0:s}'.format(title))
         print('Response: ', new_repo.content)
-
+        """
+        logging.DEBUG(print('Could not create Issue {0:s}'.format(title)))
+        logging.DEBUG(print('Response: ', new_repo.content))
+        
+        logging.DEBUG(Could not create Issue {0:s}'.format(title))
+        logging.DEBUG(Response: ', new_repo.content)
+        """
 def weekly_nal_create_github_issue(title, labels=None, assignees=None, body=None):
     # Create an issue on github.com using the given parameters.
     # Our url to create issues via POST
@@ -298,8 +313,12 @@ def delay_api_requests():
     delay_in_sec = int(config['API']['delay'])
     time.sleep(delay_in_sec)
 
+'''
+def logging():
+    logging.basicConfig(filename='activity.log', encoding='utf-8', level=logging.DEBUG)
+'''
 # Create hash object from "gitconfig.ini" configuration file
-# to read in weekly csv security report related to "Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report
+# to read in weekly security report related to "Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report
 # - CHML Vulns  7 Days.csv"
 log4shell_report = config['security-csv-reports']['Log4Shell_report']
 
@@ -314,6 +333,8 @@ weekly_nal_report = config['security-csv-reports']['Weekly_NAL_report']
 ars_bod_report = config['security-csv-reports']['ARS_BOD_report']
 
 try:
+    logging.basicConfig(filename='activities.log', encoding='utf-8', level=logging.DEBUG)
+    logging.debug('Start Logging')
     # all_unique_ids_list = []
     print("Log4Shell report:")
     log4shell_issues_list = []
@@ -350,6 +371,7 @@ try:
 
         delay_api_requests()
         log4shell_create_github_issue(unique_id, ["Test Label"], ['brian-mustafa'], unique_ids_list)
+
         """
         Test:
         print("sys.audit: ")
@@ -424,6 +446,9 @@ try:
 
         delay_api_requests()
         ars_bod_create_github_issue(unique_id, ["Test Label"], ['brian-mustafa'], unique_ids_list)
+    logging.debug('Complete Logging')
+
+    open('activity.log', 'w')
 
 except AttributeError:
     print("Attribute Error.")
