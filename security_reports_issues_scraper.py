@@ -448,7 +448,7 @@ try:
         ars_bod_create_github_issue(unique_id, ["Test Label"], ['brian-mustafa'], unique_ids_list)
     logging.debug('Complete Logging')
 
-    open('activity.log', 'w')
+    open('activities.log', 'w')
 
 except AttributeError:
     print("Attribute Error.")
