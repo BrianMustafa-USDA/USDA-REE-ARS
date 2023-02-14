@@ -407,14 +407,17 @@ try:
     print("\nCreate issues from Log4Shell Report: ")
 
     for issue in range(len(log4shell_no_dupl_all_issues_list)):
-        unique_id = log4shell_no_dupl_all_issues_list[issue][0]
+        unique_id = log4shell_no_dupl_all_issues_list[issue][0] #RR plugin number
 
-        unique_ids_list = log4shell_no_dupl_all_issues_list[issue][1]
+        unique_ids_list = log4shell_no_dupl_all_issues_list[issue][1]   #RR plugin name
 
         print("&*Test")
         print(unique_ids_list)
 
+        # Set a delay for github API requests
         delay_api_requests()
+        
+        # Create a github issue for this list issue
         log4shell_create_github_issue(unique_id, ["Test Label"], ['brian-mustafa'], unique_ids_list)
 
         """
