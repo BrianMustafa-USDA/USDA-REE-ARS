@@ -1,38 +1,18 @@
+# Standard Python libraries
 import csv
 import configparser
 import json
 import logging
 import requests
 import time
+
+#Custom Library
 from github3 import login
 
-# ConfigParser Object
-config = configparser.ConfigParser()
-
-# Read "gitconfig.ini"
-config.read("gitconfig.ini")
-
-# Read config.sections()
-config.sections()
-
-# Read owner of [user] from config.ini
-owner = config["user"]["owner"]
-
-# Read repo of [user] from config.ini
-repo = config["user"]["repo"]
-
-# Read personal_access_token within [API] in config.ini
-personal_access_token = config["API"]["personal_access_token"]
-
-unique_id_title_delimiter = config["unique-id-title"]["delimiter"]
-
-print(owner)
-print(repo)
-print(personal_access_token)
-
-# Github Login Credential
-github = login(owner, personal_access_token)
-
+"""
+Read and process csv file 
+entitled 'Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv'
+"""
 def log4shell_read_csv_report(file_name):
     log4shell_list_issues = []
     with open(file_name, 'r') as file:
@@ -44,6 +24,11 @@ def log4shell_read_csv_report(file_name):
             # print(row)
     return log4shell_list_issues
 
+"""
+Read and process csv file
+entitled 'Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv'
+"""
+
 def weekly_nal_read_csv_report(file_name):
     weekly_nal_list_issues = []
     with open(file_name, 'r') as file:
@@ -54,6 +39,11 @@ def weekly_nal_read_csv_report(file_name):
             weekly_nal_list_issues.append(row)
     return weekly_nal_list_issues
 
+"""
+Read and process csv file
+entitled 'ARS BOD 22-01 National Agricultural Library (NAL) On-Prem + Azure Scan Report.csv'
+'
+"""
 def ars_bod_read_csv_report(file_name):
     ars_bod_list_issues = []
     with open(file_name, 'r') as file:
@@ -317,6 +307,30 @@ def delay_api_requests():
 def logging():
     logging.basicConfig(filename='activity.log', encoding='utf-8', level=logging.DEBUG)
 '''
+# ConfigParser Object
+config = configparser.ConfigParser()
+
+# Read "gitconfig.ini"
+config.read("gitconfig.ini")
+
+# Read config.sections()
+config.sections()
+
+# Read owner of [user] from config.ini
+owner = config["user"]["owner"]
+
+# Read repo of [user] from config.ini
+repo = config["user"]["repo"]
+
+# Read personal_access_token within [API] in config.ini
+personal_access_token = config["API"]["personal_access_token"]
+
+unique_id_title_delimiter = config["unique-id-title"]["delimiter"]
+
+print(owner)
+print(repo)
+print(personal_access_token)
+
 # Create hash object from "gitconfig.ini" configuration file
 # to read in weekly security report related to "Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report
 # - CHML Vulns  7 Days.csv"
@@ -332,9 +346,15 @@ weekly_nal_report = config['security-csv-reports']['Weekly_NAL_report']
 # Report.csv"
 ars_bod_report = config['security-csv-reports']['ARS_BOD_report']
 
+# Github Login Credential
+github = login(owner, personal_access_token)
 try:
-    logging.basicConfig(filename='activities.log', encoding='utf-8', level=logging.DEBUG)
-    logging.debug('Start Logging')
+    logging.basicConfig(filename='activities.log', encoding='utf-8', level=logging.INFO)
+    logging.info('Start Logging')
+    logging.info('Successfully Connect to API')
+    logging.info('Create issue')
+    logging.info('Initialize issue')
+    #logging.info('')
     # all_unique_ids_list = []
     print("Log4Shell report:")
     log4shell_issues_list = []
@@ -446,7 +466,7 @@ try:
 
         delay_api_requests()
         ars_bod_create_github_issue(unique_id, ["Test Label"], ['brian-mustafa'], unique_ids_list)
-    logging.debug('Complete Logging')
+    logging.info('Complete Logging')
 
     open('activities.log', 'w')
 
