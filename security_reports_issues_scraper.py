@@ -9,9 +9,21 @@ import time
 #Custom Library
 from github3 import login
 
+#RR This can be set in the config file
+#RR Set debug flag, where
+#RR   debug = 1 to print debug info, otherwise do not print debug info
+DEBUG = 1
+
 """
-Read and process csv file 
+Read the csv file 
 entitled 'Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv'
+into a list.
+
+Input Variables:
+    file_name: the name of the file to read in
+    
+Returns:
+    A list containing the rows of issues from the csv file.
 """
 def log4shell_read_csv_report(file_name):
     log4shell_list_issues = []
@@ -289,10 +301,19 @@ def ars_bod_create_github_issue(title, labels=None, assignees=None, body=None):
         print('Could not create Issue {0:s}'.format(title))
         print('Response: ', new_repo.content)
 
+"""
+Remove the header row from the list of issues.
+
+Input Variables:
+    list: the list of issues
+    
+Returns:
+    A list of issues without its header row.
+"""
 def remove_header(list):
     list.pop(0)
-    no_header_list = list
-    return no_header_list
+    no_header_list = list   #RR delete
+    return no_header_list   #RR return list
 
 def create_sets(list):
     list.split()
@@ -358,22 +379,26 @@ try:
     # all_unique_ids_list = []
     print("Log4Shell report:")
     log4shell_issues_list = []
+    #RR Get the list of issues from the report file
     log4shell_issues_list = log4shell_read_csv_report(log4shell_report)
 
     '''
     # Create Log4Shell header to security reports headers
     log4shell_header = log4shell_issues_list.pop(0)
     '''
-
+    
+    #RR Remove header row from input list
     log4shell_no_header_issues_list = remove_header(log4shell_issues_list)
-    print("No header list: ", log4shell_no_header_issues_list)
-    # print all issues of Log4Shell security report without header
-    print("\n(No header)Length of Log4Shell List of issues:", len(log4shell_no_header_issues_list))
+    if (DEBUG) #RR
+        print("No header list: ", log4shell_no_header_issues_list)
+        # print all issues of Log4Shell security report without header
+        print("\n(No header)Length of Log4Shell List of issues:", len(log4shell_no_header_issues_list))
 
-    for issue in range(len(log4shell_no_header_issues_list)):
-        print(log4shell_no_header_issues_list[issue])
-        # all_unique_ids_list.append(Log4Shell_list_issues[i])
+        for issue in range(len(log4shell_no_header_issues_list)):
+            print(log4shell_no_header_issues_list[issue])
+            # all_unique_ids_list.append(Log4Shell_list_issues[i])
 
+    #RR Check that the issues are not duplicated.
     verify_duplicates(log4shell_no_header_issues_list)
     log4shell_no_dupl_all_issues_list = log4shell_create_unique_ids(log4shell_no_header_issues_list)
 
