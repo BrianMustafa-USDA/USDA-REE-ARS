@@ -6,24 +6,12 @@ import logging
 import requests
 import time
 
-#Custom Library
+# Custom Library
 from github3 import login
 
-#RR This can be set in the config file
-#RR Set debug flag, where
-#RR   debug = 1 to print debug info, otherwise do not print debug info
-DEBUG = 1
-
 """
-Read the csv file 
+Read csv file 
 entitled 'Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv'
-into a list.
-
-Input Variables:
-    file_name: the name of the file to read in
-    
-Returns:
-    A list containing the rows of issues from the csv file.
 """
 def log4shell_read_csv_report(file_name):
     log4shell_list_issues = []
@@ -37,7 +25,7 @@ def log4shell_read_csv_report(file_name):
     return log4shell_list_issues
 
 """
-Read and process csv file
+Read csv file
 entitled 'Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv'
 """
 
@@ -52,7 +40,7 @@ def weekly_nal_read_csv_report(file_name):
     return weekly_nal_list_issues
 
 """
-Read and process csv file
+Read csv file
 entitled 'ARS BOD 22-01 National Agricultural Library (NAL) On-Prem + Azure Scan Report.csv'
 '
 """
@@ -79,10 +67,11 @@ def verify_duplicates(list):
         else:
             print("No duplicates")
     print("Total number of duplicates: ", duplicates_count)
+    return list
 
 def log4shell_create_unique_ids(list):
-    print("\nUnique IDs: ")
-    print("Length of list: ", len(list))
+    print("\nUnique IDs (Log4shell): ")
+    print("Length of Log4Shell list: ", len(list))
     log4shell_unique_ids_list = []
     assigned_unique_ids_list = []
     for row in range(len(list)):
@@ -92,11 +81,11 @@ def log4shell_create_unique_ids(list):
         list[row][1] -> Column: "Plugin Name"
         list[row][3] -> Column: "IP Address"
         list[row][4] -> Column: "Port Number"
-        list[row][12] -> Column: "Last Observed"
+        list[row][11] -> Column: "First Discovered"
         '''
 
         unique_id = str(list[row][0]) + unique_id_title_delimiter + list[row][1] + unique_id_title_delimiter + str(
-            list[row][3]) + unique_id_title_delimiter + str(list[row][4]) + unique_id_title_delimiter + list[row][12]
+            list[row][3]) + unique_id_title_delimiter + str(list[row][4]) + unique_id_title_delimiter + list[row][11]
 
         print(unique_id, list[row])
         assigned_pair_unique_id = [unique_id, list[row]]
@@ -116,12 +105,12 @@ def weekly_nal_create_unique_ids(list):
         list[row][1] -> Column: "Plugin Name"
         list[row][3] -> Column: "IP Address"
         list[row][4] -> Column: "Port Number"
-        list[row][12] -> Column: "Last Observed"
-
+        list[row][12] -> Column: "First Discovered"
         '''
         # unique_id_delimiter = gitconfig["title"]["delimiter"]
         unique_id = str(list[row][0]) + unique_id_title_delimiter + list[row][1] + unique_id_title_delimiter + str(
-            list[row][3]) + unique_id_title_delimiter + str(list[row][4]) + unique_id_title_delimiter + list[row][12]
+            list[row][3]) + unique_id_title_delimiter + str(list[row][4]) + unique_id_title_delimiter + list[row][11]
+
         weekly_nal_unique_ids_list.append(unique_id)
 
         pair_assigned_unique_id = [unique_id, list[row]]
@@ -143,10 +132,10 @@ def ars_bod_create_unique_ids(list):
         list[row][1] -> Column: "Plugin Name"
         list[row][4] -> Column: "IP Address"
         list[row][5] -> Column: "Port Number"
-        list[row][19] -> Column: "Last Observed"
+        list[row][18] -> Column: "First Discovered"
         '''
         unique_id = str(list[row][0]) + unique_id_title_delimiter + list[row][1] + unique_id_title_delimiter + str(
-            list[row][3]) + unique_id_title_delimiter + str(list[row][4]) + unique_id_title_delimiter + list[row][19]
+            list[row][3]) + unique_id_title_delimiter + str(list[row][4]) + unique_id_title_delimiter + list[row][18]
 
         pair_assigned_unique_id = [unique_id, list[row]]
         print("Assigned_unique_ids_list (assigned values): ")
@@ -301,19 +290,10 @@ def ars_bod_create_github_issue(title, labels=None, assignees=None, body=None):
         print('Could not create Issue {0:s}'.format(title))
         print('Response: ', new_repo.content)
 
-"""
-Remove the header row from the list of issues.
-
-Input Variables:
-    list: the list of issues
-    
-Returns:
-    A list of issues without its header row.
-"""
+# Remove header (1st row) of each report
 def remove_header(list):
     list.pop(0)
-    no_header_list = list   #RR delete
-    return no_header_list   #RR return list
+    return list
 
 def create_sets(list):
     list.split()
@@ -370,7 +350,7 @@ ars_bod_report = config['security-csv-reports']['ARS_BOD_report']
 # Github Login Credential
 github = login(owner, personal_access_token)
 try:
-    logging.basicConfig(filename='activities.log', encoding='utf-8', level=logging.INFO)
+    logging.basicConfig(filename='security_reports_issues_scraper_202302.log', encoding='utf-8', level=logging.INFO)
     logging.info('Start Logging')
     logging.info('Successfully Connect to API')
     logging.info('Create issue')
@@ -379,45 +359,56 @@ try:
     # all_unique_ids_list = []
     print("Log4Shell report:")
     log4shell_issues_list = []
-    #RR Get the list of issues from the report file
     log4shell_issues_list = log4shell_read_csv_report(log4shell_report)
 
     '''
     # Create Log4Shell header to security reports headers
     log4shell_header = log4shell_issues_list.pop(0)
     '''
-    
-    #RR Remove header row from input list
+
     log4shell_no_header_issues_list = remove_header(log4shell_issues_list)
-    if (DEBUG) #RR
-        print("No header list: ", log4shell_no_header_issues_list)
-        # print all issues of Log4Shell security report without header
-        print("\n(No header)Length of Log4Shell List of issues:", len(log4shell_no_header_issues_list))
+    print("No header list: ", log4shell_no_header_issues_list)
+    # print all issues of Log4Shell security report without header
+    print("\n(No header)Total Amount of Log4Shell issues:", len(log4shell_no_header_issues_list))
 
-        for issue in range(len(log4shell_no_header_issues_list)):
-            print(log4shell_no_header_issues_list[issue])
-            # all_unique_ids_list.append(Log4Shell_list_issues[i])
+    for issue in range(len(log4shell_no_header_issues_list)):
+        print(log4shell_no_header_issues_list[issue])
+        # all_unique_ids_list.append(Log4Shell_list_issues[i])
 
-    #RR Check that the issues are not duplicated.
-    verify_duplicates(log4shell_no_header_issues_list)
-    log4shell_no_dupl_all_issues_list = log4shell_create_unique_ids(log4shell_no_header_issues_list)
+    #verify_duplicates(log4shell_no_header_issues_list)
+    #log4shell_all_issues_list = log4shell_create_unique_ids(log4shell_no_header_issues_list)
+    """
+    log4shell_no_dupl_all_issues_list = verify_duplicates(log4shell_no_header_issues_list)
+    print("log4shell_no_dupl_all_issues_list:")
+    print(log4shell_no_dupl_all_issues_list)
+    """
 
+
+    # verify duplicates in Log4Shell report
+    log4shell_no_dupl_all_issues_list = verify_duplicates(log4shell_no_header_issues_list)
+    print("log4shell_no_dupl_all_issues_list: ")
+    print(log4shell_no_dupl_all_issues_list)
+    # log4shell_create_unique_ids
+    log4shell_no_dupl_all_issues_list = log4shell_create_unique_ids(log4shell_no_dupl_all_issues_list)
     # Iterate through unique identifiers (no duplicates) to pass each issue
     # into Log4Shell_create_github_issue() function
     print("\nCreate issues from Log4Shell Report: ")
 
     for issue in range(len(log4shell_no_dupl_all_issues_list)):
-        unique_id = log4shell_no_dupl_all_issues_list[issue][0] #RR plugin number
-
-        unique_ids_list = log4shell_no_dupl_all_issues_list[issue][1]   #RR plugin name
+        print("Issue in log4shell_no_dupl_all_issues_list")
+        print(issue)
+        unique_id = log4shell_no_dupl_all_issues_list[issue][0]
+        print("Unique_id")
+        print(unique_id)
+        print("unique_ids_list")
+        unique_ids_list = log4shell_no_dupl_all_issues_list[issue][1]
+        print(unique_ids_list)
 
         print("&*Test")
         print(unique_ids_list)
+        #verify_duplicates(unique_ids_list)
 
-        # Set a delay for github API requests
         delay_api_requests()
-        
-        # Create a github issue for this list issue
         log4shell_create_github_issue(unique_id, ["Test Label"], ['brian-mustafa'], unique_ids_list)
 
         """
@@ -496,8 +487,8 @@ try:
         ars_bod_create_github_issue(unique_id, ["Test Label"], ['brian-mustafa'], unique_ids_list)
     logging.info('Complete Logging')
 
-    open('activities.log', 'w')
-
+    open('security_reports_issues_scraper_202302.log', 'w')
+        
 except AttributeError:
     print("Attribute Error.")
 except EOFError:
