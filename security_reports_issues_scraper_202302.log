@@ -11,7 +11,7 @@ if successful:
     [2006-02-08 22:20:02][INFO] Checking if <input_file> exists.
     [2006-02-08 22:20:02][ERROR] <input_file> does not exist
     
-    [2006-02-08 22:20:02][INFO] Checking if issues already exists.
+    [2006-02-08 22:20:02][INFO] Checking if issue already exists.
     [2006-02-08 22:20:02][INFO] Issue alrready exists.
     [2006-02-08 22:20:02][INFO] Creating new issue.
     if successful:
