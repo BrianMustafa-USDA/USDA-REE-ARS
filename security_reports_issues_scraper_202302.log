@@ -1,3 +1,37 @@
+Look at using this log format
+[<timestamp>][<log_level>] [log_message]
+Example:
+[2006-02-08 22:20:02][INFO] Logging into repo <repo_name> on github.
+if successful:
+  [2006-02-08 22:20:02][INFO] Successfully logged into <repo_name>.
+  [2006-02-08 22:20:02][INFO] Connecting into https://api.github.com.
+  if successful:
+    [2006-02-08 22:20:02][INFO] Successfully connected to https:/api.github.com.
+    [2006-02-08 22:20:02][INFO] Processing <input_file> to create issues.
+    [2006-02-08 22:20:02][INFO] Checking if <input_file> exists.
+    [2006-02-08 22:20:02][ERROR] <input_file> does not exist
+    
+    [2006-02-08 22:20:02][INFO] Checking if issues already exists.
+    [2006-02-08 22:20:02][INFO] Issue alrready exists.
+    [2006-02-08 22:20:02][INFO] Creating new issue.
+    if successful:
+      [2006-02-08 22:20:02][INFO] Issues successfully created: <issue_number>.
+     else
+      [2006-02-08 22:20:02][ERROR] Error creating:
+      [2006-02-08 22:20:02][ERROR] <error_msg_line1>
+      ...
+      [2006-02-08 22:20:02][ERROR] <error_msg_lineN>
+  else
+      [2006-02-08 22:20:02][ERROR] Error connecting to https://api.github.com:
+      [2006-02-08 22:20:02][ERROR] <error_msg_line1>
+      ...
+      [2006-02-08 22:20:02][ERROR] <error_msg_lineN>
+else
+  [2006-02-08 22:20:02][ERROR] Error logging into <repo_name>:
+  [2006-02-08 22:20:02][ERROR] <error_msg_line1>
+  ...
+  [2006-02-08 22:20:02][ERROR] <error_msg_lineN>
+  
 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.github.com:443
 DEBUG:urllib3.connectionpool:https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 201 5272
 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.github.com:443
