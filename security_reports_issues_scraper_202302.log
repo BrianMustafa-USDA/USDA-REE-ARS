@@ -1,3 +1,4 @@
+===================Begin Sample
 Look at using this log format
 [<timestamp>][<log_level>] [log_message]
 Example:
