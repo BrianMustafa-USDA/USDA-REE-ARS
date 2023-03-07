@@ -15,6 +15,7 @@ entitled 'Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report -
 """
 def log4shell_read_csv_report(file_name):
     log4shell_list_issues = []
+    #if (file_name):
     with open(file_name, 'r') as file:
         # read the report
         csv_reader = csv.reader(file)
@@ -23,6 +24,10 @@ def log4shell_read_csv_report(file_name):
             log4shell_list_issues.append(row)
             # print(row)
     return log4shell_list_issues
+    """
+    else:
+        print("File does not exist")
+    """
 
 """
 Read csv file
@@ -55,6 +60,7 @@ def ars_bod_read_csv_report(file_name):
             print(row)
     return ars_bod_list_issues
 
+# Verify if more than one of the same issue appears in security report .csv file
 def verify_duplicates(list):
     # no_dup_unique_ids_list = []
     duplicates_count = 0
@@ -347,20 +353,35 @@ weekly_nal_report = config['security-csv-reports']['Weekly_NAL_report']
 # Report.csv"
 ars_bod_report = config['security-csv-reports']['ARS_BOD_report']
 
-# Github Login Credential
-github = login(owner, personal_access_token)
 try:
-    logging.basicConfig(filename='security_reports_issues_scraper_202302.log', encoding='utf-8', level=logging.INFO)
-    logging.info('Start Logging')
-    logging.info('Successfully Connect to API')
-    logging.info('Create issue')
-    logging.info('Initialize issue')
+    logging.basicConfig(filename="security_reports_issues_scraper_202302.log", encoding="utf-8",
+                        format="%(asctime)s %(levelname)s %(message)s", datefmt="%m/%d/%Y %I:%M:%S %p")
+
+    # Github Login Credential
+    logging.info("Logging into repo <isdapps/IT-Security-Test> on github.")
+    github = login(owner, personal_access_token)
+    logging.info("Successfully logged into repo <isdapps/IT-Security-Test>.")
+    logging.error("Unable to log into repo <isdapps/IT-Security-Test> using current login credentials.")
+    logging.info("Connecting into https://api.github.com.")
+
+
+    """
+    logging.info("Logging into repo <isdapps/IT-Security-Test> on github.")
+    logging.info("Successfully logged into repo <isdapps/IT-Security-Test>")
+    logging.info("Successfully Connect to API")
+    logging.info("Create issue")
+    logging.info("Initialize issue")
+    """
     #logging.info('')
     # all_unique_ids_list = []
     print("Log4Shell report:")
+    logging.info(
+        "Processing <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv> to create issues.")
     log4shell_issues_list = []
     log4shell_issues_list = log4shell_read_csv_report(log4shell_report)
-
+    logging.info(
+        "Checking if <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv> exists.")
+    logging.error("<Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv> does not exist.")
     '''
     # Create Log4Shell header to security reports headers
     log4shell_header = log4shell_issues_list.pop(0)
@@ -383,7 +404,6 @@ try:
     print(log4shell_no_dupl_all_issues_list)
     """
 
-
     # verify duplicates in Log4Shell report
     log4shell_no_dupl_all_issues_list = verify_duplicates(log4shell_no_header_issues_list)
     print("log4shell_no_dupl_all_issues_list: ")
@@ -405,10 +425,12 @@ try:
         print(unique_ids_list)
 
         print("&*Test")
-        print(unique_ids_list)
         #verify_duplicates(unique_ids_list)
 
+        # Call "delay_api_requests()" function to execute delay_in_sec initialized in gitconfig.ini
         delay_api_requests()
+
+        # Create each issue on github from Log4Shell
         log4shell_create_github_issue(unique_id, ["Test Label"], ['brian-mustafa'], unique_ids_list)
 
         """
@@ -418,10 +440,14 @@ try:
         sys.audit(str, *args)
         """
     print("\nWeekly NAL Report:")
-
+    logging.info(
+        "Processing <Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv> report to create issues.")
     weekly_nal_issues_list = []
     weekly_nal_issues_list = weekly_nal_read_csv_report(weekly_nal_report)
-
+    logging.info(
+        "Checking if <Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv> report exists.")
+    logging.error(
+        "<Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv> does not exist.")
     '''
     weekly_nal_header = weekly_nal_issues_list.pop(0)
     '''
@@ -435,9 +461,11 @@ try:
         # unique_ids_list.append(Log4Shell_list_issues[row])
 
     # verify duplicates in Weekly NAL reports
-    verify_duplicates(weekly_nal_no_header_issues_list)
-    # Weekly_NAL_create_unique_ids(Weekly_NAL_issues_list)
-    weekly_nal_no_dupl_all_issues_list = weekly_nal_create_unique_ids(weekly_nal_no_header_issues_list)
+    weekly_nal_no_dupl_all_issues_list = verify_duplicates(weekly_nal_no_header_issues_list)
+    print("weekly_nal_no_dupl_all_issues_list")
+    print(weekly_nal_no_dupl_all_issues_list)
+    # Weekly_nal_create_unique_ids
+    weekly_nal_no_dupl_all_issues_list = weekly_nal_create_unique_ids(weekly_nal_no_dupl_all_issues_list)
 
     # Iterate through unique identifiers (no duplicates) to pass each issue
     # into Weekly_NAL_create_github_issue() function
@@ -452,15 +480,19 @@ try:
         print(unique_ids_list)
         print(weekly_nal_no_dupl_all_issues_list[issue][1][0])
 
+
         delay_api_requests()
 
         log4shell_create_github_issue(unique_id, ["Test Label"], ['brian-mustafa'], unique_ids_list)
 
     print("\nARS BOD Report:")
-
+    logging.info(
+        "Processing <ARS BOD 22-01 National Agricultural Library (NAL) On-Prem + Azure Scan Report.csv> to create issues.")
     ars_bod_issues_list = []
     ars_bod_issues_list = ars_bod_read_csv_report(ars_bod_report)
-
+    logging.info(
+        "Checking if <ARS BOD 22-01 National Agricultural Library (NAL) On-Prem + Azure Scan Report.csv> exists.")
+    logging.error("<ARS BOD 22-01 National Agricultural Library (NAL) On-Prem + Azure Scan Report.csv> does not exist.")
     ars_bod_no_header_issues_list = remove_header(ars_bod_issues_list)
 
     # Verify that each unique identifier for ARS BOD Report is returned
@@ -470,8 +502,20 @@ try:
     print("(No header)Length of ARS BOD reports' list of issues:", len(ars_bod_no_header_issues_list))
     print("(No header) list of issues (ARS_BOD):")
 
-    verify_duplicates(ars_bod_no_header_issues_list)
-    ars_bod_no_dupl_all_issues_list = ars_bod_create_unique_ids(ars_bod_no_header_issues_list)
+    """
+        # verify duplicates in Log4Shell report
+        log4shell_no_dupl_all_issues_list = verify_duplicates(log4shell_no_header_issues_list)
+        print("log4shell_no_dupl_all_issues_list: ")
+        print(log4shell_no_dupl_all_issues_list)
+        # log4shell_create_unique_ids
+        log4shell_no_dupl_all_issues_list = log4shell_create_unique_ids(log4shell_no_dupl_all_issues_list)
+    """
+    # verify duplicates in ARS BOD Report
+    ars_bod_no_dupl_all_issues_list = verify_duplicates(ars_bod_no_header_issues_list)
+    print("ars_bod_no_dupl_all_issues_list")
+    print(ars_bod_no_dupl_all_issues_list)
+    # ars_bod_create_unique_ids
+    ars_bod_no_dupl_all_issues_list = ars_bod_create_unique_ids(ars_bod_no_dupl_all_issues_list)
 
     # Iterate through unique identifiers (no duplicates) to pass each issue
     # into ARS_BOD_create_github_issue() function
@@ -495,6 +539,7 @@ except EOFError:
     print("EOF Error is raised when the input() function hits the end-of-file condition")
 except FileNotFoundError:
     print("No such file or directory solution.")
+    logging.info("File Does Not Exist")
 except IndentationError:
     print("IndentationError is raised when there is an incorrect indentation.")
 except IndexError:
