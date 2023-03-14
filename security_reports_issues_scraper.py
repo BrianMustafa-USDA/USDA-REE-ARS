@@ -5,6 +5,7 @@ import json
 import logging
 import requests
 import time
+import os.path
 
 # Custom Library
 from github3 import login
@@ -15,7 +16,6 @@ entitled 'Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report -
 """
 def log4shell_read_csv_report(file_name):
     log4shell_list_issues = []
-    #if (file_name):
     with open(file_name, 'r') as file:
         # read the report
         csv_reader = csv.reader(file)
@@ -24,10 +24,6 @@ def log4shell_read_csv_report(file_name):
             log4shell_list_issues.append(row)
             # print(row)
     return log4shell_list_issues
-    """
-    else:
-        print("File does not exist")
-    """
 
 """
 Read csv file
@@ -47,7 +43,6 @@ def weekly_nal_read_csv_report(file_name):
 """
 Read csv file
 entitled 'ARS BOD 22-01 National Agricultural Library (NAL) On-Prem + Azure Scan Report.csv'
-'
 """
 def ars_bod_read_csv_report(file_name):
     ars_bod_list_issues = []
@@ -310,10 +305,10 @@ def delay_api_requests():
     delay_in_sec = int(config['API']['delay'])
     time.sleep(delay_in_sec)
 
-'''
-def logging():
-    logging.basicConfig(filename='activity.log', encoding='utf-8', level=logging.DEBUG)
-'''
+ # Initializing Basic Configuration File
+    logging.basicConfig(filename="security_reports_issues_scraper_202302.log", encoding="utf-8", level=logging.DEBUG,
+                        format="%(asctime)s %(levelname)s %(message)s", datefmt="%m/%d/%Y %H:%M:%S")
+
 # ConfigParser Object
 config = configparser.ConfigParser()
 
@@ -334,9 +329,11 @@ personal_access_token = config["API"]["personal_access_token"]
 
 unique_id_title_delimiter = config["unique-id-title"]["delimiter"]
 
+"""
 print(owner)
 print(repo)
 print(personal_access_token)
+"""
 
 # Create hash object from "gitconfig.ini" configuration file
 # to read in weekly security report related to "Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report
@@ -353,18 +350,21 @@ weekly_nal_report = config['security-csv-reports']['Weekly_NAL_report']
 # Report.csv"
 ars_bod_report = config['security-csv-reports']['ARS_BOD_report']
 
+github = login(owner, personal_access_token)
+
 try:
-    logging.basicConfig(filename="security_reports_issues_scraper_202302.log", encoding="utf-8",
-                        format="%(asctime)s %(levelname)s %(message)s", datefmt="%m/%d/%Y %I:%M:%S %p")
-
-    # Github Login Credential
+    # Starting security_reports_issues_scraper.py
+    logging.info("Successfully started execution of <security_reports_issues_scraper.py>")
+    # Enter Github Login Credential
     logging.info("Logging into repo <isdapps/IT-Security-Test> on github.")
-    github = login(owner, personal_access_token)
-    logging.info("Successfully logged into repo <isdapps/IT-Security-Test>.")
-    logging.error("Unable to log into repo <isdapps/IT-Security-Test> using current login credentials.")
+    """
+    if github == login(owner, personal_access_token):
+        logging.info("Successfully logged into repo <isdapps/IT-Security-Test>.")
+    else:
+        logging.error("Unable to log into repo <isdapps/IT-Security-Test> using current login credentials.")
+    """
     logging.info("Connecting into https://api.github.com.")
-
-
+    
     """
     logging.info("Logging into repo <isdapps/IT-Security-Test> on github.")
     logging.info("Successfully logged into repo <isdapps/IT-Security-Test>")
@@ -372,16 +372,21 @@ try:
     logging.info("Create issue")
     logging.info("Initialize issue")
     """
-    #logging.info('')
-    # all_unique_ids_list = []
-    print("Log4Shell report:")
     logging.info(
         "Processing <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv> to create issues.")
-    log4shell_issues_list = []
-    log4shell_issues_list = log4shell_read_csv_report(log4shell_report)
+    print("Log4Shell report:")
     logging.info(
         "Checking if <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv> exists.")
-    logging.error("<Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv> does not exist.")
+    #if os.path.exists(log4shell_report):
+
+    # / path
+    # Testing to use path variables
+    # Testing Windows path: \
+    # Testing path on linux: /
+
+    log4shell_issues_list = []
+    log4shell_issues_list = log4shell_read_csv_report(log4shell_report)
+
     '''
     # Create Log4Shell header to security reports headers
     log4shell_header = log4shell_issues_list.pop(0)
@@ -433,12 +438,6 @@ try:
         # Create each issue on github from Log4Shell
         log4shell_create_github_issue(unique_id, ["Test Label"], ['brian-mustafa'], unique_ids_list)
 
-        """
-        Test:
-        print("sys.audit: ")
-        sys.addaudithook(hook: Callable[[str, tuple]])
-        sys.audit(str, *args)
-        """
     print("\nWeekly NAL Report:")
     logging.info(
         "Processing <Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv> report to create issues.")
@@ -479,7 +478,6 @@ try:
         print("Unique IDs List")
         print(unique_ids_list)
         print(weekly_nal_no_dupl_all_issues_list[issue][1][0])
-
 
         delay_api_requests()
 
@@ -531,21 +529,22 @@ try:
         ars_bod_create_github_issue(unique_id, ["Test Label"], ['brian-mustafa'], unique_ids_list)
     logging.info('Complete Logging')
 
-    open('security_reports_issues_scraper_202302.log', 'w')
-        
 except AttributeError:
     print("Attribute Error.")
 except EOFError:
-    print("EOF Error is raised when the input() function hits the end-of-file condition")
+    print("EOF Error is raised when the input() function hits the end-of-file condition.")
 except FileNotFoundError:
     print("No such file or directory solution.")
-    logging.info("File Does Not Exist")
+    logging.error("File Does Not Exist.")
 except IndentationError:
-    print("IndentationError is raised when there is an incorrect indentation.")
+    print("Indentation Error is raised when there is an incorrect indentation.")
 except IndexError:
     print("Index Error. Index of a sequences(s) is out of range.")
 except KeyboardInterrupt:
     print("Keyboard Interrupt is raised when the user hits the interrupt key")
+except NameError:
+    print("name {} is no defined.")
+    logging.error("name '' is not defined.")
 except NotImplementedError:
     print("NotImplementedError is raised by abstract methods.")
 except UnboundLocalError:
@@ -554,5 +553,3 @@ except UnboundLocalError:
         or method but no value has been bound to that variable.''')
 except UnicodeError:
     print("Unicode Error. Unicode-related encoding or decoding error occurred")
-except ZeroDivisionError:
-    print("ZeroDivisionError is raised when the second operand of a division or module operation is zero.")
