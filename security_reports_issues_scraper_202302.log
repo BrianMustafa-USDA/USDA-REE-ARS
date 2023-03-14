@@ -2,6 +2,7 @@
 Look at using this log format
 [<timestamp>][<log_level>] [log_message]
 Example:
+[2006-02-08 22:20:02][INFO] Successfully started execution of <security_reports_issues_scraper.py>.
 [2006-02-08 22:20:02][INFO] Logging into repo <repo_name> on github.
 if successful:
   [2006-02-08 22:20:02][INFO] Successfully logged into <repo_name>.
