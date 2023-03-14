@@ -29,7 +29,7 @@ if successful:
       ...
       [2006-02-08 22:20:02][ERROR] <error_msg_lineN>
 else
-  [2006-02-08 22:20:02][ERROR] Error logging into <repo_name>:
+  [2006-02-08 22:20:02][ERROR] Error logging into <repo_name>.
   [2006-02-08 22:20:02][ERROR] <error_msg_line1>
   ...
   [2006-02-08 22:20:02][ERROR] <error_msg_lineN>
