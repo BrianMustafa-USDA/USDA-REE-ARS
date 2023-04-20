@@ -11,7 +11,7 @@ import time
 from github3 import login
 
 # Initializing Basic Configuration File entitled "security_reports_issues_scraper_202303"
-logging.basicConfig(filename="security_reports_issues_scraper_202303_trial_1.log", encoding="utf-8", level=logging.DEBUG,
+logging.basicConfig(filename="security_reports_issues_scraper_202304_test_3.log", encoding="utf-8", level=logging.DEBUG,
                     format="%(asctime)s %(levelname)s %(message)s", datefmt="%m/%d/%Y %H:%M:%S")
 
 logging.info("Start Logging")
@@ -209,7 +209,6 @@ def log4shell_create_github_issue(
     if new_repo.status_code == 201:
         print('Successfully Created Issue {0:s}'.format(title))
         logging.info('Successfully Created Issue {0:s}'.format(title))
-        
     else:
         print('Could not create Issue {0:s}'.format(title))
         print('Response: ', new_repo.content)
@@ -252,12 +251,17 @@ def weekly_nal_create_github_issue(
 '''
 }
     # Add the issue to our repository
+    # Add the issue to our repository
     new_repo = session.post(url, json.dumps(weekly_nal_issue))
+
     if new_repo.status_code == 201:
         print('Successfully Created Issue {0:s}'.format(title))
+        logging.info('Successfully Created Issue {0:s}'.format(title))
     else:
         print('Could not create Issue {0:s}'.format(title))
         print('Response: ', new_repo.content)
+        logging.error('Could not create Issue {0:s}'.format(title))
+        logging.error('Response: ', new_repo.content)
 
 def ars_bod_create_github_issue(
         title, labels=None,
@@ -304,11 +308,15 @@ def ars_bod_create_github_issue(
     }
     # Add the issue to our repository
     new_repo = session.post(url, json.dumps(ars_bod_issue))
+
     if new_repo.status_code == 201:
         print('Successfully Created Issue {0:s}'.format(title))
+        logging.info('Successfully Created Issue {0:s}'.format(title))
     else:
         print('Could not create Issue {0:s}'.format(title))
         print('Response: ', new_repo.content)
+        logging.error('Could not create Issue {0:s}'.format(title))
+        logging.error('Response: ', new_repo.content)
 
 # Remove header (1st row) of each report
 def remove_header(list):
@@ -377,7 +385,6 @@ ars_bod_report = config['security-csv-reports']['ARS_BOD_report']
 Personal Access Token:
 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
 '''
-#logging.info("")
 # Enter Github Login Credential
 """
 github = login(owner, personal_access_token)
@@ -399,214 +406,200 @@ logging.info("Checking if security report <%s> exists." % log4shell_report)
         logging.error("FileNotFoundError. Security Report <%s> does not exist." % log4shell_report)
 """
 
-while True:
-    try:
-        # Starting security_reports_issues_scraper.py
-        logging.info("Successfully started execution of <security_reports_issues_scraper.py>")
+try:
+    # Starting security_reports_issues_scraper.py
+    logging.info("Successfully started execution of <security_reports_issues_scraper.py>")
 
-        # Enter Github Login Credential
-        github = login(owner, personal_access_token)
-        #logging.info("")
+    # Enter Github Login Credential
+    github = login(owner, personal_access_token)
+    #logging.info("")
 
-        """
-        if github == login(owner, personal_access_token):
-            logging.info("Successfully logged into repo <isdapps/IT-Security-Test>.")
-        else:
-            logging.error("Unable to log into repo <isdapps/IT-Security-Test> using current login credentials.")
-        """
+    """
+    if github == login(owner, personal_access_token):
+        logging.info("Successfully logged into repo <isdapps/IT-Security-Test>.")
+    else:
+        logging.error("Unable to log into repo <isdapps/IT-Security-Test> using current login credentials.")
+    """
 
-        print("Log4Shell report:")
+    print("Log4Shell report:")
 
-        # / path
-        # Testing to use path variables
-        # Testing Windows path: \
-        # Testing path on linux: /
+    # / path
+    # Testing to use path variables
+    # Testing Windows path: \
+    # Testing path on linux: /
 
-        """
-        logging.info("Checking if security report <%s> exists." % log4shell_report)
-        if log4shell_report:
-            logging.info("Security Report <%s> exists." % log4shell_report)
-        else:
-            logging.error("Security Report <%s> does not exist." % log4shell_report)
-        """
+    """
+    logging.info("Checking if security report <%s> exists." % log4shell_report)
+    if log4shell_report:
+        logging.info("Security Report <%s> exists." % log4shell_report)
+    else:
+        logging.error("Security Report <%s> does not exist." % log4shell_report)
+    """
 
-        """
-        logging.info(
-            "Processing Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv> to create issues.")
-        """
-        log4shell_issues_list = []
-        log4shell_issues_list = log4shell_read_csv_report(log4shell_report)
-        '''
-        # Create Log4Shell header to security reports headers
-        log4shell_header = log4shell_issues_list.pop(0)
-        '''
-        log4shell_no_header_issues_list = remove_header(log4shell_issues_list)
-        print("No header list: ", log4shell_no_header_issues_list)
-        # print all issues of Log4Shell security report without header
-        print("\n(No header)Total Amount of Log4Shell issues:", len(log4shell_no_header_issues_list))
+    """
+    logging.info(
+        "Processing Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv> to create issues.")
+    """
+    log4shell_issues_list = []
+    log4shell_issues_list = log4shell_read_csv_report(log4shell_report)
+    '''
+    # Create Log4Shell header to security reports headers
+    log4shell_header = log4shell_issues_list.pop(0)
+    '''
+    log4shell_no_header_issues_list = remove_header(log4shell_issues_list)
+    print("No header list: ", log4shell_no_header_issues_list)
+    # print all issues of Log4Shell security report without header
+    print("\n(No header)Total Amount of Log4Shell issues:", len(log4shell_no_header_issues_list))
 
-        for issue in range(len(log4shell_no_header_issues_list)):
-            print(log4shell_no_header_issues_list[issue])
-            # all_unique_ids_list.append(Log4Shell_list_issues[i])
+    for issue in range(len(log4shell_no_header_issues_list)):
+        print(log4shell_no_header_issues_list[issue])
+        # all_unique_ids_list.append(Log4Shell_list_issues[i])
 
-        #verify_duplicates(log4shell_no_header_issues_list)
-        #log4shell_all_issues_list = log4shell_create_unique_ids(log4shell_no_header_issues_list)
-        """
-        log4shell_no_dupl_all_issues_list = verify_duplicates(log4shell_no_header_issues_list)
-        print("log4shell_no_dupl_all_issues_list:")
-        print(log4shell_no_dupl_all_issues_list)
-        """
+    """
+    log4shell_no_dupl_all_issues_list = verify_duplicates(log4shell_no_header_issues_list)
+    print("log4shell_no_dupl_all_issues_list:")
+    print(log4shell_no_dupl_all_issues_list)
+    """
 
+    # verify duplicates in Log4Shell report
+    log4shell_no_dupl_all_issues_list = verify_duplicates(log4shell_no_header_issues_list)
+    print("log4shell_no_dupl_all_issues_list: ")
+    print(log4shell_no_dupl_all_issues_list)
+    # log4shell_create_unique_ids
+    log4shell_no_dupl_all_issues_list = log4shell_create_unique_ids(log4shell_no_dupl_all_issues_list)
+    # Iterate through unique identifiers (no duplicates) to pass each issue
+    # into Log4Shell_create_github_issue() function
+    print("\nCreate issues from Log4Shell Report: ")
+
+    # Iterate and print each issue in "Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv> exists."
+    for issue in range(len(log4shell_no_dupl_all_issues_list)):
+        print("Issue in log4shell_no_dupl_all_issues_list")
+        print(issue)
+        unique_id = log4shell_no_dupl_all_issues_list[issue][0]
+        print("Unique_id")
+        print(unique_id)
+        print("unique_ids_list")
+        unique_ids_list = log4shell_no_dupl_all_issues_list[issue][1]
+        print(unique_ids_list)
+
+        print("&*Test")
+        #verify_duplicates(unique_ids_list)
+
+        # Call "delay_api_requests()" function to execute delay_in_sec initialized in gitconfig.ini
+        delay_api_requests()
+
+        # Create each issue on github from Log4Shell
+        log4shell_create_github_issue(unique_id, ["Test Label"], ['brian-mustafa'], unique_ids_list)
+
+    print("\nWeekly NAL Report:")
+    weekly_nal_issues_list = []
+    weekly_nal_issues_list = weekly_nal_read_csv_report(weekly_nal_report)
+    logging.info(
+        "Checking if <Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv> report exists.")
+    logging.error(
+        "<Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv> does not exist.")
+    '''
+    weekly_nal_header = weekly_nal_issues_list.pop(0)
+    '''
+    weekly_nal_no_header_issues_list = remove_header(weekly_nal_issues_list)
+    print("(No header)Length of Weekly NAL list_issues:", len(weekly_nal_no_header_issues_list))
+    print("(No header) List of Weekly NAL reports' issues:")
+
+    for issue in range(len(weekly_nal_no_header_issues_list)):
+        print(weekly_nal_no_header_issues_list[issue])
+        # all_unique_ids_list.append(Weekly_NAL_issues_list[j])
+        # unique_ids_list.append(Log4Shell_list_issues[row])
+
+    # verify duplicates in Weekly NAL reports
+    weekly_nal_no_dupl_all_issues_list = verify_duplicates(weekly_nal_no_header_issues_list)
+    print("weekly_nal_no_dupl_all_issues_list")
+    print(weekly_nal_no_dupl_all_issues_list)
+    # Weekly_nal_create_unique_ids
+    weekly_nal_no_dupl_all_issues_list = weekly_nal_create_unique_ids(weekly_nal_no_dupl_all_issues_list)
+
+    '''
+    Iterate through unique identifiers (no duplicates) to pass each issue
+    into Weekly_NAL_create_github_issue() function
+    '''
+    print("\n\nCreate issues from Weekly NAL Report: ")
+
+    for issue in range(len(weekly_nal_no_dupl_all_issues_list)):
+        unique_id = weekly_nal_no_dupl_all_issues_list[issue][0]
+
+        unique_ids_list = weekly_nal_no_dupl_all_issues_list[issue][1]
+
+        print("Unique IDs List")
+        print(unique_ids_list)
+        print(weekly_nal_no_dupl_all_issues_list[issue][1][0])
+
+        delay_api_requests()
+
+        weekly_nal_create_github_issue(unique_id, ["Test Label"], ['brian-mustafa'], unique_ids_list)
+
+    print("\nARS BOD Report:")
+    ars_bod_issues_list = []
+    ars_bod_issues_list = ars_bod_read_csv_report(ars_bod_report)
+    logging.info(
+        "Checking if <ARS BOD 22-01 National Agricultural Library (NAL) On-Prem + Azure Scan Report.csv> exists.")
+    logging.error("<ARS BOD 22-01 National Agricultural Library (NAL) On-Prem + Azure Scan Report.csv> does not exist.")
+    ars_bod_no_header_issues_list = remove_header(ars_bod_issues_list)
+
+    # Verify that each unique identifier for ARS BOD Report is returned
+    for issue in range(len(ars_bod_no_header_issues_list)):
+        print(ars_bod_issues_list[issue])
+
+    print("(No header)Length of ARS BOD reports' list of issues:", len(ars_bod_no_header_issues_list))
+    print("(No header) list of issues (ARS_BOD):")
+
+    """
         # verify duplicates in Log4Shell report
         log4shell_no_dupl_all_issues_list = verify_duplicates(log4shell_no_header_issues_list)
         print("log4shell_no_dupl_all_issues_list: ")
         print(log4shell_no_dupl_all_issues_list)
         # log4shell_create_unique_ids
         log4shell_no_dupl_all_issues_list = log4shell_create_unique_ids(log4shell_no_dupl_all_issues_list)
-        # Iterate through unique identifiers (no duplicates) to pass each issue
-        # into Log4Shell_create_github_issue() function
-        print("\nCreate issues from Log4Shell Report: ")
+    """
+    # verify duplicates in ARS BOD Report
+    ars_bod_no_dupl_all_issues_list = verify_duplicates(ars_bod_no_header_issues_list)
+    print("ars_bod_no_dupl_all_issues_list")
+    print(ars_bod_no_dupl_all_issues_list)
+    # ars_bod_create_unique_ids
+    ars_bod_no_dupl_all_issues_list = ars_bod_create_unique_ids(ars_bod_no_dupl_all_issues_list)
 
-        # Iterate and print each issue in "Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv> exists."
-        for issue in range(len(log4shell_no_dupl_all_issues_list)):
-            print("Issue in log4shell_no_dupl_all_issues_list")
-            print(issue)
-            unique_id = log4shell_no_dupl_all_issues_list[issue][0]
-            print("Unique_id")
-            print(unique_id)
-            print("unique_ids_list")
-            unique_ids_list = log4shell_no_dupl_all_issues_list[issue][1]
-            print(unique_ids_list)
+    # Iterate through unique identifiers (no duplicates) to pass each issue
+    # into ARS_BOD_create_github_issue() function
+    print("\nCreate issues from ARS BOD Report: ")
 
-            print("&*Test")
-            #verify_duplicates(unique_ids_list)
+    for issue in range(len(ars_bod_no_dupl_all_issues_list)):
+        print("ARS_BOD_no_dupl_all_issues_list[i][0]")
+        print(ars_bod_no_dupl_all_issues_list[issue][0])
+        unique_id = ars_bod_no_dupl_all_issues_list[issue][0]
+        unique_ids_list = ars_bod_no_dupl_all_issues_list[issue][1]
 
-            # Call "delay_api_requests()" function to execute delay_in_sec initialized in gitconfig.ini
-            delay_api_requests()
-
-            # Create each issue on github from Log4Shell
-            log4shell_create_github_issue(unique_id, ["Test Label"], ['brian-mustafa'], unique_ids_list)
-
-        print("\nWeekly NAL Report:")
-        weekly_nal_issues_list = []
-        weekly_nal_issues_list = weekly_nal_read_csv_report(weekly_nal_report)
-        logging.info(
-            "Checking if <Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv> report exists.")
-        logging.error(
-            "<Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv> does not exist.")
-        '''
-        weekly_nal_header = weekly_nal_issues_list.pop(0)
-        '''
-        weekly_nal_no_header_issues_list = remove_header(weekly_nal_issues_list)
-        print("(No header)Length of Weekly NAL list_issues:", len(weekly_nal_no_header_issues_list))
-        print("(No header) List of Weekly NAL reports' issues:")
-
-        for issue in range(len(weekly_nal_no_header_issues_list)):
-            print(weekly_nal_no_header_issues_list[issue])
-            # all_unique_ids_list.append(Weekly_NAL_issues_list[j])
-            # unique_ids_list.append(Log4Shell_list_issues[row])
-
-        # verify duplicates in Weekly NAL reports
-        weekly_nal_no_dupl_all_issues_list = verify_duplicates(weekly_nal_no_header_issues_list)
-        print("weekly_nal_no_dupl_all_issues_list")
-        print(weekly_nal_no_dupl_all_issues_list)
-        # Weekly_nal_create_unique_ids
-        weekly_nal_no_dupl_all_issues_list = weekly_nal_create_unique_ids(weekly_nal_no_dupl_all_issues_list)
-
-        '''
-        Iterate through unique identifiers (no duplicates) to pass each issue
-        into Weekly_NAL_create_github_issue() function
-        '''
-        print("\n\nCreate issues from Weekly NAL Report: ")
-
-        for issue in range(len(weekly_nal_no_dupl_all_issues_list)):
-            unique_id = weekly_nal_no_dupl_all_issues_list[issue][0]
-
-            unique_ids_list = weekly_nal_no_dupl_all_issues_list[issue][1]
-
-            print("Unique IDs List")
-            print(unique_ids_list)
-            print(weekly_nal_no_dupl_all_issues_list[issue][1][0])
-
-            delay_api_requests()
-
-            weekly_nal_create_github_issue(unique_id, ["Test Label"], ['brian-mustafa'], unique_ids_list)
-
-        print("\nARS BOD Report:")
-        ars_bod_issues_list = []
-        ars_bod_issues_list = ars_bod_read_csv_report(ars_bod_report)
-        logging.info(
-            "Checking if <ARS BOD 22-01 National Agricultural Library (NAL) On-Prem + Azure Scan Report.csv> exists.")
-        logging.error("<ARS BOD 22-01 National Agricultural Library (NAL) On-Prem + Azure Scan Report.csv> does not exist.")
-        ars_bod_no_header_issues_list = remove_header(ars_bod_issues_list)
-
-        # Verify that each unique identifier for ARS BOD Report is returned
-        for issue in range(len(ars_bod_no_header_issues_list)):
-            print(ars_bod_issues_list[issue])
-
-        print("(No header)Length of ARS BOD reports' list of issues:", len(ars_bod_no_header_issues_list))
-        print("(No header) list of issues (ARS_BOD):")
-
-        """
-            # verify duplicates in Log4Shell report
-            log4shell_no_dupl_all_issues_list = verify_duplicates(log4shell_no_header_issues_list)
-            print("log4shell_no_dupl_all_issues_list: ")
-            print(log4shell_no_dupl_all_issues_list)
-            # log4shell_create_unique_ids
-            log4shell_no_dupl_all_issues_list = log4shell_create_unique_ids(log4shell_no_dupl_all_issues_list)
-        """
-        # verify duplicates in ARS BOD Report
-        ars_bod_no_dupl_all_issues_list = verify_duplicates(ars_bod_no_header_issues_list)
-        print("ars_bod_no_dupl_all_issues_list")
-        print(ars_bod_no_dupl_all_issues_list)
-        # ars_bod_create_unique_ids
-        ars_bod_no_dupl_all_issues_list = ars_bod_create_unique_ids(ars_bod_no_dupl_all_issues_list)
-
-        # Iterate through unique identifiers (no duplicates) to pass each issue
-        # into ARS_BOD_create_github_issue() function
-        print("\nCreate issues from ARS BOD Report: ")
-
-        for issue in range(len(ars_bod_no_dupl_all_issues_list)):
-            print("ARS_BOD_no_dupl_all_issues_list[i][0]")
-            print(ars_bod_no_dupl_all_issues_list[issue][0])
-            unique_id = ars_bod_no_dupl_all_issues_list[issue][0]
-            unique_ids_list = ars_bod_no_dupl_all_issues_list[issue][1]
-
-            delay_api_requests()
-            ars_bod_create_github_issue(unique_id, ["Test Label"], ['brian-mustafa'], unique_ids_list)
-        logging.info('Complete Logging')
-    except AttributeError:
-        print("Attribute Error.")
-        continue
-    except EOFError:
-        print("EOF Error is raised when the input() function hits the end-of-file condition.")
-        continue
-    except FileNotFoundError:
-        print("No such file or directory solution.")
-        #logging.error("<%s> does not exist" % s)
-        continue
-    except IndentationError:
-        print("Indentation Error is raised when there is an incorrect indentation.")
-        continue
-    except IndexError:
-        print("Index Error. Index of a sequences(s) is out of range.")
-        continue
-    except KeyboardInterrupt:
-        print("Keyboard Interrupt is raised when the user hits the interrupt key")
-        continue
-    except NameError:
-        print("name {} is no defined.")
-        #logging.error("name '' is not defined.")
-        continue
-    except NotImplementedError:
-        print("NotImplementedError is raised by abstract methods.")
-        continue
-    except UnboundLocalError:
-        print(
-            '''Unbound Local Error is raised when a reference is made to a local variable in a function
-            or method but no value has been bound to that variable.''')
-        continue
-    except UnicodeError:
-        print("Unicode Error. Unicode-related encoding or decoding error occurred")
-        continue
-    break
+        delay_api_requests()
+        ars_bod_create_github_issue(unique_id, ["Test Label"], ['brian-mustafa'], unique_ids_list)
+    logging.info('Complete Logging')
+except AttributeError:
+    print("Attribute Error.")
+except EOFError:
+    print("EOF Error is raised when the input() function hits the end-of-file condition.")
+except FileNotFoundError:
+    print("No such file or directory solution.")
+    #logging.error("<%s> does not exist" % s)
+except IndentationError:
+    print("Indentation Error is raised when there is an incorrect indentation.")
+except IndexError:
+    print("Index Error. Index of a sequences(s) is out of range.")
+except KeyboardInterrupt:
+    print("Keyboard Interrupt is raised when the user hits the interrupt key")
+except NameError:
+    print("name {} is no defined.")
+    #logging.error("name '' is not defined.")
+except NotImplementedError:
+    print("NotImplementedError is raised by abstract methods.")
+except UnboundLocalError:
+    print(
+        '''Unbound Local Error is raised when a reference is made to a local variable in a function
+        or method but no value has been bound to that variable.''')
+except UnicodeError:
+    print("Unicode Error. Unicode-related encoding or decoding error occurred")
