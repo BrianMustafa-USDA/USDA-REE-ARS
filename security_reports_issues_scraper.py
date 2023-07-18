@@ -1,7 +1,6 @@
 # Standard Python libraries
 import configparser
 import csv
-#import os
 import json
 import logging
 import requests
@@ -422,7 +421,6 @@ f'### Cross References: {unique_ids_list[20]}'
 
 def create_most_recent_timestamp_comment_of_duplicate_issue(title, labels=None, assignees=None, body=None):
     # Create an issue comment for each existing duplicate issue in repo
-
     try:
         subprocess.run(["/home/brian.mustafa/", "c.sh", "5"], timeout=10, check=True)
     except FileNotFoundError as exc:
@@ -434,6 +432,7 @@ def create_most_recent_timestamp_comment_of_duplicate_issue(title, labels=None, 
         )
     except subprocess.TimeoutExpired as exc:
         print(f"Process timed out.\n{exc}")
+
     # Pass variable assigned to issue_number into url
     # issue_number
 
@@ -666,7 +665,7 @@ for issue in range(len(log4shell_unique_ids_list)):
         #print("Issue number of r.content: ", r.content)
         #create_new_github_issue[log4shell_create_github_issue]
         last_observed_timestamp = send_last_observed_timestamp(dupl_unique_ids_list)
-        #create_most_recent_timestamp_comment_of_duplicate_issue()
+        create_most_recent_timestamp_comment_of_duplicate_issue()
 
     # Call "delay_api_requests()" function to execute delay_in_sec initialized in config file.
     delay_api_requests()
