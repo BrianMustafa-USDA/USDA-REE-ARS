@@ -12,12 +12,13 @@ import time
 from github3 import login
 
 # Initializing Basic Configuration File entitled "security_reports_issues_scraper_202303"
-logging.basicConfig(filename="security_reports_issues_scraper_202307_test_case_1.log",
+logging.basicConfig(filename="security_reports_issues_scraper_202308_test_case_1.log",
                     level=logging.DEBUG,
                     format="%(asctime)s %(levelname)s %(message)s",
                     datefmt="%m/%d/%Y %H:%M:%S")
 
 logging.info("Start Logging")
+
 """
 Read csv file 
 entitled "Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv"
@@ -69,6 +70,7 @@ def ars_bod_read_csv_report(file_name):
     # Return new list entitled "ars_bod_issues_list" consisting of each row of issues
     return ars_bod_issues_list
 
+"""
 # Verify if more than one copy of the same issue appears in security report.csv files
 def verify_duplicates(list):
     # Create counter entitled "duplicates_count" to keep count of all # of duplicates
@@ -85,6 +87,7 @@ def verify_duplicates(list):
             print("No duplicates")
     print("Total number of duplicates: ", duplicates_count)
     return list
+"""
 
 """
 # Verify if more than one of the same issue appears in each of the security report.csv files
@@ -112,31 +115,31 @@ Create log4shell_create_unique_ids() function to
 pass list object "list" of unique identifier fields
 in order to parse and create unique identifiers from "Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv"
 """
-
+"""
 def verify_duplicates_of_unique_ids(list):
     # Compare list to issues in isd repo using title
-
-
     dupl_list = []
     dupl_count = 0
+    uniq_list = []
     for each_issue in list:
         if each_issue not in uniq_list:
             uniq_list.append(each_issue)  # Append each new non-duplicate unique issue to uniq_list
         else:
             dupl_list.append(each_issue)  # Capture each duplicate unique id in dupl_list
             dupl_count += 1  # Incremental count by 1
-    """
+
     print("(log4shell) dupl_list: ", dupl_list)
     print("(log4shell) uniq_list: ", uniq_list)
     print("Total # of duplicates: ", dupl_count)
-    """
+    
     return dupl_list
+"""
 
 def log4shell_create_unique_ids_list(list):
     print("\nUnique IDs (Log4shell): ")
     print("Length of Log4Shell list: ", len(list))
     log4shell_unique_ids_list = []
-    assigned_unique_ids_list = []
+    #assigned_unique_ids_list = []
     for row in range(len(list)):
 
         '''
@@ -152,25 +155,26 @@ def log4shell_create_unique_ids_list(list):
             list[row][3]) + unique_id_title_delimiter + str(list[row][4]) + unique_id_title_delimiter + list[row][11]
 
         print("Unique ID of log4shell_issues: ", unique_id)
+
+        # Create list of all unique ids entitled 'log4shell_unique_ids_list'
         log4shell_unique_ids_list.append(unique_id)
+
         #dupl_uniq_ids_list = verify_duplicates_of_unique_ids(log4shell_unique_ids_list)
 
+    return log4shell_unique_ids_list
+    """
         print("unique_id, list[row]: ", unique_id, list[row])
         assigned_pair_unique_id = [unique_id, list[row]]
         print("Assigned_unique_ids_list (assigned values): ", assigned_pair_unique_id)
         assigned_unique_ids_list.append(assigned_pair_unique_id)
+
     return assigned_unique_ids_list
+    """
 
-def retrieve_last_observed_timestamp(list):
-    for row in range(len(list)):
-        # Last Observed Timestamp
-        # list[row][12] -> Column: Last Observed
-        last_observed_timestamp = list[row][12]
-        return last_observed_timestamp
-
+"""
 def get_all_repo_issues():
     try:
-        exit_code = subprocess.run(["python3", "get_github_issues.py"], timeout=10, check=True)
+        exit_code = subprocess.run(["python3", "get_github_issues.py"])
         print(exit_code)
     except FileNotFoundError as exc:
         print(f"Process failed because the executable could not be found.\n{exc}")
@@ -182,98 +186,6 @@ def get_all_repo_issues():
     except subprocess.TimeoutExpired as exc:
         print(f"Process timed out.\n{exc}")
 """
-GITHUB_API_URL = "https://api.github.com/repos"
-GITHUB_REPO = "isdapps/IT-Security-Test"
-GITHUB_API_TYPE = "issues"
-GET_URL = GITHUB_API_URL + '/' + GITHUB_REPO + '/' + GITHUB_API_TYPE
-
-# Get all issues from the github repo and return the result in JSON.
-def get_github_issues():
-
-    headers = {
-        'Accept': 'application/vnd.github+json',
-        'Authorization': 'Bearer ' + BEARER_KEY,
-        'X-GitHub-Api-Version': GITHUB_API_DATE,
-    }
-
-    #print("Headers:", headers)
-
-    response = requests.get(GET_URL, headers=headers)
-
-# Global config variables
-BEARER_KEY = "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"
-GITHUB_API_DATE = "2022-11-28"
-"""
-def retrieve_issue_number():
-    # Retrieve an issue on api.github.com using the given parameters.
-    # Our url to create API response
-
-    #url = "https://api.github.com/repos/%s/%s/issues" % (owner, repo)
-    url = "https://api.github.com/repos/%s/%s/issues" % (owner, repo)
-
-    # Create headers to get issues from isd/apps repository
-    headers = {
-        "Accept": "application/vnd.github+json",
-        "Authorization": "token %s" % personal_access_token,
-        "X-GitHub-Api-Version": "2022-11-28",
-    }
-    #headers = {'Authorization': personal_access_token}
-    print("get an issue's response content")
-    r = requests.get(url, headers=headers)
-
-    print("r.text:", r.text)
-    print("r.status_code", r.status_code)
-
-    if r.status_code == 200:
-        # get JSON object from the response by calling r.text
-        data = json.loads(r.text)
-        print("data type: ", type(data))
-        print("data: ", data)
-        """
-        print("data[0]")
-        print(data[0])
-        """
-
-        """
-        for key, value in data[0]:
-            print("key" + key)
-            print("value" + value)
-        """
-        print("data[0]: ", data[0])
-        for key in data[0]:
-            if key == 'number':
-                print("data[0]key:  ")
-                print(data[0][key])
-                issue_number = data[0][key]
-            #print(issue_number)
-            #print("Key: " + key)
-
-        #print(data["number"])
-        for i in data:
-            value = data[0]
-            print("Key and value pair ({}) = ({})".format(i, value))
-
-        """
-        i = 'number'
-        for i in data:
-            print("data['issue number']")
-            issue_number = data['number']
-            print(issue_number)
-        """
-    else:
-        print("Error:", r.status_code)
-    return issue_number
-    """
-    with requests.Session() as session:
-        session = requests.Session()
-        session.auth = (owner, personal_access_token)
-    try:
-        session.post(url)
-        logging.info("Successfully created session")
-    except ConnectionError as ce:
-        print(ce)
-        logging.error("Connection Error")
-    """
 """
 Create weekly_nal_create_unique_ids() function to 
 pass list object  to create unique identifiers from "Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv"
@@ -371,7 +283,7 @@ def log4shell_create_github_issue(
     # Create an authenticated session to create the issue in security report
     with requests.Session() as session:
         session = requests.Session()
-        session.auth = (owner, personal_access_token)
+        session.auth = (owner, BEARER_KEY)
     try:
         session.post(url)
         logging.info("Successfully created session")
@@ -414,7 +326,253 @@ f'### Last Observed: {unique_ids_list[12]}'
         logging.error('Response: ', new_repo.content)
     return log4shell_issue
 
+# Get all issues from the github repo and return the result in JSON.
+def get_github_issues():
+
+    headers = {
+        'Accept': 'application/vnd.github+json',
+        'Authorization': 'Bearer ' + BEARER_KEY,
+        'X-GitHub-Api-Version': GITHUB_API_DATE,
+    }
+
+    per_page = {GITHUB_PER_PAGE: GITHUB_MAX_LIMIT_PER_PAGE}
+    print("printing per_page: ", per_page)
+    # print("Headers:", headers)
+
+    print("GITHUB_API_URL", GITHUB_API_URL)
+    print("type of GITHUB_API_URL", type(GITHUB_API_URL))
+    print("before passing url to .get(): ", GET_URL)
+    print("str(GET_URL: ", str(GET_URL))
+    # Make a GET request and assign API data to variable entitled 'response'
+    response = requests.get(GET_URL, headers=headers, params=per_page)
+
+    print("Request URL:", response.url)
+    print("Return Code:", response.status_code)
+
+    # print("Return json:", response.json())
+
+    # return JSON content of response
+    return response.json()
+
+def get_issue_titles(issues):
+    # Initialize the dictionary to store the issue number and title
+
+    issue_titles = {}
+
+    for issue in issues:
+        # Filter out any pull requests, which happen to be open issues.
+        if not "pull_request" in issue:
+            # print(issue['number'])
+            # print(issue['title'])
+            issue_number = issue['number']
+            issue_title = issue['title']
+            issue_titles[issue_number] = issue_title
+    return issue_titles
+
+def get_issue_number():
+    # Retrieve an issue on api.github.com using the given parameters.
+    # Our url to create API response
+
+    #url = "https://api.github.com/repos/%s/%s/issues" % (owner, repo)
+    url = "https://api.github.com/repos/%s/%s/issues" % (owner, repo)
+
+    # Create headers to get issues from isd/apps repository
+    headers = {
+        "Accept": "application/vnd.github+json",
+        "Authorization": "token %s" % config['global-config-variables']['BEARER_KEY'],
+        "X-GitHub-Api-Version": "2022-11-28",
+    }
+    #headers = {'Authorization': personal_access_token}
+    print("get an issue's response content")
+    r = requests.get(url, headers=headers)
+
+    print("r.text:", r.text)
+    print("r.status_code", r.status_code)
+
+    if r.status_code == 200:
+        # get JSON object from the response by calling r.text
+        data = json.loads(r.text)
+        print("data type: ", type(data))
+        print("data: ", data)
+        """
+        for key, value in data[0]:
+            print("key" + key)
+            print("value" + value)
+        """
+        print("data[0]: ", data[0])
+        for key in data[0]:
+            if key == 'number':
+                print("data[0]key:  ")
+                print(data[0][key])
+                issue_number = data[0][key]
+
+        for i in data:
+            value = data[0]
+            print("Key and value pair ({}) = ({})".format(i, value))
+
+        """
+        i = 'number'
+        for i in data:
+            print("data['issue number']")
+            issue_number = data['number']
+            print(issue_number)
+        """
+    else:
+        print("Error:", r.status_code)
+    return issue_number
+
+def get_last_observed_timestamp(uniq_id, list):
+    # for each
+    #print("list: ", list)
+    last_observed_timestamp = ""
+    for row in list:
+        # create a list unique_id by pulling same components from list
+
+        #print("row", row)
+
+        list_uniq_id = str(row[0]) + unique_id_title_delimiter + row[1] + unique_id_title_delimiter + str(row[3]) + unique_id_title_delimiter + str(row[4]) + unique_id_title_delimiter + row[12]
+        #print(list_uniq_id)
+
+
+        # create list uniq id from components of list row
+        if uniq_id == list_uniq_id:
+            last_observed_timestamp = row[12]
+
+        # if uniq id == list uniq_id
+
+        # Last Observed Timestamp
+        # list[row][12] -> Column: Last Observed
+            #print("last_observed_timestamp: ", last_observed_timestamp)
+            return last_observed_timestamp
+
 """
+def create_most_recent_timestamp_commment_for_duplicate_issue(issue_number):
+
+    # URL to create github issues
+    url = "https://api.github.com/repos/%s/%s/issues/%s/comments" % (owner, repo, issue_number)
+    headers = {
+        'Accept': 'application/vnd.github+json',
+        'Authorization': 'Bearer ' + BEARER_KEY,
+        'X-GitHub-Api-Version': GITHUB_API_DATE,
+    }
+
+    r = requests.post(url, headers=headers)
+
+    if r.status_code == 200:
+        data = json.load(r.text)
+    else:
+        print("Error")
+"""
+#def create_most_recent_timestamp_comment_of_duplicate_issue(title, labels=None, assignees=None, body=None):
+def create_most_recent_timestamp_comment_for_existing_issue(owner, repo, issue_number, last_observed_timestamp):
+    """
+    # Create an issue comment with most recent timestamp for each existing duplicate issue in repo
+    try:
+       #subprocess.run(["/home/brian.mustafa/"], timeout=10, check=True)
+       exit_code = subprocess.run(["bash", "-x", "c.sh"], timeout=10, check=True)
+       print(exit_code)
+    except FileNotFoundError as exc:
+        print(f"Process failed because the executable could not be found.\n{exc}")
+    except subprocess.CalledProcessError as exc:
+        print(
+            f"Process failed because did not return a successful return code. "
+            f"Returned {exc.returncode}\n{exc}"
+        )
+    except subprocess.TimeoutExpired as exc:
+        print(f"Process timed out.\n{exc}")
+    """
+
+    # Our url to create issue comments via POST
+    url = "https://api.github.com/repos/%s/%s/issues/%s/comments" % (owner, repo, issue_number)
+
+    # Display message in log file of logging into repo
+    logging.info("Logging into repo %s" % repo)
+    # Create an authenticated session to create the issue in security report
+    with requests.Session() as session:
+        session = requests.Session()
+        session.auth = (owner, BEARER_KEY)
+    try:
+        session.post(url)
+        logging.info("Successfully created session")
+    except ConnectionError as ce:
+        print(ce)
+        logging.error("Connection Error")
+
+    # create issue comment of duplicate
+    duplicate_issue_comment = {
+f'### body': f'Last Created: {last_observed_timestamp}'
+    }
+    # Add issue comment of most recent duplicate issues to previously created issue in our repository
+    new_repo = session.post(url, json.dumps(duplicate_issue_comment))
+    print("new_repo: ", new_repo)
+"""
+create a function to add a new comment "last observed" field of new duplicate issue
+"""
+
+def verify_duplicates_of_github_issues(issue_titles, uniq_ids_list):
+    dupl_unique_ids_list = []
+    flag = False
+    print("sample of unique_ids_list", uniq_ids_list)
+    print("sample of issue titles: ", issue_titles)
+
+    print("Issue_titles of log4shell csv:")
+    # Iterate through values of issue_titles
+    for uniq_id in uniq_ids_list:
+        print("values - issue_titles")
+        print(uniq_id)
+        for issue_value in issue_titles.values():
+            print("uniq_id in list: ", uniq_id)
+            # Check that issue_titles.values() contains correct values
+            print("inside issue_title: ", issue_value)
+            if uniq_id == issue_value:
+                flag = True
+                print("flag is True", flag)
+                print("Github issue already exists in repo")
+                print("uniq_id: ", uniq_id)
+                print("issue_value: ", issue_value)
+                last_observed_timestamp = get_last_observed_timestamp(uniq_id, log4shell_no_header_issues_list)
+                print("last_observed_timestamp: ", last_observed_timestamp)
+                # Get most recent issue number from each duplicate unique id on this list
+                # pass the issue_number into create_most_recent_timestamp_comment_of_duplicate_issues()
+                issue_number = get_issue_number()
+                print("returned issue number: ", issue_number)
+                continue
+                """
+                # check if flag is true
+                if flag:
+                    print("The issue already exists")
+                    dupl_unique_ids_list.append(uniq_id, issue_number)
+                    create_most_recent_timestamp_comment_for_existing_issue(owner, repo, issue_number,
+                                                                            last_observed_timestamp)
+                else:
+                    print("New issue.")
+                """
+
+            else:
+                print("New issue in repo")
+
+        # check if flag is True
+        if flag:
+            # if issue exists, then send an API call
+            print("The issue already exists")
+            # Follow same format
+            dupl_unique_ids_list.append(uniq_id)
+            # create most recent timestamp comment for existing issue
+            create_most_recent_timestamp_comment_for_existing_issue(owner, repo, issue_number,last_observed_timestamp)
+            # reset flag to false
+            flag = False
+            # for each issue, make sure flag is set to false
+            # drop into if condition, sets it to true
+            # if the flag is true, then after creating comment for github issue
+        else:
+            print("New issue")
+
+            # At some point, reset flag to false
+            # Only after creating most recent timestamp comment
+
+            # return list with issue_number, a flag of whether issue_number is new (0 is new, 1 exists) & last_observed_timestamp
+            return dupl_unique_ids_list
+"""          
 def add_updated_timestamp_comment_of_most_recent_issue(owner, repo):
     # Display message to log file to indicate program is connecting into https://api.github.com
     logging.info("Add new comment with most recent updated timestamp")
@@ -429,6 +587,8 @@ def add_updated_timestamp_comment_of_most_recent_issue(owner, repo):
     return r
 """
 
+
+
 def weekly_nal_create_github_issue(
         title, labels=None,
         assignees=None, body=None):
@@ -440,7 +600,7 @@ def weekly_nal_create_github_issue(
     url = "https://api.github.com/repos/%s/%s/issues" % (owner, repo)
     # Create an authenticated session to create the issue
     session = requests.Session()
-    session.auth = (owner, personal_access_token)
+    session.auth = (owner, BEARER_KEY)
 
     # Create new issues for Weekly NAL Report
     weekly_nal_issue = {
@@ -485,7 +645,7 @@ def ars_bod_create_github_issue(
     url = "https://api.github.com/repos/%s/%s/issues" % (owner, repo)
     # Create an authenticated session to create the issue
     session = requests.Session()
-    session.auth = (owner, personal_access_token)
+    session.auth = (owner, BEARER_KEY)
 
     # Create new issues for Weekly NAL Security Report
     ars_bod_issue = {
@@ -527,51 +687,6 @@ f'### Cross References: {unique_ids_list[20]}'
         logging.error('Could not create Issue {0:s}'.format(title))
         logging.error('Response: ', new_repo.content)
 
-#def create_most_recent_timestamp_comment_of_duplicate_issue(title, labels=None, assignees=None, body=None):
-def create_most_recent_timestamp_comment_for_duplicate_issue():
-    # Create an issue comment for each existing duplicate issue in repo
-    try:
-       #subprocess.run(["/home/brian.mustafa/"], timeout=10, check=True)
-       exit_code = subprocess.run(["bash", "-x", "c.sh"], timeout=10, check=True)
-       print(exit_code)
-    except FileNotFoundError as exc:
-        print(f"Process failed because the executable could not be found.\n{exc}")
-    except subprocess.CalledProcessError as exc:
-        print(
-            f"Process failed because did not return a successful return code. "
-            f"Returned {exc.returncode}\n{exc}"
-        )
-    except subprocess.TimeoutExpired as exc:
-        print(f"Process timed out.\n{exc}")
-
-    """
-    # Our url to create issue comments via POST
-    url = "https://api.github.com/repos/%s/%s/issues/%s/comments" % (owner, repo, issue_number)
-
-    # Display message in log file of logging into repo
-    logging.info("Logging into repo %s" % repo)
-    # Create an authenticated session to create the issue in security report
-    with requests.Session() as session:
-        session = requests.Session()
-        session.auth = (owner, personal_access_token)
-    try:
-        session.post(url)
-        logging.info("Successfully created session")
-    except ConnectionError as ce:
-        print(ce)
-        logging.error("Connection Error")
-
-    # create issue comment of duplicate
-    duplicate_issue_comment = {
-f'### body': 'Last Created: {}'
-    }
-    # Add issue comment of most recent duplicate issues to previously created issue in our repository
-    new_repo = session.post(url, json.dumps(duplicate_issue_comment))
-    """
-
-"""
-create a function to add a new comment "last observed" field of new duplicate issue
-"""
 
 # Remove header (1st row) of each .csv report
 def remove_header(list):
@@ -585,21 +700,35 @@ def delay_api_requests():
 # Create and assign ConfigParser Object to retrieve configuration data from config.ini
 config = configparser.ConfigParser()
 
-# Read "config file."
+# Read config file entitled "security_reports_issue_scraper.conf"
 config.read("security_reports_issues_scraper.conf")
 
-# Assign owner of [user] from config.ini
+# Assign owner of [user] from security_reports_issues_scraper.conf
 owner = config["user"]["owner"]
 
-# Assign repo of [user] from config.ini
+# Assign repo of [user] from security_reports_issues_scraper.conf
 repo = config["user"]["repo"]
 
-# Assign personal_access_token within [API] in config file.
-personal_access_token = config["API"]["personal_access_token"]
+# Assign personal_access_token within [API] in security_reports_issues_scraper.conf
+BEARER_KEY = config["global-config-variables"]["BEARER_KEY"]
 
-# Assign delimiter within [unique-id-title] in config.ini
+# Assign delimiter within [unique-id-title] in security_reports_issues_scraper.conf
 unique_id_title_delimiter = config["unique-id-title"]["delimiter"]
 
+# Global config variables
+BEARER_KEY = config["global-config-variables"]["BEARER_KEY"]
+GITHUB_API_DATE = config["global-config-variables"]["GITHUB_API_DATE"]
+
+# local config variables
+GITHUB_API_URL = config["local-config-variables"]["GITHUB_API_URL"]
+GITHUB_REPO = config["local-config-variables"]["GITHUB_REPO"]
+GITHUB_API_TYPE = config["local-config-variables"]["GITHUB_API_TYPE"]
+GITHUB_PER_PAGE = config["local-config-variables"]["GITHUB_PER_PAGE"]
+GITHUB_MAX_LIMIT_PER_PAGE = int(config["local-config-variables"]["GITHUB_MAX_LIMIT_PER_PAGE"])
+GET_URL = GITHUB_API_URL + '/' + GITHUB_REPO + '/' + GITHUB_API_TYPE
+print("url of github issues - GET_URL: ", GET_URL)
+print("Type of URL: ", type(GET_URL))
+print("str of GET_URL", str(GET_URL))
 """
 Create hash object from "config file." configuration file
 to read in weekly security report related to "Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report
@@ -636,9 +765,6 @@ github = login(owner, personal_access_token)
 print("Login information from Github")
 #logging.info("")
 """
-"""
-FileNotFoundError: [Errno 2] No such file or directory: 'Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv'
-"""
 
 """
 logging.info("Checking if security report <%s> exists." % log4shell_report)
@@ -652,7 +778,7 @@ logging.info("Checking if security report <%s> exists." % log4shell_report)
 logging.info("Successfully started execution of <security_reports_issues_scraper.py>")
 
 # Enter Github Login Credential
-github = login(owner, personal_access_token)
+github = login(owner, BEARER_KEY)
 
 """
 if github == login(owner, personal_access_token):
@@ -691,130 +817,51 @@ for issue in range(len(log4shell_no_header_issues_list)):
     print(log4shell_no_header_issues_list[issue])
 """
 
-# 2nd method to verify duplicates in Log4Shell report
+#log4shell_no_dupl_all_issues_list = verify_duplicates(log4shell_no_header_issues_list)
 
-"""
-dup = {x for x in log4shell_no_header_issues_list if log4shell_no_header_issues_list.count(x) > 1}
-print("dup: ", dup)
-print("len of duplicate issues in header: ", len(dup))
-"""
-log4shell_no_dupl_all_issues_list = verify_duplicates(log4shell_no_header_issues_list)
 print("verified log4shell_issues")
 
 # create unique ids for each issue in the security report
-log4shell_unique_ids_list = log4shell_create_unique_ids_list(log4shell_no_dupl_all_issues_list)
+log4shell_unique_ids_list = log4shell_create_unique_ids_list(log4shell_no_header_issues_list)
 
-#print("log4shell_no_dupl_all_unique_ids_list", log4shell_no_dupl_all_unique_ids_list)
+# log4shell unique ids list
+#print("try log4shell_no_dupl_all_unique_ids_list: ", log4shell_no_dupl_all_unique_ids_list)
+print("unique id titles of Log4shell_unique_ids_list: ", log4shell_unique_ids_list)
+print("Len of log4shell_unique_ids_list: ", len(log4shell_unique_ids_list))
 
-# Iterate through unique identifiers (no duplicates) to pass each issue
+issues = get_github_issues()
+# print the content of response object in JSON format
+print("output of issues", issues)
+# Execute json.dumps to convert and serialize all github issues into JSON string
+print(json.dumps(issues, indent=4, sort_keys=True))
+
+
+issue_titles = get_issue_titles(issues)
+# print issue_titles
+print("!Issue titles:", issue_titles)
+
+# return list of issue titles whether issues is new or already exists,
+    #if issue already exists, create loop to iterate through that list, then create comment on that issue
+dupl_unique_ids_list = verify_duplicates_of_github_issues(issue_titles, log4shell_unique_ids_list)
+print("dupl_unique_ids_list: ", dupl_unique_ids_list)
+
+# Iterate through unique identifiers to pass each issue
 # into Log4Shell_create_github_issue() function
 print("\nCreate issues from Log4Shell Report: ")
 
-"""
 # Iterate and create each issue in "Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv> exists."
 # onto the repo
-"""
-# return issue number of most recently created issue on Github
-#s = requests.Session()
-
-"""
-comment_id = 44242
-r = requests.get("https://api.github.com/repos/%s/%s/issues/comments/%s" % (owner, repo, comment_id))
-#print("Issue number of r.json: ", r.json())
-print("r.headers: ", r.headers)
-print("r.status_code:", r.status_code)
-print("r.json() to terminal:")
-print(r.json())
-"""
-
-"""
-#s = requests.Session()
-
-#url = 'https://api.github.com/repos/%s/%s/issues/comments' % (owner, repo)
-url = 'https://api.github.com/' + '/repos/' + '/' + owner + '/' + repo + '/' + '/issues/comments'
-#url = 'https://api.github/com/get/repos//issues/comments'
-headers = {'X-GitHub-Api-Version': '2022-11-28'}
-r = requests.get(url, auth = (owner, personal_access_token), headers=headers)
-print(r.url)
-print(r.status_code)
-print("r.text ")
-"""
-
-"""
-with requests.Session() as session:
-    session = requests.Session()
-    session.auth = (owner, personal_access_token)
-try:
-    session.post(url)
-    logging.info("Successfully created session")
-except ConnectionError as ce:
-    print(ce)
-    logging.error("Connection Error")
-"""
-
-# print("session.json(): ", r.json())
 
 for issue in range(len(log4shell_unique_ids_list)):
     print("(1)Issue in log4shell_no_dupl_all_issues_list")
-    #print(issue)
+    print(issue)
     unique_id = log4shell_unique_ids_list[issue][0]
     #dupl_list = verify_duplicates(unique_id)
-    print("Log4Shell Unique_id: ")
-    #print(unique_id)
+    print("Log4Shell Unique_id: ", log4shell_unique_ids_list)
     print("New Unique_ids_list")
-    unique_id_list = log4shell_unique_ids_list[issue][1]
-    #print("Unique_ids_list compilation: ", unique_id_list)
+    unique_ids_list = log4shell_unique_ids_list[issue][1]
+    print("Unique_ids_list: ", unique_ids_list)
 
-    # Compare most recently created issue with previously created issue to detect duplicate issues w/ same unique id
-    # Create API call
-    url = "https://api/github.com/"
-
-    dupl_unique_ids_list = verify_duplicates_of_unique_ids(log4shell_unique_ids_list)
-    print("dupl_unique_ids_list: ", dupl_unique_ids_list)
-    last_observed_timestamp = retrieve_last_observed_timestamp(dupl_unique_ids_list)
-    # Get most recent issue number from each duplicate unique_id on this list
-    # pass the issue_number into create_most_recent timestamp_comment_of_duplicate_issues()
-    issue_number = retrieve_issue_number()
-
-    #Update comment
-    print("returned issue number")
-
-    # call 'get_github_issues()' function to retrieve all issues from IT-Security-Test Repo via GET
-    get_github_issues()
-
-    if unique_id in dupl_unique_ids_list:
-        print("Duplicate issue with same unique_id in repository")
-        # return issue number of most recently created issue on Github
-        #s = requests.Session()
-        #r = s.post("https://api.github.com/%s/%s/issues" % (owner, repo))
-        #print("Issue number of r.content: ", r.content)
-        #create_new_github_issue[log4shell_create_github_issue]
-
-        last_observed_timestamp = retrieve_last_observed_timestamp(dupl_unique_ids_list)
-        #Get most recent issue number from each duplicate unique_id on this list
-        #pass the issue_number into create_most_recent timestamp_comment_of_duplicate_issues()
-        issue_number = retrieve_issue_number()
-        print("returned issue number")
-        create_most_recent_timestamp_comment_for_duplicate_issue(owner, repo, issue_number, last_observed_timestamp)
-    else:
-        print("No issues with duplicate unique IDs are present.")
-
-    # Call "delay_api_requests()" function to execute delay_in_sec initialized in config file.
-    delay_api_requests()
-
-    # Create each issue on github from Log4Shell Report
-    # new_issue = log4shell_create_github_issue(unique_id, ["Test Label"], ["brian-mustafa"], unique_id_list)
-
-    """
-    if new_issue[unique_id] == issue[unique_id]:
-        print("Most recent unique id is same as previous unique id")
-        # create function to add new comment with most recent timestamp
-        # add_new_comment_with_most_recent_timestamp
-        # log4shell_create_github_issue()
-    else:
-        print("Error. Unable to compare unique identifiers.")
-    # add_updated_timestamp_comment_of_most_recent_issue()
-    """
 """
 print("\nWeekly NAL Report:")
 weekly_nal_issues_list = []
@@ -894,7 +941,8 @@ for issue in range(len(ars_bod_no_dupl_all_issues_list)):
 """
 logging.info('Complete Logging')
 
-"""\
+"""
+
 except AttributeError:
     print("Attribute Error.")
 except EOFError:
