@@ -9392,3 +9392,68 @@
 09/13/2023 12:08:37 INFO Successfully created session
 09/13/2023 12:08:38 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues/45347/comments HTTP/1.1" 422 150
 09/13/2023 12:08:38 INFO Complete Logging
+09/14/2023 09:57:31 INFO Start Logging
+09/14/2023 09:57:32 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/14/2023 09:57:32 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/14/2023 09:57:33 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/14/2023 09:57:33 INFO Complete Logging
+09/14/2023 10:12:46 INFO Start Logging
+09/14/2023 10:12:46 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/14/2023 10:12:46 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/14/2023 10:12:47 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/14/2023 10:12:47 INFO Complete Logging
+09/14/2023 10:35:44 INFO Start Logging
+09/14/2023 10:35:44 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/14/2023 10:35:45 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/14/2023 10:35:46 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/14/2023 10:35:46 INFO Complete Logging
+09/14/2023 10:36:08 INFO Start Logging
+09/14/2023 10:36:08 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/14/2023 10:36:08 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/14/2023 10:36:09 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/14/2023 10:36:09 INFO Complete Logging
+09/14/2023 10:56:56 INFO Start Logging
+09/14/2023 10:56:56 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/14/2023 10:56:56 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/14/2023 10:56:57 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/14/2023 10:56:57 INFO Complete Logging
+09/14/2023 11:12:56 INFO Start Logging
+09/14/2023 11:12:56 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/14/2023 11:12:56 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/14/2023 11:12:57 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/14/2023 11:12:57 INFO Complete Logging
+09/14/2023 11:26:59 INFO Start Logging
+09/14/2023 11:26:59 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/14/2023 11:26:59 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/14/2023 11:27:00 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/14/2023 11:27:00 INFO Complete Logging
+09/14/2023 11:27:19 INFO Start Logging
+09/14/2023 11:27:19 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/14/2023 11:27:19 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/14/2023 11:27:20 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/14/2023 11:27:20 INFO Complete Logging
+09/14/2023 11:27:28 INFO Start Logging
+09/14/2023 11:27:28 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/14/2023 11:27:28 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/14/2023 11:27:29 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/14/2023 11:27:29 INFO Complete Logging
+09/14/2023 11:29:25 INFO Start Logging
+09/14/2023 11:29:25 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/14/2023 11:29:25 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/14/2023 11:29:26 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/14/2023 11:29:26 INFO Complete Logging
+09/14/2023 11:41:47 INFO Start Logging
+09/14/2023 11:41:47 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/14/2023 11:41:47 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/14/2023 11:41:48 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/14/2023 11:41:48 INFO Complete Logging
+09/14/2023 11:48:01 INFO Start Logging
+09/14/2023 11:48:01 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/14/2023 11:48:01 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/14/2023 11:48:02 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/14/2023 11:48:02 INFO Complete Logging
+09/14/2023 12:05:43 INFO Start Logging
+09/14/2023 12:05:43 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/14/2023 12:05:43 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/14/2023 12:05:44 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/14/2023 12:05:44 INFO Complete Logging

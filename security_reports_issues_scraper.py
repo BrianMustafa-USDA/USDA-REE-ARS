@@ -4,7 +4,6 @@ import csv
 import json
 import logging
 import requests
-import subprocess
 import time
 
 # Custom Library:
@@ -71,68 +70,9 @@ def ars_bod_read_csv_report(file_name):
     return ars_bod_issues_list
 
 """
-# Verify if more than one copy of the same issue appears in security report.csv files
-def verify_duplicates(list):
-    # Create counter entitled "duplicates_count" to keep count of all # of duplicates
-    duplicates_count = 0
-    print("\nVerify if duplicates occur in unique identifiers' list")
-    print("Type of list: ", type(list))
-    for uniq_id in list:
-        if list.count(uniq_id) > 1:
-            print("Duplicate ids are present in this list")
-            print("uniq_id: ", uniq_id)
-            duplicates_count += 1
-            list.pop(uniq_id)
-        else:
-            print("No duplicates")
-    print("Total number of duplicates: ", duplicates_count)
-    return list
-"""
-
-"""
-# Verify if more than one of the same issue appears in each of the security report.csv files
-def verify_duplicates(list):
-    # Create counter entitled "duplicates_count" to keep track of the number of duplicates
-    dupl_counter = 0
-    dupl_list = []
-    print("\nVerify if duplicates occur in unique identifiers' list")
-    for uniq_id in list:
-        if list.count(uniq_id) > 1:
-            print("Duplicate ids are present in this list")
-            dupl_counter += 1
-            #dupl_list.append()
-            list.pop(uniq_id)
-            # Add a new comment to most recent duplicate issue using "Last Observed" field in body field
-            #if uniq_id == uniq_id:
-        else:
-            print("No duplicates")
-    print("Total number of duplicates: ", dupl_counter)
-    return no_dupl_list
-"""
-
-"""
 Create log4shell_create_unique_ids() function to 
 pass list object "list" of unique identifier fields
 in order to parse and create unique identifiers from "Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv"
-"""
-"""
-def verify_duplicates_of_unique_ids(list):
-    # Compare list to issues in isd repo using title
-    dupl_list = []
-    dupl_count = 0
-    uniq_list = []
-    for each_issue in list:
-        if each_issue not in uniq_list:
-            uniq_list.append(each_issue)  # Append each new non-duplicate unique issue to uniq_list
-        else:
-            dupl_list.append(each_issue)  # Capture each duplicate unique id in dupl_list
-            dupl_count += 1  # Incremental count by 1
-
-    print("(log4shell) dupl_list: ", dupl_list)
-    print("(log4shell) uniq_list: ", uniq_list)
-    print("Total # of duplicates: ", dupl_count)
-    
-    return dupl_list
 """
 
 def log4shell_create_unique_ids_list(list):
@@ -159,8 +99,6 @@ def log4shell_create_unique_ids_list(list):
         # Create list of all unique ids entitled 'log4shell_unique_ids_list'
         log4shell_unique_ids_list.append(unique_id)
 
-        #dupl_uniq_ids_list = verify_duplicates_of_unique_ids(log4shell_unique_ids_list)
-
     return log4shell_unique_ids_list
     """
         print("unique_id, list[row]: ", unique_id, list[row])
@@ -172,23 +110,8 @@ def log4shell_create_unique_ids_list(list):
     """
 
 """
-def get_all_repo_issues():
-    try:
-        exit_code = subprocess.run(["python3", "get_github_issues.py"])
-        print(exit_code)
-    except FileNotFoundError as exc:
-        print(f"Process failed because the executable could not be found.\n{exc}")
-    except subprocess.CalledProcessError as exc:
-        print(
-            f"Process failed because did not return a successful return code. "
-            f"Returned {exc.returncode}\n{exc}"
-        )
-    except subprocess.TimeoutExpired as exc:
-        print(f"Process timed out.\n{exc}")
-"""
-"""
-Create weekly_nal_create_unique_ids() function to 
-pass list object  to create unique identifiers from "Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv"
+Create weekly_nal_create_unique_ids() function to pass list object  
+to create unique identifiers from "Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv"
 """
 
 def weekly_nal_create_unique_id(list):
@@ -274,22 +197,19 @@ def log4shell_create_github_issue(
     logging.info("""Connecting into https://api.github.com in order to create issue on 
     <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>""")
 
+    # Create dict of headers in order to create new issues via POST
+    headers = {
+        'Accept': 'application/vnd.github+json',
+        'Authorization': 'Bearer ' + BEARER_KEY,
+        'X-GitHub-Api-Version': GITHUB_API_DATE
+    }
+
     # Create an issue on https://api.github.com using the given parameters.
     # Our url to create issues via POST
     url = "https://api.github.com/repos/%s/%s/issues" % (owner, repo)
 
     # Display message in log file of logging into repo
     logging.info("Logging into repo <%s>" % repo)
-    # Create an authenticated session to create the issue in security report
-    with requests.Session() as session:
-        session = requests.Session()
-        session.auth = (owner, BEARER_KEY)
-    try:
-        session.post(url)
-        logging.info("Successfully created session")
-    except ConnectionError as ce:
-        print(ce)
-        logging.error("Connection Error")
 
     # for unique_id in Security_Report:
     # create dict of each issue entitled "log4shell_issue"
@@ -312,8 +232,8 @@ f'### CVE: {unique_ids_list[10]}'
 f'### First Discovered: {unique_ids_list[11]}'
 f'### Last Observed: {unique_ids_list[12]}'
     }
-    # Serialize session object and convert data type of log4shell_issue from dict to json string to be processed via POST
-    new_repo = session.post(url, json.dumps(log4shell_issue))
+    # Add the issue to our repository via POST
+    new_repo = requests.post(url, data=json.dumps(log4shell_issue), headers=headers)
 
     # HTTP response status code 201 indicates that the issue was successfully created
     if new_repo.status_code == 201:
@@ -326,13 +246,14 @@ f'### Last Observed: {unique_ids_list[12]}'
         logging.error('Response: ', new_repo.content)
     return log4shell_issue
 
-# Get all issues from the github repo and return the result in JSON.
+# Get all issues from repo and return the result in JSON.
 def get_github_issues():
 
+    # Create dict of headers
     headers = {
         'Accept': 'application/vnd.github+json',
         'Authorization': 'Bearer ' + BEARER_KEY,
-        'X-GitHub-Api-Version': GITHUB_API_DATE,
+        'X-GitHub-Api-Version': GITHUB_API_DATE
     }
 
     per_page = {GITHUB_PER_PAGE: GITHUB_MAX_LIMIT_PER_PAGE}
@@ -340,23 +261,18 @@ def get_github_issues():
     # print("Headers:", headers)
 
     print("GITHUB_API_URL", GITHUB_API_URL)
-    print("type of GITHUB_API_URL", type(GITHUB_API_URL))
-    print("before passing url to .get(): ", GET_URL)
-    print("str(GET_URL: ", str(GET_URL))
+
     # Make a GET request and assign API data to variable entitled 'response'
     response = requests.get(GET_URL, headers=headers, params=per_page)
 
     print("Request URL:", response.url)
     print("Return Code:", response.status_code)
-
-    # print("Return json:", response.json())
-
     # return JSON content of response
     return response.json()
 
+# GEt issue titles for all issues on repo
 def get_issue_titles(issues):
     # Initialize the dictionary to store the issue number and title
-
     issue_titles = {}
 
     for issue in issues:
@@ -370,19 +286,18 @@ def get_issue_titles(issues):
     return issue_titles
 
 def get_issue_number():
-    # Retrieve an issue on api.github.com using the given parameters.
+
+    # Create dict of headers in order to create new issues via POST
+    headers = {
+        'Accept': 'application/vnd.github+json',
+        'Authorization': 'Bearer ' + BEARER_KEY,
+        'X-GitHub-Api-Version': GITHUB_API_DATE
+    }
+
     # Our url to create API response
 
-    #url = "https://api.github.com/repos/%s/%s/issues" % (owner, repo)
     url = "https://api.github.com/repos/%s/%s/issues" % (owner, repo)
 
-    # Create headers to get issues from isd/apps repository
-    headers = {
-        "Accept": "application/vnd.github+json",
-        "Authorization": "token %s" % config['global-config-variables']['BEARER_KEY'],
-        "X-GitHub-Api-Version": "2022-11-28",
-    }
-    #headers = {'Authorization': personal_access_token}
     print("get an issue's response content")
     r = requests.get(url, headers=headers)
 
@@ -445,66 +360,47 @@ def get_last_observed_timestamp(uniq_id, list):
             #print("last_observed_timestamp: ", last_observed_timestamp)
             return last_observed_timestamp
 
-"""
-def create_most_recent_timestamp_commment_for_duplicate_issue(issue_number):
-
-    # URL to create github issues
-    url = "https://api.github.com/repos/%s/%s/issues/%s/comments" % (owner, repo, issue_number)
+def create_issue_comment_of_most_updated_timestamp(owner, repo, issue_number, last_observed_timestamp):
+    # Create dict of headers in order to create issue comment of most recent timestamp
     headers = {
         'Accept': 'application/vnd.github+json',
         'Authorization': 'Bearer ' + BEARER_KEY,
         'X-GitHub-Api-Version': GITHUB_API_DATE,
     }
 
-    r = requests.post(url, headers=headers)
-
-    if r.status_code == 200:
-        data = json.load(r.text)
-    else:
-        print("Error")
-"""
-#def create_most_recent_timestamp_comment_of_duplicate_issue(title, labels=None, assignees=None, body=None):
-def create_most_recent_timestamp_comment_for_existing_issue(owner, repo, issue_number, last_observed_timestamp):
-    """
-    # Create an issue comment with most recent timestamp for each existing duplicate issue in repo
-    try:
-       #subprocess.run(["/home/brian.mustafa/"], timeout=10, check=True)
-       exit_code = subprocess.run(["bash", "-x", "c.sh"], timeout=10, check=True)
-       print(exit_code)
-    except FileNotFoundError as exc:
-        print(f"Process failed because the executable could not be found.\n{exc}")
-    except subprocess.CalledProcessError as exc:
-        print(
-            f"Process failed because did not return a successful return code. "
-            f"Returned {exc.returncode}\n{exc}"
-        )
-    except subprocess.TimeoutExpired as exc:
-        print(f"Process timed out.\n{exc}")
-    """
-
     # Our url to create issue comments via POST
     url = "https://api.github.com/repos/%s/%s/issues/%s/comments" % (owner, repo, issue_number)
 
     # Display message in log file of logging into repo
     logging.info("Logging into repo %s" % repo)
-    # Create an authenticated session to create the issue in security report
-    with requests.Session() as session:
-        session = requests.Session()
-        session.auth = (owner, BEARER_KEY)
-    try:
-        session.post(url)
-        logging.info("Successfully created session")
-    except ConnectionError as ce:
-        print(ce)
-        logging.error("Connection Error")
 
     # create issue comment of duplicate
-    duplicate_issue_comment = {
-f'### body': f'Last Created: {last_observed_timestamp}'
+    issue_comment = {
+        'body':
+f'### Last Created: {last_observed_timestamp}'
     }
     # Add issue comment of most recent duplicate issues to previously created issue in our repository
-    new_repo = session.post(url, json.dumps(duplicate_issue_comment))
-    print("new_repo: ", new_repo)
+    new_issue_comment = requests.post(url, data=json.dumps(issue_comment, headers=headers))
+
+    if new_issue_comment == 201:
+        print('Successfully Created Issue Comment for Issue {0:s}'.format(issue_number))
+        logging.info('Successfully Created Issue for Issue {0:s}'. format(issue_number))
+    else:
+        print('Could not create Issue Comment for Issue {0:s}'.format(issue_number))
+        print('Response: ', new_issue_comment.content)
+        logging.error('Could not create Issue Comment for Issue {0:s}'.format(issue_number))
+        logging.error('Response: ', new_issue_comment.content)
+    """
+        if new_repo.status_code == 201:
+        print('Successfully Created Issue {0:s}'.format(title))
+        logging.info('Successfully Created Issue {0:s}'.format(title))
+    else:
+        print('Could not create Issue {0:s}'.format(title))
+        print('Response: ', new_repo.content)
+        logging.error('Could not create Issue {0:s}'.format(title))
+        logging.error('Response: ', new_repo.content)
+    """    
+
 """
 create a function to add a new comment "last observed" field of new duplicate issue
 """
@@ -542,23 +438,22 @@ def verify_duplicates_of_github_issues(issue_titles, uniq_ids_list):
                 if flag:
                     print("The issue already exists")
                     dupl_unique_ids_list.append(uniq_id, issue_number)
-                    create_most_recent_timestamp_comment_for_existing_issue(owner, repo, issue_number,
+                    create_issue_comment_of_most_updated_timestamp(owner, repo, issue_number,
                                                                             last_observed_timestamp)
                 else:
                     print("New issue.")
                 """
-
             else:
                 print("New issue in repo")
 
-        # check if flag is True
+        # check if flag is true
         if flag:
-            # if issue exists, then send an API call
+            # if issue exists, then send an API call to GitHub
             print("The issue already exists")
             # Follow same format
             dupl_unique_ids_list.append(uniq_id)
             # create most recent timestamp comment for existing issue
-            create_most_recent_timestamp_comment_for_existing_issue(owner, repo, issue_number,last_observed_timestamp)
+            create_issue_comment_of_most_updated_timestamp(owner, repo, issue_number, last_observed_timestamp)
             # reset flag to false
             flag = False
             # for each issue, make sure flag is set to false
@@ -566,28 +461,8 @@ def verify_duplicates_of_github_issues(issue_titles, uniq_ids_list):
             # if the flag is true, then after creating comment for github issue
         else:
             print("New issue")
-
-            # At some point, reset flag to false
-            # Only after creating most recent timestamp comment
-
             # return list with issue_number, a flag of whether issue_number is new (0 is new, 1 exists) & last_observed_timestamp
             return dupl_unique_ids_list
-"""          
-def add_updated_timestamp_comment_of_most_recent_issue(owner, repo):
-    # Display message to log file to indicate program is connecting into https://api.github.com
-    logging.info("Add new comment with most recent updated timestamp")
-
-    #Create a response object called r
-
-    #Send request
-
-    r = requests.patch('https://api.github.com/repos/%s/%s/issues/%s / patch' % (owner, repo, comment_id), data={'key':'value'} )
-    print('r object: ', r)
-    #await session.request('PATCH /repos/{owner}/{repo}/issues/comments/{comment_id}', )
-    return r
-"""
-
-
 
 def weekly_nal_create_github_issue(
         title, labels=None,
@@ -595,12 +470,16 @@ def weekly_nal_create_github_issue(
     # Display message to log file to indicate program is connecting into https://api.github.com
     logging.info("""Connecting into https://api.github.com in order to create issue on 
         <Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>""")
-    # Create an issue on github.com using the given parameters.
+
+    # Create dict of headers in order to create new issues via POST
+    headers = {
+        'Accept': 'application/vnd.github+json',
+        'Authorization': 'Bearer ' + BEARER_KEY,
+        'X-GitHub-Api-Version': GITHUB_API_DATE
+    }
+
     # Our url to create issues via POST
     url = "https://api.github.com/repos/%s/%s/issues" % (owner, repo)
-    # Create an authenticated session to create the issue
-    session = requests.Session()
-    session.auth = (owner, BEARER_KEY)
 
     # Create new issues for Weekly NAL Report
     weekly_nal_issue = {
@@ -622,8 +501,8 @@ f'### CVE: {unique_ids_list[10]}'
 f'### First Discovered: {unique_ids_list[11]}'
 f'### Last Observed: {unique_ids_list[12]}'
     }
-    # Add the issue to our repository
-    new_repo = session.post(url, json.dumps(weekly_nal_issue))
+    # Add the issue to our repository via POST
+    new_repo = requests.post(url, data=json.dumps(weekly_nal_issue), headers=headers)
 
     if new_repo.status_code == 201:
         print('Successfully Created Issue {0:s}'.format(title))
@@ -640,12 +519,16 @@ def ars_bod_create_github_issue(
     # Display message to log file to indicate program is connecting into https://api.github.com
     logging.info("""Connecting into https://api.github.com in order to create issue on 
             <ARS BOD 22-01 National Agricultural Library (NAL) On-Prem + Azure Scan Report.csv>""")
-    # Create an issue on github.com using the given parameters.
+
+    # Create dict of headers in order to create new issues via POST
+    headers = {
+        'Accept': 'application/vnd.github+json',
+        'Authorization': 'Bearer ' + BEARER_KEY,
+        'X-GitHub-Api-Version': GITHUB_API_DATE
+    }
+
     # Our url to create issues via POST
     url = "https://api.github.com/repos/%s/%s/issues" % (owner, repo)
-    # Create an authenticated session to create the issue
-    session = requests.Session()
-    session.auth = (owner, BEARER_KEY)
 
     # Create new issues for Weekly NAL Security Report
     ars_bod_issue = {
@@ -675,8 +558,8 @@ f'### First Discovered: {unique_ids_list[18]}'
 f'### Last Observed: {unique_ids_list[19]}'
 f'### Cross References: {unique_ids_list[20]}'
     }
-    # Add the issue to our repository
-    new_repo = session.post(url, json.dumps(ars_bod_issue))
+    # Add the issue to our repository via POST
+    new_repo = requests.post(url, data=json.dumps(ars_bod_issue), headers=headers)
 
     if new_repo.status_code == 201:
         print('Successfully Created Issue {0:s}'.format(title))
@@ -708,9 +591,6 @@ owner = config["user"]["owner"]
 
 # Assign repo of [user] from security_reports_issues_scraper.conf
 repo = config["user"]["repo"]
-
-# Assign personal_access_token within [API] in security_reports_issues_scraper.conf
-BEARER_KEY = config["global-config-variables"]["BEARER_KEY"]
 
 # Assign delimiter within [unique-id-title] in security_reports_issues_scraper.conf
 unique_id_title_delimiter = config["unique-id-title"]["delimiter"]
@@ -812,6 +692,7 @@ print("No header list: ", log4shell_no_header_issues_list)
 # print length of all issues of Log4Shell security report without header
 print("\n(No header) Total Number of issues: ", len(log4shell_no_header_issues_list))
 print("Type of log4shell_no_header_issues_list: ", type(log4shell_no_header_issues_list))
+
 """
 for issue in range(len(log4shell_no_header_issues_list)):
     print(log4shell_no_header_issues_list[issue])
@@ -834,7 +715,6 @@ issues = get_github_issues()
 print("output of issues", issues)
 # Execute json.dumps to convert and serialize all github issues into JSON string
 print(json.dumps(issues, indent=4, sort_keys=True))
-
 
 issue_titles = get_issue_titles(issues)
 # print issue_titles
