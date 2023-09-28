@@ -1,0 +1,26 @@
+Plugin,Plugin Name,Severity,IP Address,Port,DNS Name,NetBIOS Name,Plugin Output,Solution,CVSS V3 Base Score,CVE,First Discovered,Last Observed
+163793,RHEL 8 : kernel (RHSA-2022:5819),High,10.11.215.189,0,annif-dev.nal.usda.gov,,"Plugin Output: 
+Package kernel-4.18.0-372.19.1.el8_6 is installed.
+However, according to uname -r, the current running kernel level is 4.18.0-372.16.1.el8_6.
+This system requires a reboot to begin using the patched kernel level.
+
+Package kernel-core-4.18.0-372.19.1.el8_6 is installed.
+However, according to uname -r, the current running kernel level is 4.18.0-372.16.1.el8_6.
+This system requires a reboot to begin using the patched kernel level.
+
+Package kernel-modules-4.18.0-372.19.1.el8_6 is installed.
+However, according to uname -r, the current running kernel level is 4.18.0-372.16.1.el8_6.
+This system requires a reboot to begin using the patched kernel level.
+
+Package kernel-tools-4.18.0-372.19.1.el8_6 is installed.
+However, according to uname -r, the current running kernel level is 4.18.0-372.16.1.el8_6.
+This system requires a reboot to begin using the patched kernel level.
+
+Package kernel-tools-libs-4.18.0-372.19.1.el8_6 is installed.
+However, according to uname -r, the current running kernel level is 4.18.0-372.16.1.el8_6.
+This system requires a reboot to begin using the patched kernel level.
+
+NOTE: The vulnerability information above was derived by checking the
+package versions of the affected packages from this advisory. This
+scan is unable to rely on Red Hat's own security checks, which
+consider channels and products in their vulnerability determinations.",Update the affected packages.,7.8,"CVE-2022-1012,CVE-2022-32250","Aug 8, 2022 17:02:52 UTC","Aug 8, 2022 17:02:52 UTC"
