@@ -9457,3 +9457,1469 @@
 09/14/2023 12:05:43 DEBUG Starting new HTTPS connection (1): api.github.com:443
 09/14/2023 12:05:44 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
 09/14/2023 12:05:44 INFO Complete Logging
+09/14/2023 22:07:38 INFO Start Logging
+09/14/2023 22:07:38 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/14/2023 22:07:38 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/14/2023 22:07:39 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/14/2023 22:07:39 INFO Complete Logging
+09/14/2023 22:12:01 INFO Start Logging
+09/14/2023 22:12:01 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/14/2023 22:12:01 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/14/2023 22:12:03 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/14/2023 22:12:03 INFO Complete Logging
+09/14/2023 22:18:12 INFO Start Logging
+09/14/2023 22:18:12 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/14/2023 22:18:12 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/14/2023 22:18:13 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/14/2023 22:18:13 INFO Complete Logging
+09/14/2023 22:23:01 INFO Start Logging
+09/14/2023 22:23:01 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/14/2023 22:23:01 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/14/2023 22:23:02 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/14/2023 22:23:02 INFO Complete Logging
+09/14/2023 22:27:38 INFO Start Logging
+09/14/2023 22:27:38 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/14/2023 22:27:38 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/14/2023 22:27:39 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/14/2023 22:27:39 INFO Complete Logging
+09/14/2023 22:27:46 INFO Start Logging
+09/14/2023 22:27:46 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/14/2023 22:27:46 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/14/2023 22:27:46 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/14/2023 22:27:46 INFO Complete Logging
+09/14/2023 22:29:27 INFO Start Logging
+09/14/2023 22:29:27 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/14/2023 22:29:27 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/14/2023 22:29:29 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/14/2023 22:29:29 INFO Complete Logging
+09/14/2023 22:48:06 INFO Start Logging
+09/14/2023 22:48:06 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/14/2023 22:48:06 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/14/2023 22:48:07 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/14/2023 22:48:07 INFO Complete Logging
+09/14/2023 22:55:08 INFO Start Logging
+09/14/2023 22:55:08 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/14/2023 22:55:08 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/14/2023 22:55:09 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/14/2023 22:55:09 INFO Complete Logging
+09/14/2023 23:14:48 INFO Start Logging
+09/14/2023 23:14:48 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/14/2023 23:14:48 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/14/2023 23:14:49 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/14/2023 23:14:49 INFO Complete Logging
+09/14/2023 23:18:03 INFO Start Logging
+09/14/2023 23:18:03 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/14/2023 23:18:03 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/14/2023 23:18:04 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/14/2023 23:18:04 INFO Complete Logging
+09/14/2023 23:22:12 INFO Start Logging
+09/14/2023 23:22:12 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/14/2023 23:22:12 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/14/2023 23:22:13 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/14/2023 23:22:13 INFO Complete Logging
+09/14/2023 23:22:16 INFO Start Logging
+09/14/2023 23:22:16 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/14/2023 23:22:16 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/14/2023 23:22:17 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/14/2023 23:22:17 INFO Complete Logging
+09/14/2023 23:24:35 INFO Start Logging
+09/14/2023 23:24:35 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/14/2023 23:24:35 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/14/2023 23:24:36 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/14/2023 23:24:36 INFO Complete Logging
+09/14/2023 23:33:18 INFO Start Logging
+09/14/2023 23:33:18 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/14/2023 23:33:18 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/14/2023 23:33:19 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/14/2023 23:33:19 INFO Complete Logging
+09/14/2023 23:44:37 INFO Start Logging
+09/14/2023 23:44:37 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/14/2023 23:44:37 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/14/2023 23:44:39 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/14/2023 23:44:39 INFO Complete Logging
+09/14/2023 23:58:22 INFO Start Logging
+09/14/2023 23:58:22 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/14/2023 23:58:22 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/14/2023 23:58:23 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/14/2023 23:58:23 INFO Complete Logging
+09/15/2023 08:48:35 INFO Start Logging
+09/15/2023 08:48:35 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/15/2023 08:48:36 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/15/2023 08:48:37 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/15/2023 08:48:37 INFO Complete Logging
+09/15/2023 09:33:17 INFO Start Logging
+09/15/2023 09:33:17 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/15/2023 09:33:17 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/15/2023 09:33:18 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/15/2023 09:33:18 INFO Complete Logging
+09/15/2023 09:39:04 INFO Start Logging
+09/15/2023 09:39:04 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/15/2023 09:39:04 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/15/2023 09:39:05 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/15/2023 09:39:05 INFO Complete Logging
+09/15/2023 09:44:02 INFO Start Logging
+09/15/2023 09:44:02 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/15/2023 09:44:02 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/15/2023 09:44:03 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/15/2023 09:44:03 INFO Complete Logging
+09/15/2023 09:49:29 INFO Start Logging
+09/15/2023 09:49:29 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/15/2023 09:49:29 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/15/2023 09:49:30 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/15/2023 09:53:55 INFO Start Logging
+09/15/2023 09:53:55 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/15/2023 09:55:20 INFO Start Logging
+09/15/2023 09:55:20 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/15/2023 09:55:46 INFO Start Logging
+09/15/2023 09:55:46 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/15/2023 09:56:29 INFO Start Logging
+09/15/2023 09:56:29 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/15/2023 09:58:16 INFO Start Logging
+09/15/2023 09:58:16 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/15/2023 10:01:49 INFO Start Logging
+09/15/2023 10:01:49 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/15/2023 10:02:20 INFO Start Logging
+09/15/2023 10:02:20 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/15/2023 10:02:20 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/15/2023 10:02:21 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/15/2023 10:09:03 INFO Start Logging
+09/15/2023 10:09:03 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/15/2023 10:09:03 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/15/2023 10:09:04 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/15/2023 10:09:29 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/15/2023 10:09:29 INFO Logging into repo <IT-Security-Test>
+09/15/2023 10:09:29 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/15/2023 10:09:30 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/15/2023 10:09:30 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/15/2023 10:09:30 INFO Checking if <Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv> report exists.
+09/15/2023 10:09:30 ERROR <Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv> does not exist.
+09/15/2023 10:10:05 INFO Start Logging
+09/15/2023 10:10:05 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/15/2023 10:10:05 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/15/2023 10:10:06 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/15/2023 10:10:31 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/15/2023 10:10:31 INFO Logging into repo <IT-Security-Test>
+09/15/2023 10:10:31 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/15/2023 10:10:32 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/15/2023 10:10:32 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/15/2023 10:10:32 INFO Complete Logging
+09/15/2023 10:15:10 INFO Start Logging
+09/15/2023 10:15:10 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/15/2023 10:15:10 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/15/2023 10:15:11 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/15/2023 10:15:36 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/15/2023 10:15:36 INFO Logging into repo <IT-Security-Test>
+09/15/2023 10:15:36 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/15/2023 10:15:37 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/15/2023 10:15:37 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/15/2023 10:15:37 INFO Complete Logging
+09/15/2023 10:15:41 INFO Start Logging
+09/15/2023 10:15:41 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/15/2023 10:15:41 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/15/2023 10:15:41 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/15/2023 10:29:34 INFO Start Logging
+09/15/2023 10:29:34 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/15/2023 10:29:34 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/15/2023 10:29:35 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/15/2023 10:30:00 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/15/2023 10:30:00 INFO Logging into repo <IT-Security-Test>
+09/15/2023 10:30:00 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/15/2023 10:30:01 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 404 None
+09/15/2023 10:30:01 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/15/2023 10:30:01 INFO Complete Logging
+09/15/2023 11:36:49 INFO Start Logging
+09/15/2023 11:36:49 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/15/2023 11:36:49 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/15/2023 11:36:50 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/15/2023 11:37:16 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/15/2023 11:37:16 INFO Logging into repo <IT-Security-Test>
+09/15/2023 11:37:16 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/15/2023 11:37:16 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/15/2023 11:37:16 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/15/2023 11:37:16 INFO Complete Logging
+09/15/2023 11:42:23 INFO Start Logging
+09/15/2023 11:42:23 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/15/2023 11:42:23 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/15/2023 11:42:24 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/15/2023 11:42:49 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/15/2023 11:42:49 INFO Logging into repo <IT-Security-Test>
+09/15/2023 11:42:49 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/15/2023 11:42:50 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/15/2023 11:42:50 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/15/2023 11:42:50 INFO Complete Logging
+09/15/2023 11:48:08 INFO Start Logging
+09/15/2023 11:48:08 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/15/2023 11:48:08 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/15/2023 11:48:09 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/15/2023 11:48:34 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/15/2023 11:48:34 INFO Logging into repo <IT-Security-Test>
+09/15/2023 11:48:34 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/15/2023 11:48:34 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/15/2023 11:48:34 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/15/2023 11:48:34 INFO Complete Logging
+09/15/2023 11:58:08 INFO Start Logging
+09/15/2023 11:58:08 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/15/2023 11:58:08 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/15/2023 11:58:09 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/15/2023 11:58:34 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/15/2023 11:58:34 INFO Logging into repo <IT-Security-Test>
+09/15/2023 11:58:34 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/15/2023 11:58:35 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/15/2023 11:58:35 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/15/2023 11:58:35 INFO Complete Logging
+09/15/2023 12:02:50 INFO Start Logging
+09/15/2023 12:02:50 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/15/2023 12:02:50 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/15/2023 12:02:51 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/15/2023 12:03:04 INFO Start Logging
+09/15/2023 12:03:04 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/15/2023 12:03:04 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/15/2023 12:03:05 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/15/2023 12:03:30 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/15/2023 12:03:30 INFO Logging into repo <IT-Security-Test>
+09/15/2023 12:03:30 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/15/2023 12:03:31 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/15/2023 12:03:31 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/15/2023 12:03:31 INFO Complete Logging
+09/15/2023 12:03:53 INFO Start Logging
+09/15/2023 12:03:53 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/15/2023 12:03:53 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/15/2023 12:03:54 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/15/2023 12:04:19 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/15/2023 12:04:19 INFO Logging into repo <IT-Security-Test>
+09/15/2023 12:04:19 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/15/2023 12:04:20 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/15/2023 12:04:20 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/15/2023 12:04:20 INFO Complete Logging
+09/15/2023 12:04:50 INFO Start Logging
+09/15/2023 12:04:50 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/15/2023 12:04:50 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/15/2023 12:04:51 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/15/2023 12:05:16 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/15/2023 12:05:16 INFO Logging into repo <IT-Security-Test>
+09/15/2023 12:05:16 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/15/2023 12:05:17 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/15/2023 12:05:17 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/15/2023 12:05:17 INFO Complete Logging
+09/15/2023 12:05:35 INFO Start Logging
+09/15/2023 12:05:35 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/15/2023 12:05:35 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/15/2023 12:05:36 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/15/2023 12:06:01 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/15/2023 12:06:01 INFO Logging into repo <IT-Security-Test>
+09/15/2023 12:06:01 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/15/2023 12:06:02 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/15/2023 12:06:02 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/15/2023 12:06:02 INFO Complete Logging
+09/15/2023 12:06:19 INFO Start Logging
+09/15/2023 12:06:19 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/15/2023 12:06:19 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/15/2023 12:06:19 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/15/2023 12:06:22 INFO Start Logging
+09/15/2023 12:06:22 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/15/2023 12:06:22 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/15/2023 12:06:23 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/15/2023 12:06:48 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/15/2023 12:06:48 INFO Logging into repo <IT-Security-Test>
+09/15/2023 12:06:48 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/15/2023 12:06:48 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/15/2023 12:06:48 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/15/2023 12:06:48 INFO Complete Logging
+09/15/2023 12:07:21 INFO Start Logging
+09/15/2023 12:07:21 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/15/2023 12:07:21 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/15/2023 12:07:22 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/15/2023 12:07:47 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/15/2023 12:07:47 INFO Logging into repo <IT-Security-Test>
+09/15/2023 12:07:47 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/15/2023 12:07:48 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/15/2023 12:07:48 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/15/2023 12:07:48 INFO Complete Logging
+09/15/2023 12:08:32 INFO Start Logging
+09/15/2023 12:08:32 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/15/2023 12:08:32 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/15/2023 12:08:33 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/15/2023 12:08:58 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/15/2023 12:08:58 INFO Logging into repo <IT-Security-Test>
+09/15/2023 12:08:58 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/15/2023 12:08:59 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/15/2023 12:08:59 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/15/2023 12:08:59 INFO Complete Logging
+09/15/2023 12:12:05 INFO Start Logging
+09/15/2023 12:12:05 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/15/2023 12:12:05 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/15/2023 12:12:06 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/15/2023 12:12:31 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/15/2023 12:12:31 INFO Logging into repo <IT-Security-Test>
+09/15/2023 12:12:31 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/15/2023 12:12:32 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/15/2023 12:12:32 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/15/2023 12:12:32 INFO Complete Logging
+09/15/2023 12:12:51 INFO Start Logging
+09/15/2023 12:12:51 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/15/2023 12:12:51 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/15/2023 12:12:52 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/15/2023 12:13:17 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/15/2023 12:13:17 INFO Logging into repo <IT-Security-Test>
+09/15/2023 12:13:17 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/15/2023 12:13:18 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/15/2023 12:13:18 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/15/2023 12:13:18 INFO Complete Logging
+09/18/2023 08:55:49 INFO Start Logging
+09/18/2023 08:55:49 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/18/2023 08:55:50 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/18/2023 08:55:50 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/18/2023 08:56:16 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/18/2023 08:56:16 INFO Logging into repo <IT-Security-Test>
+09/18/2023 08:56:16 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/18/2023 08:56:17 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/18/2023 08:56:17 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/18/2023 08:56:17 INFO Complete Logging
+09/18/2023 09:53:51 INFO Start Logging
+09/18/2023 09:53:52 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/18/2023 09:53:52 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/18/2023 09:53:53 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/18/2023 09:54:18 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/18/2023 09:54:18 INFO Logging into repo <IT-Security-Test>
+09/18/2023 09:54:18 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/18/2023 09:54:18 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/18/2023 09:54:18 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/18/2023 09:54:18 INFO Complete Logging
+09/18/2023 10:17:25 INFO Start Logging
+09/18/2023 10:17:25 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/18/2023 10:17:25 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/18/2023 10:17:26 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/18/2023 10:17:51 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/18/2023 10:17:51 INFO Logging into repo <IT-Security-Test>
+09/18/2023 10:17:51 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/18/2023 10:17:52 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/18/2023 10:17:52 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/18/2023 10:17:52 INFO Complete Logging
+09/18/2023 10:22:33 INFO Start Logging
+09/18/2023 10:22:33 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/18/2023 10:22:33 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/18/2023 10:22:34 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/18/2023 10:22:59 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/18/2023 10:22:59 INFO Logging into repo <IT-Security-Test>
+09/18/2023 10:22:59 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/18/2023 10:23:00 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/18/2023 10:23:00 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/18/2023 10:23:00 INFO Complete Logging
+09/18/2023 10:24:38 INFO Start Logging
+09/18/2023 10:24:38 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/18/2023 10:24:38 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/18/2023 10:24:39 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/18/2023 10:25:04 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/18/2023 10:25:04 INFO Logging into repo <IT-Security-Test>
+09/18/2023 10:25:04 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/18/2023 10:25:05 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/18/2023 10:25:05 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/18/2023 10:25:05 INFO Complete Logging
+09/18/2023 10:26:33 INFO Start Logging
+09/18/2023 10:26:33 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/18/2023 10:26:34 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/18/2023 10:26:34 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/18/2023 10:26:59 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/18/2023 10:26:59 INFO Logging into repo <IT-Security-Test>
+09/18/2023 10:26:59 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/18/2023 10:27:01 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/18/2023 10:27:01 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/18/2023 10:27:01 INFO Complete Logging
+09/18/2023 10:28:55 INFO Start Logging
+09/18/2023 10:28:55 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/18/2023 10:28:55 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/18/2023 10:28:56 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/18/2023 10:29:21 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/18/2023 10:29:21 INFO Logging into repo <IT-Security-Test>
+09/18/2023 10:29:21 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/18/2023 10:29:22 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/18/2023 10:29:22 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/18/2023 10:29:22 INFO Complete Logging
+09/18/2023 10:35:40 INFO Start Logging
+09/18/2023 10:35:40 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/18/2023 10:35:40 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/18/2023 10:35:41 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/18/2023 10:36:06 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/18/2023 10:36:06 INFO Logging into repo <IT-Security-Test>
+09/18/2023 10:36:06 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/18/2023 10:36:07 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/18/2023 10:36:07 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/18/2023 10:36:07 INFO Complete Logging
+09/18/2023 10:38:06 INFO Start Logging
+09/18/2023 10:38:06 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/18/2023 10:38:06 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/18/2023 10:38:07 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/18/2023 10:38:32 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/18/2023 10:38:32 INFO Logging into repo <IT-Security-Test>
+09/18/2023 10:38:32 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/18/2023 10:38:33 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/18/2023 10:38:33 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/18/2023 10:38:33 INFO Complete Logging
+09/18/2023 10:40:50 INFO Start Logging
+09/18/2023 10:40:50 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/18/2023 10:40:50 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/18/2023 10:40:51 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/18/2023 10:41:16 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/18/2023 10:41:16 INFO Logging into repo <IT-Security-Test>
+09/18/2023 10:41:16 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/18/2023 10:41:17 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/18/2023 10:41:17 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/18/2023 10:41:17 INFO Complete Logging
+09/18/2023 10:50:55 INFO Start Logging
+09/18/2023 10:50:55 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/18/2023 10:50:55 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/18/2023 10:50:56 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/18/2023 10:51:21 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/18/2023 10:51:21 INFO Logging into repo <IT-Security-Test>
+09/18/2023 10:51:21 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/18/2023 10:51:22 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/18/2023 10:51:22 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/18/2023 10:51:22 INFO Complete Logging
+09/18/2023 10:54:15 INFO Start Logging
+09/18/2023 10:54:15 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/18/2023 10:54:15 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/18/2023 10:54:16 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/18/2023 10:54:41 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/18/2023 10:54:41 INFO Logging into repo <IT-Security-Test>
+09/18/2023 10:54:41 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/18/2023 10:54:42 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/18/2023 10:54:42 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/18/2023 10:54:42 INFO Complete Logging
+09/18/2023 10:58:33 INFO Start Logging
+09/18/2023 10:58:33 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/18/2023 10:58:33 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/18/2023 10:58:34 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/18/2023 10:58:59 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/18/2023 10:58:59 INFO Logging into repo <IT-Security-Test>
+09/18/2023 10:58:59 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/18/2023 10:59:00 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/18/2023 10:59:00 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/18/2023 10:59:00 INFO Complete Logging
+09/18/2023 11:01:23 INFO Start Logging
+09/18/2023 11:01:23 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/18/2023 11:01:23 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/18/2023 11:01:24 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/18/2023 11:01:49 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/18/2023 11:01:49 INFO Logging into repo <IT-Security-Test>
+09/18/2023 11:01:49 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/18/2023 11:01:50 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/18/2023 11:01:50 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/18/2023 11:01:50 INFO Complete Logging
+09/18/2023 11:25:07 INFO Start Logging
+09/18/2023 11:25:07 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/18/2023 11:25:07 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/18/2023 11:25:08 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/18/2023 11:25:33 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/18/2023 11:25:33 INFO Logging into repo <IT-Security-Test>
+09/18/2023 11:25:33 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/18/2023 11:25:34 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/18/2023 11:25:34 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/18/2023 11:25:34 INFO Complete Logging
+09/18/2023 11:41:28 INFO Start Logging
+09/18/2023 11:41:28 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/18/2023 11:41:28 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/18/2023 11:41:30 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/18/2023 11:41:55 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/18/2023 11:41:55 INFO Logging into repo <IT-Security-Test>
+09/18/2023 11:41:55 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/18/2023 11:41:55 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/18/2023 11:41:55 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/18/2023 11:41:55 INFO Complete Logging
+09/18/2023 12:01:28 INFO Start Logging
+09/18/2023 12:01:28 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/18/2023 12:01:28 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/18/2023 12:01:29 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/18/2023 12:01:54 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/18/2023 12:01:54 INFO Logging into repo <IT-Security-Test>
+09/18/2023 12:01:54 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/18/2023 12:01:55 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/18/2023 12:01:55 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/18/2023 12:01:55 INFO Complete Logging
+09/18/2023 12:19:13 INFO Start Logging
+09/18/2023 12:19:13 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/18/2023 12:19:13 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/18/2023 12:19:14 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/18/2023 12:19:39 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/18/2023 12:19:39 INFO Logging into repo <IT-Security-Test>
+09/18/2023 12:19:39 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/18/2023 12:19:41 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/18/2023 12:19:41 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/18/2023 12:19:41 INFO Complete Logging
+09/18/2023 12:22:50 INFO Start Logging
+09/18/2023 12:22:50 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/18/2023 12:22:50 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/18/2023 12:22:51 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/18/2023 12:23:16 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/18/2023 12:23:16 INFO Logging into repo <IT-Security-Test>
+09/18/2023 12:23:16 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/18/2023 12:23:17 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/18/2023 12:23:17 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/18/2023 12:23:17 INFO Complete Logging
+09/19/2023 08:53:14 INFO Start Logging
+09/19/2023 08:53:14 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/19/2023 08:53:14 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 08:53:16 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/19/2023 08:53:41 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/19/2023 08:53:41 INFO Logging into repo <IT-Security-Test>
+09/19/2023 08:53:41 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 08:53:42 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/19/2023 08:53:42 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/19/2023 08:53:42 INFO Complete Logging
+09/19/2023 08:59:32 INFO Start Logging
+09/19/2023 08:59:32 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/19/2023 08:59:32 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 08:59:33 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/19/2023 08:59:58 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/19/2023 08:59:58 INFO Logging into repo <IT-Security-Test>
+09/19/2023 08:59:58 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 08:59:58 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/19/2023 08:59:58 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/19/2023 08:59:59 INFO Complete Logging
+09/19/2023 09:09:10 INFO Start Logging
+09/19/2023 09:09:10 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/19/2023 09:09:10 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 09:09:11 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/19/2023 09:09:36 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/19/2023 09:09:36 INFO Logging into repo <IT-Security-Test>
+09/19/2023 09:09:36 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 09:09:37 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/19/2023 09:09:37 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/19/2023 09:09:37 INFO Complete Logging
+09/19/2023 09:12:22 INFO Start Logging
+09/19/2023 09:12:22 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/19/2023 09:12:22 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 09:12:24 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/19/2023 09:12:49 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/19/2023 09:12:49 INFO Logging into repo <IT-Security-Test>
+09/19/2023 09:12:49 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 09:12:49 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/19/2023 09:12:49 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/19/2023 09:12:49 INFO Complete Logging
+09/19/2023 09:33:13 INFO Start Logging
+09/19/2023 09:33:13 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/19/2023 09:33:13 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 09:33:14 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/19/2023 09:33:39 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/19/2023 09:33:39 INFO Logging into repo <IT-Security-Test>
+09/19/2023 09:33:39 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 09:33:40 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/19/2023 09:33:40 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/19/2023 09:33:40 INFO Complete Logging
+09/19/2023 09:42:19 INFO Start Logging
+09/19/2023 09:42:19 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/19/2023 09:42:19 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 09:42:21 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/19/2023 09:42:46 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/19/2023 09:42:46 INFO Logging into repo <IT-Security-Test>
+09/19/2023 09:42:46 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 09:42:47 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/19/2023 09:42:47 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/19/2023 09:42:47 INFO Complete Logging
+09/19/2023 10:13:15 INFO Start Logging
+09/19/2023 10:13:15 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/19/2023 10:13:15 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 10:13:16 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/19/2023 10:13:41 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/19/2023 10:13:41 INFO Logging into repo <IT-Security-Test>
+09/19/2023 10:13:41 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 10:13:42 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/19/2023 10:13:42 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/19/2023 10:13:42 INFO Complete Logging
+09/19/2023 10:19:27 INFO Start Logging
+09/19/2023 10:19:27 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/19/2023 10:19:27 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 10:19:28 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/19/2023 10:19:53 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/19/2023 10:19:53 INFO Logging into repo <IT-Security-Test>
+09/19/2023 10:19:53 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 10:19:54 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/19/2023 10:19:54 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/19/2023 10:19:54 INFO Complete Logging
+09/19/2023 10:20:40 INFO Start Logging
+09/19/2023 10:20:40 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/19/2023 10:20:40 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 10:20:41 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/19/2023 10:21:06 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/19/2023 10:21:06 INFO Logging into repo <IT-Security-Test>
+09/19/2023 10:21:06 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 10:21:07 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/19/2023 10:21:07 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/19/2023 10:21:07 INFO Complete Logging
+09/19/2023 10:33:02 INFO Start Logging
+09/19/2023 10:33:02 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/19/2023 10:33:02 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 10:33:03 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/19/2023 10:33:28 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/19/2023 10:33:28 INFO Logging into repo <IT-Security-Test>
+09/19/2023 10:33:28 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 10:33:29 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/19/2023 10:33:29 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/19/2023 10:33:29 INFO Complete Logging
+09/19/2023 10:34:06 INFO Start Logging
+09/19/2023 10:34:06 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/19/2023 10:34:06 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 10:34:07 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/19/2023 10:34:32 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/19/2023 10:34:32 INFO Logging into repo <IT-Security-Test>
+09/19/2023 10:34:32 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 10:34:33 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/19/2023 10:34:33 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/19/2023 10:34:33 INFO Complete Logging
+09/19/2023 10:40:24 INFO Start Logging
+09/19/2023 10:40:24 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/19/2023 10:40:24 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 10:40:26 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/19/2023 10:40:51 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/19/2023 10:40:51 INFO Logging into repo <IT-Security-Test>
+09/19/2023 10:40:51 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 10:40:52 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/19/2023 10:40:52 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/19/2023 10:40:52 INFO Complete Logging
+09/19/2023 10:45:37 INFO Start Logging
+09/19/2023 10:45:37 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/19/2023 10:45:37 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 10:45:38 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/19/2023 10:46:03 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/19/2023 10:46:03 INFO Logging into repo <IT-Security-Test>
+09/19/2023 10:46:03 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 10:46:03 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/19/2023 10:46:03 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/19/2023 10:46:03 INFO Complete Logging
+09/19/2023 10:46:38 INFO Start Logging
+09/19/2023 10:46:38 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/19/2023 10:46:38 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 10:46:39 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/19/2023 10:47:04 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/19/2023 10:47:04 INFO Logging into repo <IT-Security-Test>
+09/19/2023 10:47:04 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 10:47:05 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/19/2023 10:47:05 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/19/2023 10:47:05 INFO Complete Logging
+09/19/2023 10:55:00 INFO Start Logging
+09/19/2023 10:55:00 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/19/2023 10:55:00 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 10:55:01 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/19/2023 10:55:26 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/19/2023 10:55:26 INFO Logging into repo <IT-Security-Test>
+09/19/2023 10:55:26 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 10:55:27 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/19/2023 10:55:27 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/19/2023 10:55:27 INFO Complete Logging
+09/19/2023 11:06:09 INFO Start Logging
+09/19/2023 11:06:09 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/19/2023 11:06:09 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 11:06:10 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/19/2023 11:06:35 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/19/2023 11:06:35 INFO Logging into repo <IT-Security-Test>
+09/19/2023 11:06:35 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 11:06:36 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/19/2023 11:06:36 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/19/2023 11:06:36 INFO Complete Logging
+09/19/2023 11:08:44 INFO Start Logging
+09/19/2023 11:08:44 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/19/2023 11:08:44 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 11:08:45 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/19/2023 11:09:10 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/19/2023 11:09:10 INFO Logging into repo <IT-Security-Test>
+09/19/2023 11:09:10 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 11:09:11 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/19/2023 11:09:11 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/19/2023 11:09:12 INFO Complete Logging
+09/19/2023 11:13:00 INFO Start Logging
+09/19/2023 11:13:00 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/19/2023 11:13:00 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 11:13:00 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/19/2023 11:13:25 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/19/2023 11:13:25 INFO Logging into repo <IT-Security-Test>
+09/19/2023 11:13:25 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 11:13:26 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/19/2023 11:13:26 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/19/2023 11:13:26 INFO Complete Logging
+09/19/2023 11:19:18 INFO Start Logging
+09/19/2023 11:19:18 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/19/2023 11:19:18 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 11:19:19 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/19/2023 11:19:44 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/19/2023 11:19:44 INFO Logging into repo <IT-Security-Test>
+09/19/2023 11:19:44 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 11:19:45 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/19/2023 11:19:45 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/19/2023 11:19:45 INFO Complete Logging
+09/19/2023 11:26:25 INFO Start Logging
+09/19/2023 11:26:25 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/19/2023 11:26:25 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 11:26:26 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/19/2023 11:26:51 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/19/2023 11:26:51 INFO Logging into repo <IT-Security-Test>
+09/19/2023 11:26:51 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 11:26:52 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/19/2023 11:26:52 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/19/2023 11:26:52 INFO Complete Logging
+09/19/2023 11:30:39 INFO Start Logging
+09/19/2023 11:30:39 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/19/2023 11:30:39 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 11:30:40 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/19/2023 11:31:05 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/19/2023 11:31:05 INFO Logging into repo <IT-Security-Test>
+09/19/2023 11:31:05 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 11:31:06 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/19/2023 11:31:06 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/19/2023 11:31:06 INFO Complete Logging
+09/19/2023 11:36:00 INFO Start Logging
+09/19/2023 11:36:00 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/19/2023 11:36:00 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 11:36:02 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/19/2023 11:36:27 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/19/2023 11:36:27 INFO Logging into repo <IT-Security-Test>
+09/19/2023 11:36:27 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 11:36:28 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/19/2023 11:36:28 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/19/2023 11:36:28 INFO Complete Logging
+09/19/2023 11:44:22 INFO Start Logging
+09/19/2023 11:44:22 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/19/2023 11:44:22 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 11:44:23 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/19/2023 11:44:48 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/19/2023 11:44:48 INFO Logging into repo <IT-Security-Test>
+09/19/2023 11:44:48 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 11:44:49 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/19/2023 11:44:49 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/19/2023 11:44:49 INFO Complete Logging
+09/19/2023 11:45:07 INFO Start Logging
+09/19/2023 11:45:07 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/19/2023 11:45:07 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 11:45:09 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/19/2023 11:45:34 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/19/2023 11:45:34 INFO Logging into repo <IT-Security-Test>
+09/19/2023 11:45:34 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 11:45:35 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/19/2023 11:45:35 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/19/2023 11:45:35 INFO Complete Logging
+09/19/2023 11:47:16 INFO Start Logging
+09/19/2023 11:47:16 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/19/2023 11:47:16 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 11:47:17 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/19/2023 11:47:42 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/19/2023 11:47:42 INFO Logging into repo <IT-Security-Test>
+09/19/2023 11:47:42 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 11:47:42 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/19/2023 11:47:42 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/19/2023 11:47:42 INFO Complete Logging
+09/19/2023 11:51:19 INFO Start Logging
+09/19/2023 11:51:19 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/19/2023 11:51:19 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 11:51:20 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/19/2023 11:51:45 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/19/2023 11:51:45 INFO Logging into repo <IT-Security-Test>
+09/19/2023 11:51:45 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 11:51:46 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/19/2023 11:51:46 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/19/2023 11:51:46 INFO Complete Logging
+09/19/2023 11:53:11 INFO Start Logging
+09/19/2023 11:53:11 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/19/2023 11:53:11 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 11:53:12 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/19/2023 11:53:37 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/19/2023 11:53:37 INFO Logging into repo <IT-Security-Test>
+09/19/2023 11:53:37 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 11:53:38 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/19/2023 11:53:38 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/19/2023 11:53:38 INFO Complete Logging
+09/19/2023 12:06:05 INFO Start Logging
+09/19/2023 12:06:05 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/19/2023 12:06:05 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 12:06:06 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/19/2023 12:06:31 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/19/2023 12:06:31 INFO Logging into repo <IT-Security-Test>
+09/19/2023 12:06:31 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/19/2023 12:06:31 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 400 116
+09/19/2023 12:06:31 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/19/2023 12:06:31 INFO Complete Logging
+09/20/2023 08:23:42 INFO Start Logging
+09/20/2023 08:23:42 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/20/2023 08:23:42 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/20/2023 08:23:43 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/20/2023 08:24:08 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/20/2023 08:24:08 INFO Logging into repo <IT-Security-Test>
+09/20/2023 08:24:08 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/20/2023 08:24:10 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/20/2023 08:24:10 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/20/2023 08:24:10 INFO Complete Logging
+09/20/2023 08:33:27 INFO Start Logging
+09/20/2023 08:33:27 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/20/2023 08:33:27 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/20/2023 08:33:28 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/20/2023 08:33:53 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/20/2023 08:33:53 INFO Logging into repo <IT-Security-Test>
+09/20/2023 08:33:53 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/20/2023 08:33:54 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/20/2023 08:33:54 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/20/2023 08:33:54 INFO Complete Logging
+09/20/2023 08:36:42 INFO Start Logging
+09/20/2023 08:36:42 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/20/2023 08:36:42 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/20/2023 08:36:44 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/20/2023 08:37:09 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/20/2023 08:37:09 INFO Logging into repo <IT-Security-Test>
+09/20/2023 08:37:09 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/20/2023 08:37:10 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/20/2023 08:37:10 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/20/2023 08:37:10 INFO Complete Logging
+09/20/2023 08:46:43 INFO Start Logging
+09/20/2023 08:46:43 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/20/2023 08:46:43 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/20/2023 08:46:45 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/20/2023 08:47:10 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/20/2023 08:47:10 INFO Logging into repo <IT-Security-Test>
+09/20/2023 08:47:10 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/20/2023 08:47:10 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/20/2023 08:47:10 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/20/2023 08:47:10 INFO Complete Logging
+09/20/2023 08:51:05 INFO Start Logging
+09/20/2023 08:51:05 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/20/2023 08:51:05 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/20/2023 08:51:06 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/20/2023 08:51:31 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/20/2023 08:51:31 INFO Logging into repo <IT-Security-Test>
+09/20/2023 08:51:31 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/20/2023 08:51:32 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/20/2023 08:51:32 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/20/2023 08:51:32 INFO Complete Logging
+09/20/2023 09:04:47 INFO Start Logging
+09/20/2023 09:04:47 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/20/2023 09:04:47 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/20/2023 09:04:48 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/20/2023 09:05:13 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/20/2023 09:05:13 INFO Logging into repo <IT-Security-Test>
+09/20/2023 09:05:13 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/20/2023 09:05:14 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/20/2023 09:05:14 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/20/2023 09:05:14 INFO Complete Logging
+09/20/2023 09:39:23 INFO Start Logging
+09/20/2023 09:39:23 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/20/2023 09:39:23 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/20/2023 09:39:25 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/20/2023 09:39:50 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/20/2023 09:39:50 INFO Logging into repo <IT-Security-Test>
+09/20/2023 09:39:50 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/20/2023 09:39:51 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/20/2023 09:39:51 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/20/2023 09:39:51 INFO Complete Logging
+09/20/2023 09:45:51 INFO Start Logging
+09/20/2023 09:45:51 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/20/2023 09:45:51 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/20/2023 09:45:52 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/20/2023 09:46:17 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/20/2023 09:46:17 INFO Logging into repo <IT-Security-Test>
+09/20/2023 09:46:17 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/20/2023 09:46:18 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/20/2023 09:46:18 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/20/2023 09:46:18 INFO Complete Logging
+09/20/2023 09:48:29 INFO Start Logging
+09/20/2023 09:48:29 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/20/2023 09:48:29 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/20/2023 09:48:30 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/20/2023 09:48:55 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/20/2023 09:48:55 INFO Logging into repo <IT-Security-Test>
+09/20/2023 09:48:55 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/20/2023 09:48:56 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/20/2023 09:48:56 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/20/2023 09:48:56 INFO Complete Logging
+09/20/2023 09:52:39 INFO Start Logging
+09/20/2023 09:52:39 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/20/2023 09:52:39 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/20/2023 09:52:40 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/20/2023 09:53:05 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/20/2023 09:53:05 INFO Logging into repo <IT-Security-Test>
+09/20/2023 09:53:05 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/20/2023 09:53:07 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/20/2023 09:53:07 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/20/2023 09:53:07 INFO Complete Logging
+09/20/2023 09:57:47 INFO Start Logging
+09/20/2023 09:57:47 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/20/2023 09:57:47 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/20/2023 09:57:48 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/20/2023 09:58:13 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/20/2023 09:58:13 INFO Logging into repo <IT-Security-Test>
+09/20/2023 09:58:13 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/20/2023 09:58:13 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/20/2023 09:58:13 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/20/2023 09:58:13 INFO Complete Logging
+09/20/2023 10:02:12 INFO Start Logging
+09/20/2023 10:02:12 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/20/2023 10:02:12 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/20/2023 10:02:13 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/20/2023 10:02:38 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/20/2023 10:02:38 INFO Logging into repo <IT-Security-Test>
+09/20/2023 10:02:38 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/20/2023 10:02:39 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/20/2023 10:02:39 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/20/2023 10:02:39 INFO Complete Logging
+09/20/2023 10:07:21 INFO Start Logging
+09/20/2023 10:07:21 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/20/2023 10:07:21 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/20/2023 10:07:23 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/20/2023 10:07:48 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/20/2023 10:07:48 INFO Logging into repo <IT-Security-Test>
+09/20/2023 10:07:48 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/20/2023 10:07:48 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/20/2023 10:07:48 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/20/2023 10:07:49 INFO Complete Logging
+09/20/2023 10:13:40 INFO Start Logging
+09/20/2023 10:13:40 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/20/2023 10:13:40 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/20/2023 10:13:41 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/20/2023 10:14:06 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/20/2023 10:14:06 INFO Logging into repo <IT-Security-Test>
+09/20/2023 10:14:06 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/20/2023 10:14:07 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/20/2023 10:14:07 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/20/2023 10:14:07 INFO Complete Logging
+09/20/2023 10:21:09 INFO Start Logging
+09/20/2023 10:21:09 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/20/2023 10:21:09 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/20/2023 10:21:10 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/20/2023 10:21:35 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/20/2023 10:21:35 INFO Logging into repo <IT-Security-Test>
+09/20/2023 10:21:35 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/20/2023 10:21:36 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/20/2023 10:21:36 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/20/2023 10:21:36 INFO Complete Logging
+09/20/2023 10:26:18 INFO Start Logging
+09/20/2023 10:26:18 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/20/2023 10:26:18 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/20/2023 10:26:19 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/20/2023 10:26:44 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/20/2023 10:26:44 INFO Logging into repo <IT-Security-Test>
+09/20/2023 10:26:44 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/20/2023 10:26:44 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/20/2023 10:26:44 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/20/2023 10:26:44 INFO Complete Logging
+09/20/2023 10:34:25 INFO Start Logging
+09/20/2023 10:34:25 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/20/2023 10:34:25 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/20/2023 10:34:26 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/20/2023 10:34:51 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/20/2023 10:34:51 INFO Logging into repo <IT-Security-Test>
+09/20/2023 10:34:51 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/20/2023 10:34:52 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/20/2023 10:34:52 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/20/2023 10:34:52 INFO Complete Logging
+09/20/2023 10:52:35 INFO Start Logging
+09/20/2023 10:52:35 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/20/2023 10:52:35 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/20/2023 10:52:37 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/20/2023 10:53:02 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/20/2023 10:53:02 INFO Logging into repo <IT-Security-Test>
+09/20/2023 10:53:02 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/20/2023 10:53:03 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/20/2023 10:53:03 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/20/2023 10:53:03 INFO Complete Logging
+09/20/2023 10:58:27 INFO Start Logging
+09/20/2023 10:58:27 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/20/2023 10:58:27 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/20/2023 10:58:29 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/20/2023 10:58:54 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/20/2023 10:58:54 INFO Logging into repo <IT-Security-Test>
+09/20/2023 10:58:54 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/20/2023 10:58:55 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/20/2023 10:58:55 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/20/2023 10:58:55 INFO Complete Logging
+09/22/2023 09:17:54 INFO Start Logging
+09/22/2023 09:17:54 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/22/2023 09:17:54 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/22/2023 09:17:55 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/22/2023 09:18:20 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/22/2023 09:18:20 INFO Logging into repo <IT-Security-Test>
+09/22/2023 09:18:20 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/22/2023 09:18:21 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/22/2023 09:18:21 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/22/2023 09:18:21 INFO Complete Logging
+09/22/2023 09:21:25 INFO Start Logging
+09/22/2023 09:21:25 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/22/2023 09:21:25 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/22/2023 09:21:26 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/22/2023 09:21:51 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/22/2023 09:21:51 INFO Logging into repo <IT-Security-Test>
+09/22/2023 09:21:51 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/22/2023 09:21:52 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/22/2023 09:21:52 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/22/2023 09:21:52 INFO Complete Logging
+09/22/2023 09:23:20 INFO Start Logging
+09/22/2023 09:23:20 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/22/2023 09:23:20 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/22/2023 09:23:21 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/22/2023 09:23:46 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/22/2023 09:23:46 INFO Logging into repo <IT-Security-Test>
+09/22/2023 09:23:46 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/22/2023 09:23:47 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/22/2023 09:23:47 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/22/2023 09:23:47 INFO Complete Logging
+09/22/2023 10:34:28 INFO Start Logging
+09/22/2023 10:34:28 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/22/2023 10:34:28 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/22/2023 10:34:29 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/22/2023 10:34:54 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/22/2023 10:34:54 INFO Logging into repo <IT-Security-Test>
+09/22/2023 10:34:54 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/22/2023 10:34:55 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 205
+09/22/2023 10:34:55 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/22/2023 10:34:55 INFO Complete Logging
+09/22/2023 10:40:40 INFO Start Logging
+09/22/2023 10:40:40 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/22/2023 10:40:40 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/22/2023 10:40:41 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/22/2023 10:41:06 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/22/2023 10:41:06 INFO Logging into repo <IT-Security-Test>
+09/22/2023 10:41:06 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/22/2023 10:41:07 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 400 116
+09/22/2023 10:41:07 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/22/2023 10:41:07 INFO Complete Logging
+09/22/2023 10:43:14 INFO Start Logging
+09/22/2023 10:43:14 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/22/2023 10:43:14 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/22/2023 10:43:15 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/22/2023 10:43:40 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/22/2023 10:43:40 INFO Logging into repo <IT-Security-Test>
+09/22/2023 10:43:40 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/22/2023 10:43:40 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 400 116
+09/22/2023 10:43:40 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/22/2023 10:43:40 INFO Complete Logging
+09/22/2023 10:44:46 INFO Start Logging
+09/22/2023 10:44:46 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/22/2023 10:44:46 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/22/2023 10:44:47 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/22/2023 10:45:12 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/22/2023 10:45:12 INFO Logging into repo <IT-Security-Test>
+09/22/2023 10:45:12 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/22/2023 10:45:13 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 400 116
+09/22/2023 10:45:13 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/22/2023 10:45:13 INFO Complete Logging
+09/22/2023 11:03:34 INFO Start Logging
+09/22/2023 11:03:34 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/22/2023 11:03:34 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/22/2023 11:03:35 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/22/2023 11:04:00 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/22/2023 11:04:00 INFO Logging into repo <IT-Security-Test>
+09/22/2023 11:04:00 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/22/2023 11:04:01 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues/ HTTP/1.1" 404 None
+09/22/2023 11:04:01 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/22/2023 11:04:01 INFO Complete Logging
+09/22/2023 11:09:09 INFO Start Logging
+09/22/2023 11:09:10 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/22/2023 11:09:10 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/22/2023 11:09:11 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/22/2023 11:09:36 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/22/2023 11:09:36 INFO Logging into repo <IT-Security-Test>
+09/22/2023 11:09:36 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/22/2023 11:09:36 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues/ HTTP/1.1" 404 None
+09/22/2023 11:09:36 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/22/2023 11:09:36 INFO Complete Logging
+09/22/2023 11:09:47 INFO Start Logging
+09/22/2023 11:09:47 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/22/2023 11:09:47 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/22/2023 11:09:48 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/22/2023 11:10:13 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/22/2023 11:10:13 INFO Logging into repo <IT-Security-Test>
+09/22/2023 11:10:13 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/22/2023 11:10:14 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues/ HTTP/1.1" 404 None
+09/22/2023 11:10:14 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/22/2023 11:10:14 INFO Complete Logging
+09/22/2023 11:20:06 INFO Start Logging
+09/22/2023 11:20:06 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/22/2023 11:20:06 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/22/2023 11:20:07 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/22/2023 11:20:32 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/22/2023 11:20:32 INFO Logging into repo <IT-Security-Test>
+09/22/2023 11:20:32 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/22/2023 11:20:34 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 2199
+09/22/2023 11:20:34 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/22/2023 11:20:34 INFO Complete Logging
+09/22/2023 11:20:54 INFO Start Logging
+09/22/2023 11:20:54 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/22/2023 11:20:54 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/22/2023 11:20:55 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/22/2023 11:21:20 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/22/2023 11:21:20 INFO Logging into repo <IT-Security-Test>
+09/22/2023 11:21:20 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/22/2023 11:21:21 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 400 116
+09/22/2023 11:21:21 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/22/2023 11:21:21 INFO Complete Logging
+09/22/2023 11:22:24 INFO Start Logging
+09/22/2023 11:22:24 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/22/2023 11:22:24 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/22/2023 11:22:25 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/22/2023 11:22:50 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/22/2023 11:22:50 INFO Logging into repo <IT-Security-Test>
+09/22/2023 11:22:50 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/22/2023 11:22:51 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 141
+09/22/2023 11:22:51 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/22/2023 11:22:51 INFO Complete Logging
+09/22/2023 11:29:52 INFO Start Logging
+09/22/2023 11:29:52 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/22/2023 11:29:52 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/22/2023 11:29:53 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/22/2023 11:30:18 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/22/2023 11:30:18 INFO Logging into repo <IT-Security-Test>
+09/22/2023 11:30:18 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/22/2023 11:30:19 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 141
+09/22/2023 11:30:19 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/22/2023 11:30:19 INFO Complete Logging
+09/22/2023 11:33:05 INFO Start Logging
+09/22/2023 11:33:05 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/22/2023 11:33:05 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/22/2023 11:33:06 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/22/2023 11:33:31 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/22/2023 11:33:31 INFO Logging into repo <IT-Security-Test>
+09/22/2023 11:33:31 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/22/2023 11:33:32 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 141
+09/22/2023 11:33:32 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/22/2023 11:33:32 INFO Complete Logging
+09/22/2023 11:35:37 INFO Start Logging
+09/22/2023 11:35:37 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/22/2023 11:35:37 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/22/2023 11:35:38 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/22/2023 11:36:03 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/22/2023 11:36:03 INFO Logging into repo <IT-Security-Test>
+09/22/2023 11:36:35 INFO Start Logging
+09/22/2023 11:36:35 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/22/2023 11:36:35 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/22/2023 11:36:37 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/22/2023 11:37:02 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/22/2023 11:37:02 INFO Logging into repo <IT-Security-Test>
+09/22/2023 11:38:35 INFO Start Logging
+09/22/2023 11:38:35 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/22/2023 11:38:35 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/22/2023 11:38:36 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/22/2023 11:39:01 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/22/2023 11:39:01 INFO Logging into repo <IT-Security-Test>
+09/22/2023 11:40:25 INFO Start Logging
+09/22/2023 11:40:25 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/22/2023 11:40:25 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/22/2023 11:40:26 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/22/2023 11:40:51 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/22/2023 11:40:51 INFO Logging into repo <IT-Security-Test>
+09/22/2023 11:41:25 INFO Start Logging
+09/22/2023 11:41:25 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/22/2023 11:41:25 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/22/2023 11:41:26 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/22/2023 11:41:51 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/22/2023 11:41:51 INFO Logging into repo <IT-Security-Test>
+09/22/2023 11:41:51 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/22/2023 11:41:52 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 769
+09/22/2023 11:41:52 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/22/2023 11:41:52 INFO Complete Logging
+09/22/2023 11:42:57 INFO Start Logging
+09/22/2023 11:42:57 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/22/2023 11:42:57 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/22/2023 11:42:59 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/22/2023 11:43:24 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/22/2023 11:43:24 INFO Logging into repo <IT-Security-Test>
+09/22/2023 11:43:24 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/22/2023 11:43:25 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 2058
+09/22/2023 11:43:25 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/22/2023 11:43:25 INFO Complete Logging
+09/22/2023 11:43:55 INFO Start Logging
+09/22/2023 11:43:55 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/22/2023 11:43:55 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/22/2023 11:43:56 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/22/2023 11:44:21 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/22/2023 11:44:21 INFO Logging into repo <IT-Security-Test>
+09/22/2023 11:44:21 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/22/2023 11:44:22 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 141
+09/22/2023 11:44:22 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/22/2023 11:44:22 INFO Complete Logging
+09/22/2023 12:04:21 INFO Start Logging
+09/22/2023 12:04:21 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/22/2023 12:04:21 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/22/2023 12:04:22 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/22/2023 12:04:47 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/22/2023 12:04:47 INFO Logging into repo <IT-Security-Test>
+09/25/2023 12:18:06 INFO Start Logging
+09/25/2023 12:18:06 INFO Complete Logging
+09/25/2023 12:30:49 INFO Start Logging
+09/25/2023 12:30:49 INFO Complete Logging
+09/26/2023 09:15:28 INFO Start Logging
+09/26/2023 09:15:28 INFO Complete Logging
+09/26/2023 09:27:37 INFO Start Logging
+09/26/2023 09:27:37 INFO Complete Logging
+09/26/2023 09:52:52 INFO Start Logging
+09/26/2023 09:52:52 INFO Complete Logging
+09/26/2023 10:28:03 INFO Start Logging
+09/26/2023 10:28:03 INFO Complete Logging
+09/26/2023 10:39:34 INFO Start Logging
+09/26/2023 10:39:34 INFO Complete Logging
+09/26/2023 10:47:36 INFO Start Logging
+09/26/2023 10:47:36 INFO Complete Logging
+09/26/2023 11:00:19 INFO Start Logging
+09/26/2023 11:00:19 INFO Complete Logging
+09/26/2023 11:00:37 INFO Start Logging
+09/26/2023 11:00:37 INFO Complete Logging
+09/26/2023 11:09:07 INFO Start Logging
+09/26/2023 11:09:07 INFO Complete Logging
+09/26/2023 11:16:35 INFO Start Logging
+09/26/2023 11:16:35 INFO Complete Logging
+09/26/2023 11:25:53 INFO Start Logging
+09/26/2023 11:25:53 INFO Complete Logging
+09/26/2023 11:29:03 INFO Start Logging
+09/26/2023 11:29:03 INFO Complete Logging
+09/26/2023 11:29:05 INFO Start Logging
+09/26/2023 11:29:05 INFO Complete Logging
+09/26/2023 11:34:40 INFO Start Logging
+09/26/2023 11:34:40 INFO Complete Logging
+09/26/2023 12:18:53 INFO Start Logging
+09/26/2023 12:18:53 INFO Complete Logging
+09/26/2023 12:19:42 INFO Start Logging
+09/26/2023 12:19:42 INFO Complete Logging
+09/26/2023 12:27:16 INFO Start Logging
+09/26/2023 12:27:16 INFO Complete Logging
+09/26/2023 12:28:55 INFO Start Logging
+09/26/2023 12:28:55 INFO Complete Logging
+09/26/2023 12:39:45 INFO Start Logging
+09/26/2023 12:39:45 INFO Complete Logging
+09/26/2023 12:53:01 INFO Start Logging
+09/26/2023 12:53:01 INFO Complete Logging
+09/26/2023 13:07:38 INFO Start Logging
+09/26/2023 13:07:38 INFO Complete Logging
+09/27/2023 10:25:02 INFO Start Logging
+09/27/2023 10:25:02 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+09/27/2023 10:25:02 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+09/27/2023 10:25:02 INFO Complete Logging
+09/27/2023 10:59:44 INFO Start Logging
+09/27/2023 10:59:44 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+09/27/2023 10:59:44 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+09/27/2023 10:59:44 INFO Complete Logging
+09/27/2023 11:16:15 INFO Start Logging
+09/27/2023 11:16:15 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+09/27/2023 11:16:15 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+09/27/2023 11:16:15 INFO Complete Logging
+09/27/2023 11:16:46 INFO Start Logging
+09/27/2023 11:16:46 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+09/27/2023 11:16:46 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+09/27/2023 11:16:46 INFO Complete Logging
+09/27/2023 11:42:04 INFO Start Logging
+09/27/2023 11:42:04 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+09/27/2023 11:42:04 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+09/27/2023 11:42:04 INFO Complete Logging
+09/28/2023 08:49:01 INFO Start Logging
+09/28/2023 08:49:01 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+09/28/2023 08:49:01 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+09/28/2023 08:49:01 INFO Complete Logging
+09/28/2023 08:52:56 INFO Start Logging
+09/28/2023 08:52:56 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+09/28/2023 08:52:56 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+09/28/2023 08:52:56 INFO Complete Logging
+09/28/2023 08:53:12 INFO Start Logging
+09/28/2023 08:53:12 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+09/28/2023 08:53:12 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+09/28/2023 08:53:12 INFO Complete Logging
+09/28/2023 09:08:40 INFO Start Logging
+09/28/2023 09:08:40 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+09/28/2023 09:08:40 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+09/28/2023 09:08:40 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/28/2023 09:08:40 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/28/2023 09:08:41 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/28/2023 09:09:06 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/28/2023 09:09:06 INFO Logging into repo <IT-Security-Test>
+09/28/2023 09:09:06 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/28/2023 09:09:07 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 182
+09/28/2023 09:09:07 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/28/2023 09:09:07 INFO Checking if <Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv> report exists.
+09/28/2023 09:09:07 ERROR <Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv> does not exist.
+09/28/2023 09:11:04 INFO Start Logging
+09/28/2023 09:11:04 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+09/28/2023 09:11:04 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+09/28/2023 09:11:04 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/28/2023 09:11:04 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/28/2023 09:11:05 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/28/2023 09:11:30 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/28/2023 09:11:30 INFO Logging into repo <IT-Security-Test>
+09/28/2023 09:11:30 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/28/2023 09:11:31 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 182
+09/28/2023 09:11:31 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/28/2023 09:13:49 INFO Start Logging
+09/28/2023 09:13:49 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+09/28/2023 09:13:49 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+09/28/2023 09:13:49 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/28/2023 09:13:49 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/28/2023 09:13:50 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/28/2023 09:13:54 INFO Start Logging
+09/28/2023 09:13:54 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+09/28/2023 09:13:54 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+09/28/2023 09:13:54 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/28/2023 09:13:54 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/28/2023 09:13:55 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/28/2023 09:14:20 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/28/2023 09:14:20 INFO Logging into repo <IT-Security-Test>
+09/28/2023 09:14:32 INFO Start Logging
+09/28/2023 09:14:32 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+09/28/2023 09:14:32 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+09/28/2023 09:14:32 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/28/2023 09:14:32 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/28/2023 09:14:33 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/28/2023 09:14:36 INFO Start Logging
+09/28/2023 09:14:36 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+09/28/2023 09:14:36 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+09/28/2023 09:14:36 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/28/2023 09:14:36 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/28/2023 09:14:37 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/28/2023 09:15:02 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/28/2023 09:15:02 INFO Logging into repo <IT-Security-Test>
+09/28/2023 09:15:58 INFO Start Logging
+09/28/2023 09:15:58 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+09/28/2023 09:15:58 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+09/28/2023 09:15:58 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/28/2023 09:15:58 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/28/2023 09:15:59 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/28/2023 09:16:24 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/28/2023 09:16:24 INFO Logging into repo <IT-Security-Test>
+09/28/2023 09:16:24 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/28/2023 09:16:25 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 182
+09/28/2023 09:16:25 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/28/2023 09:43:09 INFO Start Logging
+09/28/2023 09:43:09 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+09/28/2023 09:43:09 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+09/28/2023 09:43:09 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/28/2023 09:43:09 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/28/2023 09:43:10 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/28/2023 09:43:35 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/28/2023 09:43:35 INFO Logging into repo <IT-Security-Test>
+09/28/2023 09:43:35 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/28/2023 09:43:36 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 182
+09/28/2023 09:43:36 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/28/2023 10:02:10 INFO Start Logging
+09/28/2023 10:02:10 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+09/28/2023 10:02:10 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+09/28/2023 10:02:10 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/28/2023 10:02:10 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/28/2023 10:02:11 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/28/2023 10:02:36 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/28/2023 10:02:36 INFO Logging into repo <IT-Security-Test>
+09/28/2023 10:02:36 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/28/2023 10:02:37 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 182
+09/28/2023 10:02:37 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+09/28/2023 10:04:26 INFO Start Logging
+09/28/2023 10:04:26 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+09/28/2023 10:04:26 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+09/28/2023 10:04:26 INFO Successfully started execution of <security_reports_issues_scraper.py>
+09/28/2023 10:04:26 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/28/2023 10:04:27 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?per_page=100 HTTP/1.1" 200 None
+09/28/2023 10:04:52 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+09/28/2023 10:04:52 INFO Logging into repo <IT-Security-Test>
+09/28/2023 10:04:52 DEBUG Starting new HTTPS connection (1): api.github.com:443
+09/28/2023 10:04:54 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 422 182
+09/28/2023 10:04:54 ERROR Could not create Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC

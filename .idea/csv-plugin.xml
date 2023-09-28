@@ -31,6 +31,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\log4shell_weekly_1_sample_issue.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\log4shell_weekly_short.csv">
           <value>
             <Attribute>
