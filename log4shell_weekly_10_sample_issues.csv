@@ -1,0 +1,62 @@
+Plugin,Plugin Name,Severity,IP Address,Port,DNS Name,NetBIOS Name,Plugin Output,Solution,CVSS V3 Base Score,CVE,First Discovered,Last Observed
+163793,RHEL 8 : kernel (RHSA-2022:5819),High,10.11.215.189,0,annif-dev.nal.usda.gov,,"Plugin Output: 
+Package kernel-4.18.0-372.19.1.el8_6 is installed.
+However, according to uname -r, the current running kernel level is 4.18.0-372.16.1.el8_6.
+This system requires a reboot to begin using the patched kernel level.
+
+Package kernel-core-4.18.0-372.19.1.el8_6 is installed.
+However, according to uname -r, the current running kernel level is 4.18.0-372.16.1.el8_6.
+This system requires a reboot to begin using the patched kernel level.
+
+Package kernel-modules-4.18.0-372.19.1.el8_6 is installed.
+However, according to uname -r, the current running kernel level is 4.18.0-372.16.1.el8_6.
+This system requires a reboot to begin using the patched kernel level.
+
+Package kernel-tools-4.18.0-372.19.1.el8_6 is installed.
+However, according to uname -r, the current running kernel level is 4.18.0-372.16.1.el8_6.
+This system requires a reboot to begin using the patched kernel level.
+
+Package kernel-tools-libs-4.18.0-372.19.1.el8_6 is installed.
+However, according to uname -r, the current running kernel level is 4.18.0-372.16.1.el8_6.
+This system requires a reboot to begin using the patched kernel level.
+
+NOTE: The vulnerability information above was derived by checking the
+package versions of the affected packages from this advisory. This
+scan is unable to rely on Red Hat's own security checks, which
+consider channels and products in their vulnerability determinations.",Update the affected packages.,7.8,"CVE-2022-1012,CVE-2022-32250","Aug 8, 2022 17:02:52 UTC","Aug 8, 2022 17:02:52 UTC"
+163724,Google Chrome < 104.0.5112.79 Multiple Vulnerabilities,Critical,10.11.210.148,445,ip-10-11-210-148.nal.usda.gov,usda.net\ARSMDBE24195032,"Plugin Output: 
+  Path              : C:\Program Files\Google\Chrome\Application
+  Installed version : 103.0.5060.134
+  Fixed version     : 104.0.5112.79",Upgrade to Google Chrome version 104.0.5112.79 or later.,9.8,"CVE-2022-2603,CVE-2022-2604,CVE-2022-2605,CVE-2022-2606,CVE-2022-2607,CVE-2022-2608,CVE-2022-2609,CVE-2022-2610,CVE-2022-2611,CVE-2022-2612,CVE-2022-2613,CVE-2022-2614,CVE-2022-2615,CVE-2022-2616,CVE-2022-2617,CVE-2022-2618,CVE-2022-2619,CVE-2022-2620,CVE-2022-2621,CVE-2022-2622,CVE-2022-2623,CVE-2022-2624","Aug 8, 2022 17:02:52 UTC","Aug 8, 2022 17:02:52 UTC"
+163724,Google Chrome < 104.0.5112.79 Multiple Vulnerabilities,Critical,10.11.210.152,445,ip-10-11-210-152.nal.usda.gov,usda.net\ARSMDBE25194807,"Plugin Output: 
+  Path              : C:\Program Files\Google\Chrome\Application
+  Installed version : 103.0.5060.134
+  Fixed version     : 104.0.5112.79",Upgrade to Google Chrome version 104.0.5112.79 or later.,9.8,"CVE-2022-2603,CVE-2022-2604,CVE-2022-2605,CVE-2022-2606,CVE-2022-2607,CVE-2022-2608,CVE-2022-2609,CVE-2022-2610,CVE-2022-2611,CVE-2022-2612,CVE-2022-2613,CVE-2022-2614,CVE-2022-2615,CVE-2022-2616,CVE-2022-2617,CVE-2022-2618,CVE-2022-2619,CVE-2022-2620,CVE-2022-2621,CVE-2022-2622,CVE-2022-2623,CVE-2022-2624","Aug 8, 2022 17:02:52 UTC","Aug 8, 2022 17:02:52 UTC"
+163497,Mozilla Firefox < 103.0,Critical,10.11.210.29,445,ip-10-11-210-29.nal.usda.gov,usda.net\ARSMDBE35001105,"Plugin Output: 
+  Path              : C:\Program Files\Mozilla Firefox
+  Installed version : 102.0.1
+  Fixed version     : 103.0",Upgrade to Mozilla Firefox version 103.0 or later.,9.8,"CVE-2022-2505,CVE-2022-36314,CVE-2022-36315,CVE-2022-36316,CVE-2022-36317,CVE-2022-36318,CVE-2022-36319,CVE-2022-36320","Aug 1, 2022 20:04:38 UTC","Aug 3, 2022 05:01:18 UTC"
+163497,Mozilla Firefox < 103.0,Critical,10.11.210.31,445,ip-10-11-210-31.nal.usda.gov,usda.net\AIODCWA24000027,"Plugin Output: 
+  Path              : C:\Program Files\Mozilla Firefox
+  Installed version : 102.0.1
+  Fixed version     : 103.0",Upgrade to Mozilla Firefox version 103.0 or later.,9.8,"CVE-2022-2505,CVE-2022-36314,CVE-2022-36315,CVE-2022-36316,CVE-2022-36317,CVE-2022-36318,CVE-2022-36319,CVE-2022-36320","Aug 1, 2022 20:04:38 UTC","Aug 3, 2022 05:01:18 UTC"
+163497,Mozilla Firefox < 103.0,Critical,10.11.210.40,445,ip-10-11-210-40.nal.usda.gov,usda.net\ARSMDBE24195091,"Plugin Output: 
+  Path              : C:\Program Files\Mozilla Firefox
+  Installed version : 102.0.1
+  Fixed version     : 103.0",Upgrade to Mozilla Firefox version 103.0 or later.,9.8,"CVE-2022-2505,CVE-2022-36314,CVE-2022-36315,CVE-2022-36316,CVE-2022-36317,CVE-2022-36318,CVE-2022-36319,CVE-2022-36320","Aug 1, 2022 17:00:55 UTC","Aug 3, 2022 05:01:18 UTC"
+163497,Mozilla Firefox < 103.0,Critical,10.11.210.133,445,ip-10-11-210-133.nal.usda.gov,usda.net\ARSMDBE25195633,"Plugin Output: 
+  Path              : C:\Program Files\Mozilla Firefox
+  Installed version : 102.0.1
+  Fixed version     : 103.0",Upgrade to Mozilla Firefox version 103.0 or later.,9.8,"CVE-2022-2505,CVE-2022-36314,CVE-2022-36315,CVE-2022-36316,CVE-2022-36317,CVE-2022-36318,CVE-2022-36319,CVE-2022-36320","Aug 1, 2022 17:00:55 UTC","Aug 1, 2022 20:04:38 UTC"
+163497,Mozilla Firefox < 103.0,Critical,10.11.210.142,445,ip-10-11-210-142.nal.usda.gov,usda.net\ARSMDBE34004248,"Plugin Output: 
+  Path              : C:\Program Files\Mozilla Firefox
+  Installed version : 102.0
+  Fixed version     : 103.0",Upgrade to Mozilla Firefox version 103.0 or later.,9.8,"CVE-2022-2505,CVE-2022-36314,CVE-2022-36315,CVE-2022-36316,CVE-2022-36317,CVE-2022-36318,CVE-2022-36319,CVE-2022-36320","Aug 3, 2022 05:01:18 UTC","Aug 3, 2022 05:01:18 UTC"
+163497,Mozilla Firefox < 103.0,Critical,10.11.210.143,445,ip-10-11-210-143.nal.usda.gov,usda.net\ARSMDBE34004249,"Plugin Output: 
+  Path              : C:\Program Files\Mozilla Firefox
+  Installed version : 98.0.2
+  Fixed version     : 103.0",Upgrade to Mozilla Firefox version 103.0 or later.,9.8,"CVE-2022-2505,CVE-2022-36314,CVE-2022-36315,CVE-2022-36316,CVE-2022-36317,CVE-2022-36318,CVE-2022-36319,CVE-2022-36320","Aug 1, 2022 20:04:38 UTC","Aug 3, 2022 05:01:18 UTC"
+163497,Mozilla Firefox < 103.0,Critical,10.11.210.150,445,ip-10-11-210-150.nal.usda.gov,usda.net\ARSMDBE24194496,"Plugin Output: 
+  Path              : C:\Program Files\Mozilla Firefox
+  Installed version : 102.0.1
+  Fixed version     : 103.0",Upgrade to Mozilla Firefox version 103.0 or later.,9.8,"CVE-2022-2505,CVE-2022-36314,CVE-2022-36315,CVE-2022-36316,CVE-2022-36317,CVE-2022-36318,CVE-2022-36319,CVE-2022-36320","Aug 1, 2022 17:00:55 UTC","Aug 1, 2022 20:04:38 UTC"

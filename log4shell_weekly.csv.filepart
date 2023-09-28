@@ -1,0 +1,991 @@
+Plugin,Plugin Name,Severity,IP Address,Port,DNS Name,NetBIOS Name,Plugin Output,Solution,CVSS V3 Base Score,CVE,First Discovered,Last Observed
+163793,RHEL 8 : kernel (RHSA-2022:5819),High,10.11.215.189,0,annif-dev.nal.usda.gov,,"Plugin Output: 
+Package kernel-4.18.0-372.19.1.el8_6 is installed.
+However, according to uname -r, the current running kernel level is 4.18.0-372.16.1.el8_6.
+This system requires a reboot to begin using the patched kernel level.
+
+Package kernel-core-4.18.0-372.19.1.el8_6 is installed.
+However, according to uname -r, the current running kernel level is 4.18.0-372.16.1.el8_6.
+This system requires a reboot to begin using the patched kernel level.
+
+Package kernel-modules-4.18.0-372.19.1.el8_6 is installed.
+However, according to uname -r, the current running kernel level is 4.18.0-372.16.1.el8_6.
+This system requires a reboot to begin using the patched kernel level.
+
+Package kernel-tools-4.18.0-372.19.1.el8_6 is installed.
+However, according to uname -r, the current running kernel level is 4.18.0-372.16.1.el8_6.
+This system requires a reboot to begin using the patched kernel level.
+
+Package kernel-tools-libs-4.18.0-372.19.1.el8_6 is installed.
+However, according to uname -r, the current running kernel level is 4.18.0-372.16.1.el8_6.
+This system requires a reboot to begin using the patched kernel level.
+
+NOTE: The vulnerability information above was derived by checking the
+package versions of the affected packages from this advisory. This
+scan is unable to rely on Red Hat's own security checks, which
+consider channels and products in their vulnerability determinations.",Update the affected packages.,7.8,"CVE-2022-1012,CVE-2022-32250","Aug 8, 2022 17:02:52 UTC","Aug 8, 2022 17:02:52 UTC"
+163724,Google Chrome < 104.0.5112.79 Multiple Vulnerabilities,Critical,10.11.210.148,445,ip-10-11-210-148.nal.usda.gov,usda.net\ARSMDBE24195032,"Plugin Output: 
+  Path              : C:\Program Files\Google\Chrome\Application
+  Installed version : 103.0.5060.134
+  Fixed version     : 104.0.5112.79",Upgrade to Google Chrome version 104.0.5112.79 or later.,9.8,"CVE-2022-2603,CVE-2022-2604,CVE-2022-2605,CVE-2022-2606,CVE-2022-2607,CVE-2022-2608,CVE-2022-2609,CVE-2022-2610,CVE-2022-2611,CVE-2022-2612,CVE-2022-2613,CVE-2022-2614,CVE-2022-2615,CVE-2022-2616,CVE-2022-2617,CVE-2022-2618,CVE-2022-2619,CVE-2022-2620,CVE-2022-2621,CVE-2022-2622,CVE-2022-2623,CVE-2022-2624","Aug 8, 2022 17:02:52 UTC","Aug 8, 2022 17:02:52 UTC"
+163724,Google Chrome < 104.0.5112.79 Multiple Vulnerabilities,Critical,10.11.210.152,445,ip-10-11-210-152.nal.usda.gov,usda.net\ARSMDBE25194807,"Plugin Output: 
+  Path              : C:\Program Files\Google\Chrome\Application
+  Installed version : 103.0.5060.134
+  Fixed version     : 104.0.5112.79",Upgrade to Google Chrome version 104.0.5112.79 or later.,9.8,"CVE-2022-2603,CVE-2022-2604,CVE-2022-2605,CVE-2022-2606,CVE-2022-2607,CVE-2022-2608,CVE-2022-2609,CVE-2022-2610,CVE-2022-2611,CVE-2022-2612,CVE-2022-2613,CVE-2022-2614,CVE-2022-2615,CVE-2022-2616,CVE-2022-2617,CVE-2022-2618,CVE-2022-2619,CVE-2022-2620,CVE-2022-2621,CVE-2022-2622,CVE-2022-2623,CVE-2022-2624","Aug 8, 2022 17:02:52 UTC","Aug 8, 2022 17:02:52 UTC"
+163497,Mozilla Firefox < 103.0,Critical,10.11.210.29,445,ip-10-11-210-29.nal.usda.gov,usda.net\ARSMDBE35001105,"Plugin Output: 
+  Path              : C:\Program Files\Mozilla Firefox
+  Installed version : 102.0.1
+  Fixed version     : 103.0",Upgrade to Mozilla Firefox version 103.0 or later.,9.8,"CVE-2022-2505,CVE-2022-36314,CVE-2022-36315,CVE-2022-36316,CVE-2022-36317,CVE-2022-36318,CVE-2022-36319,CVE-2022-36320","Aug 1, 2022 20:04:38 UTC","Aug 3, 2022 05:01:18 UTC"
+163497,Mozilla Firefox < 103.0,Critical,10.11.210.31,445,ip-10-11-210-31.nal.usda.gov,usda.net\AIODCWA24000027,"Plugin Output: 
+  Path              : C:\Program Files\Mozilla Firefox
+  Installed version : 102.0.1
+  Fixed version     : 103.0",Upgrade to Mozilla Firefox version 103.0 or later.,9.8,"CVE-2022-2505,CVE-2022-36314,CVE-2022-36315,CVE-2022-36316,CVE-2022-36317,CVE-2022-36318,CVE-2022-36319,CVE-2022-36320","Aug 1, 2022 20:04:38 UTC","Aug 3, 2022 05:01:18 UTC"
+163497,Mozilla Firefox < 103.0,Critical,10.11.210.40,445,ip-10-11-210-40.nal.usda.gov,usda.net\ARSMDBE24195091,"Plugin Output: 
+  Path              : C:\Program Files\Mozilla Firefox
+  Installed version : 102.0.1
+  Fixed version     : 103.0",Upgrade to Mozilla Firefox version 103.0 or later.,9.8,"CVE-2022-2505,CVE-2022-36314,CVE-2022-36315,CVE-2022-36316,CVE-2022-36317,CVE-2022-36318,CVE-2022-36319,CVE-2022-36320","Aug 1, 2022 17:00:55 UTC","Aug 3, 2022 05:01:18 UTC"
+163497,Mozilla Firefox < 103.0,Critical,10.11.210.133,445,ip-10-11-210-133.nal.usda.gov,usda.net\ARSMDBE25195633,"Plugin Output: 
+  Path              : C:\Program Files\Mozilla Firefox
+  Installed version : 102.0.1
+  Fixed version     : 103.0",Upgrade to Mozilla Firefox version 103.0 or later.,9.8,"CVE-2022-2505,CVE-2022-36314,CVE-2022-36315,CVE-2022-36316,CVE-2022-36317,CVE-2022-36318,CVE-2022-36319,CVE-2022-36320","Aug 1, 2022 17:00:55 UTC","Aug 1, 2022 20:04:38 UTC"
+163497,Mozilla Firefox < 103.0,Critical,10.11.210.142,445,ip-10-11-210-142.nal.usda.gov,usda.net\ARSMDBE34004248,"Plugin Output: 
+  Path              : C:\Program Files\Mozilla Firefox
+  Installed version : 102.0
+  Fixed version     : 103.0",Upgrade to Mozilla Firefox version 103.0 or later.,9.8,"CVE-2022-2505,CVE-2022-36314,CVE-2022-36315,CVE-2022-36316,CVE-2022-36317,CVE-2022-36318,CVE-2022-36319,CVE-2022-36320","Aug 3, 2022 05:01:18 UTC","Aug 3, 2022 05:01:18 UTC"
+163497,Mozilla Firefox < 103.0,Critical,10.11.210.143,445,ip-10-11-210-143.nal.usda.gov,usda.net\ARSMDBE34004249,"Plugin Output: 
+  Path              : C:\Program Files\Mozilla Firefox
+  Installed version : 98.0.2
+  Fixed version     : 103.0",Upgrade to Mozilla Firefox version 103.0 or later.,9.8,"CVE-2022-2505,CVE-2022-36314,CVE-2022-36315,CVE-2022-36316,CVE-2022-36317,CVE-2022-36318,CVE-2022-36319,CVE-2022-36320","Aug 1, 2022 20:04:38 UTC","Aug 3, 2022 05:01:18 UTC"
+163497,Mozilla Firefox < 103.0,Critical,10.11.210.150,445,ip-10-11-210-150.nal.usda.gov,usda.net\ARSMDBE24194496,"Plugin Output: 
+  Path              : C:\Program Files\Mozilla Firefox
+  Installed version : 102.0.1
+  Fixed version     : 103.0",Upgrade to Mozilla Firefox version 103.0 or later.,9.8,"CVE-2022-2505,CVE-2022-36314,CVE-2022-36315,CVE-2022-36316,CVE-2022-36317,CVE-2022-36318,CVE-2022-36319,CVE-2022-36320","Aug 1, 2022 17:00:55 UTC","Aug 1, 2022 20:04:38 UTC"
+163455,OpenJDK 7 <= 7u341 / 8 <= 8u332 / 11.0.0 <= 11.0.15 / 13.0.0 <= 13.0.11 / 15.0.0 <= 15.0.7 / 17.0.0 <= 17.0.3 / 18.0.0 <= 18.0.1 Multiple Vulnerabilities (2022-07-19,Critical,10.11.217.135,0,i5k-node1.nal.usda.gov,,"Plugin Output: 
+  Path              : /usr/share/elasticsearch/jdk/
+  Installed version : 18.0.1.1 2022-04-22
+  Fixed version     : Upgrade to a version greater than 18.0.1",Upgrade to an OpenJDK version greater than 7u341 / 8u332 / 11.0.15 / 13.0.11 / 15.0.7 / 17.0.3 / 18.0.1,9.8,"CVE-2022-21540,CVE-2022-21541,CVE-2022-21549,CVE-2022-34169","Aug 1, 2022 17:00:55 UTC","Aug 3, 2022 05:01:18 UTC"
+163455,OpenJDK 7 <= 7u341 / 8 <= 8u332 / 11.0.0 <= 11.0.15 / 13.0.0 <= 13.0.11 / 15.0.0 <= 15.0.7 / 17.0.0 <= 17.0.3 / 18.0.0 <= 18.0.1 Multiple Vulnerabilities (2022-07-19,Critical,10.11.217.136,0,gis2-node1.nal.usda.gov,,"Plugin Output: 
+  Path              : /usr/share/elasticsearch/jdk/
+  Installed version : 18.0.1.1 2022-04-22
+  Fixed version     : Upgrade to a version greater than 18.0.1
+
+
+
+  Path              : /usr/share/logstash/jdk/
+  Installed version : 11.0.15 2022-04-19
+  Fixed version     : Upgrade to a version greater than 11.0.15",Upgrade to an OpenJDK version greater than 7u341 / 8u332 / 11.0.15 / 13.0.11 / 15.0.7 / 17.0.3 / 18.0.1,9.8,"CVE-2022-21540,CVE-2022-21541,CVE-2022-21549,CVE-2022-34169","Aug 1, 2022 17:00:55 UTC","Aug 3, 2022 05:01:18 UTC"
+163444,RHEL 8 : java-1.8.0-openjdk (RHSA-2022:5696),Critical,10.11.217.126,0,apollo2-node1.nal.usda.gov,,"Plugin Output: 
+Remote package installed : java-1.8.0-openjdk-1.8.0.332.b09-2.el8_6
+Should be                : java-1.8.0-openjdk-1.8.0.342.b07-2.el8_6
+
+Remote package installed : java-1.8.0-openjdk-devel-1.8.0.332.b09-2.el8_6
+Should be                : java-1.8.0-openjdk-devel-1.8.0.342.b07-2.el8_6
+
+Remote package installed : java-1.8.0-openjdk-headless-1.8.0.332.b09-2.el8_6
+Should be                : java-1.8.0-openjdk-headless-1.8.0.342.b07-2.el8_6
+
+NOTE: The vulnerability information above was derived by checking the
+package versions of the affected packages from this advisory. This
+scan is unable to rely on Red Hat's own security checks, which
+consider channels and products in their vulnerability determinations.",Update the affected packages.,9.8,"CVE-2022-21540,CVE-2022-21541,CVE-2022-34169","Jul 27, 2022 04:53:03 UTC","Aug 3, 2022 05:01:18 UTC"
+163444,RHEL 8 : java-1.8.0-openjdk (RHSA-2022:5696),Critical,10.11.217.135,0,i5k-node1.nal.usda.gov,,"Plugin Output: 
+Remote package installed : java-1.8.0-openjdk-1.8.0.332.b09-2.el8_6
+Should be                : java-1.8.0-openjdk-1.8.0.342.b07-2.el8_6
+
+Remote package installed : java-1.8.0-openjdk-headless-1.8.0.332.b09-2.el8_6
+Should be                : java-1.8.0-openjdk-headless-1.8.0.342.b07-2.el8_6
+
+NOTE: The vulnerability information above was derived by checking the
+package versions of the affected packages from this advisory. This
+scan is unable to rely on Red Hat's own security checks, which
+consider channels and products in their vulnerability determinations.",Update the affected packages.,9.8,"CVE-2022-21540,CVE-2022-21541,CVE-2022-34169","Jul 27, 2022 04:53:03 UTC","Aug 3, 2022 05:01:18 UTC"
+163444,RHEL 8 : java-1.8.0-openjdk (RHSA-2022:5696),Critical,10.11.217.136,0,gis2-node1.nal.usda.gov,,"Plugin Output: 
+Remote package installed : java-1.8.0-openjdk-1.8.0.332.b09-2.el8_6
+Should be                : java-1.8.0-openjdk-1.8.0.342.b07-2.el8_6
+
+Remote package installed : java-1.8.0-openjdk-devel-1.8.0.332.b09-2.el8_6
+Should be                : java-1.8.0-openjdk-devel-1.8.0.342.b07-2.el8_6
+
+Remote package installed : java-1.8.0-openjdk-headless-1.8.0.332.b09-2.el8_6
+Should be                : java-1.8.0-openjdk-headless-1.8.0.342.b07-2.el8_6
+
+NOTE: The vulnerability information above was derived by checking the
+package versions of the affected packages from this advisory. This
+scan is unable to rely on Red Hat's own security checks, which
+consider channels and products in their vulnerability determinations.",Update the affected packages.,9.8,"CVE-2022-21540,CVE-2022-21541,CVE-2022-34169","Jul 27, 2022 04:53:03 UTC","Aug 3, 2022 05:01:18 UTC"
+163408,Oracle Oracle Database Server (Jul 2022 CPU),Critical,10.11.217.99,0,agricola-db.nal.usda.gov,,"Plugin Output: 
+  Component         : RDBMS
+  Installed version : 19.15.0.0.220419
+  Fixed version     : 19.15.1.0.220719
+  Missing patch     : 34119532
+
+  Component         : OJVM
+  Installed version : 19.15.0.0.220419
+  Fixed version     : 19.16.0.0.220719
+  Missing patch     : 34086870",Apply the appropriate patch according to the July 2022 Oracle Critical Patch Update advisory.,9.8,"CVE-2020-29505,CVE-2020-29506,CVE-2020-29507,CVE-2020-35167,CVE-2020-35169,CVE-2021-41184,CVE-2021-45943,CVE-2022-0839,CVE-2022-21432,CVE-2022-21510,CVE-2022-21511,CVE-2022-21565,CVE-2022-24729,CVE-2022-24891","Jul 25, 2022 17:00:22 UTC","Aug 3, 2022 05:01:18 UTC"
+163304,Oracle Java SE Multiple Vulnerabilities (July 2022 CPU),Critical,10.11.208.192,0,arsmdbe20nbkap2.nal.usda.gov,,"Plugin Output: 
+  Path              : /usr/openv/
+  Installed version : 1.8.0_291 / build 8.0.291
+  Fixed version     : Upgrade to version 8.0.341 or greater",Apply the appropriate patch according to the July 2022 Oracle Critical Patch Update advisory.,9.8,"CVE-2022-21540,CVE-2022-21541,CVE-2022-21549,CVE-2022-25647,CVE-2022-34169","Jul 25, 2022 17:00:22 UTC","Aug 3, 2022 05:01:18 UTC"
+163304,Oracle Java SE Multiple Vulnerabilities (July 2022 CPU),Critical,10.11.209.28,445,ip-10-11-209-28.nal.usda.gov,usda.net\ARSMDBE24195740,"Plugin Output: 
+  Path              : C:\Program Files\Java\jre8\
+  Installed version : 1.8.0_331 / build 8.0.331
+  Fixed version     : Upgrade to version 8.0.341 or greater",Apply the appropriate patch according to the July 2022 Oracle Critical Patch Update advisory.,9.8,"CVE-2022-21540,CVE-2022-21541,CVE-2022-21549,CVE-2022-25647,CVE-2022-34169","Aug 1, 2022 20:04:38 UTC","Aug 1, 2022 20:04:38 UTC"
+163304,Oracle Java SE Multiple Vulnerabilities (July 2022 CPU),Critical,10.11.209.29,445,ip-10-11-209-29.nal.usda.gov,usda.net\ARSMDBE24195081,"Plugin Output: 
+  Path              : C:\Program Files\Java\jre8\
+  Installed version : 1.8.0_331 / build 8.0.331
+  Fixed version     : Upgrade to version 8.0.341 or greater
+
+
+
+  Path              : C:\Program Files (x86)\Java\jre8\
+  Installed version : 1.8.0_331 / build 8.0.331
+  Fixed version     : Upgrade to version 8.0.341 or greater",Apply the appropriate patch according to the July 2022 Oracle Critical Patch Update advisory.,9.8,"CVE-2022-21540,CVE-2022-21541,CVE-2022-21549,CVE-2022-25647,CVE-2022-34169","Jul 27, 2022 04:53:03 UTC","Aug 3, 2022 05:01:18 UTC"
+163304,Oracle Java SE Multiple Vulnerabilities (July 2022 CPU),Critical,10.11.209.30,445,ip-10-11-209-30.nal.usda.gov,usda.net\ARSMDBE34004253,"Plugin Output: 
+  Path              : C:\Program Files (x86)\Java\jre8\
+  Installed version : 1.8.0_331 / build 8.0.331
+  Fixed version     : Upgrade to version 8.0.341 or greater",Apply the appropriate patch according to the July 2022 Oracle Critical Patch Update advisory.,9.8,"CVE-2022-21540,CVE-2022-21541,CVE-2022-21549,CVE-2022-25647,CVE-2022-34169","Jul 27, 2022 04:53:03 UTC","Aug 3, 2022 05:01:18 UTC"
+163304,Oracle Java SE Multiple Vulnerabilities (July 2022 CPU),Critical,10.11.209.142,445,ip-10-11-209-142.nal.usda.gov,usda.net\ARSMDBE24YD1JL2,"Plugin Output: 
+  Path              : C:\Program Files\Java\jre8\
+  Installed version : 1.8.0_331 / build 8.0.331
+  Fixed version     : Upgrade to version 8.0.341 or greater
+
+
+
+  Path              : C:\Program Files (x86)\Java\jre8\
+  Installed version : 1.8.0_331 / build 8.0.331
+  Fixed version     : Upgrade to version 8.0.341 or greater",Apply the appropriate patch according to the July 2022 Oracle Critical Patch Update advisory.,9.8,"CVE-2022-21540,CVE-2022-21541,CVE-2022-21549,CVE-2022-25647,CVE-2022-34169","Jul 27, 2022 04:53:03 UTC","Aug 3, 2022 05:01:18 UTC"
+163304,Oracle Java SE Multiple Vulnerabilities (July 2022 CPU),Critical,10.11.209.144,445,ip-10-11-209-144.nal.usda.gov,usda.net\ARSMDBE24B40001,"Plugin Output: 
+  Path              : C:\Program Files (x86)\Java\jre1.8.0_301\
+  Installed version : 1.8.0_301 / build 8.0.301
+  Fixed version     : Upgrade to version 8.0.341 or greater",Apply the appropriate patch according to the July 2022 Oracle Critical Patch Update advisory.,9.8,"CVE-2022-21540,CVE-2022-21541,CVE-2022-21549,CVE-2022-25647,CVE-2022-34169","Jul 26, 2022 21:02:14 UTC","Aug 5, 2022 21:04:04 UTC"
+163304,Oracle Java SE Multiple Vulnerabilities (July 2022 CPU),Critical,10.11.209.145,445,ip-10-11-209-145.nal.usda.gov,usda.net\ARSMDBE24195105,"Plugin Output: 
+  Path              : C:\Program Files\Java\jre8\
+  Installed version : 1.8.0_331 / build 8.0.331
+  Fixed version     : Upgrade to version 8.0.341 or greater
+
+
+
+  Path              : C:\Program Files (x86)\Java\jre8\
+  Installed version : 1.8.0_331 / build 8.0.331
+  Fixed version     : Upgrade to version 8.0.341 or greater",Apply the appropriate patch according to the July 2022 Oracle Critical Patch Update advisory.,9.8,"CVE-2022-21540,CVE-2022-21541,CVE-2022-21549,CVE-2022-25647,CVE-2022-34169","Aug 1, 2022 17:00:55 UTC","Aug 1, 2022 20:04:38 UTC"
+163304,Oracle Java SE Multiple Vulnerabilities (July 2022 CPU),Critical,10.11.210.25,445,ip-10-11-210-25.nal.usda.gov,usda.net\ARSMDBE34004254,"Plugin Output: 
+  Path              : C:\Program Files (x86)\Java\jre8\
+  Installed version : 1.8.0_331 / build 8.0.331
+  Fixed version     : Upgrade to version 8.0.341 or greater",Apply the appropriate patch according to the July 2022 Oracle Critical Patch Update advisory.,9.8,"CVE-2022-21540,CVE-2022-21541,CVE-2022-21549,CVE-2022-25647,CVE-2022-34169","Jul 27, 2022 04:53:03 UTC","Aug 3, 2022 05:01:18 UTC"
+163304,Oracle Java SE Multiple Vulnerabilities (July 2022 CPU),Critical,10.11.210.26,445,ip-10-11-210-26.nal.usda.gov,usda.net\ARSMDBE34004255,"Plugin Output: 
+  Path              : C:\Program Files (x86)\Java\jre8\
+  Installed version : 1.8.0_331 / build 8.0.331
+  Fixed version     : Upgrade to version 8.0.341 or greater",Apply the appropriate patch according to the July 2022 Oracle Critical Patch Update advisory.,9.8,"CVE-2022-21540,CVE-2022-21541,CVE-2022-21549,CVE-2022-25647,CVE-2022-34169","Jul 27, 2022 04:53:03 UTC","Aug 3, 2022 05:01:18 UTC"
+163304,Oracle Java SE Multiple Vulnerabilities (July 2022 CPU),Critical,10.11.210.27,445,ip-10-11-210-27.nal.usda.gov,usda.net\ARSDCWA25000054,"Plugin Output: 
+  Path              : C:\Program Files\Java\jre8\
+  Installed version : 1.8.0_321 / build 8.0.321
+  Fixed version     : Upgrade to version 8.0.341 or greater
+
+
+
+  Path              : C:\Program Files (x86)\Java\jre8\
+  Installed version : 1.8.0_321 / build 8.0.321
+  Fixed version     : Upgrade to version 8.0.341 or greater",Apply the appropriate patch according to the July 2022 Oracle Critical Patch Update advisory.,9.8,"CVE-2022-21540,CVE-2022-21541,CVE-2022-21549,CVE-2022-25647,CVE-2022-34169","Aug 1, 2022 17:00:55 UTC","Aug 1, 2022 20:04:38 UTC"
+163304,Oracle Java SE Multiple Vulnerabilities (July 2022 CPU),Critical,10.11.210.29,445,ip-10-11-210-29.nal.usda.gov,usda.net\ARSMDBE35001105,"Plugin Output: 
+  Path              : C:\Program Files (x86)\Java\jre8\
+  Installed version : 1.8.0_331 / build 8.0.331
+  Fixed version     : Upgrade to version 8.0.341 or greater",Apply the appropriate patch according to the July 2022 Oracle Critical Patch Update advisory.,9.8,"CVE-2022-21540,CVE-2022-21541,CVE-2022-21549,CVE-2022-25647,CVE-2022-34169","Aug 1, 2022 20:04:38 UTC","Aug 3, 2022 05:01:18 UTC"
+163304,Oracle Java SE Multiple Vulnerabilities (July 2022 CPU),Critical,10.11.210.31,445,ip-10-11-210-31.nal.usda.gov,usda.net\AIODCWA24000027,"Plugin Output: 
+  Path              : C:\Program Files (x86)\Java\jre8\
+  Installed version : 1.8.0_331 / build 8.0.331
+  Fixed version     : Upgrade to version 8.0.341 or greater",Apply the appropriate patch according to the July 2022 Oracle Critical Patch Update advisory.,9.8,"CVE-2022-21540,CVE-2022-21541,CVE-2022-21549,CVE-2022-25647,CVE-2022-34169","Aug 1, 2022 20:04:38 UTC","Aug 3, 2022 05:01:18 UTC"
+163304,Oracle Java SE Multiple Vulnerabilities (July 2022 CPU),Critical,10.11.210.32,445,ip-10-11-210-32.nal.usda.gov,usda.net\ARSMDBE25195613,"Plugin Output: 
+  Path              : C:\Program Files\Java\jre8\
+  Installed version : 1.8.0_331 / build 8.0.331
+  Fixed version     : Upgrade to version 8.0.341 or greater
+
+
+
+  Path              : C:\Program Files (x86)\Java\jre8\
+  Installed version : 1.8.0_331 / build 8.0.331
+  Fixed version     : Upgrade to version 8.0.341 or greater",Apply the appropriate patch according to the July 2022 Oracle Critical Patch Update advisory.,9.8,"CVE-2022-21540,CVE-2022-21541,CVE-2022-21549,CVE-2022-25647,CVE-2022-34169","Aug 1, 2022 20:04:38 UTC","Aug 1, 2022 20:04:38 UTC"
+163304,Oracle Java SE Multiple Vulnerabilities (July 2022 CPU),Critical,10.11.210.40,445,ip-10-11-210-40.nal.usda.gov,usda.net\ARSMDBE24195091,"Plugin Output: 
+  Path              : C:\Program Files\Java\jre8\
+  Installed version : 1.8.0_331 / build 8.0.331
+  Fixed version     : Upgrade to version 8.0.341 or greater
+
+
+
+  Path              : C:\Program Files (x86)\Java\jre8\
+  Installed version : 1.8.0_331 / build 8.0.331
+  Fixed version     : Upgrade to version 8.0.341 or greater",Apply the appropriate patch according to the July 2022 Oracle Critical Patch Update advisory.,9.8,"CVE-2022-21540,CVE-2022-21541,CVE-2022-21549,CVE-2022-25647,CVE-2022-34169","Aug 1, 2022 17:00:55 UTC","Aug 3, 2022 05:01:18 UTC"
+163304,Oracle Java SE Multiple Vulnerabilities (July 2022 CPU),Critical,10.11.210.133,445,ip-10-11-210-133.nal.usda.gov,usda.net\ARSMDBE25195633,"Plugin Output: 
+  Path              : C:\Program Files\Java\jre8\
+  Installed version : 1.8.0_331 / build 8.0.331
+  Fixed version     : Upgrade to version 8.0.341 or greater
+
+
+
+  Path              : C:\Program Files (x86)\Java\jre8\
+  Installed version : 1.8.0_331 / build 8.0.331
+  Fixed version     : Upgrade to version 8.0.341 or greater",Apply the appropriate patch according to the July 2022 Oracle Critical Patch Update advisory.,9.8,"CVE-2022-21540,CVE-2022-21541,CVE-2022-21549,CVE-2022-25647,CVE-2022-34169","Aug 1, 2022 17:00:55 UTC","Aug 1, 2022 20:04:38 UTC"
+163304,Oracle Java SE Multiple Vulnerabilities (July 2022 CPU),Critical,10.11.210.140,445,ip-10-11-210-140.nal.usda.gov,usda.net\ARSMDBE35004275,"Plugin Output: 
+  Path              : C:\Program Files (x86)\Java\jre8\
+  Installed version : 1.8.0_331 / build 8.0.331
+  Fixed version     : Upgrade to version 8.0.341 or greater",Apply the appropriate patch according to the July 2022 Oracle Critical Patch Update advisory.,9.8,"CVE-2022-21540,CVE-2022-21541,CVE-2022-21549,CVE-2022-25647,CVE-2022-34169","Jul 27, 2022 04:53:03 UTC","Aug 3, 2022 05:01:18 UTC"
+163304,Oracle Java SE Multiple Vulnerabilities (July 2022 CPU),Critical,10.11.210.142,445,ip-10-11-210-142.nal.usda.gov,usda.net\ARSMDBE34004248,"Plugin Output: 
+  Path              : C:\Program Files (x86)\Java\jre8\
+  Installed version : 1.8.0_331 / build 8.0.331
+  Fixed version     : Upgrade to version 8.0.341 or greater",Apply the appropriate patch according to the July 2022 Oracle Critical Patch Update advisory.,9.8,"CVE-2022-21540,CVE-2022-21541,CVE-2022-21549,CVE-2022-25647,CVE-2022-34169","Aug 3, 2022 05:01:18 UTC","Aug 3, 2022 05:01:18 UTC"
+163304,Oracle Java SE Multiple Vulnerabilities (July 2022 CPU),Critical,10.11.210.143,445,ip-10-11-210-143.nal.usda.gov,usda.net\ARSMDBE34004249,"Plugin Output: 
+  Path              : C:\Program Files (x86)\Java\jre8\
+  Installed version : 1.8.0_321 / build 8.0.321
+  Fixed version     : Upgrade to version 8.0.341 or greater",Apply the appropriate patch according to the July 2022 Oracle Critical Patch Update advisory.,9.8,"CVE-2022-21540,CVE-2022-21541,CVE-2022-21549,CVE-2022-25647,CVE-2022-34169","Aug 1, 2022 20:04:38 UTC","Aug 3, 2022 05:01:18 UTC"
+163304,Oracle Java SE Multiple Vulnerabilities (July 2022 CPU),Critical,10.11.210.146,445,ip-10-11-210-146.nal.usda.gov,usda.net\ARSMDBE25195612,"Plugin Output: 
+  Path              : C:\Program Files\Java\jre8\
+  Installed version : 1.8.0_331 / build 8.0.331
+  Fixed version     : Upgrade to version 8.0.341 or greater
+
+
+
+  Path              : C:\Program Files (x86)\Java\jre8\
+  Installed version : 1.8.0_331 / build 8.0.331
+  Fixed version     : Upgrade to version 8.0.341 or greater",Apply the appropriate patch according to the July 2022 Oracle Critical Patch Update advisory.,9.8,"CVE-2022-21540,CVE-2022-21541,CVE-2022-21549,CVE-2022-25647,CVE-2022-34169","Aug 1, 2022 20:04:38 UTC","Aug 8, 2022 17:02:52 UTC"
+163304,Oracle Java SE Multiple Vulnerabilities (July 2022 CPU),Critical,10.11.210.149,445,ip-10-11-210-149.nal.usda.gov,usda.net\ARSMDBE25195601,"Plugin Output: 
+  Path              : C:\Program Files\Java\jre8\
+  Installed version : 1.8.0_331 / build 8.0.331
+  Fixed version     : Upgrade to version 8.0.341 or greater
+
+
+
+  Path              : C:\Program Files (x86)\Java\jre8\
+  Installed version : 1.8.0_331 / build 8.0.331
+  Fixed version     : Upgrade to version 8.0.341 or greater",Apply the appropriate patch according to the July 2022 Oracle Critical Patch Update advisory.,9.8,"CVE-2022-21540,CVE-2022-21541,CVE-2022-21549,CVE-2022-25647,CVE-2022-34169","Aug 1, 2022 17:00:55 UTC","Aug 8, 2022 17:02:52 UTC"
+163304,Oracle Java SE Multiple Vulnerabilities (July 2022 CPU),Critical,10.11.210.150,445,ip-10-11-210-150.nal.usda.gov,usda.net\ARSMDBE24194496,"Plugin Output: 
+  Path              : C:\Program Files\Java\jre8\
+  Installed version : 1.8.0_331 / build 8.0.331
+  Fixed version     : Upgrade to version 8.0.341 or greater
+
+
+
+  Path              : C:\Program Files (x86)\Java\jre8\
+  Installed version : 1.8.0_331 / build 8.0.331
+  Fixed version     : Upgrade to version 8.0.341 or greater",Apply the appropriate patch according to the July 2022 Oracle Critical Patch Update advisory.,9.8,"CVE-2022-21540,CVE-2022-21541,CVE-2022-21549,CVE-2022-25647,CVE-2022-34169","Aug 1, 2022 20:04:38 UTC","Aug 1, 2022 20:04:38 UTC"
+163304,Oracle Java SE Multiple Vulnerabilities (July 2022 CPU),Critical,10.11.210.151,445,ip-10-11-210-151.nal.usda.gov,usda.net\ARSMDBE25195655,"Plugin Output: 
+  Path              : C:\Program Files\Java\jre8\
+  Installed version : 1.8.0_331 / build 8.0.331
+  Fixed version     : Upgrade to version 8.0.341 or greater
+
+
+
+  Path              : C:\Program Files (x86)\Java\jre8\
+  Installed version : 1.8.0_331 / build 8.0.331
+  Fixed version     : Upgrade to version 8.0.341 or greater",Apply the appropriate patch according to the July 2022 Oracle Critical Patch Update advisory.,9.8,"CVE-2022-21540,CVE-2022-21541,CVE-2022-21549,CVE-2022-25647,CVE-2022-34169","Aug 1, 2022 20:04:38 UTC","Aug 3, 2022 05:01:18 UTC"
+163304,Oracle Java SE Multiple Vulnerabilities (July 2022 CPU),Critical,10.11.210.152,445,ip-10-11-210-152.nal.usda.gov,usda.net\ARSMDBE25194807,"Plugin Output: 
+  Path              : C:\Program Files\Java\jre8\
+  Installed version : 1.8.0_331 / build 8.0.331
+  Fixed version     : Upgrade to version 8.0.341 or greater
+
+
+
+  Path              : C:\Program Files (x86)\Java\jre8\
+  Installed version : 1.8.0_331 / build 8.0.331
+  Fixed version     : Upgrade to version 8.0.341 or greater",Apply the appropriate patch according to the July 2022 Oracle Critical Patch Update advisory.,9.8,"CVE-2022-21540,CVE-2022-21541,CVE-2022-21549,CVE-2022-25647,CVE-2022-34169","Aug 1, 2022 17:00:55 UTC","Aug 8, 2022 17:02:52 UTC"
+163304,Oracle Java SE Multiple Vulnerabilities (July 2022 CPU),Critical,10.11.210.157,445,ip-10-11-210-157.nal.usda.gov,usda.net\ARSMDBE25VCGH53,"Plugin Output: 
+  Path              : C:\Program Files\Java\jre8\
+  Installed version : 1.8.0_331 / build 8.0.331
+  Fixed version     : Upgrade to version 8.0.341 or greater
+
+
+
+  Path              : C:\Program Files (x86)\Java\jre8\
+  Installed version : 1.8.0_331 / build 8.0.331
+  Fixed version     : Upgrade to version 8.0.341 or greater",Apply the appropriate patch according to the July 2022 Oracle Critical Patch Update advisory.,9.8,"CVE-2022-21540,CVE-2022-21541,CVE-2022-21549,CVE-2022-25647,CVE-2022-34169","Jul 27, 2022 04:53:03 UTC","Aug 3, 2022 05:01:18 UTC"
+163304,Oracle Java SE Multiple Vulnerabilities (July 2022 CPU),Critical,10.11.210.160,445,ip-10-11-210-160.nal.usda.gov,usda.net\ARSMDBE24123001,"Plugin Output: 
+  Path              : C:\Program Files (x86)\Java\jre1.8.0_301\
+  Installed version : 1.8.0_301 / build 8.0.301
+  Fixed version     : Upgrade to version 8.0.341 or greater",Apply the appropriate patch according to the July 2022 Oracle Critical Patch Update advisory.,9.8,"CVE-2022-21540,CVE-2022-21541,CVE-2022-21549,CVE-2022-25647,CVE-2022-34169","Jul 27, 2022 04:53:03 UTC","Aug 3, 2022 05:01:18 UTC"
+163304,Oracle Java SE Multiple Vulnerabilities (July 2022 CPU),Critical,10.11.210.162,445,ip-10-11-210-162.nal.usda.gov,usda.net\ARSMDBE24YGZHL2,"Plugin Output: 
+  Path              : C:\Program Files\Java\jre8\
+  Installed version : 1.8.0_331 / build 8.0.331
+  Fixed version     : Upgrade to version 8.0.341 or greater
+
+
+
+  Path              : C:\Program Files (x86)\Java\jre8\
+  Installed version : 1.8.0_331 / build 8.0.331
+  Fixed version     : Upgrade to version 8.0.341 or greater",Apply the appropriate patch according to the July 2022 Oracle Critical Patch Update advisory.,9.8,"CVE-2022-21540,CVE-2022-21541,CVE-2022-21549,CVE-2022-25647,CVE-2022-34169","Jul 27, 2022 04:53:03 UTC","Aug 3, 2022 05:01:18 UTC"
+163304,Oracle Java SE Multiple Vulnerabilities (July 2022 CPU),Critical,10.11.210.163,445,ip-10-11-210-163.nal.usda.gov,usda.net\ARSMDBE25195640,"Plugin Output: 
+  Path              : C:\Program Files\Java\jre8\
+  Installed version : 1.8.0_331 / build 8.0.331
+  Fixed version     : Upgrade to version 8.0.341 or greater
+
+
+
+  Path              : C:\Program Files (x86)\Java\jre8\
+  Installed version : 1.8.0_331 / build 8.0.331
+  Fixed version     : Upgrade to version 8.0.341 or greater",Apply the appropriate patch according to the July 2022 Oracle Critical Patch Update advisory.,9.8,"CVE-2022-21540,CVE-2022-21541,CVE-2022-21549,CVE-2022-25647,CVE-2022-34169","Aug 1, 2022 20:04:38 UTC","Aug 3, 2022 05:01:18 UTC"
+163304,Oracle Java SE Multiple Vulnerabilities (July 2022 CPU),Critical,10.11.210.164,445,ip-10-11-210-164.nal.usda.gov,usda.net\ARSMDBE35004260,"Plugin Output: 
+  Path              : C:\Program Files (x86)\Java\jre8\
+  Installed version : 1.8.0_321 / build 8.0.321
+  Fixed version     : Upgrade to version 8.0.341 or greater",Apply the appropriate patch according to the July 2022 Oracle Critical Patch Update advisory.,9.8,"CVE-2022-21540,CVE-2022-21541,CVE-2022-21549,CVE-2022-25647,CVE-2022-34169","Aug 1, 2022 17:00:55 UTC","Aug 1, 2022 20:04:38 UTC"
+163304,Oracle Java SE Multiple Vulnerabilities (July 2022 CPU),Critical,10.11.217.78,0,nal-solr.nal.usda.gov,,"Plugin Output: 
+  Path              : /opt/jdk1.8.0_202/
+  Installed version : 1.8.0_202
+  Fixed version     : Upgrade to version 8.0.341 or greater",Apply the appropriate patch according to the July 2022 Oracle Critical Patch Update advisory.,9.8,"CVE-2022-21540,CVE-2022-21541,CVE-2022-21549,CVE-2022-25647,CVE-2022-34169","Jul 25, 2022 17:00:22 UTC","Aug 3, 2022 05:01:18 UTC"
+163304,Oracle Java SE Multiple Vulnerabilities (July 2022 CPU),Critical,10.11.217.88,0,openagricola-node2.nal.usda.gov,,"Plugin Output: 
+  Path              : /usr/openv/
+  Installed version : 1.8.0_211 / build 8.0.211
+  Fixed version     : Upgrade to version 8.0.341 or greater",Apply the appropriate patch according to the July 2022 Oracle Critical Patch Update advisory.,9.8,"CVE-2022-21540,CVE-2022-21541,CVE-2022-21549,CVE-2022-25647,CVE-2022-34169","Jul 25, 2022 17:00:22 UTC","Aug 3, 2022 05:01:18 UTC"
+163304,Oracle Java SE Multiple Vulnerabilities (July 2022 CPU),Critical,10.11.217.99,0,agricola-db.nal.usda.gov,,"Plugin Output: 
+  Path              : /oracle/app/oracle/product/19c/jdk/
+  Installed version : 1.8.0_321
+  Fixed version     : Upgrade to version 8.0.341 or greater",Apply the appropriate patch according to the July 2022 Oracle Critical Patch Update advisory.,9.8,"CVE-2022-21540,CVE-2022-21541,CVE-2022-21549,CVE-2022-25647,CVE-2022-34169","Jul 25, 2022 17:00:22 UTC","Aug 3, 2022 05:01:18 UTC"
+163275,Amazon Corretto Java 8.x < 8.342.07.1 Multiple Vulnerabilities,Critical,10.11.215.206,0,docdel-stage-node1.nal.usda.gov,,"Plugin Output: 
+  Path              : /usr/java/amazon-corretto-8.322.06.2-linux-x64/
+  Installed version : 1.8.0_322 / build 8.322.06.2
+  Fixed version     : 8.342.07.1",Update to Amazon Corretto Java 8.342.07.1 or later,9.8,"CVE-2022-21540,CVE-2022-21541,CVE-2022-34169","Jul 25, 2022 17:00:22 UTC","Aug 8, 2022 17:02:52 UTC"
+163275,Amazon Corretto Java 8.x < 8.342.07.1 Multiple Vulnerabilities,Critical,10.11.217.91,0,docdel-node1.nal.usda.gov,,"Plugin Output: 
+  Path              : /usr/java/amazon-corretto-8.322.06.2-linux-x64/
+  Installed version : 1.8.0_322 / build 8.322.06.2
+  Fixed version     : 8.342.07.1",Update to Amazon Corretto Java 8.342.07.1 or later,9.8,"CVE-2022-21540,CVE-2022-21541,CVE-2022-34169","Jul 25, 2022 17:00:22 UTC","Aug 3, 2022 05:01:18 UTC"
+163273,Google Chrome < 103.0.5060.134 Multiple Vulnerabilities,High,10.11.210.143,445,ip-10-11-210-143.nal.usda.gov,usda.net\ARSMDBE34004249,"Plugin Output: 
+  Path              : C:\Program Files\Google\Chrome\Application
+  Installed version : 103.0.5060.114
+  Fixed version     : 103.0.5060.134",Upgrade to Google Chrome version 103.0.5060.134 or later.,8.8,"CVE-2022-2163,CVE-2022-2477,CVE-2022-2478,CVE-2022-2479,CVE-2022-2480,CVE-2022-2481","Aug 1, 2022 20:04:38 UTC","Aug 3, 2022 05:01:18 UTC"
+163048,KB5015807: Windows 10 Version 20H2 / 21H1 / 21H2 Security Update (July 2022),High,10.11.210.29,445,ip-10-11-210-29.nal.usda.gov,usda.net\ARSMDBE35001105,"Plugin Output: 
+The remote host is missing one of the following rollup KBs : 
+  - 5015807
+
+  - C:\windows\system32\ntoskrnl.exe has not been patched.
+    Remote version : 10.0.19041.1415
+    Should be      : 10.0.19041.1826",Apply Security Update 5015807,8.8,"CVE-2022-21845,CVE-2022-22022,CVE-2022-22023,CVE-2022-22024,CVE-2022-22025,CVE-2022-22026,CVE-2022-22027,CVE-2022-22028,CVE-2022-22029,CVE-2022-22031,CVE-2022-22034,CVE-2022-22036,CVE-2022-22037,CVE-2022-22038,CVE-2022-22039,CVE-2022-22040,CVE-2022-22041,CVE-2022-22042,CVE-2022-22043,CVE-2022-22045,CVE-2022-22047,CVE-2022-22048,CVE-2022-22049,CVE-2022-22050,CVE-2022-22711,CVE-2022-27776,CVE-2022-30202,CVE-2022-30203,CVE-2022-30205,CVE-2022-30206,CVE-2022-30208,CVE-2022-30209,CVE-2022-30211,CVE-2022-30212,CVE-2022-30213,CVE-2022-30214,CVE-2022-30215,CVE-2022-30216,CVE-2022-30220,CVE-2022-30221,CVE-2022-30222,CVE-2022-30223,CVE-2022-30224,CVE-2022-30225,CVE-2022-30226,CVE-2022-33644","Aug 1, 2022 20:04:38 UTC","Aug 3, 2022 05:01:18 UTC"
+163048,KB5015807: Windows 10 Version 20H2 / 21H1 / 21H2 Security Update (July 2022),High,10.11.210.142,445,ip-10-11-210-142.nal.usda.gov,usda.net\ARSMDBE34004248,"Plugin Output: 
+The remote host is missing one of the following rollup KBs : 
+  - 5015807
+
+  - C:\windows\system32\ntoskrnl.exe has not been patched.
+    Remote version : 10.0.19041.1766
+    Should be      : 10.0.19041.1826",Apply Security Update 5015807,8.8,"CVE-2022-21845,CVE-2022-22022,CVE-2022-22023,CVE-2022-22024,CVE-2022-22025,CVE-2022-22026,CVE-2022-22027,CVE-2022-22028,CVE-2022-22029,CVE-2022-22031,CVE-2022-22034,CVE-2022-22036,CVE-2022-22037,CVE-2022-22038,CVE-2022-22039,CVE-2022-22040,CVE-2022-22041,CVE-2022-22042,CVE-2022-22043,CVE-2022-22045,CVE-2022-22047,CVE-2022-22048,CVE-2022-22049,CVE-2022-22050,CVE-2022-22711,CVE-2022-27776,CVE-2022-30202,CVE-2022-30203,CVE-2022-30205,CVE-2022-30206,CVE-2022-30208,CVE-2022-30209,CVE-2022-30211,CVE-2022-30212,CVE-2022-30213,CVE-2022-30214,CVE-2022-30215,CVE-2022-30216,CVE-2022-30220,CVE-2022-30221,CVE-2022-30222,CVE-2022-30223,CVE-2022-30224,CVE-2022-30225,CVE-2022-30226,CVE-2022-33644","Aug 3, 2022 05:01:18 UTC","Aug 3, 2022 05:01:18 UTC"
+163032,Adobe Acrobat < 17.012.30249 / 20.005.30362 / 22.001.20169 Multiple Vulnerabilities (APSB22-32),High,10.11.209.144,445,ip-10-11-209-144.nal.usda.gov,usda.net\ARSMDBE24B40001,"Plugin Output: 
+  Path              : C:\Program Files (x86)\Adobe\Acrobat DC
+  Installed version : 22.1.20117
+  Fixed version     : 22.001.20169",Upgrade to Adobe Acrobat version 17.012.30249 / 20.005.30362 / 22.001.20169 or later.,7.8,"CVE-2022-34215,CVE-2022-34216,CVE-2022-34217,CVE-2022-34219,CVE-2022-34220,CVE-2022-34221,CVE-2022-34222,CVE-2022-34223,CVE-2022-34224,CVE-2022-34225,CVE-2022-34226,CVE-2022-34227,CVE-2022-34228,CVE-2022-34229,CVE-2022-34230,CVE-2022-34232,CVE-2022-34233,CVE-2022-34234,CVE-2022-34236,CVE-2022-34237,CVE-2022-34238,CVE-2022-34239,CVE-2022-35669","Jul 14, 2022 19:58:00 UTC","Aug 5, 2022 21:04:04 UTC"
+163032,Adobe Acrobat < 17.012.30249 / 20.005.30362 / 22.001.20169 Multiple Vulnerabilities (APSB22-32),High,10.11.210.27,445,ip-10-11-210-27.nal.usda.gov,usda.net\ARSDCWA25000054,"Plugin Output: 
+  Path              : C:\Program Files (x86)\Adobe\Acrobat DC
+  Installed version : 22.1.20142
+  Fixed version     : 22.001.20169",Upgrade to Adobe Acrobat version 17.012.30249 / 20.005.30362 / 22.001.20169 or later.,7.8,"CVE-2022-34215,CVE-2022-34216,CVE-2022-34217,CVE-2022-34219,CVE-2022-34220,CVE-2022-34221,CVE-2022-34222,CVE-2022-34223,CVE-2022-34224,CVE-2022-34225,CVE-2022-34226,CVE-2022-34227,CVE-2022-34228,CVE-2022-34229,CVE-2022-34230,CVE-2022-34232,CVE-2022-34233,CVE-2022-34234,CVE-2022-34236,CVE-2022-34237,CVE-2022-34238,CVE-2022-34239,CVE-2022-35669","Jul 18, 2022 16:38:28 UTC","Aug 1, 2022 20:04:38 UTC"
+163032,Adobe Acrobat < 17.012.30249 / 20.005.30362 / 22.001.20169 Multiple Vulnerabilities (APSB22-32),High,10.11.210.29,445,ip-10-11-210-29.nal.usda.gov,usda.net\ARSMDBE35001105,"Plugin Output: 
+  Path              : C:\Program Files (x86)\Adobe\Acrobat DC
+  Installed version : 21.7.20099
+  Fixed version     : 22.001.20169",Upgrade to Adobe Acrobat version 17.012.30249 / 20.005.30362 / 22.001.20169 or later.,7.8,"CVE-2022-34215,CVE-2022-34216,CVE-2022-34217,CVE-2022-34219,CVE-2022-34220,CVE-2022-34221,CVE-2022-34222,CVE-2022-34223,CVE-2022-34224,CVE-2022-34225,CVE-2022-34226,CVE-2022-34227,CVE-2022-34228,CVE-2022-34229,CVE-2022-34230,CVE-2022-34232,CVE-2022-34233,CVE-2022-34234,CVE-2022-34236,CVE-2022-34237,CVE-2022-34238,CVE-2022-34239,CVE-2022-35669","Aug 1, 2022 20:04:38 UTC","Aug 3, 2022 05:01:18 UTC"
+163032,Adobe Acrobat < 17.012.30249 / 20.005.30362 / 22.001.20169 Multiple Vulnerabilities (APSB22-32),High,10.11.210.142,445,ip-10-11-210-142.nal.usda.gov,usda.net\ARSMDBE34004248,"Plugin Output: 
+  Path              : C:\Program Files (x86)\Adobe\Acrobat DC
+  Installed version : 22.1.20142
+  Fixed version     : 22.001.20169",Upgrade to Adobe Acrobat version 17.012.30249 / 20.005.30362 / 22.001.20169 or later.,7.8,"CVE-2022-34215,CVE-2022-34216,CVE-2022-34217,CVE-2022-34219,CVE-2022-34220,CVE-2022-34221,CVE-2022-34222,CVE-2022-34223,CVE-2022-34224,CVE-2022-34225,CVE-2022-34226,CVE-2022-34227,CVE-2022-34228,CVE-2022-34229,CVE-2022-34230,CVE-2022-34232,CVE-2022-34233,CVE-2022-34234,CVE-2022-34236,CVE-2022-34237,CVE-2022-34238,CVE-2022-34239,CVE-2022-35669","Aug 3, 2022 05:01:18 UTC","Aug 3, 2022 05:01:18 UTC"
+163032,Adobe Acrobat < 17.012.30249 / 20.005.30362 / 22.001.20169 Multiple Vulnerabilities (APSB22-32),High,10.11.210.143,445,ip-10-11-210-143.nal.usda.gov,usda.net\ARSMDBE34004249,"Plugin Output: 
+  Path              : C:\Program Files (x86)\Adobe\Acrobat DC
+  Installed version : 22.1.20085
+  Fixed version     : 22.001.20169",Upgrade to Adobe Acrobat version 17.012.30249 / 20.005.30362 / 22.001.20169 or later.,7.8,"CVE-2022-34215,CVE-2022-34216,CVE-2022-34217,CVE-2022-34219,CVE-2022-34220,CVE-2022-34221,CVE-2022-34222,CVE-2022-34223,CVE-2022-34224,CVE-2022-34225,CVE-2022-34226,CVE-2022-34227,CVE-2022-34228,CVE-2022-34229,CVE-2022-34230,CVE-2022-34232,CVE-2022-34233,CVE-2022-34234,CVE-2022-34236,CVE-2022-34237,CVE-2022-34238,CVE-2022-34239,CVE-2022-35669","Aug 1, 2022 20:04:38 UTC","Aug 3, 2022 05:01:18 UTC"
+163032,Adobe Acrobat < 17.012.30249 / 20.005.30362 / 22.001.20169 Multiple Vulnerabilities (APSB22-32),High,10.11.210.150,445,ip-10-11-210-150.nal.usda.gov,usda.net\ARSMDBE24194496,"Plugin Output: 
+  Path              : C:\Program Files (x86)\Adobe\Acrobat DC
+  Installed version : 22.1.20142
+  Fixed version     : 22.001.20169",Upgrade to Adobe Acrobat version 17.012.30249 / 20.005.30362 / 22.001.20169 or later.,7.8,"CVE-2022-34215,CVE-2022-34216,CVE-2022-34217,CVE-2022-34219,CVE-2022-34220,CVE-2022-34221,CVE-2022-34222,CVE-2022-34223,CVE-2022-34224,CVE-2022-34225,CVE-2022-34226,CVE-2022-34227,CVE-2022-34228,CVE-2022-34229,CVE-2022-34230,CVE-2022-34232,CVE-2022-34233,CVE-2022-34234,CVE-2022-34236,CVE-2022-34237,CVE-2022-34238,CVE-2022-34239,CVE-2022-35669","Jul 18, 2022 16:38:28 UTC","Aug 1, 2022 20:04:38 UTC"
+163032,Adobe Acrobat < 17.012.30249 / 20.005.30362 / 22.001.20169 Multiple Vulnerabilities (APSB22-32),High,10.11.210.164,445,ip-10-11-210-164.nal.usda.gov,usda.net\ARSMDBE35004260,"Plugin Output: 
+  Path              : C:\Program Files (x86)\Adobe\Acrobat DC
+  Installed version : 22.1.20142
+  Fixed version     : 22.001.20169",Upgrade to Adobe Acrobat version 17.012.30249 / 20.005.30362 / 22.001.20169 or later.,7.8,"CVE-2022-34215,CVE-2022-34216,CVE-2022-34217,CVE-2022-34219,CVE-2022-34220,CVE-2022-34221,CVE-2022-34222,CVE-2022-34223,CVE-2022-34224,CVE-2022-34225,CVE-2022-34226,CVE-2022-34227,CVE-2022-34228,CVE-2022-34229,CVE-2022-34230,CVE-2022-34232,CVE-2022-34233,CVE-2022-34234,CVE-2022-34236,CVE-2022-34237,CVE-2022-34238,CVE-2022-34239,CVE-2022-35669","Jul 18, 2022 16:38:28 UTC","Aug 1, 2022 20:04:38 UTC"
+163028,Adobe Photoshop 22.x < 22.5.8 / 23.x < 23.4.1 Multiple Vulnerabilities (APSB22-35),High,10.11.210.152,445,ip-10-11-210-152.nal.usda.gov,usda.net\ARSMDBE25194807,"Plugin Output: 
+  Path              : C:\Program Files\Adobe\Adobe Photoshop 2022\
+  Installed version : 23.3.2
+  Fixed version     : 23.4.1",Upgrade to Adobe Photoshop version 22.5.8/23.4.1 or later.,7.8,"CVE-2022-34243,CVE-2022-34244","Jul 18, 2022 16:38:28 UTC","Aug 8, 2022 17:02:52 UTC"
+162502,Apache Tomcat 8.5.50 < 8.5.82 vulnerability,Medium,10.11.215.109,0,nal-solr-stage.nal.usda.gov,,"Plugin Output: 
+  Path              : /opt/tomcat/bin/
+  Installed version : 8.5.79
+  Fixed version     : 8.5.82
+
+
+
+  Path              : /usr/local/tomcat/apache-tomcat-8.5.79/bin/
+  Installed version : 8.5.79
+  Fixed version     : 8.5.82",Upgrade to Apache Tomcat version 8.5.82 or later.,6.1,CVE-2022-34305,"Jun 27, 2022 16:59:19 UTC","Aug 3, 2022 05:01:18 UTC"
+162502,Apache Tomcat 8.5.50 < 8.5.82 vulnerability,Medium,10.11.215.109,8080,nal-solr-stage.nal.usda.gov,,"Plugin Output: 
+  Installed version : 8.5.79
+  Fixed version     : 8.5.82",Upgrade to Apache Tomcat version 8.5.82 or later.,6.1,CVE-2022-34305,"Jun 27, 2022 16:59:19 UTC","Aug 3, 2022 05:01:18 UTC"
+162502,Apache Tomcat 8.5.50 < 8.5.82 vulnerability,Medium,10.11.215.171,0,nal-solr-dev.nal.usda.gov,,"Plugin Output: 
+  Path              : /opt/tomcat/bin/
+  Installed version : 8.5.79
+  Fixed version     : 8.5.82
+
+
+
+  Path              : /usr/local/tomcat/apache-tomcat-8.5.79/bin/
+  Installed version : 8.5.79
+  Fixed version     : 8.5.82",Upgrade to Apache Tomcat version 8.5.82 or later.,6.1,CVE-2022-34305,"Jun 27, 2022 16:59:19 UTC","Aug 3, 2022 05:01:18 UTC"
+162502,Apache Tomcat 8.5.50 < 8.5.82 vulnerability,Medium,10.11.215.171,8080,nal-solr-dev.nal.usda.gov,,"Plugin Output: 
+  Installed version : 8.5.79
+  Fixed version     : 8.5.82",Upgrade to Apache Tomcat version 8.5.82 or later.,6.1,CVE-2022-34305,"Jun 27, 2022 16:59:19 UTC","Aug 3, 2022 05:01:18 UTC"
+162502,Apache Tomcat 8.5.50 < 8.5.82 vulnerability,Medium,10.11.217.78,0,nal-solr.nal.usda.gov,,"Plugin Output: 
+  Path              : /opt/tomcat/bin/
+  Installed version : 8.5.79
+  Fixed version     : 8.5.82
+
+
+
+  Path              : /usr/local/tomcat/apache-tomcat-8.5.79/bin/
+  Installed version : 8.5.79
+  Fixed version     : 8.5.82",Upgrade to Apache Tomcat version 8.5.82 or later.,6.1,CVE-2022-34305,"Jun 27, 2022 16:59:19 UTC","Aug 3, 2022 05:01:18 UTC"
+162502,Apache Tomcat 8.5.50 < 8.5.82 vulnerability,Medium,10.11.217.78,8080,nal-solr.nal.usda.gov,,"Plugin Output: 
+  Installed version : 8.5.79
+  Fixed version     : 8.5.82",Upgrade to Apache Tomcat version 8.5.82 or later.,6.1,CVE-2022-34305,"Jun 27, 2022 16:59:19 UTC","Aug 3, 2022 05:01:18 UTC"
+162502,Apache Tomcat 8.5.50 < 8.5.82 vulnerability,Medium,10.11.217.98,0,agricola-node1.nal.usda.gov,,"Plugin Output: 
+  Path              : /m1/voyager/agri2db/tomcat/catalina_home/bin/
+  Installed version : 8.5.81
+  Fixed version     : 8.5.82
+
+
+
+  Path              : /m1/voyager/naldb/tomcat/catalina_home/bin/
+  Installed version : 8.5.81
+  Fixed version     : 8.5.82",Upgrade to Apache Tomcat version 8.5.82 or later.,6.1,CVE-2022-34305,"Jun 27, 2022 16:59:19 UTC","Aug 3, 2022 05:01:18 UTC"
+162502,Apache Tomcat 8.5.50 < 8.5.82 vulnerability,Medium,10.11.217.99,0,agricola-db.nal.usda.gov,,"Plugin Output: 
+  Path              : /m1/voyager/agri2db/tomcat/catalina_home/bin/
+  Installed version : 8.5.81
+  Fixed version     : 8.5.82
+
+
+
+  Path              : /m1/voyager/inprocessdb/tomcat/catalina_home/bin/
+  Installed version : 8.5.81
+  Fixed version     : 8.5.82
+
+
+
+  Path              : /m1/voyager/naldb/tomcat/catalina_home/bin/
+  Installed version : 8.5.81
+  Fixed version     : 8.5.82
+
+
+
+  Path              : /m1/voyager/traindb/tomcat/catalina_home/bin/
+  Installed version : 8.5.81
+  Fixed version     : 8.5.82",Upgrade to Apache Tomcat version 8.5.82 or later.,6.1,CVE-2022-34305,"Jun 27, 2022 16:59:19 UTC","Aug 3, 2022 05:01:18 UTC"
+162502,Apache Tomcat 8.5.50 < 8.5.82 vulnerability,Medium,10.11.217.129,0,agricola-preprod-node1.nal.usda.gov,,"Plugin Output: 
+  Path              : /m1/voyager/agri2db/tomcat/catalina_home/bin/
+  Installed version : 8.5.81
+  Fixed version     : 8.5.82
+
+
+
+  Path              : /m1/voyager/naldb/tomcat/catalina_home/bin/
+  Installed version : 8.5.81
+  Fixed version     : 8.5.82",Upgrade to Apache Tomcat version 8.5.82 or later.,6.1,CVE-2022-34305,"Jun 27, 2022 16:59:19 UTC","Aug 3, 2022 05:01:18 UTC"
+162498,Apache Tomcat 9.0.30 < 9.0.65 vulnerability,Medium,10.11.208.192,0,arsmdbe20nbkap2.nal.usda.gov,,"Plugin Output: 
+  Path              : /usr/openv/wmc/webserver/bin/
+  Installed version : 9.0.58
+  Fixed version     : 9.0.65
+
+
+
+  Path              : /usr/openv/bkpcomp/NetBackup-webserver-9.1.0.1-backup/bin/
+  Installed version : 9.0.52
+  Fixed version     : 9.0.65",Upgrade to Apache Tomcat version 9.0.65 or later.,6.1,CVE-2022-34305,"Jun 27, 2022 16:59:19 UTC","Aug 3, 2022 05:01:18 UTC"
+162498,Apache Tomcat 9.0.30 < 9.0.65 vulnerability,Medium,10.11.215.175,0,soa-dev.nal.usda.gov,,"Plugin Output: 
+  Path              : /opt/tomcat/bin/
+  Installed version : 9.0.58
+  Fixed version     : 9.0.65
+
+
+
+  Path              : /usr/local/tomcat/apache-tomcat-9.0.58/bin/
+  Installed version : 9.0.58
+  Fixed version     : 9.0.65",Upgrade to Apache Tomcat version 9.0.65 or later.,6.1,CVE-2022-34305,"Jun 27, 2022 16:59:19 UTC","Aug 3, 2022 05:01:18 UTC"
+162498,Apache Tomcat 9.0.30 < 9.0.65 vulnerability,Medium,10.11.215.175,8090,soa-dev.nal.usda.gov,,"Plugin Output: 
+  Installed version : 9.0.58
+  Fixed version     : 9.0.65",Upgrade to Apache Tomcat version 9.0.65 or later.,6.1,CVE-2022-34305,"Jun 27, 2022 16:59:19 UTC","Aug 3, 2022 05:01:18 UTC"
+162498,Apache Tomcat 9.0.30 < 9.0.65 vulnerability,Medium,10.11.215.187,0,soa-stage-node1.nal.usda.gov,,"Plugin Output: 
+  Path              : /opt/tomcat/bin/
+  Installed version : 9.0.60
+  Fixed version     : 9.0.65
+
+
+
+  Path              : /usr/local/tomcat/apache-tomcat-9.0.60/bin/
+  Installed version : 9.0.60
+  Fixed version     : 9.0.65",Upgrade to Apache Tomcat version 9.0.65 or later.,6.1,CVE-2022-34305,"Jun 27, 2022 16:59:19 UTC","Aug 8, 2022 17:02:52 UTC"
+162498,Apache Tomcat 9.0.30 < 9.0.65 vulnerability,Medium,10.11.215.187,8080,soa-stage-node1.nal.usda.gov,,"Plugin Output: 
+  Installed version : 9.0.60
+  Fixed version     : 9.0.65",Upgrade to Apache Tomcat version 9.0.65 or later.,6.1,CVE-2022-34305,"Jun 27, 2022 16:59:19 UTC","Aug 8, 2022 17:02:52 UTC"
+162498,Apache Tomcat 9.0.30 < 9.0.65 vulnerability,Medium,10.11.217.14,0,ur-prod.nal.usda.gov,,"Plugin Output: 
+  Path              : /app/local/tomcat-fedora/bin/
+  Installed version : 9.0.63
+  Fixed version     : 9.0.65",Upgrade to Apache Tomcat version 9.0.65 or later.,6.1,CVE-2022-34305,"Jun 27, 2022 16:59:19 UTC","Aug 8, 2022 17:02:52 UTC"
+162498,Apache Tomcat 9.0.30 < 9.0.65 vulnerability,Medium,10.11.217.112,0,soa-node1.nal.usda.gov,,"Plugin Output: 
+  Path              : /opt/tomcat/bin/
+  Installed version : 9.0.58
+  Fixed version     : 9.0.65
+
+
+
+  Path              : /usr/local/tomcat/apache-tomcat-9.0.58/bin/
+  Installed version : 9.0.58
+  Fixed version     : 9.0.65",Upgrade to Apache Tomcat version 9.0.65 or later.,6.1,CVE-2022-34305,"Jun 27, 2022 16:59:19 UTC","Aug 3, 2022 05:01:18 UTC"
+162498,Apache Tomcat 9.0.30 < 9.0.65 vulnerability,Medium,10.11.217.112,8080,soa-node1.nal.usda.gov,,"Plugin Output: 
+  Installed version : 9.0.58
+  Fixed version     : 9.0.65",Upgrade to Apache Tomcat version 9.0.65 or later.,6.1,CVE-2022-34305,"Jun 27, 2022 16:59:19 UTC","Aug 3, 2022 05:01:18 UTC"
+162498,Apache Tomcat 9.0.30 < 9.0.65 vulnerability,Medium,10.11.217.115,0,soa-node2.nal.usda.gov,,"Plugin Output: 
+  Path              : /opt/tomcat/bin/
+  Installed version : 9.0.58
+  Fixed version     : 9.0.65
+
+
+
+  Path              : /usr/local/tomcat/apache-tomcat-9.0.58/bin/
+  Installed version : 9.0.58
+  Fixed version     : 9.0.65",Upgrade to Apache Tomcat version 9.0.65 or later.,6.1,CVE-2022-34305,"Jun 27, 2022 16:59:19 UTC","Aug 3, 2022 05:01:18 UTC"
+162498,Apache Tomcat 9.0.30 < 9.0.65 vulnerability,Medium,10.11.217.115,8080,soa-node2.nal.usda.gov,,"Plugin Output: 
+  Installed version : 9.0.58
+  Fixed version     : 9.0.65",Upgrade to Apache Tomcat version 9.0.65 or later.,6.1,CVE-2022-34305,"Jun 27, 2022 16:59:19 UTC","Aug 3, 2022 05:01:18 UTC"
+162498,Apache Tomcat 9.0.30 < 9.0.65 vulnerability,Medium,10.11.217.116,0,cogito-studio.nal.usda.gov,,"Plugin Output: 
+  Path              : /opt/apache-tomcat-9.0.63/bin/
+  Installed version : 9.0.63
+  Fixed version     : 9.0.65
+
+
+
+  Path              : /usr/local/cogito/cogitostudioexpress/tomcat/bin/
+  Installed version : 9.0.63
+  Fixed version     : 9.0.65",Upgrade to Apache Tomcat version 9.0.65 or later.,6.1,CVE-2022-34305,"Jun 27, 2022 16:59:19 UTC","Aug 3, 2022 05:01:18 UTC"
+162498,Apache Tomcat 9.0.30 < 9.0.65 vulnerability,Medium,10.11.217.117,0,cogito-discover.nal.usda.gov,,"Plugin Output: 
+  Path              : /usr/local/cogito/cogitodiscover/tomcat/bin/
+  Installed version : 9.0.63
+  Fixed version     : 9.0.65",Upgrade to Apache Tomcat version 9.0.65 or later.,6.1,CVE-2022-34305,"Jun 27, 2022 16:59:19 UTC","Aug 3, 2022 05:01:18 UTC"
+162498,Apache Tomcat 9.0.30 < 9.0.65 vulnerability,Medium,10.11.217.126,0,apollo2-node1.nal.usda.gov,,"Plugin Output: 
+  Path              : /app/local/apollo/bin/
+  Installed version : 9.0.64
+  Fixed version     : 9.0.65
+
+
+
+  Path              : /app/local/apache-tomcat-9.0.64/bin/
+  Installed version : 9.0.64
+  Fixed version     : 9.0.65
+
+
+
+  Path              : /usr/local/apollo/bin/
+  Installed version : 9.0.64
+  Fixed version     : 9.0.65
+
+
+
+  Path              : /usr/local/apache-tomcat-9.0.64/bin/
+  Installed version : 9.0.64
+  Fixed version     : 9.0.65",Upgrade to Apache Tomcat version 9.0.65 or later.,6.1,CVE-2022-34305,"Jun 27, 2022 16:59:19 UTC","Aug 3, 2022 05:01:18 UTC"
+162498,Apache Tomcat 9.0.30 < 9.0.65 vulnerability,Medium,10.11.217.133,0,soa-node3.nal.usda.gov,,"Plugin Output: 
+  Path              : /opt/tomcat/bin/
+  Installed version : 9.0.58
+  Fixed version     : 9.0.65
+
+
+
+  Path              : /usr/local/tomcat/apache-tomcat-9.0.58/bin/
+  Installed version : 9.0.58
+  Fixed version     : 9.0.65",Upgrade to Apache Tomcat version 9.0.65 or later.,6.1,CVE-2022-34305,"Jun 27, 2022 16:59:19 UTC","Aug 3, 2022 05:01:18 UTC"
+162498,Apache Tomcat 9.0.30 < 9.0.65 vulnerability,Medium,10.11.217.133,8080,soa-node3.nal.usda.gov,,"Plugin Output: 
+  Installed version : 9.0.58
+  Fixed version     : 9.0.65",Upgrade to Apache Tomcat version 9.0.65 or later.,6.1,CVE-2022-34305,"Jun 27, 2022 16:59:19 UTC","Aug 3, 2022 05:01:18 UTC"
+162498,Apache Tomcat 9.0.30 < 9.0.65 vulnerability,Medium,10.11.217.136,0,gis2-node1.nal.usda.gov,,"Plugin Output: 
+  Path              : /usr/local/apache-tomcat-9.0.64/bin/
+  Installed version : 9.0.64
+  Fixed version     : 9.0.65
+
+
+
+  Path              : /usr/local/geodata/bin/
+  Installed version : 9.0.64
+  Fixed version     : 9.0.65",Upgrade to Apache Tomcat version 9.0.65 or later.,6.1,CVE-2022-34305,"Jun 27, 2022 16:59:19 UTC","Aug 3, 2022 05:01:18 UTC"
+162227,Adobe InDesign < 16.4.2 / 17.0.0 < 17.3.0 Multiple Arbitrary Code Execution (APSB22-30),High,10.11.210.160,445,ip-10-11-210-160.nal.usda.gov,usda.net\ARSMDBE24123001,"Plugin Output: 
+  Path              : C:\Program Files\Adobe\Adobe InDesign CC 2019
+  Installed version : 14.0.1.209
+  Fixed version     : 16.4.2","Upgrade to Adobe InDesign version 16.4.2, 17.3.0 or later.",7.8,"CVE-2022-30658,CVE-2022-30659,CVE-2022-30660,CVE-2022-30661,CVE-2022-30662,CVE-2022-30663,CVE-2022-30665","Jun 20, 2022 17:01:05 UTC","Aug 3, 2022 05:01:18 UTC"
+161949,Spring Framework < 5.2.20 / 5.3.x < 5.3.17 DoS (CVE-2022-22950),Medium,10.11.217.14,0,ur-prod.nal.usda.gov,,"Plugin Output: 
+  Path              : /app/local/tomcat-fedora/webapps/fedora/WEB-INF/lib/spring-core-3.0.7.RELEASE.jar
+  Installed version : 3.0.7.RELEASE
+  Fixed version     : 5.2.20
+
+
+
+  Path              : /app/local/tomcat-fedora/webapps/fedora/WEB-INF/lib/xbean-spring-3.11.1.jar
+  Installed version : 3.11.1
+  Fixed version     : 5.2.20
+
+
+
+  Path              : /app/local/fedora/client/lib/spring-core-3.0.7.RELEASE.jar
+  Installed version : 3.0.7.RELEASE
+  Fixed version     : 5.2.20
+
+
+
+  Path              : /app/opt/trippi-sail-source/trippi-sail-base/target/dependency/spring-core-3.0.7.RELEASE.jar
+  Installed version : 3.0.7.RELEASE
+  Fixed version     : 5.2.20
+
+
+
+  Path              : /app/opt/trippi-sail-source/trippi-sail-blazegraph-embedded/target/dependency/spring-core-3.0.7.RELEASE.jar
+  Installed version : 3.0.7.RELEASE
+  Fixed version     : 5.2.20
+
+
+
+  Path              : /app/opt/trippi-sail-source/trippi-sail-blazegraph-remote/target/dependency/spring-core-3.0.7.RELEASE.jar
+  Installed version : 3.0.7.RELEASE
+  Fixed version     : 5.2.20
+
+
+
+  Path              : /app/opt/trippi-sail-source/trippi-sail-blazegraph-remote-0.0.1-SNAPSHOT/spring-core-3.0.7.RELEASE.jar
+  Installed version : 3.0.7.RELEASE
+  Fixed version     : 5.2.20
+
+
+
+  Path              : /app/opt/trippi-sail-rebuild/trippi-sail-base/target/dependency/spring-core-3.0.7.RELEASE.jar
+  Installed version : 3.0.7.RELEASE
+  Fixed version     : 5.2.20
+
+
+
+  Path              : /app/opt/trippi-sail-rebuild/trippi-sail-blazegraph-embedded/target/dependency/spring-core-3.0.7.RELEASE.jar
+  Installed version : 3.0.7.RELEASE
+  Fixed version     : 5.2.20
+
+
+
+  Path              : /app/opt/trippi-sail-rebuild/trippi-sail-blazegraph-remote/target/dependency/spring-core-3.0.7.RELEASE.jar
+  Installed version : 3.0.7.RELEASE
+  Fixed version     : 5.2.20
+
+
+
+  Path              : /app/opt/trippi-sail.old/spring-core-3.0.7.RELEASE.jar
+  Installed version : 3.0.7.RELEASE
+  Fixed version     : 5.2.20
+
+
+
+  Path              : /app/opt/trippi-sail.notwork/spring-core-3.0.7.RELEASE.jar
+  Installed version : 3.0.7.RELEASE
+  Fixed version     : 5.2.20
+
+
+
+  Path              : /app/opt/trippi-sail/spring-core-3.0.7.RELEASE.jar
+  Installed version : 3.0.7.RELEASE
+  Fixed version     : 5.2.20",Upgrade to Spring Framework version 5.2.20 or 5.3.17 or later.,6.5,CVE-2022-22950,"Jun 13, 2022 17:01:04 UTC","Aug 8, 2022 17:02:52 UTC"
+161949,Spring Framework < 5.2.20 / 5.3.x < 5.3.17 DoS (CVE-2022-22950),Medium,10.11.217.136,0,gis2-node1.nal.usda.gov,,"Plugin Output: 
+  Path              : /app/geodata/webapps/geonetwork/WEB-INF/lib/xbean-spring-3.18.jar
+  Installed version : 3.18
+  Fixed version     : 5.2.20
+
+
+
+  Path              : /app/geodata/webapps/geonetwork/WEB-INF/lib/camel-spring-2.25.1.jar
+  Installed version : 2.25.1
+  Fixed version     : 5.2.20
+
+
+
+  Path              : /app/geodata/webapps/geoserver/WEB-INF/lib/spring-core-4.3.18.RELEASE.jar
+  Installed version : 4.3.18.RELEASE
+  Fixed version     : 5.2.20",Upgrade to Spring Framework version 5.2.20 or 5.3.17 or later.,6.5,CVE-2022-22950,"Jun 13, 2022 19:56:06 UTC","Aug 3, 2022 05:01:18 UTC"
+161760,Zoom Client < 5.10.0 Attack Chain Vulnerabilities,Critical,10.11.210.27,445,ip-10-11-210-27.nal.usda.gov,usda.net\ARSDCWA25000054,"Plugin Output: 
+  Path              : C:\Program Files\Zoom\bin
+  Installed version : 5.9.3.3169
+  Fixed version     : 5.10.0",Upgrade to Zoom Client for Meetings 5.10.0 or later.,9.1,"CVE-2022-22784,CVE-2022-22785,CVE-2022-22786,CVE-2022-22787","Jun 6, 2022 17:00:27 UTC","Aug 1, 2022 20:04:38 UTC"
+161760,Zoom Client < 5.10.0 Attack Chain Vulnerabilities,Critical,10.11.210.29,445,ip-10-11-210-29.nal.usda.gov,usda.net\ARSMDBE35001105,"Plugin Output: 
+  Path              : C:\Program Files\Zoom\bin
+  Installed version : 5.8.1.1435
+  Fixed version     : 5.10.0",Upgrade to Zoom Client for Meetings 5.10.0 or later.,9.1,"CVE-2022-22784,CVE-2022-22785,CVE-2022-22786,CVE-2022-22787","Aug 1, 2022 20:04:38 UTC","Aug 3, 2022 05:01:18 UTC"
+161760,Zoom Client < 5.10.0 Attack Chain Vulnerabilities,Critical,10.11.210.143,445,ip-10-11-210-143.nal.usda.gov,usda.net\ARSMDBE34004249,"Plugin Output: 
+  Path              : C:\Program Files\Zoom\bin
+  Installed version : 5.8.1.1435
+  Fixed version     : 5.10.0",Upgrade to Zoom Client for Meetings 5.10.0 or later.,9.1,"CVE-2022-22784,CVE-2022-22785,CVE-2022-22786,CVE-2022-22787","Jul 11, 2022 23:55:12 UTC","Aug 3, 2022 05:01:18 UTC"
+161760,Zoom Client < 5.10.0 Attack Chain Vulnerabilities,Critical,10.11.210.164,445,ip-10-11-210-164.nal.usda.gov,usda.net\ARSMDBE35004260,"Plugin Output: 
+  Path              : C:\Program Files\Zoom\bin
+  Installed version : 5.9.3.3169
+  Fixed version     : 5.10.0",Upgrade to Zoom Client for Meetings 5.10.0 or later.,9.1,"CVE-2022-22784,CVE-2022-22785,CVE-2022-22786,CVE-2022-22787","Jun 6, 2022 17:00:27 UTC","Aug 1, 2022 20:04:38 UTC"
+161241,Oracle Java SE Multiple Vulnerabilities (Unix April 2022 CPU),High,10.11.209.144,445,ip-10-11-209-144.nal.usda.gov,usda.net\ARSMDBE24B40001,"Plugin Output: 
+  Path              : C:\Program Files (x86)\Java\jre1.8.0_301\
+  Installed version : 1.8.0_301 / build 8.0.301
+  Fixed version     : Upgrade to version 8.0.331 or greater",Apply the appropriate patch according to the April 2022 Oracle Critical Patch Update advisory.,7.5,"CVE-2022-21426,CVE-2022-21434,CVE-2022-21443,CVE-2022-21449,CVE-2022-21476,CVE-2022-21496","Aug 3, 2022 21:03:45 UTC","Aug 5, 2022 21:04:04 UTC"
+160894,Apache Tomcat 9.0.13 < 9.0.63 vulnerability,High,10.11.208.192,0,arsmdbe20nbkap2.nal.usda.gov,,"Plugin Output: 
+  Path              : /usr/openv/wmc/webserver/bin/
+  Installed version : 9.0.58
+  Fixed version     : 9.0.63
+
+
+
+  Path              : /usr/openv/bkpcomp/NetBackup-webserver-9.1.0.1-backup/bin/
+  Installed version : 9.0.52
+  Fixed version     : 9.0.63",Upgrade to Apache Tomcat version 9.0.63 or later.,7.5,CVE-2022-29885,"May 16, 2022 19:00:21 UTC","Aug 3, 2022 05:01:18 UTC"
+160894,Apache Tomcat 9.0.13 < 9.0.63 vulnerability,High,10.11.215.175,0,soa-dev.nal.usda.gov,,"Plugin Output: 
+  Path              : /opt/tomcat/bin/
+  Installed version : 9.0.58
+  Fixed version     : 9.0.63
+
+
+
+  Path              : /usr/local/tomcat/apache-tomcat-9.0.58/bin/
+  Installed version : 9.0.58
+  Fixed version     : 9.0.63",Upgrade to Apache Tomcat version 9.0.63 or later.,7.5,CVE-2022-29885,"May 16, 2022 19:00:21 UTC","Aug 3, 2022 05:01:18 UTC"
+160894,Apache Tomcat 9.0.13 < 9.0.63 vulnerability,High,10.11.215.175,8090,soa-dev.nal.usda.gov,,"Plugin Output: 
+  Installed version : 9.0.58
+  Fixed version     : 9.0.63",Upgrade to Apache Tomcat version 9.0.63 or later.,7.5,CVE-2022-29885,"May 16, 2022 19:00:21 UTC","Aug 3, 2022 05:01:18 UTC"
+160894,Apache Tomcat 9.0.13 < 9.0.63 vulnerability,High,10.11.215.187,0,soa-stage-node1.nal.usda.gov,,"Plugin Output: 
+  Path              : /opt/tomcat/bin/
+  Installed version : 9.0.60
+  Fixed version     : 9.0.63
+
+
+
+  Path              : /usr/local/tomcat/apache-tomcat-9.0.60/bin/
+  Installed version : 9.0.60
+  Fixed version     : 9.0.63",Upgrade to Apache Tomcat version 9.0.63 or later.,7.5,CVE-2022-29885,"May 16, 2022 19:00:21 UTC","Aug 8, 2022 17:02:52 UTC"
+160894,Apache Tomcat 9.0.13 < 9.0.63 vulnerability,High,10.11.215.187,8080,soa-stage-node1.nal.usda.gov,,"Plugin Output: 
+  Installed version : 9.0.60
+  Fixed version     : 9.0.63",Upgrade to Apache Tomcat version 9.0.63 or later.,7.5,CVE-2022-29885,"May 16, 2022 19:00:21 UTC","Aug 8, 2022 17:02:52 UTC"
+160894,Apache Tomcat 9.0.13 < 9.0.63 vulnerability,High,10.11.217.112,0,soa-node1.nal.usda.gov,,"Plugin Output: 
+  Path              : /opt/tomcat/bin/
+  Installed version : 9.0.58
+  Fixed version     : 9.0.63
+
+
+
+  Path              : /usr/local/tomcat/apache-tomcat-9.0.58/bin/
+  Installed version : 9.0.58
+  Fixed version     : 9.0.63",Upgrade to Apache Tomcat version 9.0.63 or later.,7.5,CVE-2022-29885,"May 16, 2022 19:00:21 UTC","Aug 3, 2022 05:01:18 UTC"
+160894,Apache Tomcat 9.0.13 < 9.0.63 vulnerability,High,10.11.217.112,8080,soa-node1.nal.usda.gov,,"Plugin Output: 
+  Installed version : 9.0.58
+  Fixed version     : 9.0.63",Upgrade to Apache Tomcat version 9.0.63 or later.,7.5,CVE-2022-29885,"May 16, 2022 19:00:21 UTC","Aug 3, 2022 05:01:18 UTC"
+160894,Apache Tomcat 9.0.13 < 9.0.63 vulnerability,High,10.11.217.115,0,soa-node2.nal.usda.gov,,"Plugin Output: 
+  Path              : /opt/tomcat/bin/
+  Installed version : 9.0.58
+  Fixed version     : 9.0.63
+
+
+
+  Path              : /usr/local/tomcat/apache-tomcat-9.0.58/bin/
+  Installed version : 9.0.58
+  Fixed version     : 9.0.63",Upgrade to Apache Tomcat version 9.0.63 or later.,7.5,CVE-2022-29885,"May 16, 2022 19:00:21 UTC","Aug 3, 2022 05:01:18 UTC"
+160894,Apache Tomcat 9.0.13 < 9.0.63 vulnerability,High,10.11.217.115,8080,soa-node2.nal.usda.gov,,"Plugin Output: 
+  Installed version : 9.0.58
+  Fixed version     : 9.0.63",Upgrade to Apache Tomcat version 9.0.63 or later.,7.5,CVE-2022-29885,"May 16, 2022 19:00:21 UTC","Aug 3, 2022 05:01:18 UTC"
+160894,Apache Tomcat 9.0.13 < 9.0.63 vulnerability,High,10.11.217.133,0,soa-node3.nal.usda.gov,,"Plugin Output: 
+  Path              : /opt/tomcat/bin/
+  Installed version : 9.0.58
+  Fixed version     : 9.0.63
+
+
+
+  Path              : /usr/local/tomcat/apache-tomcat-9.0.58/bin/
+  Installed version : 9.0.58
+  Fixed version     : 9.0.63",Upgrade to Apache Tomcat version 9.0.63 or later.,7.5,CVE-2022-29885,"May 16, 2022 19:00:21 UTC","Aug 3, 2022 05:01:18 UTC"
+160894,Apache Tomcat 9.0.13 < 9.0.63 vulnerability,High,10.11.217.133,8080,soa-node3.nal.usda.gov,,"Plugin Output: 
+  Installed version : 9.0.58
+  Fixed version     : 9.0.63",Upgrade to Apache Tomcat version 9.0.63 or later.,7.5,CVE-2022-29885,"May 16, 2022 19:00:21 UTC","Aug 3, 2022 05:01:18 UTC"
+158094,Apache Solr Unauthenticated Access Information Disclosure,Medium,10.11.215.109,8983,nal-solr-stage.nal.usda.gov,,"Plugin Output: Nessus has determined that the Apache Solr instance at http://nal-solr-stage.nal.usda.gov:8983/solr
+does not require authentication to access the node management pages. Nessus requested
+http://nal-solr-stage.nal.usda.gov:8983/solr/admin/cores?action=STATUS&indexInfo=false&wt=json and did
+not receive a request for authorization.
+
+Cores found: agdatacommons, adc1,",Update Apache Solr's configuration to require authentication.,5.3,,"Feb 21, 2022 18:00:43 UTC","Aug 3, 2022 05:01:18 UTC"
+158094,Apache Solr Unauthenticated Access Information Disclosure,Medium,10.11.215.171,8983,nal-solr-dev.nal.usda.gov,,"Plugin Output: Nessus has determined that the Apache Solr instance at http://nal-solr-dev.nal.usda.gov:8983/solr
+does not require authentication to access the node management pages. Nessus requested
+http://nal-solr-dev.nal.usda.gov:8983/solr/admin/cores?action=STATUS&indexInfo=false&wt=json and did
+not receive a request for authorization.
+
+Cores found: agdatacommons, adccore7,",Update Apache Solr's configuration to require authentication.,5.3,,"Feb 21, 2022 18:00:43 UTC","Aug 3, 2022 05:01:18 UTC"
+158094,Apache Solr Unauthenticated Access Information Disclosure,Medium,10.11.215.175,8981,soa-dev.nal.usda.gov,,"Plugin Output: Nessus has determined that the Apache Solr instance at http://soa-dev.nal.usda.gov:8981/solr
+does not require authentication to access the node management pages. Nessus requested
+http://soa-dev.nal.usda.gov:8981/solr/admin/cores?action=STATUS&indexInfo=false&wt=json and did
+not receive a request for authorization.
+
+Cores found: naldclh_shard1_replica_n2, naldc-test_shard2_replica_n6, carl-pubag_shard3_replica_n4, carl-naldc_shard2_replica_n2, naldclh_shard3_replica_n8, naldc-test_shard1_replica_n1, pubag_shard1_replica_n1, naldc-delong_shard1_replica_n2,",Update Apache Solr's configuration to require authentication.,5.3,,"Feb 21, 2022 18:00:43 UTC","Aug 3, 2022 05:01:18 UTC"
+158094,Apache Solr Unauthenticated Access Information Disclosure,Medium,10.11.215.175,8982,soa-dev.nal.usda.gov,,"Plugin Output: Nessus has determined that the Apache Solr instance at http://soa-dev.nal.usda.gov:8982/solr
+does not require authentication to access the node management pages. Nessus requested
+http://soa-dev.nal.usda.gov:8982/solr/admin/cores?action=STATUS&indexInfo=false&wt=json and did
+not receive a request for authorization.
+
+Cores found: naldc-delong_shard2_replica_n4, carl-pubag_shard1_replica_n1, naldc-test_shard3_replica_n10, naldc-test_shard2_replica_n4, carl-naldc_shard1_replica_n1, pubag_shard3_replica_n10, naldclh_shard3_replica_n10, naldclh_shard2_replica_n4,",Update Apache Solr's configuration to require authentication.,5.3,,"Feb 21, 2022 18:00:43 UTC","Aug 3, 2022 05:01:18 UTC"
+158094,Apache Solr Unauthenticated Access Information Disclosure,Medium,10.11.215.175,8983,soa-dev.nal.usda.gov,,"Plugin Output: Nessus has determined that the Apache Solr instance at http://soa-dev.nal.usda.gov:8983/solr
+does not require authentication to access the node management pages. Nessus requested
+http://soa-dev.nal.usda.gov:8983/solr/admin/cores?action=STATUS&indexInfo=false&wt=json and did
+not receive a request for authorization.
+
+Cores found: naldc-test_shard1_replica_n2, pubag_shard1_replica_n2, carl-naldc_shard3_replica_n4, naldc-delong_shard2_replica_n6, carl-pubag_shard2_replica_n2, naldclh_shard1_replica_n1, pubag_shard3_replica_n8, naldclh_shard2_replica_n6, naldc-delong_shard1_replica_n1, naldc-test_shard3_replica_n8,",Update Apache Solr's configuration to require authentication.,5.3,,"Feb 21, 2022 18:00:43 UTC","Aug 3, 2022 05:01:18 UTC"
+158094,Apache Solr Unauthenticated Access Information Disclosure,Medium,10.11.215.187,8981,soa-stage-node1.nal.usda.gov,,"Plugin Output: Nessus has determined that the Apache Solr instance at http://soa-stage-node1.nal.usda.gov:8981/solr
+does not require authentication to access the node management pages. Nessus requested
+http://soa-stage-node1.nal.usda.gov:8981/solr/admin/cores?action=STATUS&indexInfo=false&wt=json and did
+not receive a request for authorization.
+
+Cores found: naldclh_shard3_replica_n6, naldclh_shard1_replica_n2, carl-pubag_shard2_replica_n2, naldc_shard1_replica_n2, carl-naldc_shard1_replica_n1,",Update Apache Solr's configuration to require authentication.,5.3,,"Feb 21, 2022 18:00:43 UTC","Aug 8, 2022 17:02:52 UTC"
+158094,Apache Solr Unauthenticated Access Information Disclosure,Medium,10.11.215.187,8982,soa-stage-node1.nal.usda.gov,,"Plugin Output: Nessus has determined that the Apache Solr instance at http://soa-stage-node1.nal.usda.gov:8982/solr
+does not require authentication to access the node management pages. Nessus requested
+http://soa-stage-node1.nal.usda.gov:8982/solr/admin/cores?action=STATUS&indexInfo=false&wt=json and did
+not receive a request for authorization.
+
+Cores found: carl-pubag_shard1_replica_n1, carl-naldc_shard2_replica_n2, naldc_shard2_replica_n4, naldclh_shard3_replica_n7, naldclh_shard2_replica_n4,",Update Apache Solr's configuration to require authentication.,5.3,,"Feb 21, 2022 18:00:43 UTC","Aug 8, 2022 17:02:52 UTC"
+158094,Apache Solr Unauthenticated Access Information Disclosure,Medium,10.11.215.187,8983,soa-stage-node1.nal.usda.gov,,"Plugin Output: Nessus has determined that the Apache Solr instance at http://soa-stage-node1.nal.usda.gov:8983/solr
+does not require authentication to access the node management pages. Nessus requested
+http://soa-stage-node1.nal.usda.gov:8983/solr/admin/cores?action=STATUS&indexInfo=false&wt=json and did
+not receive a request for authorization.
+
+Cores found: naldclh_shard2_replica_n5, naldclh_shard1_replica_n1, carl-pubag_shard3_replica_n4, naldc_shard2_replica_n5, carl-naldc_shard3_replica_n4, naldc_shard1_replica_n1,",Update Apache Solr's configuration to require authentication.,5.3,,"Feb 21, 2022 18:00:43 UTC","Aug 8, 2022 17:02:52 UTC"
+158094,Apache Solr Unauthenticated Access Information Disclosure,Medium,10.11.215.196,8983,archivesspace-dev.nal.usda.gov,,"Plugin Output: Nessus has determined that the Apache Solr instance at http://archivesspace-dev.nal.usda.gov:8983/solr
+does not require authentication to access the node management pages. Nessus requested
+http://archivesspace-dev.nal.usda.gov:8983/solr/admin/cores?action=STATUS&indexInfo=false&wt=json and did
+not receive a request for authorization.
+
+Cores found: archivesspace,",Update Apache Solr's configuration to require authentication.,5.3,,"Apr 18, 2022 20:59:37 UTC","Aug 8, 2022 17:02:52 UTC"
+158094,Apache Solr Unauthenticated Access Information Disclosure,Medium,10.11.215.212,8983,archivesspace-stage.nal.usda.gov,,"Plugin Output: Nessus has determined that the Apache Solr instance at http://archivesspace-stage.nal.usda.gov:8983/solr
+does not require authentication to access the node management pages. Nessus requested
+http://archivesspace-stage.nal.usda.gov:8983/solr/admin/cores?action=STATUS&indexInfo=false&wt=json and did
+not receive a request for authorization.
+
+Cores found: archivesspace,",Update Apache Solr's configuration to require authentication.,5.3,,"Mar 16, 2022 04:48:39 UTC","Aug 3, 2022 05:01:18 UTC"
+158094,Apache Solr Unauthenticated Access Information Disclosure,Medium,10.11.217.112,8981,soa-node1.nal.usda.gov,,"Plugin Output: Nessus has determined that the Apache Solr instance at http://soa-node1.nal.usda.gov:8981/solr
+does not require authentication to access the node management pages. Nessus requested
+http://soa-node1.nal.usda.gov:8981/solr/admin/cores?action=STATUS&indexInfo=false&wt=json and did
+not receive a request for authorization.
+
+Cores found: pubag_shard2_replica_n4, naldc_shard3_replica_n8, naldc_shard1_replica_n3, pubag_shard3_replica_n10,",Update Apache Solr's configuration to require authentication.,5.3,,"Apr 1, 2022 11:38:47 UTC","Aug 3, 2022 05:01:18 UTC"
+158094,Apache Solr Unauthenticated Access Information Disclosure,Medium,10.11.217.112,8982,soa-node1.nal.usda.gov,,"Plugin Output: Nessus has determined that the Apache Solr instance at http://soa-node1.nal.usda.gov:8982/solr
+does not require authentication to access the node management pages. Nessus requested
+http://soa-node1.nal.usda.gov:8982/solr/admin/cores?action=STATUS&indexInfo=false&wt=json and did
+not receive a request for authorization.
+
+Cores found: naldc_shard2_replica_n6, pubag_shard3_replica_n8, pubag_shard1_replica_n2, naldc_shard1_replica_n1,",Update Apache Solr's configuration to require authentication.,5.3,,"Apr 1, 2022 11:38:47 UTC","Aug 3, 2022 05:01:18 UTC"
+158094,Apache Solr Unauthenticated Access Information Disclosure,Medium,10.11.217.112,8983,soa-node1.nal.usda.gov,,"Plugin Output: Nessus has determined that the Apache Solr instance at http://soa-node1.nal.usda.gov:8983/solr
+does not require authentication to access the node management pages. Nessus requested
+http://soa-node1.nal.usda.gov:8983/solr/admin/cores?action=STATUS&indexInfo=false&wt=json and did
+not receive a request for authorization.
+
+Cores found: pubag_shard2_replica_n6, naldc_shard2_replica_n4, pubag_shard1_replica_n1, naldc_shard3_replica_n10,",Update Apache Solr's configuration to require authentication.,5.3,,"Feb 18, 2022 11:52:06 UTC","Aug 3, 2022 05:01:18 UTC"
+158094,Apache Solr Unauthenticated Access Information Disclosure,Medium,10.11.217.115,8981,soa-node2.nal.usda.gov,,"Plugin Output: Nessus has determined that the Apache Solr instance at http://soa-node2.nal.usda.gov:8981/solr
+does not require authentication to access the node management pages. Nessus requested
+http://soa-node2.nal.usda.gov:8981/solr/admin/cores?action=STATUS&indexInfo=false&wt=json and did
+not receive a request for authorization.
+
+Cores found: naldc_shard3_replica_n8, pubag_shard2_replica_n6, naldc_shard1_replica_n2, pubag_shard1_replica_n1,",Update Apache Solr's configuration to require authentication.,5.3,,"Apr 6, 2022 06:34:32 UTC","Aug 3, 2022 05:01:18 UTC"
+158094,Apache Solr Unauthenticated Access Information Disclosure,Medium,10.11.217.115,8982,soa-node2.nal.usda.gov,,"Plugin Output: Nessus has determined that the Apache Solr instance at http://soa-node2.nal.usda.gov:8982/solr
+does not require authentication to access the node management pages. Nessus requested
+http://soa-node2.nal.usda.gov:8982/solr/admin/cores?action=STATUS&indexInfo=false&wt=json and did
+not receive a request for authorization.
+
+Cores found: pubag_shard2_replica_n4, naldc_shard2_replica_n6, pubag_shard3_replica_n10, naldc_shard1_replica_n1,",Update Apache Solr's configuration to require authentication.,5.3,,"Apr 6, 2022 06:34:32 UTC","Aug 3, 2022 05:01:18 UTC"
+158094,Apache Solr Unauthenticated Access Information Disclosure,Medium,10.11.217.115,8983,soa-node2.nal.usda.gov,,"Plugin Output: Nessus has determined that the Apache Solr instance at http://soa-node2.nal.usda.gov:8983/solr
+does not require authentication to access the node management pages. Nessus requested
+http://soa-node2.nal.usda.gov:8983/solr/admin/cores?action=STATUS&indexInfo=false&wt=json and did
+not receive a request for authorization.
+
+Cores found: naldc_shard2_replica_n4, pubag_shard3_replica_n8, pubag_shard1_replica_n2, naldc_shard3_replica_n10,",Update Apache Solr's configuration to require authentication.,5.3,,"Apr 6, 2022 06:34:32 UTC","Aug 3, 2022 05:01:18 UTC"
+158094,Apache Solr Unauthenticated Access Information Disclosure,Medium,10.11.217.132,8983,archivesspace.nal.usda.gov,,"Plugin Output: Nessus has determined that the Apache Solr instance at http://archivesspace.nal.usda.gov:8983/solr
+does not require authentication to access the node management pages. Nessus requested
+http://archivesspace.nal.usda.gov:8983/solr/admin/cores?action=STATUS&indexInfo=false&wt=json and did
+not receive a request for authorization.
+
+Cores found: archivesspace,",Update Apache Solr's configuration to require authentication.,5.3,,"Mar 28, 2022 21:02:27 UTC","Aug 3, 2022 05:01:18 UTC"
+158094,Apache Solr Unauthenticated Access Information Disclosure,Medium,10.11.217.133,8981,soa-node3.nal.usda.gov,,"Plugin Output: Nessus has determined that the Apache Solr instance at http://soa-node3.nal.usda.gov:8981/solr
+does not require authentication to access the node management pages. Nessus requested
+http://soa-node3.nal.usda.gov:8981/solr/admin/cores?action=STATUS&indexInfo=false&wt=json and did
+not receive a request for authorization.
+
+Cores found: naldc_shard3_replica_n8, pubag_shard2_replica_n6, naldc_shard1_replica_n2, pubag_shard1_replica_n1,",Update Apache Solr's configuration to require authentication.,5.3,,"Feb 21, 2022 18:00:43 UTC","Aug 3, 2022 05:01:18 UTC"
+158094,Apache Solr Unauthenticated Access Information Disclosure,Medium,10.11.217.133,8982,soa-node3.nal.usda.gov,,"Plugin Output: Nessus has determined that the Apache Solr instance at http://soa-node3.nal.usda.gov:8982/solr
+does not require authentication to access the node management pages. Nessus requested
+http://soa-node3.nal.usda.gov:8982/solr/admin/cores?action=STATUS&indexInfo=false&wt=json and did
+not receive a request for authorization.
+
+Cores found: pubag_shard2_replica_n4, naldc_shard2_replica_n6, pubag_shard3_replica_n10, naldc_shard1_replica_n1,",Update Apache Solr's configuration to require authentication.,5.3,,"Feb 21, 2022 18:00:43 UTC","Aug 3, 2022 05:01:18 UTC"
+158094,Apache Solr Unauthenticated Access Information Disclosure,Medium,10.11.217.133,8983,soa-node3.nal.usda.gov,,"Plugin Output: Nessus has determined that the Apache Solr instance at http://soa-node3.nal.usda.gov:8983/solr
+does not require authentication to access the node management pages. Nessus requested
+http://soa-node3.nal.usda.gov:8983/solr/admin/cores?action=STATUS&indexInfo=false&wt=json and did
+not receive a request for authorization.
+
+Cores found: naldc_shard2_replica_n4, pubag_shard3_replica_n8, pubag_shard1_replica_n2, naldc_shard3_replica_n10,",Update Apache Solr's configuration to require authentication.,5.3,,"Feb 21, 2022 18:00:43 UTC","Aug 3, 2022 05:01:18 UTC"
+158094,Apache Solr Unauthenticated Access Information Disclosure,Medium,10.11.217.134,443,ip-10-11-217-134.nal.usda.gov,,"Plugin Output: Nessus has determined that the Apache Solr instance at https://10.11.217.134/solr
+does not require authentication to access the node management pages. Nessus requested
+https://10.11.217.134/solr/admin/cores?action=STATUS&indexInfo=false&wt=json and did
+not receive a request for authorization.
+
+Cores found: naldc_shard2_replica_n4, pubag_shard3_replica_n8, pubag_shard1_replica_n2, naldc_shard3_replica_n10,",Update Apache Solr's configuration to require authentication.,5.3,,"Jul 20, 2022 05:09:17 UTC","Aug 3, 2022 05:01:18 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.11.208.24,3389,acunetix.nal.usda.gov,usda.net\ARSMDBE23ACUNET,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Apr 6, 2022 06:34:32 UTC","Aug 3, 2022 05:01:18 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.11.208.60,3389,arsmdbe23ni002.nal.usda.gov,usda.net\ARSMDBE23NI002,"Plugin Output: 
+TLSv1.1 is enabled and the server supports at least one cipher.
+
+TLSv1.1 is enabled and the server supports at least one cipher.","Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Apr 6, 2022 06:34:32 UTC","Aug 3, 2022 10:23:12 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.11.208.100,3389,syslog-servers.nal.usda.gov,usda.net\ARSMDBE23SYSLG3,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Apr 6, 2022 06:34:32 UTC","Aug 3, 2022 05:01:18 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.11.208.195,443,arsmdbe20vcenter.nal.usda.gov,,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Apr 6, 2022 06:34:32 UTC","Aug 3, 2022 10:23:12 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.11.208.195,636,arsmdbe20vcenter.nal.usda.gov,,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Apr 6, 2022 06:34:32 UTC","Aug 3, 2022 10:23:12 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.11.208.195,5480,arsmdbe20vcenter.nal.usda.gov,,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Apr 6, 2022 09:28:59 UTC","Aug 3, 2022 10:23:12 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.11.208.195,9443,arsmdbe20vcenter.nal.usda.gov,,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Apr 6, 2022 06:34:32 UTC","Aug 3, 2022 10:23:12 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.11.208.215,3389,ip-10-11-208-215.nal.usda.gov,,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Jun 6, 2022 17:00:27 UTC","Aug 3, 2022 05:01:18 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.11.208.240,50000,sp-netapp01.nal.usda.gov,,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Apr 6, 2022 06:34:32 UTC","Aug 3, 2022 05:01:18 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.11.208.241,50000,sp-netapp02.nal.usda.gov,,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Apr 6, 2022 06:34:32 UTC","Aug 3, 2022 05:01:18 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.11.209.28,3389,ip-10-11-209-28.nal.usda.gov,usda.net\ARSMDBE24195740,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Apr 20, 2022 07:36:18 UTC","Aug 1, 2022 20:04:38 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.11.209.29,3389,ip-10-11-209-29.nal.usda.gov,usda.net\ARSMDBE24195081,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Apr 6, 2022 06:34:32 UTC","Aug 3, 2022 05:01:18 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.11.209.30,3389,ip-10-11-209-30.nal.usda.gov,usda.net\ARSMDBE34004253,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Jun 13, 2022 17:01:04 UTC","Aug 3, 2022 05:01:18 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.11.209.142,3389,ip-10-11-209-142.nal.usda.gov,usda.net\ARSMDBE24YD1JL2,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Apr 6, 2022 06:34:32 UTC","Aug 3, 2022 05:01:18 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.11.209.145,3389,ip-10-11-209-145.nal.usda.gov,usda.net\ARSMDBE24195105,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Apr 6, 2022 06:34:32 UTC","Aug 1, 2022 20:04:38 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.11.210.25,3389,ip-10-11-210-25.nal.usda.gov,usda.net\ARSMDBE34004254,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"May 2, 2022 18:48:28 UTC","Aug 3, 2022 05:01:18 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.11.210.26,3389,ip-10-11-210-26.nal.usda.gov,usda.net\ARSMDBE34004255,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Jul 18, 2022 16:38:28 UTC","Aug 3, 2022 05:01:18 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.11.210.27,3389,ip-10-11-210-27.nal.usda.gov,usda.net\ARSDCWA25000054,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Apr 11, 2022 18:55:04 UTC","Aug 1, 2022 20:04:38 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.11.210.29,3389,ip-10-11-210-29.nal.usda.gov,usda.net\ARSMDBE35001105,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Aug 1, 2022 20:04:38 UTC","Aug 3, 2022 05:01:18 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.11.210.31,3389,ip-10-11-210-31.nal.usda.gov,usda.net\AIODCWA24000027,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Jul 11, 2022 17:00:50 UTC","Aug 3, 2022 05:01:18 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.11.210.32,3389,ip-10-11-210-32.nal.usda.gov,usda.net\ARSMDBE25195613,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Jun 27, 2022 18:22:04 UTC","Aug 1, 2022 20:04:38 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.11.210.40,3389,ip-10-11-210-40.nal.usda.gov,usda.net\ARSMDBE24195091,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Apr 6, 2022 06:34:32 UTC","Aug 3, 2022 05:01:18 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.11.210.100,3389,ip-10-11-210-100.nal.usda.gov,usda.net\ARSMDBE24195097,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Apr 11, 2022 18:55:04 UTC","Aug 1, 2022 20:04:38 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.11.210.133,3389,ip-10-11-210-133.nal.usda.gov,usda.net\ARSMDBE25195633,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Jul 11, 2022 17:00:50 UTC","Aug 1, 2022 20:04:38 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.11.210.140,3389,ip-10-11-210-140.nal.usda.gov,usda.net\ARSMDBE35004275,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"May 2, 2022 18:48:28 UTC","Aug 3, 2022 05:01:18 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.11.210.142,3389,ip-10-11-210-142.nal.usda.gov,usda.net\ARSMDBE34004248,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Jun 13, 2022 19:56:06 UTC","Aug 3, 2022 05:01:18 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.11.210.143,3389,ip-10-11-210-143.nal.usda.gov,usda.net\ARSMDBE34004249,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Jul 11, 2022 23:55:12 UTC","Aug 3, 2022 05:01:18 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.11.210.146,3389,ip-10-11-210-146.nal.usda.gov,usda.net\ARSMDBE25195612,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Jun 13, 2022 19:56:06 UTC","Aug 8, 2022 17:02:52 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.11.210.148,3389,ip-10-11-210-148.nal.usda.gov,usda.net\ARSMDBE24195032,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Apr 6, 2022 06:34:32 UTC","Aug 8, 2022 17:02:52 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.11.210.149,3389,ip-10-11-210-149.nal.usda.gov,usda.net\ARSMDBE25195601,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Apr 25, 2022 18:45:31 UTC","Aug 8, 2022 17:02:52 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.11.210.150,3389,ip-10-11-210-150.nal.usda.gov,usda.net\ARSMDBE24194496,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Apr 11, 2022 18:55:04 UTC","Aug 1, 2022 20:04:38 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.11.210.151,3389,ip-10-11-210-151.nal.usda.gov,usda.net\ARSMDBE25195655,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Apr 11, 2022 18:55:04 UTC","Aug 3, 2022 05:01:18 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.11.210.152,3389,ip-10-11-210-152.nal.usda.gov,usda.net\ARSMDBE25194807,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Apr 11, 2022 18:55:04 UTC","Aug 8, 2022 17:02:52 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.11.210.157,3389,ip-10-11-210-157.nal.usda.gov,usda.net\ARSMDBE25VCGH53,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Apr 6, 2022 06:34:32 UTC","Aug 3, 2022 05:01:18 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.11.210.162,3389,ip-10-11-210-162.nal.usda.gov,usda.net\ARSMDBE24YGZHL2,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Apr 6, 2022 06:34:32 UTC","Aug 3, 2022 05:01:18 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.11.210.163,3389,ip-10-11-210-163.nal.usda.gov,usda.net\ARSMDBE25195640,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Apr 25, 2022 18:45:31 UTC","Aug 3, 2022 05:01:18 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.11.210.164,3389,ip-10-11-210-164.nal.usda.gov,usda.net\ARSMDBE35004260,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"May 2, 2022 18:48:28 UTC","Aug 1, 2022 20:04:38 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.11.215.31,443,bigip-self1-215.nal.usda.gov,,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Apr 6, 2022 06:34:32 UTC","Aug 8, 2022 17:02:52 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.11.215.32,443,bigip-self2-215.nal.usda.gov,,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Apr 6, 2022 06:34:32 UTC","Aug 8, 2022 17:02:52 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.11.215.33,443,bigip-float-215.nal.usda.gov,,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Apr 6, 2022 06:34:32 UTC","Aug 8, 2022 17:02:52 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.11.215.180,3389,agclass-stage-node1.nal.usda.gov,ARSMDBE23NALT-S\ARSMDBE23NALT-S,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Apr 6, 2022 06:34:32 UTC","Aug 8, 2022 17:02:52 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.11.215.196,25,archivesspace-dev.nal.usda.gov,,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Apr 18, 2022 20:59:37 UTC","Aug 8, 2022 17:02:52 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.11.215.212,25,archivesspace-stage.nal.usda.gov,,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Apr 6, 2022 06:34:32 UTC","Aug 3, 2022 05:01:18 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.11.217.31,443,bigip-self1-217.nal.usda.gov,,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Apr 6, 2022 06:34:32 UTC","Aug 3, 2022 05:01:18 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.11.217.33,443,bigip-float-217.nal.usda.gov,,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Apr 6, 2022 06:34:32 UTC","Aug 3, 2022 05:01:18 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.11.217.97,1433,arsmdbe23relapp.nal.usda.gov,ARSMDBE23RELAPP\ARSMDBE23RELAPP,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Apr 6, 2022 06:34:32 UTC","Aug 3, 2022 05:01:18 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.11.217.97,3389,arsmdbe23relapp.nal.usda.gov,ARSMDBE23RELAPP\ARSMDBE23RELAPP,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Apr 6, 2022 06:34:32 UTC","Aug 3, 2022 05:01:18 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.11.217.125,3389,agclass-node1.nal.usda.gov,ARSMDBE23NALT-S\ARSMDBE23NALT-S,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Apr 6, 2022 06:34:32 UTC","Aug 3, 2022 05:01:18 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.11.217.132,25,archivesspace.nal.usda.gov,,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Apr 6, 2022 06:34:32 UTC","Aug 3, 2022 05:01:18 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.12.16.10,3389,,usda.net\ARSMDBE23ACUNET,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Apr 6, 2022 06:34:32 UTC","Aug 8, 2022 17:02:52 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.12.16.11,443,,,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Apr 6, 2022 06:34:32 UTC","Aug 8, 2022 17:02:52 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.12.16.12,443,,,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Apr 6, 2022 06:34:32 UTC","Aug 8, 2022 17:02:52 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.12.16.13,443,,,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Apr 6, 2022 06:34:32 UTC","Aug 8, 2022 17:02:52 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.12.18.151,443,,,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Apr 6, 2022 06:34:32 UTC","Aug 8, 2022 17:02:52 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.12.18.151,5989,,,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Apr 6, 2022 06:34:32 UTC","Aug 8, 2022 17:02:52 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.12.18.152,443,,,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Apr 6, 2022 06:34:32 UTC","Aug 8, 2022 17:02:52 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.12.18.152,5989,,,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Apr 6, 2022 06:34:32 UTC","Aug 8, 2022 17:02:52 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.12.18.153,443,,,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Apr 6, 2022 06:34:32 UTC","Aug 8, 2022 17:02:52 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.12.18.153,5989,,,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Apr 6, 2022 06:34:32 UTC","Aug 8, 2022 17:02:52 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.12.18.154,443,,,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Apr 6, 2022 06:34:32 UTC","Aug 8, 2022 17:02:52 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.12.18.154,5989,,,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Apr 6, 2022 06:34:32 UTC","Aug 8, 2022 17:02:52 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.12.18.155,443,,,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Apr 6, 2022 06:34:32 UTC","Aug 8, 2022 17:02:52 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.12.18.155,5989,,,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Apr 6, 2022 06:34:32 UTC","Aug 8, 2022 17:02:52 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.12.18.156,443,,,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Apr 6, 2022 06:34:32 UTC","Aug 8, 2022 17:02:52 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.12.18.156,5989,,,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Apr 6, 2022 06:34:32 UTC","Aug 8, 2022 17:02:52 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.12.18.157,443,,,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Apr 6, 2022 06:34:32 UTC","Aug 8, 2022 17:02:52 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.12.18.157,5989,,,Plugin Output: TLSv1.1 is enabled and the server supports at least one cipher.,"Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",6.5,,"Apr 6, 2022 06:34:32 UTC","Aug 8, 2022 17:02:52 UTC"
+157288,TLS Version 1.1 Protocol Deprecated,Medium,10.12.18.161,443,,,Pl
