@@ -225,7 +225,7 @@ def log4shell_create_github_issue(title, labels, body):
     # for unique_id in Security_Report:
     # create dict for each issue entitled "log4shell_issue"
     log4shell_issue = {
-        "title": title,  # assign each new issue to title
+        "title": title,  # assign title of unique_id to each new issue
         "labels": labels,
         "body": body
     }
@@ -235,7 +235,7 @@ def log4shell_create_github_issue(title, labels, body):
     # Add the issue to our repository via POST
 
     new_repo = requests.post(POST_URL,headers=headers,data=json.dumps(log4shell_issue))
-    exit()
+    #exit()
     # HTTP response status code 201 indicates that the issue was successfully created
     if new_repo.status_code == 201:
         print('Successfully Created Issue {0:s}'.format(title))
@@ -335,6 +335,7 @@ def get_issue_number():
         print("Error:", r.status_code)
     return issue_number
 
+# create function to get last observed timestamp
 def get_last_observed_timestamp(uniq_id, list):
     # for each
     #print("list: ", list)
@@ -375,7 +376,7 @@ def create_issue_comment_of_most_updated_timestamp(OWNER, repo, issue_number, la
 
     # create issue comment of duplicate
     issue_comment = {
-        'body':
+        'unique_id_body':
 f'### Last Created: {last_observed_timestamp}'
     }
     # Add issue comment of most recent duplicate issues to previously created issue in our repository
@@ -490,7 +491,7 @@ def weekly_nal_create_github_issue(
         'title': title,  # assign each new issue to title
         'labels': labels,
         'assignees': assignees,
-        'body':
+        'unique_id_body':
 f'### Plugin: {unique_ids_list[0]}'
 f'### Plugin Name: {unique_ids_list[1]}'
 f'### Severity: {unique_ids_list[2]}'
@@ -545,7 +546,7 @@ def ars_bod_create_github_issue(
         'title': title,  # assign each new issue to title
         'labels': labels,
         'assignees': assignees,
-        'body':
+        'unique_id_body':
 f'### Plugin: {unique_ids_list[0]}'
 f'### Plugin Name: {unique_ids_list[1]}'
 f'### Family: {unique_ids_list[2]}'
@@ -742,23 +743,23 @@ for issue in range(len(log4shell_unique_ids_list)):
     print("unique_id_title: ", unique_id_title)
     unique_id_list = log4shell_unique_ids_list[issue][1]
     #print("Log4Shell Unique_id: ", log4shell_unique_ids_list)
-    print("#Unique_ids_list: ", unique_id_list)
+    print("#Unique_id_list: ", unique_id_list)
     unique_id_labels = ["Test Label"]
-    unique_id_body = '### Plugin: ' + unique_id_list[0] + '\n' + '### Plugin Name: ' + unique_id_list[1] + '\n' 
-    """
-    ### Severity: {unique_id_list[2]}' +
-    ### IP Address: {unique_id_list[3]}' +
-    ### Port: {unique_id_list[4]}' +
-    ### DNS Name: {unique_id_list[5]}' +
-    ### NetBios Name: {unique_id_list[6]}' +
-    ### Plugin Output: {unique_id_list[7]}' +
-    ### Solution: {unique_id_list[8]}' +
-    ### CVSS V3 Base Score: {unique_id_list[9]}' +
-    ### CVE: {unique_id_list[10]}' +
-    ### First Discovered: {unique_id_list[11]}' +
-    ### Last Observed: {unique_id_list[12]}'
-    """
-
+    unique_id_body = f'### Plugin: {unique_id_list[0]}\n'
+    unique_id_body += f'### Plugin Name: {unique_id_list[1]}\n'
+    unique_id_body += f'### Severity: {unique_id_list[2]}\n'
+    unique_id_body += f'### IP Address: {unique_id_list[3]}\n'
+    unique_id_body += f'### Port: {unique_id_list[4]}\n'
+    unique_id_body += f'### DNS Name: {unique_id_list[5]}\n'
+    unique_id_body += f'### NetBIOS Name: {unique_id_list[6]}\n'
+    unique_id_body += f'### Plugin Output: {unique_id_list[7]}\n'
+    unique_id_body += f'### Solution: {unique_id_list[8]}\n'
+    unique_id_body += f'### CVSS V3 Base Score: {unique_id_list[9]}\n'
+    unique_id_body += f'### CVE: {unique_id_list[10]}\n'
+    unique_id_body += f'### First Discovered: {unique_id_list[11]}\n'
+    unique_id_body += f'### Last Discovered: {unique_id_list[12]}'
+    print("Body:", unique_id_body)
+    #exit()
     delay_api_requests()
     log4shell_create_github_issue(unique_id_title, unique_id_labels, unique_id_body)
 

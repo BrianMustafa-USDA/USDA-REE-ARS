@@ -11973,3 +11973,145 @@
 10/04/2023 12:51:11 INFO Logging into REPO <IT-Security-Test>
 10/04/2023 12:51:11 DEBUG Starting new HTTPS connection (1): api.github.com:443
 10/04/2023 12:51:12 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 201 2572
+10/11/2023 12:15:46 INFO Start Logging
+10/11/2023 12:15:46 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+10/11/2023 12:15:46 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+10/11/2023 12:15:46 INFO Successfully started execution of <security_reports_issues_scraper.py>
+10/11/2023 12:15:46 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/11/2023 12:15:47 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 200 None
+10/11/2023 12:16:12 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+10/11/2023 12:16:12 INFO Logging into REPO <IT-Security-Test>
+10/11/2023 12:16:12 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/11/2023 12:16:14 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 201 2572
+10/11/2023 12:20:06 INFO Start Logging
+10/11/2023 12:20:06 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+10/11/2023 12:20:06 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+10/11/2023 12:20:06 INFO Successfully started execution of <security_reports_issues_scraper.py>
+10/11/2023 12:20:06 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/11/2023 12:20:07 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 200 None
+10/11/2023 12:22:55 INFO Start Logging
+10/11/2023 12:22:55 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+10/11/2023 12:22:55 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+10/11/2023 12:22:55 INFO Successfully started execution of <security_reports_issues_scraper.py>
+10/11/2023 12:22:56 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/11/2023 12:22:56 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 200 None
+10/11/2023 12:23:21 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+10/11/2023 12:23:21 INFO Logging into REPO <IT-Security-Test>
+10/11/2023 12:23:21 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/11/2023 12:23:23 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 201 2503
+10/11/2023 12:29:13 INFO Start Logging
+10/11/2023 12:29:13 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+10/11/2023 12:29:13 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+10/11/2023 12:29:13 INFO Successfully started execution of <security_reports_issues_scraper.py>
+10/11/2023 12:29:13 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/11/2023 12:29:14 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 200 None
+10/11/2023 12:29:39 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+10/11/2023 12:29:39 INFO Logging into REPO <IT-Security-Test>
+10/11/2023 12:29:39 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/11/2023 12:29:40 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 201 2503
+10/11/2023 12:29:40 INFO Successfully Created Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+10/12/2023 08:29:08 INFO Start Logging
+10/12/2023 08:29:08 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+10/12/2023 08:29:08 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+10/12/2023 08:29:08 INFO Successfully started execution of <security_reports_issues_scraper.py>
+10/12/2023 08:29:08 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/12/2023 08:29:09 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 200 None
+10/12/2023 08:36:21 INFO Start Logging
+10/12/2023 08:36:21 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+10/12/2023 08:36:21 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+10/12/2023 08:36:21 INFO Successfully started execution of <security_reports_issues_scraper.py>
+10/12/2023 08:36:21 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/12/2023 08:36:22 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 200 None
+10/12/2023 08:36:47 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+10/12/2023 08:36:47 INFO Logging into REPO <IT-Security-Test>
+10/12/2023 08:47:16 INFO Start Logging
+10/12/2023 08:47:16 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+10/12/2023 08:47:16 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+10/12/2023 08:47:16 INFO Successfully started execution of <security_reports_issues_scraper.py>
+10/12/2023 08:47:16 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/12/2023 08:47:17 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 200 None
+10/12/2023 08:47:42 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+10/12/2023 08:47:42 INFO Logging into REPO <IT-Security-Test>
+10/12/2023 08:59:05 INFO Start Logging
+10/12/2023 08:59:06 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+10/12/2023 08:59:06 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+10/12/2023 08:59:06 INFO Successfully started execution of <security_reports_issues_scraper.py>
+10/12/2023 08:59:06 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/12/2023 08:59:07 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 200 None
+10/12/2023 08:59:32 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+10/12/2023 08:59:32 INFO Logging into REPO <IT-Security-Test>
+10/12/2023 08:59:32 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/12/2023 08:59:34 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 201 4330
+10/12/2023 08:59:34 INFO Successfully Created Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+10/12/2023 10:06:19 INFO Start Logging
+10/12/2023 10:06:19 INFO Checking if security report <log4shell_weekly_10_sample_issues.csv> exists.
+10/12/2023 10:06:19 INFO Security Report <log4shell_weekly_10_sample_issues.csv> exists.
+10/12/2023 10:06:19 INFO Successfully started execution of <security_reports_issues_scraper.py>
+10/12/2023 10:06:19 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/12/2023 10:06:20 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 200 None
+10/12/2023 10:06:45 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+10/12/2023 10:06:45 INFO Logging into REPO <IT-Security-Test>
+10/12/2023 10:06:45 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/12/2023 10:06:47 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 201 4330
+10/12/2023 10:06:47 INFO Successfully Created Issue 163793:RHEL 8 : kernel (RHSA-2022:5819):10.11.215.189:0:Aug 8, 2022 17:02:52 UTC
+10/12/2023 10:07:12 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+10/12/2023 10:07:12 INFO Logging into REPO <IT-Security-Test>
+10/12/2023 10:07:12 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/12/2023 10:07:14 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 201 3471
+10/12/2023 10:07:14 INFO Successfully Created Issue 163724:Google Chrome < 104.0.5112.79 Multiple Vulnerabilities:10.11.210.148:445:Aug 8, 2022 17:02:52 UTC
+10/12/2023 10:07:39 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+10/12/2023 10:07:39 INFO Logging into REPO <IT-Security-Test>
+10/12/2023 10:07:39 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/12/2023 10:07:40 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 201 3471
+10/12/2023 10:07:40 INFO Successfully Created Issue 163724:Google Chrome < 104.0.5112.79 Multiple Vulnerabilities:10.11.210.152:445:Aug 8, 2022 17:02:52 UTC
+10/12/2023 10:08:05 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+10/12/2023 10:08:05 INFO Logging into REPO <IT-Security-Test>
+10/12/2023 10:08:05 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/12/2023 10:08:07 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 201 3184
+10/12/2023 10:08:07 INFO Successfully Created Issue 163497:Mozilla Firefox < 103.0:10.11.210.29:445:Aug 1, 2022 20:04:38 UTC
+10/12/2023 10:08:32 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+10/12/2023 10:08:32 INFO Logging into REPO <IT-Security-Test>
+10/12/2023 10:08:32 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/12/2023 10:08:33 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 201 3184
+10/12/2023 10:08:33 INFO Successfully Created Issue 163497:Mozilla Firefox < 103.0:10.11.210.31:445:Aug 1, 2022 20:04:38 UTC
+10/12/2023 10:08:58 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+10/12/2023 10:08:58 INFO Logging into REPO <IT-Security-Test>
+10/12/2023 10:08:58 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/12/2023 10:09:00 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 201 3184
+10/12/2023 10:09:00 INFO Successfully Created Issue 163497:Mozilla Firefox < 103.0:10.11.210.40:445:Aug 1, 2022 17:00:55 UTC
+10/12/2023 10:09:25 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+10/12/2023 10:09:25 INFO Logging into REPO <IT-Security-Test>
+10/12/2023 10:09:25 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/12/2023 10:09:26 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 201 3187
+10/12/2023 10:09:26 INFO Successfully Created Issue 163497:Mozilla Firefox < 103.0:10.11.210.133:445:Aug 1, 2022 17:00:55 UTC
+10/12/2023 10:09:51 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+10/12/2023 10:09:51 INFO Logging into REPO <IT-Security-Test>
+10/12/2023 10:09:51 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/12/2023 10:09:53 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 201 3185
+10/12/2023 10:09:53 INFO Successfully Created Issue 163497:Mozilla Firefox < 103.0:10.11.210.142:445:Aug 3, 2022 05:01:18 UTC
+10/12/2023 10:10:18 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+10/12/2023 10:10:18 INFO Logging into REPO <IT-Security-Test>
+10/12/2023 10:10:18 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/12/2023 10:10:20 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 201 3186
+10/12/2023 10:10:20 INFO Successfully Created Issue 163497:Mozilla Firefox < 103.0:10.11.210.143:445:Aug 1, 2022 20:04:38 UTC
+10/12/2023 10:10:45 INFO Connecting into https://api.github.com in order to create issue on 
+    <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>
+10/12/2023 10:10:45 INFO Logging into REPO <IT-Security-Test>
+10/12/2023 10:10:45 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/12/2023 10:10:46 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 201 3187
+10/12/2023 10:10:46 INFO Successfully Created Issue 163497:Mozilla Firefox < 103.0:10.11.210.150:445:Aug 1, 2022 17:00:55 UTC
