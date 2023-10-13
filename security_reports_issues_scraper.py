@@ -197,9 +197,7 @@ def all_unique_ids(list):
         assigned_unique_ids_list.append(pair_assigned_unique_id)
     return assigned_unique_ids_list
 
-def log4shell_create_github_issue(
-        title, body=None,
-        assignees=None, labels=None,):
+def log4shell_create_github_issue(title, labels, body):
     # Display message to log file to indicate program is connecting into https://api.github.com
     logging.info("""Connecting into https://api.github.com in order to create issue on 
     <Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv>""")
@@ -213,42 +211,31 @@ def log4shell_create_github_issue(
 
     # Create an issue on https://api.github.com using the given parameters.
     # Our url to create issue comments via POST
-    url = "https://api.github.com/repos/%s/%s/issues" % (owner, repo)
+    url = "https://api.github.com/repos/%s/%s/issues" % (OWNER, REPO)
 
-    # Display message in log file of logging into repo
-    logging.info("Logging into repo <%s>" % repo)
+    # Display message in log file of logging into REPO
+    logging.info("Logging into REPO <%s>" % REPO)
 
     """
-    # Create an authenticated session to create the issue
-    session = requests.session(auth=(username, password))
+    # Create an authenticated session to create the issue from the security report (.csv)
+    session = requests.Session()
+    session.auth = (OWNER, BEARER_KEY)
     """
 
     # for unique_id in Security_Report:
     # create dict for each issue entitled "log4shell_issue"
     log4shell_issue = {
-        "title": title,  # assign each new issue to title
-        "assignees": assignees,
+        "title": title,  # assign title of unique_id to each new issue
         "labels": labels,
-        "body":
-f'### Plugin: {unique_id_list[0]}'
-f'### Plugin Name: {unique_id_list[1]}'
-f'### Severity: {unique_id_list[2]}'
-f'### IP Address: {unique_id_list[3]}'
-f'### Port: {unique_id_list[4]}'
-f'### DNS Name: {unique_id_list[5]}'
-f'### NetBios Name: {unique_id_list[6]}'
-f'### Plugin Output: {unique_id_list[7]}'
-f'### Solution: {unique_id_list[8]}'
-f'### CVSS V3 Base Score: {unique_id_list[9]}'
-f'### CVE: {unique_id_list[10]}'
-f'### First Discovered: {unique_id_list[11]}'
-f'### Last Observed: {unique_id_list[12]}'
+        "body": body
     }
+    print("log4shell_issue JSON:", json.dumps(log4shell_issue, indent=4, sort_keys=True))
     print("log4shell_issue: ", log4shell_issue)
     print("type: ", type(log4shell_issue))
     # Add the issue to our repository via POST
-    new_repo = requests.post(url, data=json.dumps(log4shell_issue), headers=headers)
 
+    new_repo = requests.post(POST_URL,headers=headers,data=json.dumps(log4shell_issue))
+    #exit()
     # HTTP response status code 201 indicates that the issue was successfully created
     if new_repo.status_code == 201:
         print('Successfully Created Issue {0:s}'.format(title))
@@ -260,7 +247,7 @@ f'### Last Observed: {unique_id_list[12]}'
         logging.error('Response: ', new_repo.content)
     return log4shell_issue
 
-# Get all issues from repo and return the result in JSON.
+# Get all issues from REPO and return the result in JSON.
 def get_github_issues():
 
     # Create dict of headers
@@ -270,21 +257,19 @@ def get_github_issues():
         'X-GitHub-Api-Version': GITHUB_API_DATE
     }
 
-    per_page = {GITHUB_PER_PAGE: GITHUB_MAX_LIMIT_PER_PAGE}
-    print("printing per_page: ", per_page)
     # print("Headers:", headers)
 
     print("GITHUB_API_URL", GITHUB_API_URL)
 
     # Make a GET request and assign API data to variable entitled 'response'
-    response = requests.get(GET_URL, headers=headers, params=per_page)
+    response = requests.get(GET_URL, headers=headers)
 
     print("Request URL:", response.url)
     print("Return Code:", response.status_code)
     # return JSON content of response
     return response.json()
 
-# GEt issue titles for all issues on repo
+# GEt issue titles for all issues on REPO
 def get_issue_titles(issues):
     # Initialize the dictionary to store the issue number and title
     issue_titles = {}
@@ -310,7 +295,7 @@ def get_issue_number():
 
     # Our url to create API response
 
-    url = "https://api.github.com/repos/%s/%s/issues" % (owner, repo)
+    url = "https://api.github.com/repos/%s/%s/issues" % (OWNER, REPO)
 
     print("get an issue's response content")
     r = requests.get(url, headers=headers)
@@ -350,6 +335,7 @@ def get_issue_number():
         print("Error:", r.status_code)
     return issue_number
 
+# create function to get last observed timestamp
 def get_last_observed_timestamp(uniq_id, list):
     # for each
     #print("list: ", list)
@@ -374,7 +360,7 @@ def get_last_observed_timestamp(uniq_id, list):
             #print("last_observed_timestamp: ", last_observed_timestamp)
             return last_observed_timestamp
 
-def create_issue_comment_of_most_updated_timestamp(owner, repo, issue_number, last_observed_timestamp):
+def create_issue_comment_of_most_updated_timestamp(OWNER, repo, issue_number, last_observed_timestamp):
     # Create dict of headers in order to create issue comment of most recent timestamp
     headers = {
         'Accept': 'application/vnd.github+json',
@@ -383,14 +369,14 @@ def create_issue_comment_of_most_updated_timestamp(owner, repo, issue_number, la
     }
 
     # Our url to create issue comments via POST
-    url = "https://api.github.com/repos/%s/%s/issues/%s/comments" % (owner, repo, issue_number)
+    url = "https://api.github.com/repos/%s/%s/issues/%s/comments" % (OWNER, repo, issue_number)
 
-    # Display message in log file of logging into repo
-    logging.info("Logging into repo %s" % repo)
+    # Display message in log file of logging into REPO
+    logging.info("Logging into REPO %s" % repo)
 
     # create issue comment of duplicate
     issue_comment = {
-        'body':
+        'unique_id_body':
 f'### Last Created: {last_observed_timestamp}'
     }
     # Add issue comment of most recent duplicate issues to previously created issue in our repository
@@ -436,7 +422,7 @@ def verify_duplicates_of_github_issues(issue_titles, uniq_ids_list):
             if uniq_id == issue_value:
                 flag = True
                 print("flag is True", flag)
-                print("Github issue already exists in repo")
+                print("Github issue already exists in REPO")
                 print("uniq_id: ", uniq_id)
                 print("issue_value: ", issue_value)
                 last_observed_timestamp = get_last_observed_timestamp(uniq_id, log4shell_no_header_issues_list)
@@ -451,13 +437,13 @@ def verify_duplicates_of_github_issues(issue_titles, uniq_ids_list):
                 if flag:
                     print("The issue already exists")
                     dupl_unique_ids_list.append(uniq_id, issue_number)
-                    create_issue_comment_of_most_updated_timestamp(owner, repo, issue_number,
+                    create_issue_comment_of_most_updated_timestamp(OWNER, REPO, issue_number,
                                                                             last_observed_timestamp)
                 else:
                     print("New issue.")
                 """
             else:
-                print("New issue in repo")
+                print("New issue in REPO")
 
         # check if flag is true
         if flag:
@@ -466,7 +452,7 @@ def verify_duplicates_of_github_issues(issue_titles, uniq_ids_list):
             # Follow same format
             dupl_unique_ids_list.append(uniq_id)
             # create most recent timestamp comment for existing issue
-            create_issue_comment_of_most_updated_timestamp(owner, repo, issue_number, last_observed_timestamp)
+            create_issue_comment_of_most_updated_timestamp(OWNER, REPO, issue_number, last_observed_timestamp)
             # reset flag to false
             flag = False
             # for each issue, make sure flag is set to false
@@ -492,14 +478,20 @@ def weekly_nal_create_github_issue(
     }
 
     # Our url to create issues via POST
-    url = "https://api.github.com/repos/%s/%s/issues" % (owner, repo)
+    url = "https://api.github.com/repos/%s/%s/issues" % (OWNER, REPO)
+
+    """
+    # Create an authenticated session to create the issue from the security report (.csv)
+    session = requests.Session()
+    session.auth = (OWNER, BEARER_KEY)
+    """
 
     # Create new issues for Weekly NAL Report
     weekly_nal_issue = {
         'title': title,  # assign each new issue to title
         'labels': labels,
         'assignees': assignees,
-        'body':
+        'unique_id_body':
 f'### Plugin: {unique_ids_list[0]}'
 f'### Plugin Name: {unique_ids_list[1]}'
 f'### Severity: {unique_ids_list[2]}'
@@ -541,14 +533,20 @@ def ars_bod_create_github_issue(
     }
 
     # Our url to create issues via POST
-    url = "https://api.github.com/repos/%s/%s/issues" % (owner, repo)
+    url = "https://api.github.com/repos/%s/%s/issues" % (OWNER, REPO)
 
-    # Create new issues for Weekly NAL Security Report
+    """
+    # Create an authenticated session to create the issue from the security report (.csv)    
+    session = requests.Session()    
+    session.auth = (OWNER, BEARER_KEY)    
+    """
+
+    # Create new issues for security report (.csv)
     ars_bod_issue = {
         'title': title,  # assign each new issue to title
         'labels': labels,
         'assignees': assignees,
-        'body':
+        'unique_id_body':
 f'### Plugin: {unique_ids_list[0]}'
 f'### Plugin Name: {unique_ids_list[1]}'
 f'### Family: {unique_ids_list[2]}'
@@ -598,11 +596,11 @@ config = configparser.ConfigParser()
 # Read config file entitled "security_reports_issue_scraper.conf"
 config.read("security_reports_issues_scraper.conf")
 
-# Assign owner of [user] from security_reports_issues_scraper.conf
-owner = config["user"]["owner"]
+# Assign OWNER of [user] from security_reports_issues_scraper.conf
+OWNER = config["user"]["OWNER"]
 
-# Assign repo of [user] from security_reports_issues_scraper.conf
-repo = config["user"]["repo"]
+# Assign REPO of [user] from security_reports_issues_scraper.conf
+REPO = config["user"]["REPO"]
 
 # Assign delimiter within [unique-id-title] in security_reports_issues_scraper.conf
 unique_id_title_delimiter = config["unique-id-title"]["delimiter"]
@@ -616,8 +614,9 @@ GITHUB_API_URL = config["local-config-variables"]["GITHUB_API_URL"]
 GITHUB_REPO = config["local-config-variables"]["GITHUB_REPO"]
 GITHUB_API_TYPE = config["local-config-variables"]["GITHUB_API_TYPE"]
 GITHUB_PER_PAGE = config["local-config-variables"]["GITHUB_PER_PAGE"]
-GITHUB_MAX_LIMIT_PER_PAGE = int(config["local-config-variables"]["GITHUB_MAX_LIMIT_PER_PAGE"])
-GET_URL = GITHUB_API_URL + '/' + GITHUB_REPO + '/' + GITHUB_API_TYPE
+#GITHUB_MAX_LIMIT_PER_PAGE = int(config["local-config-variables"]["GITHUB_MAX_LIMIT_PER_PAGE"])
+GET_URL = GITHUB_API_URL + '/' + GITHUB_REPO + '/' + GITHUB_API_TYPE + '?' + GITHUB_PER_PAGE
+POST_URL = GITHUB_API_URL + '/' + GITHUB_REPO + '/' + GITHUB_API_TYPE
 print("url of github issues - GET_URL: ", GET_URL)
 print("Type of URL: ", type(GET_URL))
 print("str of GET_URL", str(GET_URL))
@@ -662,13 +661,13 @@ logging.info("Checking if security report <%s> exists." % log4shell_report)
 logging.info("Successfully started execution of <security_reports_issues_scraper.py>")
 
 # Enter Github Login Credential
-github = login(owner, BEARER_KEY)
+github = login(OWNER, BEARER_KEY)
 
 """
-if github == login(owner, personal_access_token):
-    logging.info("Successfully logged into repo <isdapps/IT-Security-Test>.")
+if github == login(OWNER, personal_access_token):
+    logging.info("Successfully logged into REPO <isdapps/IT-Security-Test>.")
 else:
-    logging.error("Unable to log into repo <isdapps/IT-Security-Test> using current login credentials.")
+    logging.error("Unable to log into REPO <isdapps/IT-Security-Test> using current login credentials.")
 """
 
 print("Log4Shell report:")
@@ -734,7 +733,7 @@ print("\nCreate issues from Log4Shell Report: ")
 """
 Iterate and create each issue in 
 "Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv> exists."
-onto the repo
+onto the REPO
 """
 
 for issue in range(len(log4shell_unique_ids_list)):
@@ -744,9 +743,25 @@ for issue in range(len(log4shell_unique_ids_list)):
     print("unique_id_title: ", unique_id_title)
     unique_id_list = log4shell_unique_ids_list[issue][1]
     #print("Log4Shell Unique_id: ", log4shell_unique_ids_list)
-    print("#Unique_ids_list: ", unique_id_list)
+    print("#Unique_id_list: ", unique_id_list)
+    unique_id_labels = ["Test Label"]
+    unique_id_body = f'### Plugin: {unique_id_list[0]}\n'
+    unique_id_body += f'### Plugin Name: {unique_id_list[1]}\n'
+    unique_id_body += f'### Severity: {unique_id_list[2]}\n'
+    unique_id_body += f'### IP Address: {unique_id_list[3]}\n'
+    unique_id_body += f'### Port: {unique_id_list[4]}\n'
+    unique_id_body += f'### DNS Name: {unique_id_list[5]}\n'
+    unique_id_body += f'### NetBIOS Name: {unique_id_list[6]}\n'
+    unique_id_body += f'### Plugin Output: {unique_id_list[7]}\n'
+    unique_id_body += f'### Solution: {unique_id_list[8]}\n'
+    unique_id_body += f'### CVSS V3 Base Score: {unique_id_list[9]}\n'
+    unique_id_body += f'### CVE: {unique_id_list[10]}\n'
+    unique_id_body += f'### First Discovered: {unique_id_list[11]}\n'
+    unique_id_body += f'### Last Discovered: {unique_id_list[12]}'
+    print("Body:", unique_id_body)
+    #exit()
     delay_api_requests()
-    log4shell_create_github_issue(unique_id_title, ["Test Label"], ["brian-mustafa"], unique_id_list)
+    log4shell_create_github_issue(unique_id_title, unique_id_labels, unique_id_body)
 
 """
 print("\nWeekly NAL Report:")

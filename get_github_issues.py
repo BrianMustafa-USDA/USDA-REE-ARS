@@ -6,7 +6,7 @@ GITHUB_REPO = "isdapps/IT-Security-Test"
 GITHUB_API_TYPE = "issues"
 GET_URL = GITHUB_API_URL + '/' + GITHUB_REPO + '/' + GITHUB_API_TYPE
 
-# Get all issues from the github repo and return the result in JSON.
+# Get all issues from the github REPO and return the result in JSON.
 def get_github_issues():
 
     headers = {
@@ -29,7 +29,7 @@ GITHUB_REPO = "isdapps/IT-Security-Test"
 GITHUB_API_TYPE = "issues"
 GET_URL = GITHUB_API_URL + '/' + GITHUB_REPO + '/' + GITHUB_API_TYPE
 
-# Get all issues from the github repo and return the result in JSON.
+# Get all issues from the github REPO and return the result in JSON.
 def get_github_issues():
 
     headers = {
