@@ -12115,3 +12115,327 @@
 10/12/2023 10:10:45 DEBUG Starting new HTTPS connection (1): api.github.com:443
 10/12/2023 10:10:46 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 201 3187
 10/12/2023 10:10:46 INFO Successfully Created Issue 163497:Mozilla Firefox < 103.0:10.11.210.150:445:Aug 1, 2022 17:00:55 UTC
+10/17/2023 10:23:58 INFO Start Logging
+10/17/2023 10:23:58 INFO Checking if security report <log4shell_weekly_10_sample_issues.csv> exists.
+10/17/2023 10:23:58 INFO Security Report <log4shell_weekly_10_sample_issues.csv> exists.
+10/17/2023 10:23:58 INFO Successfully started execution of <security_reports_issues_scraper.py>
+10/17/2023 10:23:58 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/17/2023 10:23:59 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 200 None
+10/17/2023 10:46:09 INFO Start Logging
+10/17/2023 10:46:09 INFO Checking if security report <log4shell_weekly_10_sample_issues.csv> exists.
+10/17/2023 10:46:09 INFO Security Report <log4shell_weekly_10_sample_issues.csv> exists.
+10/17/2023 10:46:09 INFO Successfully started execution of <security_reports_issues_scraper.py>
+10/17/2023 10:46:09 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/17/2023 10:46:11 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 200 None
+10/17/2023 11:08:04 INFO Start Logging
+10/17/2023 11:08:04 INFO Checking if security report <log4shell_weekly_10_sample_issues.csv> exists.
+10/17/2023 11:08:04 INFO Security Report <log4shell_weekly_10_sample_issues.csv> exists.
+10/17/2023 11:08:04 INFO Successfully started execution of <security_reports_issues_scraper.py>
+10/17/2023 11:08:05 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/17/2023 11:08:06 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 200 None
+10/19/2023 10:40:02 INFO Start Logging
+10/19/2023 10:40:02 INFO Checking if security report <log4shell_weekly_10_sample_issues.csv> exists.
+10/19/2023 10:40:02 INFO Security Report <log4shell_weekly_10_sample_issues.csv> exists.
+10/19/2023 10:40:02 INFO Successfully started execution of <security_reports_issues_scraper.py>
+10/19/2023 10:40:02 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/19/2023 10:40:04 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 200 None
+10/19/2023 12:03:53 INFO Start Logging
+10/19/2023 12:03:53 INFO Checking if security report <log4shell_weekly_10_sample_issues.csv> exists.
+10/19/2023 12:03:53 INFO Security Report <log4shell_weekly_10_sample_issues.csv> exists.
+10/19/2023 12:03:53 INFO Successfully started execution of <security_reports_issues_scraper.py>
+10/19/2023 12:03:53 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/19/2023 12:03:54 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 200 None
+10/20/2023 08:04:57 INFO Start Logging
+10/20/2023 08:04:57 INFO Checking if security report <log4shell_weekly_10_sample_issues.csv> exists.
+10/20/2023 08:04:57 INFO Security Report <log4shell_weekly_10_sample_issues.csv> exists.
+10/20/2023 08:04:57 INFO Successfully started execution of <security_reports_issues_scraper.py>
+10/20/2023 08:04:57 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/20/2023 08:05:02 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 200 None
+10/24/2023 11:00:19 INFO Start Logging
+10/24/2023 11:00:19 INFO Checking if security report <log4shell_weekly_10_sample_issues.csv> exists.
+10/24/2023 11:00:19 INFO Security Report <log4shell_weekly_10_sample_issues.csv> exists.
+10/24/2023 11:00:19 INFO Successfully started execution of <security_reports_issues_scraper.py>
+10/24/2023 11:00:19 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/24/2023 11:00:21 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 200 None
+10/26/2023 09:25:18 INFO Start Logging
+10/26/2023 09:25:18 INFO Checking if security report <log4shell_weekly_10_sample_issues.csv> exists.
+10/26/2023 09:25:18 INFO Security Report <log4shell_weekly_10_sample_issues.csv> exists.
+10/26/2023 09:25:18 INFO Successfully started execution of <security_reports_issues_scraper.py>
+10/26/2023 09:25:18 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 09:25:19 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 200 None
+10/26/2023 09:32:15 INFO Start Logging
+10/26/2023 09:32:15 INFO Checking if security report <log4shell_weekly_10_sample_issues.csv> exists.
+10/26/2023 09:32:15 INFO Security Report <log4shell_weekly_10_sample_issues.csv> exists.
+10/26/2023 09:32:15 INFO Successfully started execution of <security_reports_issues_scraper.py>
+10/26/2023 09:32:15 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 09:32:16 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 200 None
+10/26/2023 09:40:14 INFO Start Logging
+10/26/2023 09:40:14 INFO Checking if security report <log4shell_weekly_10_sample_issues.csv> exists.
+10/26/2023 09:40:14 INFO Security Report <log4shell_weekly_10_sample_issues.csv> exists.
+10/26/2023 09:40:14 INFO Successfully started execution of <security_reports_issues_scraper.py>
+10/26/2023 09:40:14 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 09:40:16 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 200 None
+10/26/2023 10:20:40 INFO Start Logging
+10/26/2023 10:20:40 INFO Checking if security report <log4shell_weekly_10_sample_issues.csv> exists.
+10/26/2023 10:20:40 INFO Security Report <log4shell_weekly_10_sample_issues.csv> exists.
+10/26/2023 10:20:40 INFO Successfully started execution of <security_reports_issues_scraper.py>
+10/26/2023 10:20:40 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:20:41 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 200 None
+10/26/2023 10:36:01 INFO Start Logging
+10/26/2023 10:36:01 INFO Checking if security report <log4shell_weekly_10_sample_issues.csv> exists.
+10/26/2023 10:36:01 INFO Security Report <log4shell_weekly_10_sample_issues.csv> exists.
+10/26/2023 10:36:01 INFO Successfully started execution of <security_reports_issues_scraper.py>
+10/26/2023 10:36:01 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:36:02 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 200 None
+10/26/2023 10:36:02 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:36:03 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 200 None
+10/26/2023 10:36:03 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:36:04 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 200 None
+10/26/2023 10:36:04 INFO Logging into REPO IT-Security-Test
+10/26/2023 10:36:04 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:36:06 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues/45419/comments HTTP/1.1" 201 1715
+10/26/2023 10:36:38 INFO Start Logging
+10/26/2023 10:36:38 INFO Checking if security report <log4shell_weekly_10_sample_issues.csv> exists.
+10/26/2023 10:36:38 INFO Security Report <log4shell_weekly_10_sample_issues.csv> exists.
+10/26/2023 10:36:38 INFO Successfully started execution of <security_reports_issues_scraper.py>
+10/26/2023 10:36:38 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:36:39 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 200 None
+10/26/2023 10:38:07 INFO Start Logging
+10/26/2023 10:38:07 INFO Checking if security report <log4shell_weekly_10_sample_issues.csv> exists.
+10/26/2023 10:38:07 INFO Security Report <log4shell_weekly_10_sample_issues.csv> exists.
+10/26/2023 10:38:07 INFO Successfully started execution of <security_reports_issues_scraper.py>
+10/26/2023 10:38:07 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:38:08 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 200 None
+10/26/2023 10:38:53 INFO Start Logging
+10/26/2023 10:38:53 INFO Checking if security report <log4shell_weekly_10_sample_issues.csv> exists.
+10/26/2023 10:38:53 INFO Security Report <log4shell_weekly_10_sample_issues.csv> exists.
+10/26/2023 10:38:53 INFO Successfully started execution of <security_reports_issues_scraper.py>
+10/26/2023 10:38:53 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:38:54 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 200 None
+10/26/2023 10:38:54 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:38:55 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 200 None
+10/26/2023 10:38:55 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:38:55 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 200 None
+10/26/2023 10:38:55 INFO Logging into REPO IT-Security-Test
+10/26/2023 10:38:55 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:38:57 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues/45419/comments HTTP/1.1" 201 1715
+10/26/2023 10:44:23 INFO Start Logging
+10/26/2023 10:44:23 INFO Checking if security report <log4shell_weekly_10_sample_issues.csv> exists.
+10/26/2023 10:44:23 INFO Security Report <log4shell_weekly_10_sample_issues.csv> exists.
+10/26/2023 10:44:23 INFO Successfully started execution of <security_reports_issues_scraper.py>
+10/26/2023 10:44:23 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:44:24 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 200 None
+10/26/2023 10:44:24 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:44:25 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 200 None
+10/26/2023 10:44:25 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:44:26 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 200 None
+10/26/2023 10:44:26 INFO Logging into REPO IT-Security-Test
+10/26/2023 10:44:26 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:44:27 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues/45419/comments HTTP/1.1" 201 1715
+10/26/2023 10:44:27 ERROR Could not create Issue Comment for Issue 45419
+10/26/2023 10:44:27 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:44:28 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 200 None
+10/26/2023 10:44:28 INFO Logging into REPO IT-Security-Test
+10/26/2023 10:44:28 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:44:30 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues/45419/comments HTTP/1.1" 201 1715
+10/26/2023 10:44:30 ERROR Could not create Issue Comment for Issue 45419
+10/26/2023 10:44:30 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:44:30 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 200 None
+10/26/2023 10:44:31 INFO Logging into REPO IT-Security-Test
+10/26/2023 10:44:31 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:44:32 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues/45419/comments HTTP/1.1" 201 1715
+10/26/2023 10:44:32 ERROR Could not create Issue Comment for Issue 45419
+10/26/2023 10:44:32 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:44:33 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 200 None
+10/26/2023 10:44:33 INFO Logging into REPO IT-Security-Test
+10/26/2023 10:44:33 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:44:34 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues/45419/comments HTTP/1.1" 201 1715
+10/26/2023 10:44:34 ERROR Could not create Issue Comment for Issue 45419
+10/26/2023 10:44:34 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:44:35 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 200 None
+10/26/2023 10:44:35 INFO Logging into REPO IT-Security-Test
+10/26/2023 10:44:35 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:44:37 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues/45419/comments HTTP/1.1" 201 1715
+10/26/2023 10:44:37 ERROR Could not create Issue Comment for Issue 45419
+10/26/2023 10:44:37 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:44:38 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 200 None
+10/26/2023 10:44:38 INFO Logging into REPO IT-Security-Test
+10/26/2023 10:44:38 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:44:39 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues/45419/comments HTTP/1.1" 201 1715
+10/26/2023 10:44:39 ERROR Could not create Issue Comment for Issue 45419
+10/26/2023 10:44:39 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:44:40 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 200 None
+10/26/2023 10:44:40 INFO Logging into REPO IT-Security-Test
+10/26/2023 10:44:40 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:44:41 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues/45419/comments HTTP/1.1" 201 1715
+10/26/2023 10:44:41 ERROR Could not create Issue Comment for Issue 45419
+10/26/2023 10:44:41 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:44:42 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 200 None
+10/26/2023 10:44:42 INFO Logging into REPO IT-Security-Test
+10/26/2023 10:44:42 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:44:43 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues/45419/comments HTTP/1.1" 201 1715
+10/26/2023 10:44:43 ERROR Could not create Issue Comment for Issue 45419
+10/26/2023 10:44:43 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:44:44 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 200 None
+10/26/2023 10:44:44 INFO Logging into REPO IT-Security-Test
+10/26/2023 10:44:44 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:44:46 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues/45419/comments HTTP/1.1" 201 1715
+10/26/2023 10:44:46 ERROR Could not create Issue Comment for Issue 45419
+10/26/2023 10:44:46 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:44:46 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 200 None
+10/26/2023 10:44:47 INFO Logging into REPO IT-Security-Test
+10/26/2023 10:44:47 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:44:48 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues/45419/comments HTTP/1.1" 201 1715
+10/26/2023 10:44:48 ERROR Could not create Issue Comment for Issue 45419
+10/26/2023 10:47:50 INFO Start Logging
+10/26/2023 10:47:50 INFO Checking if security report <log4shell_weekly_10_sample_issues.csv> exists.
+10/26/2023 10:47:50 INFO Security Report <log4shell_weekly_10_sample_issues.csv> exists.
+10/26/2023 10:47:50 INFO Successfully started execution of <security_reports_issues_scraper.py>
+10/26/2023 10:47:50 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:47:51 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 200 None
+10/26/2023 10:47:51 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:47:51 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 200 None
+10/26/2023 10:47:52 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:47:52 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 200 None
+10/26/2023 10:47:52 INFO Logging into REPO IT-Security-Test
+10/26/2023 10:47:52 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:47:54 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues/45419/comments HTTP/1.1" 201 1715
+10/26/2023 10:47:54 ERROR Could not create Issue Comment for Issue 45419
+10/26/2023 10:49:27 INFO Start Logging
+10/26/2023 10:49:27 INFO Checking if security report <log4shell_weekly_10_sample_issues.csv> exists.
+10/26/2023 10:49:27 INFO Security Report <log4shell_weekly_10_sample_issues.csv> exists.
+10/26/2023 10:49:27 INFO Successfully started execution of <security_reports_issues_scraper.py>
+10/26/2023 10:49:27 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:49:28 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 200 None
+10/26/2023 10:49:28 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:49:29 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 200 None
+10/26/2023 10:49:29 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:49:30 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 200 None
+10/26/2023 10:49:30 INFO Logging into REPO IT-Security-Test
+10/26/2023 10:49:30 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:49:32 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues/45419/comments HTTP/1.1" 201 1715
+10/26/2023 10:49:32 ERROR Could not create Issue Comment for Issue 45419
+10/26/2023 10:53:33 INFO Start Logging
+10/26/2023 10:53:33 INFO Checking if security report <log4shell_weekly_10_sample_issues.csv> exists.
+10/26/2023 10:53:33 INFO Security Report <log4shell_weekly_10_sample_issues.csv> exists.
+10/26/2023 10:53:33 INFO Successfully started execution of <security_reports_issues_scraper.py>
+10/26/2023 10:53:33 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:53:34 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 200 None
+10/26/2023 10:53:34 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:53:35 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 200 None
+10/26/2023 10:53:35 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:53:36 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 200 None
+10/26/2023 10:53:36 INFO Logging into REPO IT-Security-Test
+10/26/2023 10:53:36 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:53:37 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues/45419/comments HTTP/1.1" 201 1715
+10/26/2023 10:53:37 ERROR Could not create Issue Comment for Issue 45419
+10/26/2023 10:53:37 ERROR Response: b'{"url":"https://api.github.com/repos/isdapps/IT-Security-Test/issues/comments/1781292207","html_url":"https://github.com/isdapps/IT-Security-Test/issues/45419#issuecomment-1781292207","issue_url":"https://api.github.com/repos/isdapps/IT-Security-Test/issues/45419","id":1781292207,"node_id":"IC_kwDOIQv2I85qLFyv","user":{"login":"BrianMustafa-USDA","id":22355695,"node_id":"MDQ6VXNlcjIyMzU1Njk1","avatar_url":"https://avatars.githubusercontent.com/u/22355695?v=4","gravatar_id":"","url":"https://api.github.com/users/BrianMustafa-USDA","html_url":"https://github.com/BrianMustafa-USDA","followers_url":"https://api.github.com/users/BrianMustafa-USDA/followers","following_url":"https://api.github.com/users/BrianMustafa-USDA/following{/other_user}","gists_url":"https://api.github.com/users/BrianMustafa-USDA/gists{/gist_id}","starred_url":"https://api.github.com/users/BrianMustafa-USDA/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/BrianMustafa-USDA/subscriptions","organizations_url":"https://api.github.com/users/BrianMustafa-USDA/orgs","repos_url":"https://api.github.com/users/BrianMustafa-USDA/repos","events_url":"https://api.github.com/users/BrianMustafa-USDA/events{/privacy}","received_events_url":"https://api.github.com/users/BrianMustafa-USDA/received_events","type":"User","site_admin":false},"created_at":"2023-10-26T14:53:37Z","updated_at":"2023-10-26T14:53:37Z","author_association":"COLLABORATOR","body":"### Last Created: None","reactions":{"url":"https://api.github.com/repos/isdapps/IT-Security-Test/issues/comments/1781292207/reactions","total_count":0,"+1":0,"-1":0,"laugh":0,"hooray":0,"confused":0,"heart":0,"rocket":0,"eyes":0},"performed_via_github_app":null}',
+10/26/2023 10:53:37 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:53:38 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 200 None
+10/26/2023 10:53:38 INFO Logging into REPO IT-Security-Test
+10/26/2023 10:53:38 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:53:39 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues/45419/comments HTTP/1.1" 201 1715
+10/26/2023 10:53:39 ERROR Could not create Issue Comment for Issue 45419
+10/26/2023 10:53:39 ERROR Response: b'{"url":"https://api.github.com/repos/isdapps/IT-Security-Test/issues/comments/1781292278","html_url":"https://github.com/isdapps/IT-Security-Test/issues/45419#issuecomment-1781292278","issue_url":"https://api.github.com/repos/isdapps/IT-Security-Test/issues/45419","id":1781292278,"node_id":"IC_kwDOIQv2I85qLFz2","user":{"login":"BrianMustafa-USDA","id":22355695,"node_id":"MDQ6VXNlcjIyMzU1Njk1","avatar_url":"https://avatars.githubusercontent.com/u/22355695?v=4","gravatar_id":"","url":"https://api.github.com/users/BrianMustafa-USDA","html_url":"https://github.com/BrianMustafa-USDA","followers_url":"https://api.github.com/users/BrianMustafa-USDA/followers","following_url":"https://api.github.com/users/BrianMustafa-USDA/following{/other_user}","gists_url":"https://api.github.com/users/BrianMustafa-USDA/gists{/gist_id}","starred_url":"https://api.github.com/users/BrianMustafa-USDA/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/BrianMustafa-USDA/subscriptions","organizations_url":"https://api.github.com/users/BrianMustafa-USDA/orgs","repos_url":"https://api.github.com/users/BrianMustafa-USDA/repos","events_url":"https://api.github.com/users/BrianMustafa-USDA/events{/privacy}","received_events_url":"https://api.github.com/users/BrianMustafa-USDA/received_events","type":"User","site_admin":false},"created_at":"2023-10-26T14:53:39Z","updated_at":"2023-10-26T14:53:39Z","author_association":"COLLABORATOR","body":"### Last Created: None","reactions":{"url":"https://api.github.com/repos/isdapps/IT-Security-Test/issues/comments/1781292278/reactions","total_count":0,"+1":0,"-1":0,"laugh":0,"hooray":0,"confused":0,"heart":0,"rocket":0,"eyes":0},"performed_via_github_app":null}',
+10/26/2023 10:53:39 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:53:40 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 200 None
+10/26/2023 10:53:40 INFO Logging into REPO IT-Security-Test
+10/26/2023 10:53:40 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:53:42 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues/45419/comments HTTP/1.1" 201 1715
+10/26/2023 10:53:42 ERROR Could not create Issue Comment for Issue 45419
+10/26/2023 10:53:42 ERROR Response: b'{"url":"https://api.github.com/repos/isdapps/IT-Security-Test/issues/comments/1781292344","html_url":"https://github.com/isdapps/IT-Security-Test/issues/45419#issuecomment-1781292344","issue_url":"https://api.github.com/repos/isdapps/IT-Security-Test/issues/45419","id":1781292344,"node_id":"IC_kwDOIQv2I85qLF04","user":{"login":"BrianMustafa-USDA","id":22355695,"node_id":"MDQ6VXNlcjIyMzU1Njk1","avatar_url":"https://avatars.githubusercontent.com/u/22355695?v=4","gravatar_id":"","url":"https://api.github.com/users/BrianMustafa-USDA","html_url":"https://github.com/BrianMustafa-USDA","followers_url":"https://api.github.com/users/BrianMustafa-USDA/followers","following_url":"https://api.github.com/users/BrianMustafa-USDA/following{/other_user}","gists_url":"https://api.github.com/users/BrianMustafa-USDA/gists{/gist_id}","starred_url":"https://api.github.com/users/BrianMustafa-USDA/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/BrianMustafa-USDA/subscriptions","organizations_url":"https://api.github.com/users/BrianMustafa-USDA/orgs","repos_url":"https://api.github.com/users/BrianMustafa-USDA/repos","events_url":"https://api.github.com/users/BrianMustafa-USDA/events{/privacy}","received_events_url":"https://api.github.com/users/BrianMustafa-USDA/received_events","type":"User","site_admin":false},"created_at":"2023-10-26T14:53:41Z","updated_at":"2023-10-26T14:53:41Z","author_association":"COLLABORATOR","body":"### Last Created: None","reactions":{"url":"https://api.github.com/repos/isdapps/IT-Security-Test/issues/comments/1781292344/reactions","total_count":0,"+1":0,"-1":0,"laugh":0,"hooray":0,"confused":0,"heart":0,"rocket":0,"eyes":0},"performed_via_github_app":null}',
+10/26/2023 10:53:42 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:53:42 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 200 None
+10/26/2023 10:53:43 INFO Logging into REPO IT-Security-Test
+10/26/2023 10:53:43 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:53:44 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues/45419/comments HTTP/1.1" 201 1715
+10/26/2023 10:53:44 ERROR Could not create Issue Comment for Issue 45419
+10/26/2023 10:53:44 ERROR Response: b'{"url":"https://api.github.com/repos/isdapps/IT-Security-Test/issues/comments/1781292433","html_url":"https://github.com/isdapps/IT-Security-Test/issues/45419#issuecomment-1781292433","issue_url":"https://api.github.com/repos/isdapps/IT-Security-Test/issues/45419","id":1781292433,"node_id":"IC_kwDOIQv2I85qLF2R","user":{"login":"BrianMustafa-USDA","id":22355695,"node_id":"MDQ6VXNlcjIyMzU1Njk1","avatar_url":"https://avatars.githubusercontent.com/u/22355695?v=4","gravatar_id":"","url":"https://api.github.com/users/BrianMustafa-USDA","html_url":"https://github.com/BrianMustafa-USDA","followers_url":"https://api.github.com/users/BrianMustafa-USDA/followers","following_url":"https://api.github.com/users/BrianMustafa-USDA/following{/other_user}","gists_url":"https://api.github.com/users/BrianMustafa-USDA/gists{/gist_id}","starred_url":"https://api.github.com/users/BrianMustafa-USDA/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/BrianMustafa-USDA/subscriptions","organizations_url":"https://api.github.com/users/BrianMustafa-USDA/orgs","repos_url":"https://api.github.com/users/BrianMustafa-USDA/repos","events_url":"https://api.github.com/users/BrianMustafa-USDA/events{/privacy}","received_events_url":"https://api.github.com/users/BrianMustafa-USDA/received_events","type":"User","site_admin":false},"created_at":"2023-10-26T14:53:44Z","updated_at":"2023-10-26T14:53:44Z","author_association":"COLLABORATOR","body":"### Last Created: None","reactions":{"url":"https://api.github.com/repos/isdapps/IT-Security-Test/issues/comments/1781292433/reactions","total_count":0,"+1":0,"-1":0,"laugh":0,"hooray":0,"confused":0,"heart":0,"rocket":0,"eyes":0},"performed_via_github_app":null}',
+10/26/2023 10:53:44 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:53:45 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 200 None
+10/26/2023 10:53:45 INFO Logging into REPO IT-Security-Test
+10/26/2023 10:53:45 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:53:47 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues/45419/comments HTTP/1.1" 201 1715
+10/26/2023 10:53:47 ERROR Could not create Issue Comment for Issue 45419
+10/26/2023 10:53:47 ERROR Response: b'{"url":"https://api.github.com/repos/isdapps/IT-Security-Test/issues/comments/1781292529","html_url":"https://github.com/isdapps/IT-Security-Test/issues/45419#issuecomment-1781292529","issue_url":"https://api.github.com/repos/isdapps/IT-Security-Test/issues/45419","id":1781292529,"node_id":"IC_kwDOIQv2I85qLF3x","user":{"login":"BrianMustafa-USDA","id":22355695,"node_id":"MDQ6VXNlcjIyMzU1Njk1","avatar_url":"https://avatars.githubusercontent.com/u/22355695?v=4","gravatar_id":"","url":"https://api.github.com/users/BrianMustafa-USDA","html_url":"https://github.com/BrianMustafa-USDA","followers_url":"https://api.github.com/users/BrianMustafa-USDA/followers","following_url":"https://api.github.com/users/BrianMustafa-USDA/following{/other_user}","gists_url":"https://api.github.com/users/BrianMustafa-USDA/gists{/gist_id}","starred_url":"https://api.github.com/users/BrianMustafa-USDA/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/BrianMustafa-USDA/subscriptions","organizations_url":"https://api.github.com/users/BrianMustafa-USDA/orgs","repos_url":"https://api.github.com/users/BrianMustafa-USDA/repos","events_url":"https://api.github.com/users/BrianMustafa-USDA/events{/privacy}","received_events_url":"https://api.github.com/users/BrianMustafa-USDA/received_events","type":"User","site_admin":false},"created_at":"2023-10-26T14:53:46Z","updated_at":"2023-10-26T14:53:46Z","author_association":"COLLABORATOR","body":"### Last Created: None","reactions":{"url":"https://api.github.com/repos/isdapps/IT-Security-Test/issues/comments/1781292529/reactions","total_count":0,"+1":0,"-1":0,"laugh":0,"hooray":0,"confused":0,"heart":0,"rocket":0,"eyes":0},"performed_via_github_app":null}',
+10/26/2023 10:53:47 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:53:47 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 200 None
+10/26/2023 10:53:47 INFO Logging into REPO IT-Security-Test
+10/26/2023 10:53:47 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:53:49 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues/45419/comments HTTP/1.1" 201 1715
+10/26/2023 10:53:49 ERROR Could not create Issue Comment for Issue 45419
+10/26/2023 10:53:49 ERROR Response: b'{"url":"https://api.github.com/repos/isdapps/IT-Security-Test/issues/comments/1781292611","html_url":"https://github.com/isdapps/IT-Security-Test/issues/45419#issuecomment-1781292611","issue_url":"https://api.github.com/repos/isdapps/IT-Security-Test/issues/45419","id":1781292611,"node_id":"IC_kwDOIQv2I85qLF5D","user":{"login":"BrianMustafa-USDA","id":22355695,"node_id":"MDQ6VXNlcjIyMzU1Njk1","avatar_url":"https://avatars.githubusercontent.com/u/22355695?v=4","gravatar_id":"","url":"https://api.github.com/users/BrianMustafa-USDA","html_url":"https://github.com/BrianMustafa-USDA","followers_url":"https://api.github.com/users/BrianMustafa-USDA/followers","following_url":"https://api.github.com/users/BrianMustafa-USDA/following{/other_user}","gists_url":"https://api.github.com/users/BrianMustafa-USDA/gists{/gist_id}","starred_url":"https://api.github.com/users/BrianMustafa-USDA/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/BrianMustafa-USDA/subscriptions","organizations_url":"https://api.github.com/users/BrianMustafa-USDA/orgs","repos_url":"https://api.github.com/users/BrianMustafa-USDA/repos","events_url":"https://api.github.com/users/BrianMustafa-USDA/events{/privacy}","received_events_url":"https://api.github.com/users/BrianMustafa-USDA/received_events","type":"User","site_admin":false},"created_at":"2023-10-26T14:53:48Z","updated_at":"2023-10-26T14:53:48Z","author_association":"COLLABORATOR","body":"### Last Created: None","reactions":{"url":"https://api.github.com/repos/isdapps/IT-Security-Test/issues/comments/1781292611/reactions","total_count":0,"+1":0,"-1":0,"laugh":0,"hooray":0,"confused":0,"heart":0,"rocket":0,"eyes":0},"performed_via_github_app":null}',
+10/26/2023 10:53:49 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:53:49 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 200 None
+10/26/2023 10:53:50 INFO Logging into REPO IT-Security-Test
+10/26/2023 10:53:50 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:53:51 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues/45419/comments HTTP/1.1" 201 1715
+10/26/2023 10:53:51 ERROR Could not create Issue Comment for Issue 45419
+10/26/2023 10:53:51 ERROR Response: b'{"url":"https://api.github.com/repos/isdapps/IT-Security-Test/issues/comments/1781292675","html_url":"https://github.com/isdapps/IT-Security-Test/issues/45419#issuecomment-1781292675","issue_url":"https://api.github.com/repos/isdapps/IT-Security-Test/issues/45419","id":1781292675,"node_id":"IC_kwDOIQv2I85qLF6D","user":{"login":"BrianMustafa-USDA","id":22355695,"node_id":"MDQ6VXNlcjIyMzU1Njk1","avatar_url":"https://avatars.githubusercontent.com/u/22355695?v=4","gravatar_id":"","url":"https://api.github.com/users/BrianMustafa-USDA","html_url":"https://github.com/BrianMustafa-USDA","followers_url":"https://api.github.com/users/BrianMustafa-USDA/followers","following_url":"https://api.github.com/users/BrianMustafa-USDA/following{/other_user}","gists_url":"https://api.github.com/users/BrianMustafa-USDA/gists{/gist_id}","starred_url":"https://api.github.com/users/BrianMustafa-USDA/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/BrianMustafa-USDA/subscriptions","organizations_url":"https://api.github.com/users/BrianMustafa-USDA/orgs","repos_url":"https://api.github.com/users/BrianMustafa-USDA/repos","events_url":"https://api.github.com/users/BrianMustafa-USDA/events{/privacy}","received_events_url":"https://api.github.com/users/BrianMustafa-USDA/received_events","type":"User","site_admin":false},"created_at":"2023-10-26T14:53:51Z","updated_at":"2023-10-26T14:53:51Z","author_association":"COLLABORATOR","body":"### Last Created: None","reactions":{"url":"https://api.github.com/repos/isdapps/IT-Security-Test/issues/comments/1781292675/reactions","total_count":0,"+1":0,"-1":0,"laugh":0,"hooray":0,"confused":0,"heart":0,"rocket":0,"eyes":0},"performed_via_github_app":null}',
+10/26/2023 10:53:51 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:53:52 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 200 None
+10/26/2023 10:53:52 INFO Logging into REPO IT-Security-Test
+10/26/2023 10:53:52 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:53:53 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues/45419/comments HTTP/1.1" 201 1715
+10/26/2023 10:53:53 ERROR Could not create Issue Comment for Issue 45419
+10/26/2023 10:53:53 ERROR Response: b'{"url":"https://api.github.com/repos/isdapps/IT-Security-Test/issues/comments/1781292759","html_url":"https://github.com/isdapps/IT-Security-Test/issues/45419#issuecomment-1781292759","issue_url":"https://api.github.com/repos/isdapps/IT-Security-Test/issues/45419","id":1781292759,"node_id":"IC_kwDOIQv2I85qLF7X","user":{"login":"BrianMustafa-USDA","id":22355695,"node_id":"MDQ6VXNlcjIyMzU1Njk1","avatar_url":"https://avatars.githubusercontent.com/u/22355695?v=4","gravatar_id":"","url":"https://api.github.com/users/BrianMustafa-USDA","html_url":"https://github.com/BrianMustafa-USDA","followers_url":"https://api.github.com/users/BrianMustafa-USDA/followers","following_url":"https://api.github.com/users/BrianMustafa-USDA/following{/other_user}","gists_url":"https://api.github.com/users/BrianMustafa-USDA/gists{/gist_id}","starred_url":"https://api.github.com/users/BrianMustafa-USDA/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/BrianMustafa-USDA/subscriptions","organizations_url":"https://api.github.com/users/BrianMustafa-USDA/orgs","repos_url":"https://api.github.com/users/BrianMustafa-USDA/repos","events_url":"https://api.github.com/users/BrianMustafa-USDA/events{/privacy}","received_events_url":"https://api.github.com/users/BrianMustafa-USDA/received_events","type":"User","site_admin":false},"created_at":"2023-10-26T14:53:53Z","updated_at":"2023-10-26T14:53:53Z","author_association":"COLLABORATOR","body":"### Last Created: None","reactions":{"url":"https://api.github.com/repos/isdapps/IT-Security-Test/issues/comments/1781292759/reactions","total_count":0,"+1":0,"-1":0,"laugh":0,"hooray":0,"confused":0,"heart":0,"rocket":0,"eyes":0},"performed_via_github_app":null}',
+10/26/2023 10:53:53 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:53:54 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 200 None
+10/26/2023 10:53:54 INFO Logging into REPO IT-Security-Test
+10/26/2023 10:53:54 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:53:55 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues/45419/comments HTTP/1.1" 201 1715
+10/26/2023 10:53:55 ERROR Could not create Issue Comment for Issue 45419
+10/26/2023 10:53:55 ERROR Response: b'{"url":"https://api.github.com/repos/isdapps/IT-Security-Test/issues/comments/1781292827","html_url":"https://github.com/isdapps/IT-Security-Test/issues/45419#issuecomment-1781292827","issue_url":"https://api.github.com/repos/isdapps/IT-Security-Test/issues/45419","id":1781292827,"node_id":"IC_kwDOIQv2I85qLF8b","user":{"login":"BrianMustafa-USDA","id":22355695,"node_id":"MDQ6VXNlcjIyMzU1Njk1","avatar_url":"https://avatars.githubusercontent.com/u/22355695?v=4","gravatar_id":"","url":"https://api.github.com/users/BrianMustafa-USDA","html_url":"https://github.com/BrianMustafa-USDA","followers_url":"https://api.github.com/users/BrianMustafa-USDA/followers","following_url":"https://api.github.com/users/BrianMustafa-USDA/following{/other_user}","gists_url":"https://api.github.com/users/BrianMustafa-USDA/gists{/gist_id}","starred_url":"https://api.github.com/users/BrianMustafa-USDA/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/BrianMustafa-USDA/subscriptions","organizations_url":"https://api.github.com/users/BrianMustafa-USDA/orgs","repos_url":"https://api.github.com/users/BrianMustafa-USDA/repos","events_url":"https://api.github.com/users/BrianMustafa-USDA/events{/privacy}","received_events_url":"https://api.github.com/users/BrianMustafa-USDA/received_events","type":"User","site_admin":false},"created_at":"2023-10-26T14:53:55Z","updated_at":"2023-10-26T14:53:55Z","author_association":"COLLABORATOR","body":"### Last Created: None","reactions":{"url":"https://api.github.com/repos/isdapps/IT-Security-Test/issues/comments/1781292827/reactions","total_count":0,"+1":0,"-1":0,"laugh":0,"hooray":0,"confused":0,"heart":0,"rocket":0,"eyes":0},"performed_via_github_app":null}',
+10/26/2023 10:53:55 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:53:56 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues HTTP/1.1" 200 None
+10/26/2023 10:53:56 INFO Logging into REPO IT-Security-Test
+10/26/2023 10:53:56 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:53:59 DEBUG https://api.github.com:443 "POST /repos/isdapps/IT-Security-Test/issues/45419/comments HTTP/1.1" 201 1715
+10/26/2023 10:53:59 ERROR Could not create Issue Comment for Issue 45419
+10/26/2023 10:53:59 ERROR Response: b'{"url":"https://api.github.com/repos/isdapps/IT-Security-Test/issues/comments/1781292921","html_url":"https://github.com/isdapps/IT-Security-Test/issues/45419#issuecomment-1781292921","issue_url":"https://api.github.com/repos/isdapps/IT-Security-Test/issues/45419","id":1781292921,"node_id":"IC_kwDOIQv2I85qLF95","user":{"login":"BrianMustafa-USDA","id":22355695,"node_id":"MDQ6VXNlcjIyMzU1Njk1","avatar_url":"https://avatars.githubusercontent.com/u/22355695?v=4","gravatar_id":"","url":"https://api.github.com/users/BrianMustafa-USDA","html_url":"https://github.com/BrianMustafa-USDA","followers_url":"https://api.github.com/users/BrianMustafa-USDA/followers","following_url":"https://api.github.com/users/BrianMustafa-USDA/following{/other_user}","gists_url":"https://api.github.com/users/BrianMustafa-USDA/gists{/gist_id}","starred_url":"https://api.github.com/users/BrianMustafa-USDA/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/BrianMustafa-USDA/subscriptions","organizations_url":"https://api.github.com/users/BrianMustafa-USDA/orgs","repos_url":"https://api.github.com/users/BrianMustafa-USDA/repos","events_url":"https://api.github.com/users/BrianMustafa-USDA/events{/privacy}","received_events_url":"https://api.github.com/users/BrianMustafa-USDA/received_events","type":"User","site_admin":false},"created_at":"2023-10-26T14:53:58Z","updated_at":"2023-10-26T14:53:58Z","author_association":"COLLABORATOR","body":"### Last Created: None","reactions":{"url":"https://api.github.com/repos/isdapps/IT-Security-Test/issues/comments/1781292921/reactions","total_count":0,"+1":0,"-1":0,"laugh":0,"hooray":0,"confused":0,"heart":0,"rocket":0,"eyes":0},"performed_via_github_app":null}',
+10/26/2023 10:59:06 INFO Start Logging
+10/26/2023 10:59:06 INFO Checking if security report <log4shell_weekly_10_sample_issues.csv> exists.
+10/26/2023 10:59:06 INFO Security Report <log4shell_weekly_10_sample_issues.csv> exists.
+10/26/2023 10:59:06 INFO Successfully started execution of <security_reports_issues_scraper.py>
+10/26/2023 10:59:06 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:59:07 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 200 2
+10/26/2023 10:59:41 INFO Start Logging
+10/26/2023 10:59:41 INFO Checking if security report <log4shell_weekly_10_sample_issues.csv> exists.
+10/26/2023 10:59:41 INFO Security Report <log4shell_weekly_10_sample_issues.csv> exists.
+10/26/2023 10:59:41 INFO Successfully started execution of <security_reports_issues_scraper.py>
+10/26/2023 10:59:41 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 10:59:41 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 200 2
+10/26/2023 11:00:19 INFO Start Logging
+10/26/2023 11:00:19 INFO Checking if security report <log4shell_weekly_1_sample_issues.csv> exists.
+10/26/2023 11:00:19 INFO Security Report <log4shell_weekly_1_sample_issues.csv> exists.
+10/26/2023 11:00:19 INFO Successfully started execution of <security_reports_issues_scraper.py>
+10/26/2023 11:00:34 INFO Start Logging
+10/26/2023 11:00:34 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+10/26/2023 11:00:34 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+10/26/2023 11:00:34 INFO Successfully started execution of <security_reports_issues_scraper.py>
+10/26/2023 11:00:34 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 11:00:34 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 200 2
+10/26/2023 11:21:47 INFO Start Logging
+10/26/2023 11:21:47 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+10/26/2023 11:21:47 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+10/26/2023 11:21:47 INFO Successfully started execution of <security_reports_issues_scraper.py>
+10/26/2023 11:21:47 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 11:21:48 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 200 2
+10/26/2023 11:24:09 INFO Start Logging
+10/26/2023 11:24:09 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+10/26/2023 11:24:09 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+10/26/2023 11:24:09 INFO Successfully started execution of <security_reports_issues_scraper.py>
+10/26/2023 11:24:09 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 11:24:09 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 200 2
+10/26/2023 12:33:37 INFO Start Logging
+10/26/2023 12:33:37 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+10/26/2023 12:33:37 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+10/26/2023 12:33:37 INFO Successfully started execution of <security_reports_issues_scraper.py>
+10/26/2023 12:33:37 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 12:33:38 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 200 2
+10/26/2023 12:35:47 INFO Start Logging
+10/26/2023 12:35:47 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+10/26/2023 12:35:47 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+10/26/2023 12:35:47 INFO Successfully started execution of <security_reports_issues_scraper.py>
+10/26/2023 12:35:47 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/26/2023 12:35:48 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 200 2
