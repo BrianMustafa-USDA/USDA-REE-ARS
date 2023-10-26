@@ -96,11 +96,7 @@ def log4shell_create_unique_ids_list(list):
 
         print("Unique ID of log4shell_issues: ", unique_id)
 
-        # Append each unique to list of all unique ids in csv report entitled 'log4shell_unique_ids_list'
-        log4shell_unique_ids_list.append(unique_id)
-
-    #return log4shell_unique_ids_list
-
+        # Append each unique id to list of all unique ids in csv report entitled 'log4shell_unique_ids_list'
         print("unique_id, list[row]: ", unique_id, list[row])
         assigned_pair_unique_id = [unique_id, list[row]]
         print("Assigned_unique_ids_list (assigned values): ", assigned_pair_unique_id)
@@ -314,6 +310,8 @@ def get_issue_number():
             print("value" + value)
         """
         print("data[0]: ", data[0])
+
+        # Extract value of issue
         for key in data[0]:
             if key == 'number':
                 print("data[0]key:  ")
@@ -376,19 +374,21 @@ def create_issue_comment_of_most_updated_timestamp(OWNER, repo, issue_number, la
 
     # create issue comment of duplicate
     issue_comment = {
-        'unique_id_body':
+        'body': \
 f'### Last Created: {last_observed_timestamp}'
     }
     # Add issue comment of most recent duplicate issues to previously created issue in our repository
     new_issue_comment = requests.post(url, data=json.dumps(issue_comment), headers=headers)
     if new_issue_comment == 201:
-        print('Successfully Created Issue Comment for Issue {0:s}'.format(issue_number))
-        logging.info('Successfully Created Issue for Issue {0:s}'. format(issue_number))
+        print('Successfully Created Issue Comment for Issue {0}'.format(issue_number))
+        logging.info('Successfully Created Issue for Issue {0}'. format(issue_number))
     else:
-        print('Could not create Issue Comment for Issue {0:s}'.format(issue_number))
-        print('Response: ', new_issue_comment.content)
-        logging.error('Could not create Issue Comment for Issue {0:s}'.format(issue_number))
-        logging.error('Response: ', new_issue_comment.content)
+        print('Could not create Issue Comment for Issue {0}'.format(issue_number))
+        print("new_issue_comment.content ", new_issue_comment.content)
+        print("(type) new_issue_comment.content ", type(new_issue_comment.content))
+        print('Response: ',  new_issue_comment.content)
+        logging.error('Could not create Issue Comment for Issue {0}'.format(issue_number))
+        logging.error('Response: {0},'.format(new_issue_comment.content))
     """
         if new_repo.status_code == 201:
         print('Successfully Created Issue {0:s}'.format(title))
@@ -414,12 +414,14 @@ def verify_duplicates_of_github_issues(issue_titles, uniq_ids_list):
     # Iterate through values of issue_titles
     for uniq_id in uniq_ids_list:
         print("values - issue_titles")
-        print(uniq_id)
+        print("uniq_id title", uniq_id[0])
+        print("uniq_id components", uniq_id[1])
         for issue_value in issue_titles.values():
             print("uniq_id in list: ", uniq_id)
             # Check that issue_titles.values() contains correct values
-            print("inside issue_title: ", issue_value)
-            if uniq_id == issue_value:
+            print("issue_value ", issue_value)
+            #if uniq_id[0] == issue_value:
+            if uniq_id[0] == issue_value:
                 flag = True
                 print("flag is True", flag)
                 print("Github issue already exists in REPO")
@@ -688,6 +690,7 @@ logging.info(
 log4shell_issues_list = []
 log4shell_issues_list = log4shell_read_csv_report(log4shell_report)
 
+print("test of log4shell_issues_list: ", log4shell_issues_list)
 log4shell_no_header_issues_list = remove_header(log4shell_issues_list)
 print("No header list: ", log4shell_no_header_issues_list)
 # print length of all issues of Log4Shell security report without header
@@ -736,11 +739,16 @@ Iterate and create each issue in
 onto the REPO
 """
 
-for issue in range(len(log4shell_unique_ids_list)):
+for issue in range(len(dupl_unique_ids_list)):
     print("Issue in log4shell_no_dupl_all_issues_list")
     print(issue)
     unique_id_title = log4shell_unique_ids_list[issue][0]
     print("unique_id_title: ", unique_id_title)
+    #if unique_id_title in issue_titles:
+        # update the comment because the title already exists
+        # create_issue_comment_of_most_updated_timestamp()
+        # last_discovered_timestamp
+    # else: grab the rest of information from unique_ids_list to create new issue
     unique_id_list = log4shell_unique_ids_list[issue][1]
     #print("Log4Shell Unique_id: ", log4shell_unique_ids_list)
     print("#Unique_id_list: ", unique_id_list)
@@ -759,7 +767,6 @@ for issue in range(len(log4shell_unique_ids_list)):
     unique_id_body += f'### First Discovered: {unique_id_list[11]}\n'
     unique_id_body += f'### Last Discovered: {unique_id_list[12]}'
     print("Body:", unique_id_body)
-    #exit()
     delay_api_requests()
     log4shell_create_github_issue(unique_id_title, unique_id_labels, unique_id_body)
 
