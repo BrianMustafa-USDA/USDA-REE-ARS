@@ -265,7 +265,7 @@ def get_github_issues():
     # return JSON content of response
     return response.json()
 
-# GEt issue titles for all issues on REPO
+# GET issue titles for all issues on REPO
 def get_issue_titles(issues):
     # Initialize the dictionary to store the issue number and title
     issue_titles = {}
@@ -276,6 +276,7 @@ def get_issue_titles(issues):
             # print(issue['number'])
             # print(issue['title'])
             issue_number = issue['number']
+            print("issue number", issue_number)
             issue_title = issue['title']
             issue_titles[issue_number] = issue_title
     return issue_titles

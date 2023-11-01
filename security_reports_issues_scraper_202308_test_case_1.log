@@ -12475,3 +12475,189 @@
 10/27/2023 11:38:29 INFO Successfully started execution of <security_reports_issues_scraper.py>
 10/27/2023 11:38:29 DEBUG Starting new HTTPS connection (1): api.github.com:443
 10/27/2023 11:38:30 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 404 None
+10/30/2023 09:54:17 INFO Start Logging
+10/30/2023 09:54:17 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+10/30/2023 09:54:17 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+10/30/2023 09:54:17 INFO Successfully started execution of <security_reports_issues_scraper.py>
+10/30/2023 09:54:17 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/30/2023 09:54:18 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 404 None
+10/30/2023 10:20:26 INFO Start Logging
+10/30/2023 10:20:26 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+10/30/2023 10:20:26 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+10/30/2023 10:20:26 INFO Successfully started execution of <security_reports_issues_scraper.py>
+10/30/2023 10:20:26 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/30/2023 10:20:27 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 404 None
+10/30/2023 10:50:33 INFO Start Logging
+10/30/2023 10:50:34 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+10/30/2023 10:50:34 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+10/30/2023 10:50:34 INFO Successfully started execution of <security_reports_issues_scraper.py>
+10/30/2023 10:50:34 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/30/2023 10:50:35 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 404 None
+10/30/2023 11:12:39 INFO Start Logging
+10/30/2023 11:12:39 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+10/30/2023 11:12:39 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+10/30/2023 11:12:39 INFO Successfully started execution of <security_reports_issues_scraper.py>
+10/30/2023 11:12:40 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/30/2023 11:12:40 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 404 None
+10/30/2023 11:29:42 INFO Start Logging
+10/30/2023 11:29:42 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+10/30/2023 11:29:42 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+10/30/2023 11:29:42 INFO Successfully started execution of <security_reports_issues_scraper.py>
+10/30/2023 11:29:42 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/30/2023 11:29:43 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 404 None
+10/30/2023 11:45:35 INFO Start Logging
+10/30/2023 11:45:35 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+10/30/2023 11:45:35 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+10/30/2023 11:45:35 INFO Successfully started execution of <security_reports_issues_scraper.py>
+10/30/2023 11:45:35 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/30/2023 11:45:36 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 404 None
+10/30/2023 11:55:59 INFO Start Logging
+10/30/2023 11:55:59 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+10/30/2023 11:55:59 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+10/30/2023 11:55:59 INFO Successfully started execution of <security_reports_issues_scraper.py>
+10/30/2023 11:56:00 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/30/2023 11:56:00 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 404 None
+10/31/2023 08:28:20 INFO Start Logging
+10/31/2023 08:28:20 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+10/31/2023 08:28:20 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+10/31/2023 08:28:20 INFO Successfully started execution of <security_reports_issues_scraper.py>
+10/31/2023 08:28:20 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/31/2023 08:28:21 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 404 None
+10/31/2023 08:37:29 INFO Start Logging
+10/31/2023 08:37:29 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+10/31/2023 08:37:29 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+10/31/2023 08:37:29 INFO Successfully started execution of <security_reports_issues_scraper.py>
+10/31/2023 08:37:29 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/31/2023 08:37:31 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 404 None
+10/31/2023 09:26:58 INFO Start Logging
+10/31/2023 09:26:58 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+10/31/2023 09:26:58 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+10/31/2023 09:26:58 INFO Successfully started execution of <security_reports_issues_scraper.py>
+10/31/2023 09:26:58 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/31/2023 09:26:59 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 404 None
+10/31/2023 11:01:04 INFO Start Logging
+10/31/2023 11:01:04 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+10/31/2023 11:01:04 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+10/31/2023 11:01:04 INFO Successfully started execution of <security_reports_issues_scraper.py>
+10/31/2023 11:01:04 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/31/2023 11:01:05 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 404 None
+10/31/2023 11:18:30 INFO Start Logging
+10/31/2023 11:18:30 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+10/31/2023 11:18:30 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+10/31/2023 11:18:30 INFO Successfully started execution of <security_reports_issues_scraper.py>
+10/31/2023 11:18:30 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/31/2023 11:18:31 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 404 None
+10/31/2023 11:30:09 INFO Start Logging
+10/31/2023 11:30:09 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+10/31/2023 11:30:09 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+10/31/2023 11:30:09 INFO Successfully started execution of <security_reports_issues_scraper.py>
+10/31/2023 11:30:09 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/31/2023 11:30:10 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 404 None
+10/31/2023 11:32:24 INFO Start Logging
+10/31/2023 11:32:24 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+10/31/2023 11:32:24 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+10/31/2023 11:32:24 INFO Successfully started execution of <security_reports_issues_scraper.py>
+10/31/2023 11:32:24 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/31/2023 11:32:25 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 404 None
+10/31/2023 11:43:20 INFO Start Logging
+10/31/2023 11:43:20 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+10/31/2023 11:43:20 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+10/31/2023 11:43:20 INFO Successfully started execution of <security_reports_issues_scraper.py>
+10/31/2023 11:43:20 DEBUG Starting new HTTPS connection (1): api.github.com:443
+10/31/2023 11:43:21 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 404 None
+11/01/2023 08:09:20 INFO Start Logging
+11/01/2023 08:09:20 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+11/01/2023 08:09:20 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+11/01/2023 08:09:20 INFO Successfully started execution of <security_reports_issues_scraper.py>
+11/01/2023 08:09:20 DEBUG Starting new HTTPS connection (1): api.github.com:443
+11/01/2023 08:09:22 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 404 None
+11/01/2023 08:16:52 INFO Start Logging
+11/01/2023 08:16:52 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+11/01/2023 08:16:52 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+11/01/2023 08:16:52 INFO Successfully started execution of <security_reports_issues_scraper.py>
+11/01/2023 08:16:52 DEBUG Starting new HTTPS connection (1): api.github.com:443
+11/01/2023 08:16:54 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 404 None
+11/01/2023 08:27:51 INFO Start Logging
+11/01/2023 08:27:51 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+11/01/2023 08:27:51 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+11/01/2023 08:27:51 INFO Successfully started execution of <security_reports_issues_scraper.py>
+11/01/2023 08:27:51 DEBUG Starting new HTTPS connection (1): api.github.com:443
+11/01/2023 08:27:52 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 404 None
+11/01/2023 08:46:29 INFO Start Logging
+11/01/2023 08:46:29 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+11/01/2023 08:46:29 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+11/01/2023 08:46:29 INFO Successfully started execution of <security_reports_issues_scraper.py>
+11/01/2023 08:46:29 DEBUG Starting new HTTPS connection (1): api.github.com:443
+11/01/2023 08:46:30 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 404 None
+11/01/2023 08:54:01 INFO Start Logging
+11/01/2023 08:54:01 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+11/01/2023 08:54:01 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+11/01/2023 08:54:01 INFO Successfully started execution of <security_reports_issues_scraper.py>
+11/01/2023 08:54:01 DEBUG Starting new HTTPS connection (1): api.github.com:443
+11/01/2023 08:54:02 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 404 None
+11/01/2023 09:05:18 INFO Start Logging
+11/01/2023 09:05:18 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+11/01/2023 09:05:18 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+11/01/2023 09:05:18 INFO Successfully started execution of <security_reports_issues_scraper.py>
+11/01/2023 09:05:18 DEBUG Starting new HTTPS connection (1): api.github.com:443
+11/01/2023 09:05:19 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 404 None
+11/01/2023 09:29:35 INFO Start Logging
+11/01/2023 09:29:35 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+11/01/2023 09:29:35 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+11/01/2023 09:29:35 INFO Successfully started execution of <security_reports_issues_scraper.py>
+11/01/2023 09:29:35 DEBUG Starting new HTTPS connection (1): api.github.com:443
+11/01/2023 09:29:36 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 404 None
+11/01/2023 09:32:03 INFO Start Logging
+11/01/2023 09:32:03 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+11/01/2023 09:32:03 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+11/01/2023 09:32:03 INFO Successfully started execution of <security_reports_issues_scraper.py>
+11/01/2023 09:32:03 DEBUG Starting new HTTPS connection (1): api.github.com:443
+11/01/2023 09:32:04 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 404 None
+11/01/2023 09:43:58 INFO Start Logging
+11/01/2023 09:43:58 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+11/01/2023 09:43:58 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+11/01/2023 09:43:58 INFO Successfully started execution of <security_reports_issues_scraper.py>
+11/01/2023 09:43:58 DEBUG Starting new HTTPS connection (1): api.github.com:443
+11/01/2023 09:43:59 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 404 None
+11/01/2023 10:28:44 INFO Start Logging
+11/01/2023 10:28:44 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+11/01/2023 10:28:44 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+11/01/2023 10:28:44 INFO Successfully started execution of <security_reports_issues_scraper.py>
+11/01/2023 10:28:44 DEBUG Starting new HTTPS connection (1): api.github.com:443
+11/01/2023 10:28:45 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 404 None
+11/01/2023 10:29:18 INFO Start Logging
+11/01/2023 10:29:18 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+11/01/2023 10:29:18 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+11/01/2023 10:29:18 INFO Successfully started execution of <security_reports_issues_scraper.py>
+11/01/2023 10:29:18 DEBUG Starting new HTTPS connection (1): api.github.com:443
+11/01/2023 10:29:19 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 404 None
+11/01/2023 10:40:23 INFO Start Logging
+11/01/2023 10:40:23 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+11/01/2023 10:40:23 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+11/01/2023 10:40:23 INFO Successfully started execution of <security_reports_issues_scraper.py>
+11/01/2023 10:40:23 DEBUG Starting new HTTPS connection (1): api.github.com:443
+11/01/2023 10:40:24 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 404 None
+11/01/2023 10:49:50 INFO Start Logging
+11/01/2023 10:49:50 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+11/01/2023 10:49:50 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+11/01/2023 10:49:50 INFO Successfully started execution of <security_reports_issues_scraper.py>
+11/01/2023 10:49:50 DEBUG Starting new HTTPS connection (1): api.github.com:443
+11/01/2023 10:49:50 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 404 None
+11/01/2023 10:59:57 INFO Start Logging
+11/01/2023 10:59:57 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+11/01/2023 10:59:57 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+11/01/2023 10:59:57 INFO Successfully started execution of <security_reports_issues_scraper.py>
+11/01/2023 10:59:57 DEBUG Starting new HTTPS connection (1): api.github.com:443
+11/01/2023 10:59:58 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 404 None
+11/01/2023 11:19:22 INFO Start Logging
+11/01/2023 11:19:22 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+11/01/2023 11:19:22 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+11/01/2023 11:19:22 INFO Successfully started execution of <security_reports_issues_scraper.py>
+11/01/2023 11:19:22 DEBUG Starting new HTTPS connection (1): api.github.com:443
+11/01/2023 11:19:23 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 404 None
+11/01/2023 11:26:10 INFO Start Logging
+11/01/2023 11:26:10 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+11/01/2023 11:26:10 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+11/01/2023 11:26:10 INFO Successfully started execution of <security_reports_issues_scraper.py>
+11/01/2023 11:26:10 DEBUG Starting new HTTPS connection (1): api.github.com:443
+11/01/2023 11:26:11 DEBUG https://api.github.com:443 "GET /repos/isdapps/IT-Security-Test/issues?'per_page=100' HTTP/1.1" 404 None
