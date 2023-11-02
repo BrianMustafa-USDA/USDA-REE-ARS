@@ -273,8 +273,6 @@ def get_issue_titles(issues):
     for issue in issues:
         # Filter out any pull requests, which happen to be open issues.
         if not "pull_request" in issue:
-            # print(issue['number'])
-            # print(issue['title'])
             issue_number = issue['number']
             print("issue number", issue_number)
             issue_title = issue['title']
