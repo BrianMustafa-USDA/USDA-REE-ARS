@@ -257,7 +257,7 @@ def get_github_issues():
 
     print("GITHUB_API_URL", GITHUB_API_URL)
 
-    # Make a GET request and assign API data to variable entitled 'response'
+    # Make a GET request and assurl of github issues - GET_URLign API data to variable entitled 'response'
     response = requests.get(GET_URL, headers=headers)
 
     print("Request URL:", response.url)
@@ -615,7 +615,6 @@ GITHUB_API_URL = config["local-config-variables"]["GITHUB_API_URL"]
 GITHUB_REPO = config["local-config-variables"]["GITHUB_REPO"]
 GITHUB_API_TYPE = config["local-config-variables"]["GITHUB_API_TYPE"]
 GITHUB_PER_PAGE = config["local-config-variables"]["GITHUB_PER_PAGE"]
-#GITHUB_MAX_LIMIT_PER_PAGE = int(config["local-config-variables"]["GITHUB_MAX_LIMIT_PER_PAGE"])
 GET_URL = GITHUB_API_URL + '/' + GITHUB_REPO + '/' + GITHUB_API_TYPE + '?' + GITHUB_PER_PAGE
 POST_URL = GITHUB_API_URL + '/' + GITHUB_REPO + '/' + GITHUB_API_TYPE
 print("url of github issues - GET_URL: ", GET_URL)
