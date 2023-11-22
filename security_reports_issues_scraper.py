@@ -252,9 +252,6 @@ def get_github_issues():
         'Authorization': 'Bearer ' + BEARER_KEY,
         'X-GitHub-Api-Version': GITHUB_API_DATE
     }
-
-    # print("Headers:", headers)
-
     print("GITHUB_API_URL", GITHUB_API_URL)
 
     # Make a GET request and assurl of github issues - GET_URLign API data to variable entitled 'response'
@@ -462,7 +459,7 @@ def verify_duplicates_of_github_issues(issue_titles, uniq_ids_list):
         else:
             print("New issue")
             # return list with issue_number, a flag of whether issue_number is new (0 is new, 1 exists) & last_observed_timestamp
-            return dupl_unique_ids_list
+    return dupl_unique_ids_list
 
 def weekly_nal_create_github_issue(
         title, labels=None,
@@ -737,7 +734,10 @@ Iterate and create each issue in
 onto the REPO
 """
 
-for issue in range(len(dupl_unique_ids_list)):
+# if unique_ids is empty, then take every issue in for loop you have
+# populate the issue into GitHub
+#
+for issue in range(len(log4shell_unique_ids_list)):
     print("Issue in log4shell_no_dupl_all_issues_list")
     print(issue)
     unique_id_title = log4shell_unique_ids_list[issue][0]
