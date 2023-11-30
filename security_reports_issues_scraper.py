@@ -229,8 +229,7 @@ def log4shell_create_github_issue(title, labels, body):
     print("log4shell_issue: ", log4shell_issue)
     print("type: ", type(log4shell_issue))
     # Add the issue to our repository via POST
-
-    new_repo = requests.post(POST_URL,headers=headers,data=json.dumps(log4shell_issue))
+    new_repo = requests.post(POST_URL, headers=headers, data=json.dumps(log4shell_issue))
     #exit()
     # HTTP response status code 201 indicates that the issue was successfully created
     if new_repo.status_code == 201:
@@ -330,29 +329,30 @@ def get_issue_number():
     return issue_number
 
 # create function to get last observed timestamp
-def get_last_observed_timestamp(uniq_id, list):
-    # for each
+def get_last_observed_timestamp(uniq_id_pair_list, list):
     #print("list: ", list)
     last_observed_timestamp = ""
     for row in list:
         # create a list unique_id by pulling same components from list
 
-        #print("row", row)
+        print("row: ", row)
 
         list_uniq_id = str(row[0]) + unique_id_title_delimiter + row[1] + unique_id_title_delimiter + str(row[3]) + unique_id_title_delimiter + str(row[4]) + unique_id_title_delimiter + row[12]
-        #print(list_uniq_id)
+        print("list_uniq_id: ", list_uniq_id)
 
 
         # create list uniq id from components of list row
-        if uniq_id == list_uniq_id:
-            last_observed_timestamp = row[12]
+        print("uniq_id_pair: ", uniq_id_pair_list
+        print(type(uniq_id_pair_list))
 
-        # if uniq id == list uniq_id
+        # compare uniqie id from uniq_id_pair_list to list_uniq_id
+        if uniq_id_pair_list[0] == list_uniq_id:
+            last_observed_timestamp = row[12]
 
         # Last Observed Timestamp
         # list[row][12] -> Column: Last Observed
             #print("last_observed_timestamp: ", last_observed_timestamp)
-            return last_observed_timestamp
+        return last_observed_timestamp
 
 def create_issue_comment_of_most_updated_timestamp(OWNER, repo, issue_number, last_observed_timestamp):
     # Create dict of headers in order to create issue comment of most recent timestamp
@@ -370,8 +370,7 @@ def create_issue_comment_of_most_updated_timestamp(OWNER, repo, issue_number, la
 
     # create issue comment of duplicate
     issue_comment = {
-        'body': \
-f'### Last Created: {last_observed_timestamp}'
+        'body': f'### Last Created: {last_observed_timestamp}'
     }
     # Add issue comment of most recent duplicate issues to previously created issue in our repository
     new_issue_comment = requests.post(url, data=json.dumps(issue_comment), headers=headers)
@@ -408,25 +407,26 @@ def verify_duplicates_of_github_issues(issue_titles, uniq_ids_list):
 
     print("Issue_titles of log4shell csv:")
     # Iterate through values of issue_titles
-    for uniq_id in uniq_ids_list:
+    for uniq_id_pair in uniq_ids_list:
         print("values - issue_titles")
-        print("uniq_id title", uniq_id[0])
-        print("uniq_id components", uniq_id[1])
+        print("uniq_id title", uniq_id_pair_list[0])
+        print("uniq_id components", uniq_id_pair_list[1])
         for issue_value in issue_titles.values():
-            print("uniq_id in list: ", uniq_id)
+            print("uniq_id_pair_list in list: ", uniq_id_pair_list)
             # Check that issue_titles.values() contains correct values
             print("issue_value ", issue_value)
-            #if uniq_id[0] == issue_value:
-            if uniq_id[0] == issue_value:
+            # Create conditional to verify uniq_id_pair_list[0], the unique identifier, is equal to issue_value
+            if uniq_id_pair_list[0] == issue_value:
                 flag = True
                 print("flag is True", flag)
                 print("Github issue already exists in REPO")
-                print("uniq_id: ", uniq_id)
+                print("uniq_id_pair_list: ", uniq_id_pair_list)
+                print("type of uniq_id_pair: ", type(uniq_id_pair_list))
                 print("issue_value: ", issue_value)
-                last_observed_timestamp = get_last_observed_timestamp(uniq_id, log4shell_no_header_issues_list)
+                last_observed_timestamp = get_last_observed_timestamp(uniq_id_pair_list, log4shell_no_header_issues_list)
                 print("last_observed_timestamp: ", last_observed_timestamp)
                 # Get most recent issue number from each duplicate unique id on this list
-                # pass the issue_number into create_most_recent_timestamp_comment_of_duplicate_issues()
+                # pass the issue_number into create_issue_comment_of_most_updated_timestamp()
                 issue_number = get_issue_number()
                 print("returned issue number: ", issue_number)
                 continue
@@ -441,15 +441,15 @@ def verify_duplicates_of_github_issues(issue_titles, uniq_ids_list):
                     print("New issue.")
                 """
             else:
-                print("New issue in REPO")
+                print("New issue in repo")
 
         # check if flag is true
         if flag:
             # if issue exists, then send an API call to GitHub
             print("The issue already exists")
-            # Follow same format
+            # follow same format
             dupl_unique_ids_list.append(uniq_id)
-            # create most recent timestamp comment for existing issue
+            # create most recent timestamp comment for existing issue on repo
             create_issue_comment_of_most_updated_timestamp(OWNER, REPO, issue_number, last_observed_timestamp)
             # reset flag to false
             flag = False
@@ -626,7 +626,7 @@ to read in weekly security report related to "Log4Shell_Weekly NAL (On Prem + Az
 
 log4shell_report = config['security-csv-reports']['Log4Shell_report']
 
-logging.info("Checking if security report <%s> exists." %log4shell_report)
+logging.info("Checking if security report <%s> exists." % log4shell_report)
 if log4shell_report:
     logging.info("Security Report <%s> exists." % log4shell_report)
 else:
@@ -736,7 +736,7 @@ onto the REPO
 
 # if unique_ids is empty, then take every issue in for loop you have
 # populate the issue into GitHub
-#
+
 for issue in range(len(log4shell_unique_ids_list)):
     print("Issue in log4shell_no_dupl_all_issues_list")
     print(issue)
