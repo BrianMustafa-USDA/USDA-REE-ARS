@@ -342,8 +342,7 @@ def get_last_observed_timestamp(uniq_id_pair_list, list):
 
 
         # create list uniq id from components of list row
-        print("uniq_id_pair: ", uniq_id_pair_list
-        print(type(uniq_id_pair_list))
+        print("uniq_id_pair: ", uniq_id_pair_list)
 
         # compare uniqie id from uniq_id_pair_list to list_uniq_id
         if uniq_id_pair_list[0] == list_uniq_id:
