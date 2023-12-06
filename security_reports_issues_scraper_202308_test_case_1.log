@@ -13431,3 +13431,9 @@
 11/30/2023 12:51:55 INFO Successfully started execution of <security_reports_issues_scraper.py>
 11/30/2023 12:51:55 DEBUG Starting new HTTPS connection (1): api.github.com:443
 11/30/2023 12:51:56 DEBUG https://api.github.com:443 "GET /repos/USDA-REE-ARS/NAL-IT-Security-Test/issues?'per_page=100' HTTP/1.1" 401 80
+12/06/2023 09:31:12 INFO Start Logging
+12/06/2023 09:31:12 INFO Checking if security report <log4shell_weekly_1_sample_issue.csv> exists.
+12/06/2023 09:31:12 INFO Security Report <log4shell_weekly_1_sample_issue.csv> exists.
+12/06/2023 09:31:12 INFO Successfully started execution of <security_reports_issues_scraper.py>
+12/06/2023 09:31:12 DEBUG Starting new HTTPS connection (1): api.github.com:443
+12/06/2023 09:31:13 DEBUG https://api.github.com:443 "GET /repos/USDA-REE-ARS/NAL-IT-Security-Test/issues?'per_page=100' HTTP/1.1" 401 80
