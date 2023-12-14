@@ -1,14 +1,18 @@
 # Standard Python libraries
-import configparser
 import csv
 import json
 import logging
+import os
 import requests
 import time
 
 # Custom Library:
 # Source URL: https://github3.readthedocs.io/en/latest/
 from github3 import login
+# Import load_dotenv to print variables of "security_reports_issues_scraper.env"
+from dotenv import load_dotenv, dotenv_values
+
+# from secureconfig import SecureConfigParser
 
 # Initializing Basic Configuration File entitled "security_reports_issues_scraper_202303"
 logging.basicConfig(filename="security_reports_issues_scraper_202308_test_case_1.log",
@@ -19,9 +23,47 @@ logging.basicConfig(filename="security_reports_issues_scraper_202308_test_case_1
 logging.info("Start Logging")
 
 """
+# Create and assign ConfigParser Object to retrieve configuration data from config.ini
+config = configparser.ConfigParser()
+
+"""
+config = {
+    **dotenv_values(".env.shared"),  # load shared development variables
+    **dotenv_values(".env.secret"),  # load sensitive variables
+    **os.environ,  # override loaded values w/ environment variables
+}
+
+print("config: ", config)
+
+# Assign OWNER of ["USER"] from security_reports_issues_scraper.conf
+OWNER = config['OWNER']
+
+# Assign REPO of [user] from security_reports_issues_scraper.conf
+REPO = config['REPO']
+
+# Assign delimiter within security_reports_issues_scraper.conf
+UNIQUE_ID_TITLE_DELIMITER = config['UNIQUE_ID_TITLE_DELIMITER']
+
+# Global config variables
+BEARER_KEY = config['BEARER_KEY']
+GITHUB_API_DATE = config['GITHUB_API_DATE']
+
+# local config variables
+GITHUB_API_URL = config['GITHUB_API_URL']
+GITHUB_REPO = config['GITHUB_REPO']
+GITHUB_API_TYPE = config['GITHUB_API_TYPE']
+GITHUB_PER_PAGE = config['GITHUB_PER_PAGE']
+GET_URL = GITHUB_API_URL + '/' + GITHUB_REPO + '/' + GITHUB_API_TYPE + '?' + GITHUB_PER_PAGE
+POST_URL = GITHUB_API_URL + '/' + GITHUB_REPO + '/' + GITHUB_API_TYPE
+print("URL of github issues - GET_URL: ", GET_URL)
+print("Type of URL: ", type(GET_URL))
+print("str of GET_URL", str(GET_URL))
+
+"""
 Read csv file 
 entitled "Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv"
 """
+
 
 def log4shell_read_csv_report(file_name):
     # Create new list entitled "log4shell_issues_list"
@@ -35,10 +77,12 @@ def log4shell_read_csv_report(file_name):
     # Return new list entitled "log4shell_issues_list" consisting of each row of issues
     return log4shell_issues_list
 
+
 """
 Read csv file
 entitled "Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv"
 """
+
 
 def weekly_nal_read_csv_report(file_name):
     # Create new list entitled "weekly_nal_issues_list"
@@ -52,10 +96,12 @@ def weekly_nal_read_csv_report(file_name):
     # Return new list entitled "weekly_nal_issues_list" consisting of each row of issues
     return weekly_nal_issues_list
 
+
 """
 Read csv file
 entitled "ARS BOD 22-01 National Agricultural Library (NAL) On-Prem + Azure Scan Report.csv"
 """
+
 
 def ars_bod_read_csv_report(file_name):
     # Create new list "ars_bod_issues_list"
@@ -69,19 +115,20 @@ def ars_bod_read_csv_report(file_name):
     # Return new list entitled "ars_bod_issues_list" consisting of each row of issues
     return ars_bod_issues_list
 
+
 """
 Create log4shell_create_unique_ids() function to 
 pass list object "list" of unique identifier fields
 in order to parse and create unique identifiers from "Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv"
 """
 
+
 def log4shell_create_unique_ids_list(list):
     print("\nUnique IDs (Log4shell): ")
     print("Length of Log4Shell list: ", len(list))
     log4shell_unique_ids_list = []
-    assigned_unique_ids_list = []
+    assigned_pair_unique_ids_list = []
     for row in range(len(list)):
-
         '''
         unique_id created using unique fields from 5 columns assigned to each issue in Log4Shell report:
         list[row][0] -> Column: "Plugin"
@@ -91,23 +138,24 @@ def log4shell_create_unique_ids_list(list):
         list[row][11] -> Column: "First Discovered"
         '''
 
-        unique_id = str(list[row][0]) + unique_id_title_delimiter + list[row][1] + unique_id_title_delimiter + str(
-            list[row][3]) + unique_id_title_delimiter + str(list[row][4]) + unique_id_title_delimiter + list[row][11]
+        unique_id = str(list[row][0]) + UNIQUE_ID_TITLE_DELIMITER + list[row][1] + UNIQUE_ID_TITLE_DELIMITER + str(
+            list[row][3]) + UNIQUE_ID_TITLE_DELIMITER + str(list[row][4]) + UNIQUE_ID_TITLE_DELIMITER + list[row][11]
 
         print("Unique ID of log4shell_issues: ", unique_id)
 
         # Append each unique id to list of all unique ids in csv report entitled 'log4shell_unique_ids_list'
         print("unique_id, list[row]: ", unique_id, list[row])
         assigned_pair_unique_id = [unique_id, list[row]]
-        print("Assigned_unique_ids_list (assigned values): ", assigned_pair_unique_id)
-        assigned_unique_ids_list.append(assigned_pair_unique_id)
+        print("Assigned_unique_id_list (assigned values): ", assigned_pair_unique_id)
+        assigned_pair_unique_ids_list.append(assigned_pair_unique_id)
 
-    return assigned_unique_ids_list
+    return assigned_pair_unique_ids_list
 
 """
 Create weekly_nal_create_unique_ids() function to pass list object  
 to create unique identifiers from "Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv"
 """
+
 
 def weekly_nal_create_unique_id(list):
     print("\nUnique ID: ")
@@ -124,8 +172,8 @@ def weekly_nal_create_unique_id(list):
         list[row][12] -> Column: "First Discovered"
         '''
         # unique_id_delimiter = gitconfig["title"]["delimiter"]
-        unique_id = str(list[row][0]) + unique_id_title_delimiter + list[row][1] + unique_id_title_delimiter + str(
-            list[row][3]) + unique_id_title_delimiter + str(list[row][4]) + unique_id_title_delimiter + list[row][11]
+        unique_id = str(list[row][0]) + DELIMITER + list[row][1] + DELIMITER + str(
+            list[row][3]) + DELIMITER + str(list[row][4]) + DELIMITER + list[row][11]
 
         # Append each unique to list of all unique ids in csv report entitled 'weekly_nal_unique_ids_list'
         weekly_nal_unique_ids_list.append(unique_id)
@@ -137,13 +185,15 @@ def weekly_nal_create_unique_id(list):
         assigned_unique_ids_list.append(assigned_pair_unique_id)
     print("list of assigned unique ids:")
     print(assigned_unique_ids_list)
-    
+
     return assigned_unique_ids_list
     """
+
 """
 Create ars_bod_create_unique_ids() function to 
 pass list object "list" to create unique identifiers from "ARS BOD 22-01 National Agricultural Library (NAL) On-Prem + Azure Scan Report.csv"
 """
+
 
 def ars_bod_create_unique_id(list):
     print("\nUnique IDs: ")
@@ -159,8 +209,8 @@ def ars_bod_create_unique_id(list):
         list[row][5] -> Column: "Port Number"
         list[row][18] -> Column: "First Discovered"
         '''
-        unique_id = str(list[row][0]) + unique_id_title_delimiter + list[row][1] + unique_id_title_delimiter + str(
-            list[row][3]) + unique_id_title_delimiter + str(list[row][4]) + unique_id_title_delimiter + list[row][18]
+        unique_id = str(list[row][0]) + DELIMITER + list[row][1] + DELIMITER + str(
+            list[row][3]) + DELIMITER + str(list[row][4]) + DELIMITER + list[row][18]
 
         # Append each unique to list of all unique ids in csv report entitled 'ars_bod_unique_ids_list'
         ars_bod_unique_ids_list.append(unique_id)
@@ -171,6 +221,8 @@ def ars_bod_create_unique_id(list):
         assigned_unique_ids_list.append(pair_assigned_unique_id)
     return assigned_unique_ids_list
     """
+
+
 def all_unique_ids(list):
     print("\nUnique IDs: ")
     print("Length of list: ", len(list))
@@ -185,13 +237,14 @@ def all_unique_ids(list):
         list[row][5] -> Column: "Port Number"
         list[row][18] -> Column: "First Discovered"
         '''
-        unique_id = str(list[row][0]) + unique_id_title_delimiter + list[row][1] + unique_id_title_delimiter + str(
-            list[row][3]) + unique_id_title_delimiter + str(list[row][4]) + unique_id_title_delimiter + list[row][18]
+        unique_id = str(list[row][0]) + UNIQUE_ID_TITLE_DELIMITER + list[row][1] + UNIQUE_ID_TITLE_DELIMITER + str(
+            list[row][3]) + UNIQUE_ID_TITLE_DELIMITER + str(list[row][4]) + UNIQUE_ID_TITLE_DELIMITER + list[row][18]
 
         pair_assigned_unique_id = [unique_id, list[row]]
         print("Assigned_unique_ids_list (assigned values): ")
         assigned_unique_ids_list.append(pair_assigned_unique_id)
     return assigned_unique_ids_list
+
 
 def log4shell_create_github_issue(title, labels, body):
     # Display message to log file to indicate program is connecting into https://api.github.com
@@ -230,7 +283,7 @@ def log4shell_create_github_issue(title, labels, body):
     print("type: ", type(log4shell_issue))
     # Add the issue to our repository via POST
     new_repo = requests.post(POST_URL, headers=headers, data=json.dumps(log4shell_issue))
-    #exit()
+    # exit()
     # HTTP response status code 201 indicates that the issue was successfully created
     if new_repo.status_code == 201:
         print('Successfully Created Issue {0:s}'.format(title))
@@ -242,24 +295,27 @@ def log4shell_create_github_issue(title, labels, body):
         logging.error('Response: ', new_repo.content)
     return log4shell_issue
 
+
 # Get all issues from REPO and return the result in JSON.
 def get_github_issues():
-
     # Create dict of headers
     headers = {
         'Accept': 'application/vnd.github+json',
         'Authorization': 'Bearer ' + BEARER_KEY,
         'X-GitHub-Api-Version': GITHUB_API_DATE
     }
-    print("GITHUB_API_URL", GITHUB_API_URL)
+    print('GITHUB_API_URL', GITHUB_API_URL)
 
-    # Make a GET request and assurl of github issues - GET_URLign API data to variable entitled 'response'
+    # Make a GET request and assure of github issues - GET_URL align API data to variable entitled 'response'
+    print('GET_URL: ', GET_URL)
     response = requests.get(GET_URL, headers=headers)
 
-    print("Request URL:", response.url)
-    print("Return Code:", response.status_code)
+    print('Request URL: ', response.url)
+    print("Type of Request URL: ", type(response.url))
+    print('Return Code: ', response.status_code)
     # return JSON content of response
     return response.json()
+
 
 # GET issue titles for all issues on REPO
 def get_issue_titles(issues):
@@ -275,8 +331,8 @@ def get_issue_titles(issues):
             issue_titles[issue_number] = issue_title
     return issue_titles
 
-def get_issue_number():
 
+def get_issue_number():
     # Create dict of headers in order to create new issues via POST
     headers = {
         'Accept': 'application/vnd.github+json',
@@ -328,32 +384,32 @@ def get_issue_number():
         print("Error:", r.status_code)
     return issue_number
 
+
 # create function to get last observed timestamp
-def get_last_observed_timestamp(uniq_id_pair_list, list):
-    #print("list: ", list)
+def get_last_observed_timestamp(unique_id_title, list):
+    # print("list: ", list)
     last_observed_timestamp = ""
     for row in list:
         # create a list unique_id by pulling same components from list
-
         print("row: ", row)
 
-        list_uniq_id = str(row[0]) + unique_id_title_delimiter + row[1] + unique_id_title_delimiter + str(row[3]) + unique_id_title_delimiter + str(row[4]) + unique_id_title_delimiter + row[12]
-        print("list_uniq_id: ", list_uniq_id)
+        unique_id = str(row[0]) + UNIQUE_ID_TITLE_DELIMITER + row[1] + UNIQUE_ID_TITLE_DELIMITER + str(
+            row[3]) + UNIQUE_ID_TITLE_DELIMITER + str(row[4]) + UNIQUE_ID_TITLE_DELIMITER + row[12]
+        print("unique_id: ", unique_id)
 
-
-        # create list uniq id from components of list row
-        print("uniq_id_pair: ", uniq_id_pair_list)
-
-        # compare uniqie id from uniq_id_pair_list to list_uniq_id
-        if uniq_id_pair_list[0] == list_uniq_id:
+        # create unique_id from components of list row
+        print("@uniq_ids_pair_list: ", unique_id_title)
+        # compare unique id from uniq_id_pair_list to list_uniq_id
+        if unique_id_title == unique_id:
             last_observed_timestamp = row[12]
 
         # Last Observed Timestamp
         # list[row][12] -> Column: Last Observed
-            #print("last_observed_timestamp: ", last_observed_timestamp)
+        # print("last_observed_timestamp: ", last_observed_timestamp)
         return last_observed_timestamp
 
-def create_issue_comment_of_most_updated_timestamp(OWNER, repo, issue_number, last_observed_timestamp):
+
+def create_issue_comment_of_most_updated_timestamp(OWNER, REPO, issue_number, last_observed_timestamp):
     # Create dict of headers in order to create issue comment of most recent timestamp
     headers = {
         'Accept': 'application/vnd.github+json',
@@ -362,10 +418,10 @@ def create_issue_comment_of_most_updated_timestamp(OWNER, repo, issue_number, la
     }
 
     # Our url to create issue comments via POST
-    url = "https://api.github.com/repos/%s/%s/issues/%s/comments" % (OWNER, repo, issue_number)
+    url = "https://api.github.com/repos/%s/%s/issues/%s/comments" % (OWNER, REPO, issue_number)
 
     # Display message in log file of logging into REPO
-    logging.info("Logging into REPO %s" % repo)
+    logging.info("Logging into REPO %s" % REPO)
 
     # create issue comment of duplicate
     issue_comment = {
@@ -373,14 +429,16 @@ def create_issue_comment_of_most_updated_timestamp(OWNER, repo, issue_number, la
     }
     # Add issue comment of most recent duplicate issues to previously created issue in our repository
     new_issue_comment = requests.post(url, data=json.dumps(issue_comment), headers=headers)
-    if new_issue_comment == 201:
+    if new_issue_comment.status_code == 201:
         print('Successfully Created Issue Comment for Issue {0}'.format(issue_number))
-        logging.info('Successfully Created Issue for Issue {0}'. format(issue_number))
+        logging.info('Successfully Created Issue for Issue {0}'.format(issue_number))
     else:
         print('Could not create Issue Comment for Issue {0}'.format(issue_number))
         print("new_issue_comment.content ", new_issue_comment.content)
         print("(type) new_issue_comment.content ", type(new_issue_comment.content))
-        print('Response: ',  new_issue_comment.content)
+        print("new_issue_comment.status_code: ", new_issue_comment.status_code)
+        print("new_issue_comment.reason: ", new_issue_comment.reason)
+        print('Response: ', new_issue_comment.content)
         logging.error('Could not create Issue Comment for Issue {0}'.format(issue_number))
         logging.error('Response: {0},'.format(new_issue_comment.content))
     """
@@ -398,31 +456,34 @@ def create_issue_comment_of_most_updated_timestamp(OWNER, repo, issue_number, la
 create a function to add a new comment "last observed" field of new duplicate issue
 """
 
-def verify_duplicates_of_github_issues(issue_titles, uniq_ids_list):
+def verify_duplicates_of_github_issues(issue_titles, unique_ids_list):
     dupl_unique_ids_list = []
     flag = False
-    print("sample of unique_ids_list", uniq_ids_list)
+    print("sample of unique_ids_list", unique_ids_list)
     print("sample of issue titles: ", issue_titles)
 
     print("Issue_titles of log4shell csv:")
     # Iterate through values of issue_titles
-    for uniq_id_pair in uniq_ids_list:
-        print("values - issue_titles")
-        print("uniq_id title", uniq_id_pair_list[0])
-        print("uniq_id components", uniq_id_pair_list[1])
+    for unique_id_pair_list in unique_ids_list:
+        print("values - issue_titles ")
+        print("unique_id_pair_list: ", unique_id_pair_list)
+        print("unique_ids_list - title: ", unique_id_pair_list[0])
+        unique_id_title = unique_id_pair_list[0]
+        print("unique_ids_list - components: ", unique_ids_list[0][1])
         for issue_value in issue_titles.values():
-            print("uniq_id_pair_list in list: ", uniq_id_pair_list)
+            print("uniq_id_pair_list in list: ", unique_ids_list)
             # Check that issue_titles.values() contains correct values
             print("issue_value ", issue_value)
             # Create conditional to verify uniq_id_pair_list[0], the unique identifier, is equal to issue_value
-            if uniq_id_pair_list[0] == issue_value:
+            if unique_id_title == issue_value:
                 flag = True
                 print("flag is True", flag)
                 print("Github issue already exists in REPO")
-                print("uniq_id_pair_list: ", uniq_id_pair_list)
-                print("type of uniq_id_pair: ", type(uniq_id_pair_list))
+                print("uniq_ids_list: ", unique_ids_list)
+                print("type of unique_ids_list: ", type(unique_ids_list))
                 print("issue_value: ", issue_value)
-                last_observed_timestamp = get_last_observed_timestamp(uniq_id_pair_list, log4shell_no_header_issues_list)
+                last_observed_timestamp = get_last_observed_timestamp(unique_id_title,
+                                                                      log4shell_no_header_issues_list)
                 print("last_observed_timestamp: ", last_observed_timestamp)
                 # Get most recent issue number from each duplicate unique id on this list
                 # pass the issue_number into create_issue_comment_of_most_updated_timestamp()
@@ -444,12 +505,12 @@ def verify_duplicates_of_github_issues(issue_titles, uniq_ids_list):
 
         # check if flag is true
         if flag:
-            # if issue exists, then send an API call to GitHub
+            # if issue exists, then send an API call to GitHub API
             print("The issue already exists")
-            # follow same format
-            dupl_unique_ids_list.append(uniq_id)
+            # Append unique_id_pair to dupl_unique_ids_list
+            dupl_unique_ids_list.append(unique_id_pair_list)
             # create most recent timestamp comment for existing issue on repo
-            create_issue_comment_of_most_updated_timestamp(OWNER, REPO, issue_number, last_observed_timestamp)
+            # create_issue_comment_of_most_updated_timestamp(OWNER, REPO, issue_number, last_observed_timestamp)
             # reset flag to false
             flag = False
             # for each issue, make sure flag is set to false
@@ -459,6 +520,7 @@ def verify_duplicates_of_github_issues(issue_titles, uniq_ids_list):
             print("New issue")
             # return list with issue_number, a flag of whether issue_number is new (0 is new, 1 exists) & last_observed_timestamp
     return dupl_unique_ids_list
+
 
 def weekly_nal_create_github_issue(
         title, labels=None,
@@ -489,19 +551,19 @@ def weekly_nal_create_github_issue(
         'labels': labels,
         'assignees': assignees,
         'unique_id_body':
-f'### Plugin: {unique_ids_list[0]}'
-f'### Plugin Name: {unique_ids_list[1]}'
-f'### Severity: {unique_ids_list[2]}'
-f'### IP Address: {unique_ids_list[3]}'
-f'### Port: {unique_ids_list[4]}'
-f'### DNS Name: {unique_ids_list[5]}'
-f'### NetBios Name: {unique_ids_list[6]}'
-f'### Plugin Output: {unique_ids_list[7]}'
-f'### Solution: {unique_ids_list[8]}'
-f'### CVSS V3 Base Score: {unique_ids_list[9]}'
-f'### CVE: {unique_ids_list[10]}'
-f'### First Discovered: {unique_ids_list[11]}'
-f'### Last Observed: {unique_ids_list[12]}'
+            f'### Plugin: {uniq_ids_list[0]}'
+            f'### Plugin Name: {uniq_ids_list[1]}'
+            f'### Severity: {uniq_ids_list[2]}'
+            f'### IP Address: {uniq_ids_list[3]}'
+            f'### Port: {uniq_ids_list[4]}'
+            f'### DNS Name: {uniq_ids_list[5]}'
+            f'### NetBios Name: {uniq_ids_list[6]}'
+            f'### Plugin Output: {uniq_ids_list[7]}'
+            f'### Solution: {uniq_ids_list[8]}'
+            f'### CVSS V3 Base Score: {uniq_ids_list[9]}'
+            f'### CVE: {uniq_ids_list[10]}'
+            f'### First Discovered: {uniq_ids_list[11]}'
+            f'### Last Observed: {uniq_ids_list[12]}'
     }
     # Add the issue to our repository via POST
     new_repo = requests.post(url, data=json.dumps(weekly_nal_issue), headers=headers)
@@ -514,6 +576,7 @@ f'### Last Observed: {unique_ids_list[12]}'
         print('Response: ', new_repo.content)
         logging.error('Could not create Issue {0:s}'.format(title))
         logging.error('Response: ', new_repo.content)
+
 
 def ars_bod_create_github_issue(
         title, labels=None,
@@ -544,27 +607,27 @@ def ars_bod_create_github_issue(
         'labels': labels,
         'assignees': assignees,
         'unique_id_body':
-f'### Plugin: {unique_ids_list[0]}'
-f'### Plugin Name: {unique_ids_list[1]}'
-f'### Family: {unique_ids_list[2]}'
-f'### Severity: {unique_ids_list[3]}'
-f'### IP Address: {unique_ids_list[4]}'
-f'### Port: {unique_ids_list[5]}'
-f'### MAC Address: {unique_ids_list[6]}'
-f'### DNS Name: {unique_ids_list[7]}'
-f'### NetBios Name: {unique_ids_list[8]}'
-f'### Plugin Output: {unique_ids_list[9]}'
-f'### Synopsis: {unique_ids_list[10]}'
-f'### Description: {unique_ids_list[11]}'
-f'### Solution: {unique_ids_list[12]}'
-f'### Vulnerability Priority Rating: {unique_ids_list[13]}'
-f'### CVSS V2 Base Score: {unique_ids_list[14]}'
-f'### CVSS V3 Base Score: {unique_ids_list[15]}'
-f'### CPE: {unique_ids_list[16]}'
-f'### CVE: {unique_ids_list[17]}'
-f'### First Discovered: {unique_ids_list[18]}'
-f'### Last Observed: {unique_ids_list[19]}'
-f'### Cross References: {unique_ids_list[20]}'
+            f'### Plugin: {uniq_ids_list[0]}'
+            f'### Plugin Name: {uniq_ids_list[1]}'
+            f'### Family: {uniq_ids_list[2]}'
+            f'### Severity: {uniq_ids_list[3]}'
+            f'### IP Address: {uniq_ids_list[4]}'
+            f'### Port: {uniq_ids_list[5]}'
+            f'### MAC Address: {uniq_ids_list[6]}'
+            f'### DNS Name: {uniq_ids_list[7]}'
+            f'### NetBios Name: {uniq_ids_list[8]}'
+            f'### Plugin Output: {uniq_ids_list[9]}'
+            f'### Synopsis: {uniq_ids_list[10]}'
+            f'### Description: {uniq_ids_list[11]}'
+            f'### Solution: {uniq_ids_list[12]}'
+            f'### Vulnerability Priority Rating: {uniq_ids_list[13]}'
+            f'### CVSS V2 Base Score: {uniq_ids_list[14]}'
+            f'### CVSS V3 Base Score: {uniq_ids_list[15]}'
+            f'### CPE: {uniq_ids_list[16]}'
+            f'### CVE: {uniq_ids_list[17]}'
+            f'### First Discovered: {uniq_ids_list[18]}'
+            f'### Last Observed: {uniq_ids_list[19]}'
+            f'### Cross References: {uniq_ids_list[20]}'
     }
     # Add the issue to our repository via POST
     new_repo = requests.post(url, data=json.dumps(ars_bod_issue), headers=headers)
@@ -578,44 +641,20 @@ f'### Cross References: {unique_ids_list[20]}'
         logging.error('Could not create Issue {0:s}'.format(title))
         logging.error('Response: ', new_repo.content)
 
+
 # Remove header (1st row) of each .csv report
 def remove_header(list):
     list.pop(0)
     return list
 
+
 def delay_api_requests():
-    delay_in_sec = int(config['API']['delay'])
+    # Assign variable entitled DELAY of requests made to GitHub API
+    DELAY = config['DELAY']
+    delay_in_sec = int(DELAY)
+    print("delay_in_sec", delay_in_sec)
     time.sleep(delay_in_sec)
 
-# Create and assign ConfigParser Object to retrieve configuration data from config.ini
-config = configparser.ConfigParser()
-
-# Read config file entitled "security_reports_issue_scraper.conf"
-config.read("security_reports_issues_scraper.conf")
-
-# Assign OWNER of [user] from security_reports_issues_scraper.conf
-OWNER = config["user"]["OWNER"]
-
-# Assign REPO of [user] from security_reports_issues_scraper.conf
-REPO = config["user"]["REPO"]
-
-# Assign delimiter within [unique-id-title] in security_reports_issues_scraper.conf
-unique_id_title_delimiter = config["unique-id-title"]["delimiter"]
-
-# Global config variables
-BEARER_KEY = config["global-config-variables"]["BEARER_KEY"]
-GITHUB_API_DATE = config["global-config-variables"]["GITHUB_API_DATE"]
-
-# local config variables
-GITHUB_API_URL = config["local-config-variables"]["GITHUB_API_URL"]
-GITHUB_REPO = config["local-config-variables"]["GITHUB_REPO"]
-GITHUB_API_TYPE = config["local-config-variables"]["GITHUB_API_TYPE"]
-GITHUB_PER_PAGE = config["local-config-variables"]["GITHUB_PER_PAGE"]
-GET_URL = GITHUB_API_URL + '/' + GITHUB_REPO + '/' + GITHUB_API_TYPE + '?' + GITHUB_PER_PAGE
-POST_URL = GITHUB_API_URL + '/' + GITHUB_REPO + '/' + GITHUB_API_TYPE
-print("url of github issues - GET_URL: ", GET_URL)
-print("Type of URL: ", type(GET_URL))
-print("str of GET_URL", str(GET_URL))
 
 """
 Create hash object from "config file." configuration file
@@ -623,34 +662,34 @@ to read in weekly security report related to "Log4Shell_Weekly NAL (On Prem + Az
 - CHML Vulns  7 Days.csv"
 """
 
-log4shell_report = config['security-csv-reports']['Log4Shell_report']
+# LOG4SHELL_REPORT = os.getenv('LOG4SHELL_REPORT')
+LOG4SHELL_REPORT = config['LOG4SHELL_REPORT']
 
-logging.info("Checking if security report <%s> exists." % log4shell_report)
-if log4shell_report:
-    logging.info("Security Report <%s> exists." % log4shell_report)
+logging.info("Checking if security report <%s> exists." % LOG4SHELL_REPORT)
+if LOG4SHELL_REPORT:
+    logging.info("Security Report <%s> exists." % LOG4SHELL_REPORT)
 else:
-    logging.error("Security Report <%s> does not exist." % log4shell_report)
-
+    logging.error("Security Report <%s> does not exist." % LOG4SHELL_REPORT)
 
 """
 Create hash object from "config file." configuration file
 to read in weekly csv security reports related to "Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML
 Vulns  7 Days.csv"
 """
-weekly_nal_report = config['security-csv-reports']['Weekly_NAL_report']
+weekly_nal_report = config['WEEKLY_NAL_REPORT']
 """
 Create hash object from "config file." configuration file
 to read in weekly csv reports related to "ARS BOD 22-01 National Agricultural Library (NAL) On-Prem + Azure Scan
 Report.csv"
 """
-ars_bod_report = config['security-csv-reports']['ARS_BOD_report']
+ars_bod_report = config['ARS_BOD_REPORT']
 
 """
-logging.info("Checking if security report <%s> exists." % log4shell_report)
-    if log4shell_report:
-        logging.info("Security Report <%s> exists." % log4shell_report)
+logging.info("Checking if security report <%s> exists." % LOG4SHELL_REPORT)
+    if LOG4SHELL_REPORT:
+        logging.info("Security Report <%s> exists." % LOG4SHELL_REPORT)
     else:
-        logging.error("FileNotFoundError. Security Report <%s> does not exist." % log4shell_report)
+        logging.error("FileNotFoundError. Security Report <%s> does not exist." % LOG4SHELL_REPORT)
 """
 
 # Starting security_reports_issues_scraper.py
@@ -669,20 +708,21 @@ else:
 print("Log4Shell report:")
 
 """
-logging.info("Checking if security report <%s> exists." % log4shell_report)
-if log4shell_report:
-    logging.info("Security Report <%s> exists." % log4shell_report)
+logging.info("Checking if security report <%s> exists." % LOG4SHELL_REPORT)
+if LOG4SHELL_REPORT:
+    logging.info("Security Report <%s> exists." % LOG4SHELL_REPORT)
 else:
-    logging.error("Security Report <%s> does not exist." % log4shell_report)
+    logging.error("Security Report <%s> does not exist." % LOG4SHELL_REPORT)
 """
 
 """
 logging.info(
     "Processing Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv> to create issues.")
 """
+print("LOG4SHELL_REPORT: ", LOG4SHELL_REPORT)
 
 log4shell_issues_list = []
-log4shell_issues_list = log4shell_read_csv_report(log4shell_report)
+log4shell_issues_list = log4shell_read_csv_report(LOG4SHELL_REPORT)
 
 print("test of log4shell_issues_list: ", log4shell_issues_list)
 log4shell_no_header_issues_list = remove_header(log4shell_issues_list)
@@ -696,7 +736,7 @@ for issue in range(len(log4shell_no_header_issues_list)):
     print(log4shell_no_header_issues_list[issue])
 """
 
-#log4shell_no_dupl_all_issues_list = verify_duplicates(log4shell_no_header_issues_list)
+# log4shell_no_dupl_all_issues_list = verify_duplicates(log4shell_no_header_issues_list)
 
 print("verified log4shell_issues")
 
@@ -704,22 +744,22 @@ print("verified log4shell_issues")
 log4shell_unique_ids_list = log4shell_create_unique_ids_list(log4shell_no_header_issues_list)
 
 # log4shell unique ids list
-#print("try log4shell_no_dupl_all_unique_ids_list: ", log4shell_no_dupl_all_unique_ids_list)
+# print("try log4shell_no_dupl_all_unique_ids_list: ", log4shell_no_dupl_all_unique_ids_list)
 print("unique id titles of Log4shell_unique_ids_list: ", log4shell_unique_ids_list)
 print("Len of log4shell_unique_ids_list: ", len(log4shell_unique_ids_list))
 
 issues = get_github_issues()
 # print the content of response object in JSON format
 print("output of issues", issues)
-# Execute json.dumps to convert and serialize all github issues into JSON string
+# Execute json.dumps to convert and serialize all GitHub issues into JSON string
 print(json.dumps(issues, indent=4, sort_keys=True))
 
 issue_titles = get_issue_titles(issues)
 # print issue_titles
 print("Issue titles: ", issue_titles)
 
-# return list of issue titles whether issues is new or already exists,
-#if issue already exists, create loop to iterate through that list, then create comment on that issue
+# return list of issue titles whether any issues is new or already exists,
+# if issue already exists, create loop to iterate through that list, then create comment on that issue
 dupl_unique_ids_list = verify_duplicates_of_github_issues(issue_titles, log4shell_unique_ids_list)
 print("dupl_unique_ids_list: ", dupl_unique_ids_list)
 
@@ -735,37 +775,46 @@ onto the REPO
 
 # if unique_ids is empty, then take every issue in for loop you have
 # populate the issue into GitHub
-
+print("log4shell_unique_ids_list: ", log4shell_unique_ids_list)
 for issue in range(len(log4shell_unique_ids_list)):
     print("Issue in log4shell_no_dupl_all_issues_list")
     print(issue)
     unique_id_title = log4shell_unique_ids_list[issue][0]
     print("unique_id_title: ", unique_id_title)
-    #if unique_id_title in issue_titles:
+    print("issue_titles.values() ", issue_titles.values())
+    if unique_id_title in issue_titles.values():
         # update the comment because the title already exists
+        issue_number = get_issue_number()
+        print("issue_number: ", issue_number)
+        last_observed_timestamp = get_last_observed_timestamp(unique_id_title, log4shell_no_header_issues_list)
+        print("last_observed_timestamp: ", last_observed_timestamp)
         # create_issue_comment_of_most_updated_timestamp()
+        print("Create Issue Comment")
+        create_issue_comment_of_most_updated_timestamp(OWNER, REPO, issue_number, last_observed_timestamp)
         # last_discovered_timestamp
-    # else: grab the rest of information from unique_ids_list to create new issue
-    unique_id_list = log4shell_unique_ids_list[issue][1]
-    #print("Log4Shell Unique_id: ", log4shell_unique_ids_list)
-    print("#Unique_id_list: ", unique_id_list)
-    unique_id_labels = ["Test Label"]
-    unique_id_body = f'### Plugin: {unique_id_list[0]}\n'
-    unique_id_body += f'### Plugin Name: {unique_id_list[1]}\n'
-    unique_id_body += f'### Severity: {unique_id_list[2]}\n'
-    unique_id_body += f'### IP Address: {unique_id_list[3]}\n'
-    unique_id_body += f'### Port: {unique_id_list[4]}\n'
-    unique_id_body += f'### DNS Name: {unique_id_list[5]}\n'
-    unique_id_body += f'### NetBIOS Name: {unique_id_list[6]}\n'
-    unique_id_body += f'### Plugin Output: {unique_id_list[7]}\n'
-    unique_id_body += f'### Solution: {unique_id_list[8]}\n'
-    unique_id_body += f'### CVSS V3 Base Score: {unique_id_list[9]}\n'
-    unique_id_body += f'### CVE: {unique_id_list[10]}\n'
-    unique_id_body += f'### First Discovered: {unique_id_list[11]}\n'
-    unique_id_body += f'### Last Discovered: {unique_id_list[12]}'
-    print("Body:", unique_id_body)
-    delay_api_requests()
-    log4shell_create_github_issue(unique_id_title, unique_id_labels, unique_id_body)
+    else:
+        # grab the rest of information from unique_ids_list to create new issue
+        unique_ids_list = log4shell_unique_ids_list[issue][1]
+        print("#Unique_ids_list: ", unique_ids_list)
+        unique_id_labels = ["Test Label"]
+        unique_id_body = f'### Plugin: {unique_ids_list[0]}\n'
+        unique_id_body += f'### Plugin Name: {unique_ids_list[1]}\n'
+        unique_id_body += f'### Severity: {unique_ids_list[2]}\n'
+        unique_id_body += f'### IP Address: {unique_ids_list[3]}\n'
+        unique_id_body += f'### Port: {unique_ids_list[4]}\n'
+        unique_id_body += f'### DNS Name: {unique_ids_list[5]}\n'
+        unique_id_body += f'### NetBIOS Name: {unique_ids_list[6]}\n'
+        unique_id_body += f'### Plugin Output: {unique_ids_list[7]}\n'
+        unique_id_body += f'### Solution: {unique_ids_list[8]}\n'
+        unique_id_body += f'### CVSS V3 Base Score: {unique_ids_list[9]}\n'
+        unique_id_body += f'### CVE: {unique_ids_list[10]}\n'
+        unique_id_body += f'### First Discovered: {unique_ids_list[11]}\n'
+        unique_id_body += f'### Last Discovered: {unique_ids_list[12]}'
+        print("Body:", unique_id_body)
+        delay_api_requests()
+        log4shell_create_github_issue(unique_id_title, unique_id_labels, unique_id_body)
+
+exit()
 
 """
 print("\nWeekly NAL Report:")
@@ -794,8 +843,8 @@ print(weekly_nal_no_dupl_all_issues_list)
 # weekly_nal_no_dupl_all_issues_list = weekly_nal_create_unique_id(weekly_nal_no_dupl_all_issues_list)
 
 """
-#Iterate through unique identifiers (no duplicates) to pass each issue
-#into Weekly_NAL_create_github_issue() function
+# Iterate through unique identifiers (no duplicates) to pass each issue
+# into Weekly_NAL_create_github_issue() function
 """
 print("\n\nCreate issues from Weekly NAL Report: ")
 

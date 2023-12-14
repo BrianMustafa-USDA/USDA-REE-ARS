@@ -10,14 +10,7 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="\(110623) Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\110623 Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv">
+        <entry key="\11-06-23_Log4Shell_Weekly NAL (On Prem + Azure + Agents) Vulnerability Report - CHML Vulns  7 Days.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
